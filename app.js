@@ -1,39 +1,28 @@
 const USERNAME = 'Boardgamebudapest';
-const BGG_API_TOKEN = ''; // PASTE YOUR TOKEN HERE WHEN YOU GET IT
+const BGG_API_TOKEN = ''; // PASTE YOUR TOKEN HERE WHEN YOU GET IT - Leave empty to use local JSON file
 
 let gamesCollection = [];
 let isLoading = false;
 
-// Function to fetch and parse BGG collection with API token
+// Main function to fetch collection - uses API if token is available, otherwise loads from JSON
 async function fetchCollection() {
     console.log('=== STARTING COLLECTION FETCH ===');
     const resultsDiv = document.getElementById('searchResults');
     resultsDiv.innerHTML = '<div class="loading">Gyűjtemény betöltése... / Loading collection...</div>';
     
-    // Check if token is configured
-    if (!BGG_API_TOKEN || BGG_API_TOKEN.trim() === '') {
-        console.error('BGG API Token not configured!');
-        resultsDiv.innerHTML = `
-            <div class="error">
-                <strong>⚠️ BGG API Token nincs beállítva / BGG API Token not configured</strong><br><br>
-                <strong>Lépések / Steps:</strong><br>
-                1. Regisztrálj itt / Register here: 
-                   <a href="https://boardgamegeek.com/applications" target="_blank">
-                   https://boardgamegeek.com/applications
-                   </a><br>
-                2. Hozz létre egy "Non-commercial" alkalmazást<br>
-                   Create a "Non-commercial" application<br>
-                3. Várd meg a jóváhagyást (akár 1 hét is lehet)<br>
-                   Wait for approval (can take up to 1 week)<br>
-                4. Kérj le egy Bearer tokent az alkalmazásodhoz<br>
-                   Generate a Bearer token for your application<br>
-                5. Másold be a tokent a script.js fájlba a BGG_API_TOKEN változóba<br>
-                   Paste the token in script.js in the BGG_API_TOKEN variable<br><br>
-                <small>Részletek / Details: https://boardgamegeek.com/using_the_xml_api</small>
-            </div>
-        `;
-        return;
+    // Check if we should use API or local JSON
+    if (BGG_API_TOKEN && BGG_API_TOKEN.trim() !== '') {
+        console.log('API token found - fetching from BGG API');
+        await fetchFromAPI();
+    } else {
+        console.log('No API token - loading from local games.json file');
+        await fetchFromJSON();
     }
+}
+
+// Fetch from BGG API (when token is available)
+async function fetchFromAPI() {
+    const resultsDiv = document.getElementById('searchResults');
     
     try {
         const url = `https://boardgamegeek.com/xmlapi2/collection?username=${USERNAME}`;
@@ -53,14 +42,13 @@ async function fetchCollection() {
         console.log('Response received:', response);
         console.log('Response status:', response.status);
         console.log('Response ok:', response.ok);
-        console.log('Response headers:', [...response.headers.entries()]);
         
         // BGG API returns 202 when collection is being queued
         if (response.status === 202) {
             console.log('Got 202 - Collection is being queued, will retry in 3 seconds...');
             resultsDiv.innerHTML = '<div class="loading">A gyűjtemény feldolgozás alatt... Újrapróbálkozás 3 másodperc múlva... / Collection is being processed... Retrying in 3 seconds...</div>';
             await new Promise(resolve => setTimeout(resolve, 3000));
-            return fetchCollection(); // Retry
+            return fetchFromAPI(); // Retry
         }
         
         if (!response.ok) {
@@ -79,7 +67,6 @@ async function fetchCollection() {
         console.log('Parsing XML...');
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
-        console.log('XML parsed, document:', xmlDoc);
         
         // Check for errors
         const error = xmlDoc.querySelector('error');
@@ -117,31 +104,82 @@ async function fetchCollection() {
             return { name, objectid, shelf };
         });
         
-        console.log('Total games loaded:', gamesCollection.length);
+        console.log('Total games loaded from API:', gamesCollection.length);
         console.log('Games with shelf info:', gamesCollection.filter(g => g.shelf).length);
         
         resultsDiv.innerHTML = `
             <div style="color: green;">
-                ✓ ${gamesCollection.length} játék betöltve / games loaded<br>
+                ✓ ${gamesCollection.length} játék betöltve (BGG API) / games loaded (BGG API)<br>
                 <small>${gamesCollection.filter(g => g.shelf).length} játéknak van polc információja / games have shelf info</small>
             </div>
         `;
-        console.log('=== COLLECTION FETCH COMPLETE ===');
+        console.log('=== COLLECTION FETCH FROM API COMPLETE ===');
         
     } catch (error) {
-        console.error('=== ERROR DURING FETCH ===');
-        console.error('Error name:', error.name);
-        console.error('Error message:', error.message);
-        console.error('Error stack:', error.stack);
+        console.error('=== ERROR DURING API FETCH ===');
+        console.error('Error:', error);
+        
+        resultsDiv.innerHTML = `
+            <div class="error">
+                <strong>Hiba a BGG API-ból való betöltéskor / Error loading from BGG API</strong><br>
+                ${error.message}<br><br>
+                <small>Ellenőrizd a Bearer tokent vagy próbáld újra! / Check your Bearer token or try again!</small><br>
+                <small>Ha a probléma továbbra is fennáll, távolítsd el a tokent a kódból, hogy a helyi JSON fájlt használja.</small><br>
+                <small>If the problem persists, remove the token from the code to use the local JSON file.</small>
+            </div>
+        `;
+    }
+}
+
+// Fetch from local JSON file (temporary solution while waiting for API token)
+async function fetchFromJSON() {
+    const resultsDiv = document.getElementById('searchResults');
+    
+    try {
+        console.log('Attempting to load from games.json...');
+        const response = await fetch('games.json');
+        
+        if (!response.ok) {
+            throw new Error(`games.json not found (status: ${response.status})`);
+        }
+        
+        const data = await response.json();
+        console.log('JSON loaded successfully');
+        
+        gamesCollection = data.games || data;
+        console.log('Total games loaded from JSON:', gamesCollection.length);
+        console.log('Games with shelf info:', gamesCollection.filter(g => g.shelf).length);
+        console.log('Sample games:', gamesCollection.slice(0, 3));
+        
+        resultsDiv.innerHTML = `
+            <div style="color: green;">
+                ✓ ${gamesCollection.length} játék betöltve (Helyi fájl) / games loaded (Local file)<br>
+                <small>${gamesCollection.filter(g => g.shelf).length} játéknak van polc információja / games have shelf info</small><br>
+                <small style="color: #666;">💡 Tipp: Add hozzá a BGG API tokent az élő adatokért / Tip: Add BGG API token for live data</small>
+            </div>
+        `;
+        console.log('=== COLLECTION LOAD FROM JSON COMPLETE ===');
+        
+    } catch (error) {
+        console.error('=== ERROR LOADING JSON ===');
+        console.error('Error:', error);
         
         resultsDiv.innerHTML = `
             <div class="error">
                 <strong>Hiba a gyűjtemény betöltésekor / Error loading collection</strong><br>
                 ${error.message}<br><br>
-                ${error.message.includes('Unauthorized') ? 
-                    '<small>Ellenőrizd, hogy a Bearer token helyesen van-e beállítva a script.js fájlban!</small><br><small>Check if the Bearer token is correctly set in script.js!</small>' : 
-                    '<small>Próbáld meg újratölteni az oldalt / Try reloading the page</small>'
-                }
+                <strong>Megoldás / Solution:</strong><br>
+                1. Győződj meg róla, hogy a <code>games.json</code> fájl létezik a projekt gyökérkönyvtárában<br>
+                   Make sure <code>games.json</code> file exists in the project root<br><br>
+                2. Exportáld a BGG gyűjteményt CSV formátumban:<br>
+                   Export your BGG collection as CSV:<br>
+                   <a href="https://boardgamegeek.com/collection/user/${USERNAME}?exportcsv=1" target="_blank">
+                   Kattints ide a CSV letöltéséhez / Click here to download CSV
+                   </a><br><br>
+                3. Használd a konvertert a CSV → JSON átalakításhoz<br>
+                   Use the converter to convert CSV → JSON<br><br>
+                <strong>VAGY / OR:</strong><br>
+                Regisztrálj BGG API tokenért: <a href="https://boardgamegeek.com/applications" target="_blank">boardgamegeek.com/applications</a>
             </div>
         `;
     }
@@ -211,4 +249,5 @@ document.getElementById('searchInput').addEventListener('keypress', (e) => {
 
 // Load collection on page load
 console.log('Page loaded, starting collection fetch...');
+console.log('BGG_API_TOKEN configured:', BGG_API_TOKEN ? 'Yes' : 'No (using local JSON)');
 fetchCollection();
