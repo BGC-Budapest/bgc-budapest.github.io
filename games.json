@@ -1,23 +1,8859 @@
-[
-  {
-    "name": "Codenames",
-    "players": [2,3,4,5,6,7,8],
-    "type": ["party", "competitive"],
-    "complexity": "easy_party",
-    "time": ["short", "medium"]
-  },
-  {
-    "name": "Pandemic",
-    "players": [2,3,4],
-    "type": ["cooperative", "strategy"],
-    "complexity": "mid",
-    "time": ["medium"]
-  },
-  {
-    "name": "Ticket to Ride",
-    "players": [2,3,4,5],
-    "type": ["competitive", "strategy"],
-    "complexity": "easy_family",
-    "time": ["short", "medium"]
-  }
-]
+{
+  "games": [
+    {
+      "name": "011",
+      "shelf": "79-1",
+      "objectid": "93194"
+    },
+    {
+      "name": "1000 hely amit látnod kell",
+      "shelf": "34-1",
+      "objectid": "27181"
+    },
+    {
+      "name": "Az 1000 tükör vára",
+      "shelf": "21-5",
+      "objectid": "40962"
+    },
+    {
+      "name": "12 Rivers",
+      "shelf": "34-5",
+      "objectid": "447649"
+    },
+    {
+      "name": "1923 Cotton Club",
+      "shelf": "65-2",
+      "objectid": "340790"
+    },
+    {
+      "name": "20 másodperc totálkáosz",
+      "shelf": "10-4",
+      "objectid": "276431"
+    },
+    {
+      "name": "*,\",\",\",100796958,5.5771,6.48904,1,10576,810,thing,20 Second Showdown,5,20,0,0,0,2022,5",
+      "shelf": "",
+      "objectid": "7"
+    },
+    {
+      "name": "2gether",
+      "shelf": "51-2",
+      "objectid": "364266"
+    },
+    {
+      "name": "3Motion",
+      "shelf": "53-2",
+      "objectid": "409580"
+    },
+    {
+      "name": "4Mation",
+      "shelf": "53-2",
+      "objectid": "329175"
+    },
+    {
+      "name": "504",
+      "shelf": "77-1",
+      "objectid": "175878"
+    },
+    {
+      "name": "7 csoda",
+      "shelf": "62-5",
+      "objectid": "68448"
+    },
+    {
+      "name": "7 Csoda (2021-es kiadás)",
+      "shelf": "65-4",
+      "objectid": "316377"
+    },
+    {
+      "name": "*,\",\",\",84247872,7.34993,7.82831,2.2766,210,18657,thing,7 Wonders (Second Edition),3,7,30,30,30,2021,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "7 Csoda Párbaj",
+      "shelf": "52-4",
+      "objectid": "173346"
+    },
+    {
+      "name": "*,\",\",\",84246801,7.95535,8.0807,2.2272,23,179938,thing,7 Wonders Duel,2,2,30,30,30,2016,2,2,10+,No necessary in-game text,\",\",\",\",\",standalone,\",Gém Klub Kft.; Repos Production,Hungarian,2016,Hungarian edition",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "7 Csoda Párbaj: Agora",
+      "shelf": "52-4",
+      "objectid": "309116"
+    },
+    {
+      "name": "7 Csoda Párbaj: Panteon",
+      "shelf": "52-4",
+      "objectid": "202976"
+    },
+    {
+      "name": "7 Csoda: Építészek",
+      "shelf": "29-4",
+      "objectid": "346703"
+    },
+    {
+      "name": "7 Csoda: Kockajáték",
+      "shelf": "17-6",
+      "objectid": "446231"
+    },
+    {
+      "name": "7 Steps",
+      "shelf": "19-4",
+      "objectid": "161537"
+    },
+    {
+      "name": "7 Wonders Duel",
+      "shelf": "52-4",
+      "objectid": "173346"
+    },
+    {
+      "name": "7 Wonders Duel: Pantheon",
+      "shelf": "52-4",
+      "objectid": "202976"
+    },
+    {
+      "name": "7 Wonders: Cities",
+      "shelf": "62-5",
+      "objectid": "111661"
+    },
+    {
+      "name": "80 Days",
+      "shelf": "34-2",
+      "objectid": "348503"
+    },
+    {
+      "name": "A fehér várkastély: Párbaj",
+      "shelf": "56-2",
+      "objectid": "438936"
+    },
+    {
+      "name": "A Piramis Kincse",
+      "shelf": "22-2",
+      "objectid": "38196"
+    },
+    {
+      "name": "Abalone",
+      "shelf": "54-1",
+      "objectid": "526"
+    },
+    {
+      "name": "Ábrándos bárányok",
+      "shelf": "27-5",
+      "objectid": "324242"
+    },
+    {
+      "name": "Abszolút elfelejtett szavak",
+      "shelf": "15-4",
+      "objectid": "350267"
+    },
+    {
+      "name": "Abszolút képtelen sztorik",
+      "shelf": "13-5",
+      "objectid": "363678"
+    },
+    {
+      "name": "Abszolút megvadult betűk",
+      "shelf": "16-3",
+      "objectid": "328484"
+    },
+    {
+      "name": "Abszolút szabad válaszok",
+      "shelf": "09-3",
+      "objectid": "457983"
+    },
+    {
+      "name": "Acélfenyves",
+      "shelf": "51-4",
+      "objectid": "407343"
+    },
+    {
+      "name": "Acélmágnás",
+      "shelf": "64-2",
+      "objectid": "318084"
+    },
+    {
+      "name": "Achtung, frecher Frosch!",
+      "shelf": "20-1",
+      "objectid": "354871"
+    },
+    {
+      "name": "Activity",
+      "shelf": "36-3",
+      "objectid": "8790"
+    },
+    {
+      "name": "Activity Family Classic",
+      "shelf": "36-3",
+      "objectid": "190104"
+    },
+    {
+      "name": "Activity Junior",
+      "shelf": "24-2",
+      "objectid": "42644"
+    },
+    {
+      "name": "Activity Pótkérdések I.",
+      "shelf": "36-3",
+      "objectid": "56688"
+    },
+    {
+      "name": "Adel Verpflichtet",
+      "shelf": "58-4",
+      "objectid": "120"
+    },
+    {
+      "name": "AdvenTourist",
+      "shelf": "28-1",
+      "objectid": "363401"
+    },
+    {
+      "name": "*,\",\",\",105054904,0,4.7,1.8,0,28,thing,AdvenTourist,2,5,120,120,60,2022,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "AdvenTourist: Természeti kincseink",
+      "shelf": "28-1",
+      "objectid": "364338"
+    },
+    {
+      "name": "*,\",\",\",105054925,0,5.6,2.3333,0,28,thing,AdvenTourist: Természeti kincseink,2,5,120,120,60,2022,\",\",\",Moderate in-game text - needs crib sheet or paste ups,\",\",\",\",\",standalone,\",Magyar Turisztikai Szövetség,Hungarian,2022,Hungarian edition",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "Afrika Csillaga",
+      "shelf": "32-4",
+      "objectid": "5130"
+    },
+    {
+      "name": "Afrikaland",
+      "shelf": "24-3",
+      "objectid": "264607"
+    },
+    {
+      "name": "Age of Thieves",
+      "shelf": "78-1",
+      "objectid": "203740"
+    },
+    {
+      "name": "Agent Undercover 2",
+      "shelf": "13-3",
+      "objectid": "193308"
+    },
+    {
+      "name": "Agricola",
+      "shelf": "84-3",
+      "objectid": "31260"
+    },
+    {
+      "name": "Agricola (Revised Edition)",
+      "shelf": "84-3",
+      "objectid": "200680"
+    },
+    {
+      "name": "Ahau: Eclipse",
+      "shelf": "82-1",
+      "objectid": "363572"
+    },
+    {
+      "name": "Ahau: Rulers of Yucatán",
+      "shelf": "82-1",
+      "objectid": "321140"
+    },
+    {
+      "name": "Ahoy",
+      "shelf": "21-2",
+      "objectid": "20031"
+    },
+    {
+      "name": "Airlines Europe",
+      "shelf": "63-1",
+      "objectid": "90419"
+    },
+    {
+      "name": "Akropolisz",
+      "shelf": "29-4",
+      "objectid": "357563"
+    },
+    {
+      "name": "Akrotiri",
+      "shelf": "55-2",
+      "objectid": "154458"
+    },
+    {
+      "name": "Álarcosbál",
+      "shelf": "12-5",
+      "objectid": "139030"
+    },
+    {
+      "name": "Alba Longa",
+      "shelf": "79-1",
+      "objectid": "58886"
+    },
+    {
+      "name": "Alhambra",
+      "shelf": "59-3",
+      "objectid": "6249"
+    },
+    {
+      "name": "Alhambra: A tolvajok órája – Hodina zlodějů – Hodina zlodejov",
+      "shelf": "59-3",
+      "objectid": "16494"
+    },
+    {
+      "name": "Alhambra: A Város kapui",
+      "shelf": "59-3",
+      "objectid": "13287"
+    },
+    {
+      "name": "Alhambra: A Vezír Kiváltsága – Vezírova přízeň – Vezírova priazeň",
+      "shelf": "59-3",
+      "objectid": "9687"
+    },
+    {
+      "name": "Ali Baba",
+      "shelf": "II.",
+      "objectid": "3889"
+    },
+    {
+      "name": "Alias",
+      "shelf": "10-2",
+      "objectid": "3818"
+    },
+    {
+      "name": "*,\",\",\",53756586,5.62278,5.95622,1.2551,8223,2254,thing,Alias,4,12,60,60,60,1990,4",
+      "shelf": "",
+      "objectid": "5"
+    },
+    {
+      "name": "Alien Wars",
+      "shelf": "04-2",
+      "objectid": "175742"
+    },
+    {
+      "name": "Aljas 7-es",
+      "shelf": "07-4",
+      "objectid": "186302"
+    },
+    {
+      "name": "*,\",\",\",62942969,5.72461,6.3828,1.0476,5739,2171,thing,Die Fiesen 7,2,6,25,25,15,2019,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "Alkonyat",
+      "shelf": "64-3",
+      "objectid": "393175"
+    },
+    {
+      "name": "*III,\",\",\",137227973,5.89492,6.92978,2.2069,3845,3239,thing,Nocturne,1,4,45,45,30,2025,1",
+      "shelf": "",
+      "objectid": "2"
+    },
+    {
+      "name": "Állati Árverés",
+      "shelf": "13-1",
+      "objectid": "408938"
+    },
+    {
+      "name": "Állati fogások",
+      "shelf": "70-2",
+      "objectid": "393429"
+    },
+    {
+      "name": "Állatok a fedélzeten",
+      "shelf": "32-1",
+      "objectid": "191572"
+    },
+    {
+      "name": "Allűr",
+      "shelf": "15-3",
+      "objectid": "233009"
+    },
+    {
+      "name": "Almamérce",
+      "shelf": "20-3",
+      "objectid": "336360"
+    },
+    {
+      "name": "Álmodj Velem!",
+      "shelf": "12-4",
+      "objectid": "198454"
+    },
+    {
+      "name": "Álomház",
+      "shelf": "29-4",
+      "objectid": "194880"
+    },
+    {
+      "name": "Álomház: Napsugárút 156",
+      "shelf": "29-4",
+      "objectid": "232291"
+    },
+    {
+      "name": "Álomkert",
+      "shelf": "29-3",
+      "objectid": "312618"
+    },
+    {
+      "name": "Alpino",
+      "shelf": "28-2",
+      "objectid": "394696"
+    },
+    {
+      "name": "Amazonas",
+      "shelf": "24-1",
+      "objectid": "125446"
+    },
+    {
+      "name": "Amazónia",
+      "shelf": "78-4",
+      "objectid": "368305"
+    },
+    {
+      "name": "Amritsar: Az Aranytemplom",
+      "shelf": "73-4",
+      "objectid": "386502"
+    },
+    {
+      "name": "Anachrony",
+      "shelf": "81-4",
+      "objectid": "185343"
+    },
+    {
+      "name": "Anachrony: Exosuit Commander Pack",
+      "shelf": "81-4",
+      "objectid": "218791"
+    },
+    {
+      "name": "Anachrony: Fractures of Time",
+      "shelf": "81-4",
+      "objectid": "272077"
+    },
+    {
+      "name": "Anarchista palacsinta",
+      "shelf": "07-3",
+      "objectid": "390151"
+    },
+    {
+      "name": "Andor legendái",
+      "shelf": "62-5",
+      "objectid": "127398"
+    },
+    {
+      "name": "Androméda",
+      "shelf": "82-4",
+      "objectid": "358661"
+    },
+    {
+      "name": "Ankh'or: A Nílus-völgy kalmárjai",
+      "shelf": "33-1",
+      "objectid": "271530"
+    },
+    {
+      "name": "Anti-Monopoly",
+      "shelf": "36-1",
+      "objectid": "1931"
+    },
+    {
+      "name": "Antigua",
+      "shelf": "04-2",
+      "objectid": "85338"
+    },
+    {
+      "name": "Ape Town",
+      "shelf": "71-1",
+      "objectid": "412123"
+    },
+    {
+      "name": "Appenzell Sajtvára",
+      "shelf": "21-3",
+      "objectid": "28089"
+    },
+    {
+      "name": "Apropó popó",
+      "shelf": "24-4",
+      "objectid": "365470"
+    },
+    {
+      "name": "Aquaretto",
+      "shelf": "32-2",
+      "objectid": "34194"
+    },
+    {
+      "name": "Aramini Circus",
+      "shelf": "04-2",
+      "objectid": "154634"
+    },
+    {
+      "name": "Aranyásók",
+      "shelf": "06-3",
+      "objectid": "9220"
+    },
+    {
+      "name": "Aranyásók 2",
+      "shelf": "06-3",
+      "objectid": "91072"
+    },
+    {
+      "name": "Aranyásók Párbaj",
+      "shelf": "56-3",
+      "objectid": "168215"
+    },
+    {
+      "name": "Aranyásók: A sötét barlang",
+      "shelf": "05-4",
+      "objectid": "365702"
+    },
+    {
+      "name": "Aranyásók: Az Elfeledett Bányák",
+      "shelf": "63-5",
+      "objectid": "245214"
+    },
+    {
+      "name": "Aranyfolyó",
+      "shelf": "66-5",
+      "objectid": "399941"
+    },
+    {
+      "name": "Arborétum",
+      "shelf": "03-5",
+      "objectid": "140934"
+    },
+    {
+      "name": "Arcanum",
+      "shelf": "79-1",
+      "objectid": "99770"
+    },
+    {
+      "name": "Arena: Revolte in Rom II",
+      "shelf": "55-1",
+      "objectid": "56931"
+    },
+    {
+      "name": "Ark Nova",
+      "shelf": "83-3",
+      "objectid": "342942"
+    },
+    {
+      "name": "Arkham Horror: The Card Game",
+      "shelf": "52-2",
+      "objectid": "205637"
+    },
+    {
+      "name": "Armageddon",
+      "shelf": "74-1",
+      "objectid": "207208"
+    },
+    {
+      "name": "Armonia",
+      "shelf": "17-2",
+      "objectid": "341009"
+    },
+    {
+      "name": "Arnak elveszett romjai",
+      "shelf": "76-3",
+      "objectid": "312484"
+    },
+    {
+      "name": "Arnak elveszett romjai: Expedícióvezetők",
+      "shelf": "76-3",
+      "objectid": "341254"
+    },
+    {
+      "name": "Around the World in 80 Days",
+      "shelf": "34-2",
+      "objectid": "204599"
+    },
+    {
+      "name": "Art Gallery",
+      "shelf": "65-3",
+      "objectid": "369395"
+    },
+    {
+      "name": "Artifact",
+      "shelf": "75-4",
+      "objectid": "144310"
+    },
+    {
+      "name": "Artus",
+      "shelf": "64-4",
+      "objectid": "92643"
+    },
+    {
+      "name": "Astra",
+      "shelf": "69-2",
+      "objectid": "369270"
+    },
+    {
+      "name": "Atlantis",
+      "shelf": "30-2",
+      "objectid": "55253"
+    },
+    {
+      "name": "Attila",
+      "shelf": "74-3",
+      "objectid": "827"
+    },
+    {
+      "name": "Auch schon clever",
+      "shelf": "24-3",
+      "objectid": "354892"
+    },
+    {
+      "name": "Auf Achse",
+      "shelf": "59-4",
+      "objectid": "110"
+    },
+    {
+      "name": "Auf den Spuren von Marco Polo",
+      "shelf": "77-3",
+      "objectid": "171623"
+    },
+    {
+      "name": "Ausonia",
+      "shelf": "04-3",
+      "objectid": "302469"
+    },
+    {
+      "name": "Axio",
+      "shelf": "18-2",
+      "objectid": "219475"
+    },
+    {
+      "name": "*,\",\",\",61215331,5.74228,6.76236,1.6111,5452,979,thing,Axio,1,4,45,45,30,2018,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Axio Rota",
+      "shelf": "18-2",
+      "objectid": "270637"
+    },
+    {
+      "name": "AYA",
+      "shelf": "29-2",
+      "objectid": "182194"
+    },
+    {
+      "name": "Aztlán",
+      "shelf": "65-4",
+      "objectid": "124490"
+    },
+    {
+      "name": "Azul",
+      "shelf": "60-2",
+      "objectid": "230802"
+    },
+    {
+      "name": "Azul Mini",
+      "shelf": "18-5",
+      "objectid": "230802"
+    },
+    {
+      "name": "Azul: A királyi pavilon",
+      "shelf": "18-5",
+      "objectid": "287954"
+    },
+    {
+      "name": "Azul: A királyné kertje",
+      "shelf": "18-5",
+      "objectid": "346965"
+    },
+    {
+      "name": "Azul: Csokoládéműhely",
+      "shelf": "18-5",
+      "objectid": "363247"
+    },
+    {
+      "name": "Azul: Sintra üvegcsodái",
+      "shelf": "18-5",
+      "objectid": "256226"
+    },
+    {
+      "name": "Babilon tornyai",
+      "shelf": "51-3",
+      "objectid": "415910"
+    },
+    {
+      "name": "Babszüret",
+      "shelf": "06-3",
+      "objectid": "11"
+    },
+    {
+      "name": "Backgammon Set",
+      "shelf": "52-1",
+      "objectid": "2397"
+    },
+    {
+      "name": "Bag of Chips",
+      "shelf": "14-5",
+      "objectid": "344114"
+    },
+    {
+      "name": "*,\",\",\",112529451,5.94761,6.42535,1.1111,3461,4169,thing,Bag of Chips,2,5,20,20,15,2022,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Bagolytanoda",
+      "shelf": "24-3",
+      "objectid": "290055"
+    },
+    {
+      "name": "Bájos Árnyak",
+      "shelf": "06-5",
+      "objectid": "359502"
+    },
+    {
+      "name": "Bájos kis bestiák",
+      "shelf": "06-5",
+      "objectid": "299252"
+    },
+    {
+      "name": "Bakschisch",
+      "shelf": "36-2",
+      "objectid": "1504"
+    },
+    {
+      "name": "Bal jobb dilemma",
+      "shelf": "08-5",
+      "objectid": "370235"
+    },
+    {
+      "name": "Bálnalovasok",
+      "shelf": "32-2",
+      "objectid": "305761"
+    },
+    {
+      "name": "Banán Buli Balhé",
+      "shelf": "15-3",
+      "objectid": "402747"
+    },
+    {
+      "name": "Bananagrams",
+      "shelf": "16-3",
+      "objectid": "27225"
+    },
+    {
+      "name": "Bandida",
+      "shelf": "07-2",
+      "objectid": "299571"
+    },
+    {
+      "name": "Bandido",
+      "shelf": "07-2",
+      "objectid": "191925"
+    },
+    {
+      "name": "*,\",\",\",54454332,6.1219,6.39755,1.1244,2525,13673,thing,Bandido,1,4,15,15,10,2016,1",
+      "shelf": "",
+      "objectid": "2"
+    },
+    {
+      "name": "BANG!",
+      "shelf": "03-3",
+      "objectid": "3955"
+    },
+    {
+      "name": "*,\",\",\",53478454,6.32165,6.48766,1.6334,1770,45793,thing,BANG!,4,7,40,40,20,2008,5",
+      "shelf": "",
+      "objectid": "6"
+    },
+    {
+      "name": "BANG! A párbaj",
+      "shelf": "56-2",
+      "objectid": "182094"
+    },
+    {
+      "name": "BANG! Aranyláz",
+      "shelf": "03-3",
+      "objectid": "107794"
+    },
+    {
+      "name": "Bang! Kiegészítő paklik",
+      "shelf": "03-3",
+      "objectid": "183275"
+    },
+    {
+      "name": "BANG! Kockajáték",
+      "shelf": "16-2",
+      "objectid": "143741"
+    },
+    {
+      "name": "BANG! The Dice Game",
+      "shelf": "01-4",
+      "objectid": "143741"
+    },
+    {
+      "name": "Barakka",
+      "shelf": "53-4",
+      "objectid": "262291"
+    },
+    {
+      "name": "*,\",\",\",84246026,5.52112,6.51094,1.3333,18654,138,thing,Barakka,1,2,20,20,15,2021,1",
+      "shelf": "",
+      "objectid": "2,2,8+,No necessary in-game text,\",\",\",\",\",standalone,\",Vagabund,English; German; Hungarian,2021,English/German/Hungarian edition"
+    },
+    {
+      "name": "Barbarossa und die Rätselmeister",
+      "shelf": "59-4",
+      "objectid": "550"
+    },
+    {
+      "name": "Barikarám",
+      "shelf": "25-2",
+      "objectid": "347348"
+    },
+    {
+      "name": "Bastille",
+      "shelf": "74-1",
+      "objectid": "259038"
+    },
+    {
+      "name": "Battle Sheep",
+      "shelf": "19-4",
+      "objectid": "54137"
+    },
+    {
+      "name": "Battleship",
+      "shelf": "53-1",
+      "objectid": "2425"
+    },
+    {
+      "name": "Die Baumeister des Colosseum",
+      "shelf": "66-4",
+      "objectid": "206928"
+    },
+    {
+      "name": "Bears vs Babies",
+      "shelf": "03-5",
+      "objectid": "211534"
+    },
+    {
+      "name": "Betűtorony",
+      "shelf": "16-4",
+      "objectid": "1515"
+    },
+    {
+      "name": "Betyárvilág",
+      "shelf": "03-3",
+      "objectid": "433344"
+    },
+    {
+      "name": "Beyond Baker Street: Sherlock Holmes árnyékában",
+      "shelf": "66-2",
+      "objectid": "168681"
+    },
+    {
+      "name": "Biberbande Schnupperspiel",
+      "shelf": "24-4",
+      "objectid": "212663"
+    },
+    {
+      "name": "Biene Maja Memo",
+      "shelf": "22-2",
+      "objectid": "7688"
+    },
+    {
+      "name": "The Big Book of Madness",
+      "shelf": "80-3",
+      "objectid": "171233"
+    },
+    {
+      "name": "*,\",\",\",53665656,6.49937,6.86842,2.6927,1306,12460,thing,The Big Book of Madness,2,5,90,90,60,2015,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Birodalmi bányászok",
+      "shelf": "29-4",
+      "objectid": "378758"
+    },
+    {
+      "name": "Birodalmi Telepesek",
+      "shelf": "77-4",
+      "objectid": "154203"
+    },
+    {
+      "name": "A Birodalom Alkonya",
+      "shelf": "64-4",
+      "objectid": "356952"
+    },
+    {
+      "name": "Bison",
+      "shelf": "21-5",
+      "objectid": "32"
+    },
+    {
+      "name": "Bitoku",
+      "shelf": "81-2",
+      "objectid": "323612"
+    },
+    {
+      "name": "Black Fleet",
+      "shelf": "29-1",
+      "objectid": "157403"
+    },
+    {
+      "name": "Black Stories",
+      "shelf": "14-5",
+      "objectid": "18803"
+    },
+    {
+      "name": "Black Stories: Real Crime Edition",
+      "shelf": "14-5",
+      "objectid": "57052"
+    },
+    {
+      "name": "Blanko",
+      "shelf": "16-4",
+      "objectid": "26729"
+    },
+    {
+      "name": "Blockers!",
+      "shelf": "18-4",
+      "objectid": "29073"
+    },
+    {
+      "name": "The Blood of an Englishman",
+      "shelf": "56-3",
+      "objectid": "206504"
+    },
+    {
+      "name": "Blood Rage",
+      "shelf": "79-3",
+      "objectid": "170216"
+    },
+    {
+      "name": "Blue Banana",
+      "shelf": "15-5",
+      "objectid": "288424"
+    },
+    {
+      "name": "Bluff",
+      "shelf": "58-4",
+      "objectid": "45"
+    },
+    {
+      "name": "Bogyó és Babóca Úton az oviba",
+      "shelf": "20-4",
+      "objectid": "363484"
+    },
+    {
+      "name": "Bohnanza",
+      "shelf": "06-3",
+      "objectid": "11"
+    },
+    {
+      "name": "Bohókák",
+      "shelf": "07-2",
+      "objectid": "65814"
+    },
+    {
+      "name": "Boldog kicsi dinók",
+      "shelf": "06-5",
+      "objectid": "325414"
+    },
+    {
+      "name": "*,\",\",\",88179123,5.81677,6.15756,1.3438,4530,13986,thing,Happy Little Dinosaurs,2,4,60,60,30,2021,3",
+      "shelf": "",
+      "objectid": "4,4,8+,Extensive use of text - massive conversion needed to be playable,\",\",\",\",\",standalone,\",Gém Klub Kft.; Unstable Games,Hungarian,2021,Hungarian edition"
+    },
+    {
+      "name": "Boldog lazac",
+      "shelf": "07-2",
+      "objectid": "194626"
+    },
+    {
+      "name": "*,\",\",\",117293507,6.32718,6.65355,1.062,1755,16413,thing,Happy Salmon,3,8,2,2,2,2018,4",
+      "shelf": "",
+      "objectid": "5"
+    },
+    {
+      "name": "Bolsevíta",
+      "shelf": "36-2",
+      "objectid": "40610"
+    },
+    {
+      "name": "Bombairtók",
+      "shelf": "58-2",
+      "objectid": "413246"
+    },
+    {
+      "name": "Bonszai",
+      "shelf": "31-4",
+      "objectid": "366994"
+    },
+    {
+      "name": "Boomtown Bandits",
+      "shelf": "27-3",
+      "objectid": "170922"
+    },
+    {
+      "name": "Boost!",
+      "shelf": "07-3",
+      "objectid": "172064"
+    },
+    {
+      "name": "Bora Bora",
+      "shelf": "84-4",
+      "objectid": "127060"
+    },
+    {
+      "name": "Boreal",
+      "shelf": "54-3",
+      "objectid": "400266"
+    },
+    {
+      "name": "Das Börsenspiel",
+      "shelf": "II.",
+      "objectid": "2947"
+    },
+    {
+      "name": "Brainstorm",
+      "shelf": "04-2",
+      "objectid": "206082"
+    },
+    {
+      "name": "Brass: Birmingham",
+      "shelf": "83-1",
+      "objectid": "224517"
+    },
+    {
+      "name": "Brazil: Birodalom",
+      "shelf": "77-3",
+      "objectid": "249277"
+    },
+    {
+      "name": "The Breyer Game of Horse Sense",
+      "shelf": "21-1",
+      "objectid": "8213"
+    },
+    {
+      "name": "Broom Service",
+      "shelf": "61-5",
+      "objectid": "172308"
+    },
+    {
+      "name": "Brüsszel 1893: Belle Époque",
+      "shelf": "74-4",
+      "objectid": "345155"
+    },
+    {
+      "name": "Buffet Boss",
+      "shelf": "19-2",
+      "objectid": "371055"
+    },
+    {
+      "name": "Buliszerviz: A partibeindító",
+      "shelf": "08-4",
+      "objectid": "294603"
+    },
+    {
+      "name": "Bullshit",
+      "shelf": "08-3",
+      "objectid": "376861"
+    },
+    {
+      "name": "*,\",\",\",109901464,0,5,0,0,29,thing,Bullshit,3,99,30,30,30,2022,\",\",\",\",\",\",\",\",\",standalone,\",Reflexshop,Hungarian,2022,Hungarian edition",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "Bűnjelek: Gyilkosság Hongkongban",
+      "shelf": "13-3",
+      "objectid": "156129"
+    },
+    {
+      "name": "Bűnügyi Krónikák",
+      "shelf": "66-2",
+      "objectid": "239188"
+    },
+    {
+      "name": "*III,\",\",\",67616572,7.16175,7.54273,2.0622,336,41056,thing,Chronicles of Crime,1,4,90,90,60,2019,1",
+      "shelf": "",
+      "objectid": "2"
+    },
+    {
+      "name": "Bűnügyi krónikák: Noir",
+      "shelf": "66-2",
+      "objectid": "249811"
+    },
+    {
+      "name": "Die Burgen von Burgund: Das Kartenspiel",
+      "shelf": "06-2",
+      "objectid": "191977"
+    },
+    {
+      "name": "Busy Day Race Game",
+      "shelf": "22-2",
+      "objectid": "20860"
+    },
+    {
+      "name": "Bűvös kulcsok",
+      "shelf": "57-1",
+      "objectid": "368899"
+    },
+    {
+      "name": "Ca$h 'n Guns (Second Edition): Team Spirit",
+      "shelf": "09-1",
+      "objectid": "199240"
+    },
+    {
+      "name": "Ca$h 'n Guns: Second Edition",
+      "shelf": "09-1",
+      "objectid": "155362"
+    },
+    {
+      "name": "Ca$h 'n Guns: Second Edition – More Ca$h 'n More Guns",
+      "shelf": "09-1",
+      "objectid": "181228"
+    },
+    {
+      "name": "Cacao",
+      "shelf": "30-4",
+      "objectid": "171499"
+    },
+    {
+      "name": "Café",
+      "shelf": "70-4",
+      "objectid": "284936"
+    },
+    {
+      "name": "Café del Gatto",
+      "shelf": "28-5",
+      "objectid": "377738"
+    },
+    {
+      "name": "Café International",
+      "shelf": "58-4",
+      "objectid": "214"
+    },
+    {
+      "name": "Calavera: Vár a karnevál",
+      "shelf": "16-2",
+      "objectid": "269041"
+    },
+    {
+      "name": "Calçada",
+      "shelf": "19-5",
+      "objectid": "385543"
+    },
+    {
+      "name": "Calico: Foltok, cicák, takarók",
+      "shelf": "71-3",
+      "objectid": "283155"
+    },
+    {
+      "name": "Camel Up (Second Edition)",
+      "shelf": "12-2",
+      "objectid": "260605"
+    },
+    {
+      "name": "Camel Up Kártyajáték",
+      "shelf": "04-4",
+      "objectid": "192947"
+    },
+    {
+      "name": "Camel Up!",
+      "shelf": "60-2",
+      "objectid": "153938"
+    },
+    {
+      "name": "Can't Stop!",
+      "shelf": "18-4",
+      "objectid": "41"
+    },
+    {
+      "name": "Canasta",
+      "shelf": "05-1",
+      "objectid": "17104"
+    },
+    {
+      "name": "Candamir: Az első telepesek",
+      "shelf": "72-2",
+      "objectid": "12004"
+    },
+    {
+      "name": "Canvas: Festői vásznak",
+      "shelf": "28-4",
+      "objectid": "290236"
+    },
+    {
+      "name": "Cápaleső matrózeső!",
+      "shelf": "21-5",
+      "objectid": "26106"
+    },
+    {
+      "name": "Capio",
+      "shelf": "16-1",
+      "objectid": "238932"
+    },
+    {
+      "name": "Capitaly: Az üzleti élet játéka",
+      "shelf": "I.",
+      "objectid": "18618"
+    },
+    {
+      "name": "Capitaly: Régi idők játékai",
+      "shelf": "36-1",
+      "objectid": "18618"
+    },
+    {
+      "name": "El Capitan",
+      "shelf": "21-2",
+      "objectid": "178937"
+    },
+    {
+      "name": "Cappuccino",
+      "shelf": "18-3",
+      "objectid": "146818"
+    },
+    {
+      "name": "Capt'n Sharky: Messer werfen",
+      "shelf": "22-3",
+      "objectid": "101874"
+    },
+    {
+      "name": "Captain Sonar",
+      "shelf": "66-3",
+      "objectid": "171131"
+    },
+    {
+      "name": "*,\",\",\",62205130,7.2893,7.50175,2.1953,241,33297,thing,Captain Sonar,2,8,60,60,45,2017,6",
+      "shelf": "",
+      "objectid": "7"
+    },
+    {
+      "name": "Captain Sonar",
+      "shelf": "02-1",
+      "objectid": "171131"
+    },
+    {
+      "name": "Caravanserai",
+      "shelf": "77-5",
+      "objectid": "405542"
+    },
+    {
+      "name": "Carcassonne",
+      "shelf": "60-3",
+      "objectid": "822"
+    },
+    {
+      "name": "Carcassonne",
+      "shelf": "31-5",
+      "objectid": "822"
+    },
+    {
+      "name": "*IV,\",\",\",66760777,7.29687,7.41487,1.8858,238,218443,thing,Carcassonne,2,5,45,45,30,2017,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Carcassonne Big Box",
+      "shelf": "30-5",
+      "objectid": "164127"
+    },
+    {
+      "name": "Carcassonne Big Box",
+      "shelf": "30-5",
+      "objectid": "364405"
+    },
+    {
+      "name": "Carcassonne: A ködbe zárt Carcassonne",
+      "shelf": "31-5",
+      "objectid": "358124"
+    },
+    {
+      "name": "Carcassonne: Amazonas",
+      "shelf": "30-5",
+      "objectid": "206940"
+    },
+    {
+      "name": "Carcassonne: Jubileumi kiadás",
+      "shelf": "31-5",
+      "objectid": "329954"
+    },
+    {
+      "name": "Carcassonne: Star Wars",
+      "shelf": "30-5",
+      "objectid": "180564"
+    },
+    {
+      "name": "Carcassonne: Südsee",
+      "shelf": "31-5",
+      "objectid": "147303"
+    },
+    {
+      "name": "Carcassonne: Vadászok és gyűjtögetők",
+      "shelf": "30-5",
+      "objectid": "4390"
+    },
+    {
+      "name": "Cardcassonne",
+      "shelf": "06-2",
+      "objectid": "58798"
+    },
+    {
+      "name": "CardLine: Állatok",
+      "shelf": "07-1",
+      "objectid": "130882"
+    },
+    {
+      "name": "Cardline: Dinosaurs",
+      "shelf": "07-1",
+      "objectid": "163277"
+    },
+    {
+      "name": "Cards Against Humanity",
+      "shelf": "08-3",
+      "objectid": "50381"
+    },
+    {
+      "name": "Cards Against Humanity: Design Pack",
+      "shelf": "08:4",
+      "objectid": "181423"
+    },
+    {
+      "name": "Cards Against Humanity: Green Box",
+      "shelf": "08-3",
+      "objectid": "214020"
+    },
+    {
+      "name": "Cartagena",
+      "shelf": "33-1",
+      "objectid": "826"
+    },
+    {
+      "name": "Cascadia vadvilága",
+      "shelf": "59-2",
+      "objectid": "295947"
+    },
+    {
+      "name": "Cascadia: Gördülő dombok",
+      "shelf": "29-2",
+      "objectid": "407317"
+    },
+    {
+      "name": "Cascadia: Gördülő folyók",
+      "shelf": "29-2",
+      "objectid": "407318"
+    },
+    {
+      "name": "A Castle for All Seasons",
+      "shelf": "78-2",
+      "objectid": "38386"
+    },
+    {
+      "name": "Castle of Mind",
+      "shelf": "56-1",
+      "objectid": "276629"
+    },
+    {
+      "name": "*,\",\",\",61215288,5.51351,7.85484,3,21022,65,thing,Castle of Mind,2,2,80,80,15,2019,2,2,\",No necessary in-game text,\",\",\",\",\",standalone,\",Fontanus Center,English; German; Hungarian; Spanish,2019,English/German/Hungarian/Spanish edition",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "Cat Lady",
+      "shelf": "04-4",
+      "objectid": "228504"
+    },
+    {
+      "name": "Cat-a-comb",
+      "shelf": "50-1",
+      "objectid": "380975"
+    },
+    {
+      "name": "Catan telepesei",
+      "shelf": "57-4",
+      "objectid": "13"
+    },
+    {
+      "name": "72-2,\",\",\",100905589,6.90523,7.09153,2.2845,608,234175,thing,CATAN,3,4,120,120,60,2015,3",
+      "shelf": "",
+      "objectid": "4,4,8+,Some necessary text - easily memorized or small crib sheet,\",\",\",\",\",standalone,\",Piatnik,Hungarian,2015,Hungarian third edition"
+    },
+    {
+      "name": "Catan Telepesei Junior",
+      "shelf": "24-2",
+      "objectid": "184842"
+    },
+    {
+      "name": "Catan: Az emberiség hajnala",
+      "shelf": "73-2",
+      "objectid": "358858"
+    },
+    {
+      "name": "Catan: Az Inka birodalom felemelkedése",
+      "shelf": "73-2",
+      "objectid": "244144"
+    },
+    {
+      "name": "Catan: Csillaghajósok",
+      "shelf": "72-2",
+      "objectid": "282853"
+    },
+    {
+      "name": "Catan: Das Würfelspiel",
+      "shelf": "17-5",
+      "objectid": "27710"
+    },
+    {
+      "name": "Catan: Entdecker & Piraten",
+      "shelf": "57-4",
+      "objectid": "135378"
+    },
+    {
+      "name": "CATAN: New Energies",
+      "shelf": "71-2",
+      "objectid": "408727"
+    },
+    {
+      "name": "*IV,\",\",\",123795007,5.64632,6.83105,2.2857,7460,1088,thing,CATAN: New Energies,3,4,90,90,90,2024,3",
+      "shelf": "",
+      "objectid": "4,3"
+    },
+    {
+      "name": "Catowl",
+      "shelf": "07-5",
+      "objectid": "239629"
+    },
+    {
+      "name": "The Cave: Aufbruch ins Dunkel",
+      "shelf": "64-1",
+      "objectid": "129351"
+    },
+    {
+      "name": "Caverna: The Cave Farmers",
+      "shelf": "84-3",
+      "objectid": "102794"
+    },
+    {
+      "name": "Cégépítők",
+      "shelf": "28-5",
+      "objectid": "406522"
+    },
+    {
+      "name": "Cellris",
+      "shelf": "28-4",
+      "objectid": "254658"
+    },
+    {
+      "name": "Celtica",
+      "shelf": "II.",
+      "objectid": "21293"
+    },
+    {
+      "name": "Century: A Kelet Csodái",
+      "shelf": "70-5",
+      "objectid": "242574"
+    },
+    {
+      "name": "Century: Big Box",
+      "shelf": "70-5",
+      "objectid": "382315"
+    },
+    {
+      "name": "Century: Egy Új Világ!",
+      "shelf": "70-5",
+      "objectid": "270970"
+    },
+    {
+      "name": "Century: Fűszerút",
+      "shelf": "70-5",
+      "objectid": "209685"
+    },
+    {
+      "name": "Cerebria: The Card Game",
+      "shelf": "05-3",
+      "objectid": "236304"
+    },
+    {
+      "name": "*,\",\",\",61695850,5.64213,6.3686,2.4444,7598,1536,thing,Cerebria: The Card Game,2,5,30,30,15,2018,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Cerebria: The Inside World",
+      "shelf": "81-3",
+      "objectid": "218479"
+    },
+    {
+      "name": "Cerebria: The Inside World – Forces of Balance",
+      "shelf": "81-3",
+      "objectid": "259988"
+    },
+    {
+      "name": "Ceres",
+      "shelf": "79-2",
+      "objectid": "349948"
+    },
+    {
+      "name": "Chachapoya",
+      "shelf": "04-1",
+      "objectid": "262520"
+    },
+    {
+      "name": "Chachapoya (Second Edition)",
+      "shelf": "04-1",
+      "objectid": "357912"
+    },
+    {
+      "name": "Chachapoya: A Yapalocté Expedíció",
+      "shelf": "04-1",
+      "objectid": "312222"
+    },
+    {
+      "name": "*,\",\",\",74881250,5.53582,7.87308,2.5,0,153,thing,Chachapoya: A Yapalocté Expedíció,2,4,30,30,25,2020,\",\",\",\",\",\",\",\",\",expansion,\",Vagabund,English; German; Hungarian,2020,Multilingual first edition",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "Chachapoya: Demon Promo",
+      "shelf": "04-1",
+      "objectid": "326660"
+    },
+    {
+      "name": "Chachapoya: Yayaucha Promo",
+      "shelf": "04-1",
+      "objectid": "291690"
+    },
+    {
+      "name": "Charon Inc.",
+      "shelf": "68-1",
+      "objectid": "71593"
+    },
+    {
+      "name": "Cheaty Mages",
+      "shelf": "03-2",
+      "objectid": "38194"
+    },
+    {
+      "name": "Checkers",
+      "shelf": "52-1",
+      "objectid": "2083"
+    },
+    {
+      "name": "Checkpoint Charlie",
+      "shelf": "04-3",
+      "objectid": "205079"
+    },
+    {
+      "name": "*,\",\",\",74455806,5.68991,6.64969,1.2,6401,1184,thing,Checkpoint Charlie,3,5,30,30,20,2016,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "Cheeky Monkey",
+      "shelf": "22-3",
+      "objectid": "29773"
+    },
+    {
+      "name": "Cheops",
+      "shelf": "65-1",
+      "objectid": "268"
+    },
+    {
+      "name": "Chess",
+      "shelf": "52-1",
+      "objectid": "171"
+    },
+    {
+      "name": "Chess",
+      "shelf": "52-1",
+      "objectid": "171"
+    },
+    {
+      "name": "Chicago Express",
+      "shelf": "73-1",
+      "objectid": "31730"
+    },
+    {
+      "name": "Chili Mafia",
+      "shelf": "03-4",
+      "objectid": "329588"
+    },
+    {
+      "name": "*,\",\",\",82667724,5.56426,6.9748,1.8333,11606,479,thing,Chili Mafia,2,8,40,40,20,2022,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Chilli Csali",
+      "shelf": "55-1",
+      "objectid": "16497"
+    },
+    {
+      "name": "Chinese Chequers",
+      "shelf": "18-1",
+      "objectid": "2386"
+    },
+    {
+      "name": "Chocolates",
+      "shelf": "28-2",
+      "objectid": "394338"
+    },
+    {
+      "name": "Christmas Tree",
+      "shelf": "03-2",
+      "objectid": "375712"
+    },
+    {
+      "name": "Chronicles of Crime: Welcome to Redview",
+      "shelf": "66-2",
+      "objectid": "258089"
+    },
+    {
+      "name": "Cicaharc: Állati csetepaté",
+      "shelf": "07-5",
+      "objectid": "411404"
+    },
+    {
+      "name": "Cin Cin",
+      "shelf": "04-2",
+      "objectid": "25233"
+    },
+    {
+      "name": "Citadella",
+      "shelf": "11-5",
+      "objectid": "478"
+    },
+    {
+      "name": "Citrus",
+      "shelf": "70-4",
+      "objectid": "145588"
+    },
+    {
+      "name": "City Tycoon",
+      "shelf": "74-2",
+      "objectid": "104994"
+    },
+    {
+      "name": "Ciúb",
+      "shelf": "16-1",
+      "objectid": "162152"
+    },
+    {
+      "name": "CIV: Carta Impera Victoria",
+      "shelf": "04-3",
+      "objectid": "240465"
+    },
+    {
+      "name": "Civolution",
+      "shelf": "84-2",
+      "objectid": "400602"
+    },
+    {
+      "name": "Civolution: 1. promó csomag",
+      "shelf": "84-2",
+      "objectid": "439687"
+    },
+    {
+      "name": "Claim",
+      "shelf": "06-5",
+      "objectid": "233961"
+    },
+    {
+      "name": "Claim 2",
+      "shelf": "06-5",
+      "objectid": "249763"
+    },
+    {
+      "name": "Claim: Dark Elves",
+      "shelf": "06-5",
+      "objectid": "292096"
+    },
+    {
+      "name": "Claim: Erősítés – Félelem",
+      "shelf": "06-5",
+      "objectid": "305656"
+    },
+    {
+      "name": "Claim: Ghosts",
+      "shelf": "06-5",
+      "objectid": "267315"
+    },
+    {
+      "name": "Claim: Reinforcements – Frost",
+      "shelf": "06-5",
+      "objectid": "305661"
+    },
+    {
+      "name": "Clever 4Ever",
+      "shelf": "17-5",
+      "objectid": "366162"
+    },
+    {
+      "name": "Clever hoch Drei",
+      "shelf": "17-5",
+      "objectid": "316546"
+    },
+    {
+      "name": "Click Clack Lumberjack",
+      "shelf": "19-1",
+      "objectid": "39206"
+    },
+    {
+      "name": "Clinic Rush: Rohanás a sürgősségin!",
+      "shelf": "67-4",
+      "objectid": "284217"
+    },
+    {
+      "name": "Cloud Mine",
+      "shelf": "04-2",
+      "objectid": "235506"
+    },
+    {
+      "name": "Cluedo",
+      "shelf": "35-3",
+      "objectid": "1294"
+    },
+    {
+      "name": "Cluedo Rejtély",
+      "shelf": "06-3",
+      "objectid": "88922"
+    },
+    {
+      "name": "? ,\",\",\",108823459,5.56725,5.85005,1.2727,11344,2980,thing,Clue: Card Game,3,4,15,15,15,2011,3",
+      "shelf": "",
+      "objectid": "4,4,8+,Some necessary text - easily memorized or small crib sheet,\",\",\",\",\",standalone,\",Hasbro,Hungarian,2011,Hungarian edition"
+    },
+    {
+      "name": "Co-Mix",
+      "shelf": "10-1",
+      "objectid": "162367"
+    },
+    {
+      "name": "Codenames",
+      "shelf": "01-4",
+      "objectid": "178900"
+    },
+    {
+      "name": "Codenames: Harry Potter",
+      "shelf": "01-4",
+      "objectid": "249821"
+    },
+    {
+      "name": "Codenames: Pictures XXL",
+      "shelf": "09-5",
+      "objectid": "198773"
+    },
+    {
+      "name": "Coffee Rush",
+      "shelf": "28-5",
+      "objectid": "377061"
+    },
+    {
+      "name": ",\",\",\",110688244,6.48103,7.12356,1.816,1354,10161,thing,Coffee Rush,2,4,30,30,30,2023,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Color Code",
+      "shelf": "12-3",
+      "objectid": "342211"
+    },
+    {
+      "name": "Colorado",
+      "shelf": "34-1",
+      "objectid": "247900"
+    },
+    {
+      "name": "Colorado: Kalandok a vadnyugaton",
+      "shelf": "33-5",
+      "objectid": "366397"
+    },
+    {
+      "name": "Coloretto",
+      "shelf": "04-2",
+      "objectid": "5782"
+    },
+    {
+      "name": "Colossal Arena",
+      "shelf": "03-2",
+      "objectid": "105"
+    },
+    {
+      "name": "Colt Express",
+      "shelf": "60-2",
+      "objectid": "158899"
+    },
+    {
+      "name": "Colt Express: Big Box",
+      "shelf": "14-2",
+      "objectid": "341504"
+    },
+    {
+      "name": "Combo Color",
+      "shelf": "19-4",
+      "objectid": "289601"
+    },
+    {
+      "name": "Concept",
+      "shelf": "09-2",
+      "objectid": "147151"
+    },
+    {
+      "name": "*",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "playmat 09-5,\",\",\",53483072,6.58699,6.74475,1.3772,1115,36758,thing,Concept,4,12,40,40,40,2014,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "Concept",
+      "shelf": "01-3",
+      "objectid": "147151"
+    },
+    {
+      "name": "Concordia: Sestertiusszal kikövezett utak",
+      "shelf": "72-3",
+      "objectid": "124361"
+    },
+    {
+      "name": "Connecting London",
+      "shelf": "01-3",
+      "objectid": "352784"
+    },
+    {
+      "name": "Conspiracy",
+      "shelf": "06-4",
+      "objectid": "363360"
+    },
+    {
+      "name": "Continental Express",
+      "shelf": "07-1",
+      "objectid": "142432"
+    },
+    {
+      "name": "Copenhagen",
+      "shelf": "32-3",
+      "objectid": "269595"
+    },
+    {
+      "name": "CoraQuest",
+      "shelf": "26-4",
+      "objectid": "318546"
+    },
+    {
+      "name": "Cortex 2",
+      "shelf": "14-5",
+      "objectid": "251481"
+    },
+    {
+      "name": "Cortex Challenge",
+      "shelf": "14-5",
+      "objectid": "206175"
+    },
+    {
+      "name": "Cosmic Factory",
+      "shelf": "28-2",
+      "objectid": "253379"
+    },
+    {
+      "name": "Council of Four",
+      "shelf": "66-4",
+      "objectid": "173101"
+    },
+    {
+      "name": "Countdown",
+      "shelf": "I.",
+      "objectid": "2681"
+    },
+    {
+      "name": "Coup: Deluxe Edition",
+      "shelf": "11-5",
+      "objectid": "158408"
+    },
+    {
+      "name": "Coyote",
+      "shelf": "15-5",
+      "objectid": "8172"
+    },
+    {
+      "name": "*,\",\",\",53483097,6.00751,6.63092,1.1783,3082,2977,thing,Coyote,3,6,30,30,20,2003,4",
+      "shelf": "",
+      "objectid": "5"
+    },
+    {
+      "name": "Crabz",
+      "shelf": "30-1",
+      "objectid": "172033"
+    },
+    {
+      "name": "The Crew: A mélytengeri küldetés",
+      "shelf": "03-3",
+      "objectid": "324856"
+    },
+    {
+      "name": "The Crew: Küldetés a 9. bolygóhoz",
+      "shelf": "62-4",
+      "objectid": "284083"
+    },
+    {
+      "name": "Crime Story: Detectives Without License",
+      "shelf": "03-1",
+      "objectid": "181193"
+    },
+    {
+      "name": "Crime Zoom: Nagyító alatt – Az utolsó kártyalap",
+      "shelf": "14-4",
+      "objectid": "294235"
+    },
+    {
+      "name": "Crime Zoom: Nagyító alatt – Vészmadár",
+      "shelf": "14-4",
+      "objectid": "321305"
+    },
+    {
+      "name": "Critters Below",
+      "shelf": "03-1",
+      "objectid": "216282"
+    },
+    {
+      "name": "Cross Clues",
+      "shelf": "02-4",
+      "objectid": "300753"
+    },
+    {
+      "name": "Crown of Emara",
+      "shelf": "74-2",
+      "objectid": "256570"
+    },
+    {
+      "name": "Cryptid",
+      "shelf": "69-3",
+      "objectid": "246784"
+    },
+    {
+      "name": "CS-Files",
+      "shelf": "01-2",
+      "objectid": "156129"
+    },
+    {
+      "name": "Csak egy",
+      "shelf": "59-2",
+      "objectid": "254640"
+    },
+    {
+      "name": "Csak egy: Új kiadás",
+      "shelf": "09-4",
+      "objectid": "450619"
+    },
+    {
+      "name": "Csatacsirkék",
+      "shelf": "07-4",
+      "objectid": "350637"
+    },
+    {
+      "name": "Csend Apó kertje",
+      "shelf": "25-2",
+      "objectid": "431062"
+    },
+    {
+      "name": "Cseresznyéskert",
+      "shelf": "20-5",
+      "objectid": "189061"
+    },
+    {
+      "name": "Csillagvadászok",
+      "shelf": "31-1",
+      "objectid": "254088"
+    },
+    {
+      "name": "Csoda és Kósza: Ollé!",
+      "shelf": "24-4",
+      "objectid": "340186"
+    },
+    {
+      "name": "A csodák kertje",
+      "shelf": "34-3",
+      "objectid": "418354"
+    },
+    {
+      "name": "Csodálatos teremtmények",
+      "shelf": "80-4",
+      "objectid": "400366"
+    },
+    {
+      "name": "Csodaország csatái",
+      "shelf": "78-3",
+      "objectid": "227935"
+    },
+    {
+      "name": "Csordaszellem",
+      "shelf": "10-4",
+      "objectid": "311322"
+    },
+    {
+      "name": "*,\",\",\",100796547,6.13094,6.61268,1,2479,9133,thing,Herd Mentality,4,20,30,30,20,2022,5",
+      "shelf": "",
+      "objectid": "6"
+    },
+    {
+      "name": "Csótánypóker",
+      "shelf": "06-4",
+      "objectid": "11971"
+    },
+    {
+      "name": "*,\",\",\",119582151,6.60324,6.80389,1.0981,1077,28319,thing,Cockroach Poker,2,6,20,20,20,2004,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "Csúszkaland",
+      "shelf": "20-2",
+      "objectid": "271785"
+    },
+    {
+      "name": "Cucc!",
+      "shelf": "07-2",
+      "objectid": "400752"
+    },
+    {
+      "name": "Cultistorm",
+      "shelf": "01-2",
+      "objectid": "233364"
+    },
+    {
+      "name": "Cultistorm",
+      "shelf": "80-3",
+      "objectid": "233364"
+    },
+    {
+      "name": "Cultistorm: Face 2 Face",
+      "shelf": "56-3",
+      "objectid": "351828"
+    },
+    {
+      "name": "Cuvée",
+      "shelf": "79-5",
+      "objectid": "400211"
+    },
+    {
+      "name": "CV",
+      "shelf": "25-5",
+      "objectid": "143986"
+    },
+    {
+      "name": "CV Pocket",
+      "shelf": "25-4",
+      "objectid": "229453"
+    },
+    {
+      "name": "CVlizations",
+      "shelf": "25-5",
+      "objectid": "181494"
+    },
+    {
+      "name": "Daimyo",
+      "shelf": "76-4",
+      "objectid": "9346"
+    },
+    {
+      "name": "Dampfross 1",
+      "shelf": "59-4",
+      "objectid": "539"
+    },
+    {
+      "name": "Dark Moon",
+      "shelf": "69-1",
+      "objectid": "111124"
+    },
+    {
+      "name": "Dark Stories",
+      "shelf": "03-2",
+      "objectid": "18803"
+    },
+    {
+      "name": "Darwin nyomában",
+      "shelf": "30-3",
+      "objectid": "376683"
+    },
+    {
+      "name": "Darwin utazásai",
+      "shelf": "83-3",
+      "objectid": "322289"
+    },
+    {
+      "name": "Day & Night",
+      "shelf": "07-4",
+      "objectid": "332914"
+    },
+    {
+      "name": "Dead of Winter: A Crossroads Game",
+      "shelf": "01-2",
+      "objectid": "150376"
+    },
+    {
+      "name": "Dead of Winter: Kodiak Colby",
+      "shelf": "01-2",
+      "objectid": "150482"
+    },
+    {
+      "name": "Dead of Winter: Roberta Plum",
+      "shelf": "01-2",
+      "objectid": "183785"
+    },
+    {
+      "name": "A Dél-Tigris bölcsei",
+      "shelf": "81-2",
+      "objectid": "367041"
+    },
+    {
+      "name": "A Dél-Tigris vándorai",
+      "shelf": "81-2",
+      "objectid": "350316"
+    },
+    {
+      "name": "Demon Worker",
+      "shelf": "62-1",
+      "objectid": "216856"
+    },
+    {
+      "name": "Deszkalózok: Csak semmi fánik!",
+      "shelf": "20-3",
+      "objectid": "367771"
+    },
+    {
+      "name": "Detektív Klub",
+      "shelf": "12-4",
+      "objectid": "256788"
+    },
+    {
+      "name": "Dice City",
+      "shelf": "17-4",
+      "objectid": "179572"
+    },
+    {
+      "name": "Dice Forge: A sors kovácsai",
+      "shelf": "17-4",
+      "objectid": "194594"
+    },
+    {
+      "name": "Dice Upon a Time",
+      "shelf": "02-2",
+      "objectid": "264278"
+    },
+    {
+      "name": "Diced Veggies",
+      "shelf": "16-5",
+      "objectid": "381356"
+    },
+    {
+      "name": "Dig Mars",
+      "shelf": "31-1",
+      "objectid": "147889"
+    },
+    {
+      "name": "Digger",
+      "shelf": "16-2",
+      "objectid": "89611"
+    },
+    {
+      "name": "Dinomino",
+      "shelf": "20-3",
+      "objectid": "438647"
+    },
+    {
+      "name": "Dixit",
+      "shelf": "57-3",
+      "objectid": "39856"
+    },
+    {
+      "name": "Dixit",
+      "shelf": "13-4",
+      "objectid": "39856"
+    },
+    {
+      "name": "*,\",\",\",118549460,7.06994,7.18528,1.1922,417,106078,thing,Dixit,3,6,30,30,30,2022,4",
+      "shelf": "",
+      "objectid": "5"
+    },
+    {
+      "name": "Dixit: Disney Edition",
+      "shelf": "13-4",
+      "objectid": "381308"
+    },
+    {
+      "name": "Dixit: Odyssey",
+      "shelf": "13-4",
+      "objectid": "92828"
+    },
+    {
+      "name": "*,\",\",\",53483356,7.14909,7.38308,1.162,344,34343,thing,Dixit: Odyssey,3,12,30,30,30,2014,4",
+      "shelf": "",
+      "objectid": "5"
+    },
+    {
+      "name": "Dobble",
+      "shelf": "07-3",
+      "objectid": "63268"
+    },
+    {
+      "name": "Dobble CATAN",
+      "shelf": "07-3",
+      "objectid": "448778"
+    },
+    {
+      "name": "Dobble Connect",
+      "shelf": "07-3",
+      "objectid": "381429"
+    },
+    {
+      "name": "Dobble Harry Potter",
+      "shelf": "07-3",
+      "objectid": "63268"
+    },
+    {
+      "name": "Dobble Hollywood",
+      "shelf": "07-3",
+      "objectid": "63268"
+    },
+    {
+      "name": "Dobble Jégvarázs II",
+      "shelf": "07-3",
+      "objectid": "63268"
+    },
+    {
+      "name": "Dobble Marvel",
+      "shelf": "07-3",
+      "objectid": "63268"
+    },
+    {
+      "name": "Dobble Star Wars: Mandalorian",
+      "shelf": "07-3",
+      "objectid": "63268"
+    },
+    {
+      "name": "Dobble: Star Wars",
+      "shelf": "07-3",
+      "objectid": "63268"
+    },
+    {
+      "name": "Dobj egy sárgát!",
+      "shelf": "08-3",
+      "objectid": "429963"
+    },
+    {
+      "name": "Dock",
+      "shelf": "17-4",
+      "objectid": "315531"
+    },
+    {
+      "name": "Dog Lover",
+      "shelf": "04-4",
+      "objectid": "344839"
+    },
+    {
+      "name": "Dog Park",
+      "shelf": "02-5",
+      "objectid": "331401"
+    },
+    {
+      "name": "Dog Park: New Tricks",
+      "shelf": "02-5",
+      "objectid": "381242"
+    },
+    {
+      "name": "Dolmen",
+      "shelf": "78-3",
+      "objectid": "161921"
+    },
+    {
+      "name": "Dominant Species",
+      "shelf": "83-3",
+      "objectid": "62219"
+    },
+    {
+      "name": "Dominion",
+      "shelf": "58-3",
+      "objectid": "36218"
+    },
+    {
+      "name": "Dorfromantik: A társasjáték",
+      "shelf": "59-2",
+      "objectid": "370591"
+    },
+    {
+      "name": "Dorfromantik: Párbaj",
+      "shelf": "51-3",
+      "objectid": "395364"
+    },
+    {
+      "name": "DOS",
+      "shelf": "06-3",
+      "objectid": "246701"
+    },
+    {
+      "name": "Double Six Dominoes",
+      "shelf": "18-1",
+      "objectid": "2394"
+    },
+    {
+      "name": "Downforce",
+      "shelf": "27-2",
+      "objectid": "215311"
+    },
+    {
+      "name": "Drachenland",
+      "shelf": "II.",
+      "objectid": "3208"
+    },
+    {
+      "name": "Draft & Write Records",
+      "shelf": "65-2",
+      "objectid": "350185"
+    },
+    {
+      "name": "Draftosaurus",
+      "shelf": "28-3",
+      "objectid": "264055"
+    },
+    {
+      "name": "Dragomino: Sárkánytojások nyomában",
+      "shelf": "58-1",
+      "objectid": "300010"
+    },
+    {
+      "name": "The Dragon & Flagon",
+      "shelf": "61-1",
+      "objectid": "193840"
+    },
+    {
+      "name": "Dragon Chess",
+      "shelf": "18-1",
+      "objectid": "23724"
+    },
+    {
+      "name": "Dragon Valley",
+      "shelf": "21-3",
+      "objectid": "157083"
+    },
+    {
+      "name": "Dragonquest: A Fantasy Dice Game",
+      "shelf": "32-2",
+      "objectid": "359127"
+    },
+    {
+      "name": "Drunter & Drüber",
+      "shelf": "58-4",
+      "objectid": "19"
+    },
+    {
+      "name": "Duck & Cover",
+      "shelf": "03-2",
+      "objectid": "422019"
+    },
+    {
+      "name": "Duck & Cover: Artist Pack",
+      "shelf": "03-2",
+      "objectid": "430300"
+    },
+    {
+      "name": "Dudab",
+      "shelf": "06-1",
+      "objectid": "165414"
+    },
+    {
+      "name": "Dudab Buba",
+      "shelf": "06-1",
+      "objectid": "257595"
+    },
+    {
+      "name": "Duel for Cardia",
+      "shelf": "56-3",
+      "objectid": "447243"
+    },
+    {
+      "name": "*III,\",\",\",135864297,6.5188,7.5445,1.7869,1257,5715,thing,Duel for Cardia,2,2,15,15,15,2025,2,2,10+,Moderate in-game text - needs crib sheet or paste ups,\",\",\",\",\",standalone,\",Piatnik,Hungarian,2025,Hungarian edition",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "Duel for Cardia: Ceremonia Promo Card",
+      "shelf": "56-3",
+      "objectid": "451441"
+    },
+    {
+      "name": "*III,\",\",\",137583653,0,7.45652,0,0,374,thing,Duel for Cardia: Ceremonia Promo Card,2,2,15,15,15,2025,\",\",\",\",\",\",\",\",\",expansion,\",\",\",\",",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "Dűlőre jutunk",
+      "shelf": "70-4",
+      "objectid": "412527"
+    },
+    {
+      "name": "Dűne: Impérium",
+      "shelf": "76-2",
+      "objectid": "316554"
+    },
+    {
+      "name": "Dűne: Impérium – Felkelés",
+      "shelf": "76-2",
+      "objectid": "397598"
+    },
+    {
+      "name": "Dungeon Petz",
+      "shelf": "83-3",
+      "objectid": "97207"
+    },
+    {
+      "name": "DUOS",
+      "shelf": "09-4",
+      "objectid": "338006"
+    },
+    {
+      "name": "Duplán okos húzás!",
+      "shelf": "17-5",
+      "objectid": "269210"
+    },
+    {
+      "name": "E.T. The Extra-Terrestrial: Light Years From Home Game",
+      "shelf": "25-1",
+      "objectid": "355772"
+    },
+    {
+      "name": "Ébredés",
+      "shelf": "75-3",
+      "objectid": "332772"
+    },
+    {
+      "name": "Ébredő erdő",
+      "shelf": "62-4",
+      "objectid": "328479"
+    },
+    {
+      "name": "Edo",
+      "shelf": "75-1",
+      "objectid": "113636"
+    },
+    {
+      "name": "Az égbolt vándorai",
+      "shelf": "75-3",
+      "objectid": "362986"
+    },
+    {
+      "name": "ego",
+      "shelf": "09-3",
+      "objectid": "39564"
+    },
+    {
+      "name": "Egri Csillagok 1552",
+      "shelf": "73-3",
+      "objectid": "375445"
+    },
+    {
+      "name": "Egyszer volt...",
+      "shelf": "13-5",
+      "objectid": "357270"
+    },
+    {
+      "name": "Eight-Minute Empire",
+      "shelf": "02-2",
+      "objectid": "131366"
+    },
+    {
+      "name": "Einfach Genial Junior",
+      "shelf": "23-2",
+      "objectid": "32876"
+    },
+    {
+      "name": "Einfach Genial: Reiseedition",
+      "shelf": "53-3",
+      "objectid": "22484"
+    },
+    {
+      "name": "Eiszeit",
+      "shelf": "72-5",
+      "objectid": "5767"
+    },
+    {
+      "name": "EladLak!",
+      "shelf": "03-3",
+      "objectid": "172"
+    },
+    {
+      "name": "Elasund: The First City",
+      "shelf": "73-2",
+      "objectid": "19526"
+    },
+    {
+      "name": "Elchfest",
+      "shelf": "54-2",
+      "objectid": "403"
+    },
+    {
+      "name": "Elder Sign",
+      "shelf": "61-1",
+      "objectid": "100423"
+    },
+    {
+      "name": "Eldorádó legendája",
+      "shelf": "33-2",
+      "objectid": "217372"
+    },
+    {
+      "name": "*IV,\",\",\",86804238,7.52915,7.71175,1.9398,121,51698,thing,The Quest for El Dorado,2,4,60,60,30,2020,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Eldorádó legendája: Az aranyváros templomai",
+      "shelf": "33-2",
+      "objectid": "271615"
+    },
+    {
+      "name": "Eldritch Horror",
+      "shelf": "80-3",
+      "objectid": "146021"
+    },
+    {
+      "name": "Az élet játéka",
+      "shelf": "35-3",
+      "objectid": "28609"
+    },
+    {
+      "name": "Elfenland",
+      "shelf": "60-3",
+      "objectid": "10"
+    },
+    {
+      "name": "Az elhagyatott könyvtár",
+      "shelf": "14-4",
+      "objectid": "300023"
+    },
+    {
+      "name": "Eltűnt fajok nyomában",
+      "shelf": "78-5",
+      "objectid": "358557"
+    },
+    {
+      "name": "Elveszett Városok",
+      "shelf": "55-2",
+      "objectid": "50"
+    },
+    {
+      "name": "Elvetemült veteményes",
+      "shelf": "03-4",
+      "objectid": "302260"
+    },
+    {
+      "name": "Emberheart",
+      "shelf": "77-4",
+      "objectid": "452817"
+    },
+    {
+      "name": "Empires: Age of Discovery",
+      "shelf": "75-3",
+      "objectid": "173442"
+    },
+    {
+      "name": "Empires: Age of Discovery – Bonus Capital Buildings",
+      "shelf": "75-3",
+      "objectid": "185044"
+    },
+    {
+      "name": "Empires: Age of Discovery – World Variant Components",
+      "shelf": "75-3",
+      "objectid": "185041"
+    },
+    {
+      "name": "Enciklopédia",
+      "shelf": "75-5",
+      "objectid": "351526"
+    },
+    {
+      "name": "Endeavor: Az ismeretlen vizek hódítói",
+      "shelf": "76-3",
+      "objectid": "233398"
+    },
+    {
+      "name": "Építőmesterek: Középkor",
+      "shelf": "07-1",
+      "objectid": "144553"
+    },
+    {
+      "name": "Equinox",
+      "shelf": "05-2",
+      "objectid": "329450"
+    },
+    {
+      "name": "Az erdő",
+      "shelf": "03-5",
+      "objectid": "391163"
+    },
+    {
+      "name": "Az erdő mélyén",
+      "shelf": "78-5",
+      "objectid": "376740"
+    },
+    {
+      "name": "Escape Tales: Children of Wyrmwoods",
+      "shelf": "01-5",
+      "objectid": "299800"
+    },
+    {
+      "name": "Escape Tales: Low Memory",
+      "shelf": "01-5",
+      "objectid": "282291"
+    },
+    {
+      "name": "Escape Tales: The Awakening",
+      "shelf": "01-5",
+      "objectid": "253214"
+    },
+    {
+      "name": "Escape: A Templom átka",
+      "shelf": "14-4",
+      "objectid": "113294"
+    },
+    {
+      "name": "Ethnos",
+      "shelf": "63-4",
+      "objectid": "206718"
+    },
+    {
+      "name": "Az Évad",
+      "shelf": "28-4",
+      "objectid": "457964"
+    },
+    {
+      "name": "Everdell: Az Örökfa Árnyékában",
+      "shelf": "79-4",
+      "objectid": "199792"
+    },
+    {
+      "name": "fa összerakva 79-5,\",\",\",67828771,7.81324,7.98839,2.8337,42,101609,thing,Everdell,1,4,80,80,40,2019,1",
+      "shelf": "",
+      "objectid": "2"
+    },
+    {
+      "name": "Everdell: Fagybérc",
+      "shelf": "79-4",
+      "objectid": "289056"
+    },
+    {
+      "name": "Everdell: Örökpart",
+      "shelf": "79-5",
+      "objectid": "394106"
+    },
+    {
+      "name": "Evolúció",
+      "shelf": "71-2",
+      "objectid": "155703"
+    },
+    {
+      "name": "Évszakok",
+      "shelf": "77-4",
+      "objectid": "108745"
+    },
+    {
+      "name": "EXIT: The Game – The Secret of the Premiere",
+      "shelf": "61-5",
+      "objectid": "206943"
+    },
+    {
+      "name": "*,\",\",\",100171348,5.59178,6.60699,1,9656,353,thing,EXIT: The Game – The Secret of the Premiere,1,6,45,45,20,2016,1",
+      "shelf": "",
+      "objectid": "2"
+    },
+    {
+      "name": "Exploding Kittens: Original Edition",
+      "shelf": "02-4",
+      "objectid": "172225"
+    },
+    {
+      "name": "Express 01",
+      "shelf": "02-1",
+      "objectid": "127798"
+    },
+    {
+      "name": "Az Ezüst-tó kincse",
+      "shelf": "35-2",
+      "objectid": "40609"
+    },
+    {
+      "name": "Ezüsthegy építészei",
+      "shelf": "65-5",
+      "objectid": "387514"
+    },
+    {
+      "name": "Ezüsthegy építészei: Források és oltárok",
+      "shelf": "65-5",
+      "objectid": "417101"
+    },
+    {
+      "name": "Fado ház",
+      "shelf": "75-4",
+      "objectid": "373667"
+    },
+    {
+      "name": "A fák népe",
+      "shelf": "30-4",
+      "objectid": "423698"
+    },
+    {
+      "name": "Family Inc.",
+      "shelf": "13-2",
+      "objectid": "325382"
+    },
+    {
+      "name": "Faművesek",
+      "shelf": "83-2",
+      "objectid": "355093"
+    },
+    {
+      "name": "Fánkfaló fenevadak",
+      "shelf": "06-3",
+      "objectid": "246696"
+    },
+    {
+      "name": "Fantasy Zoo",
+      "shelf": "04-4",
+      "objectid": "439909"
+    },
+    {
+      "name": "Farkasok",
+      "shelf": "79-4",
+      "objectid": "368058"
+    },
+    {
+      "name": "Fedőnevek",
+      "shelf": "09-5",
+      "objectid": "178900"
+    },
+    {
+      "name": "60-2,\",\",\",53756258,7.43157,7.52756,1.2569,160,175619,thing,Codenames,2,8,15,15,15,2016,4",
+      "shelf": "",
+      "objectid": "5"
+    },
+    {
+      "name": "Fedőnevek Disney",
+      "shelf": "09-5",
+      "objectid": "220775"
+    },
+    {
+      "name": "Fedőnevek: Képekkel",
+      "shelf": "09-5",
+      "objectid": "198773"
+    },
+    {
+      "name": "Fedőnevek: Négyszemközt",
+      "shelf": "50-2",
+      "objectid": "224037"
+    },
+    {
+      "name": "A fehér várkastély",
+      "shelf": "76-6",
+      "objectid": "371942"
+    },
+    {
+      "name": "Fekete történetek",
+      "shelf": "14-5",
+      "objectid": "18803"
+    },
+    {
+      "name": "Fekete történetek 2",
+      "shelf": "14-5",
+      "objectid": "20750"
+    },
+    {
+      "name": "Fekete történetek 4",
+      "shelf": "14-5",
+      "objectid": "41311"
+    },
+    {
+      "name": "Fekete történetek: És mégis lapos a Föld...",
+      "shelf": "14-5",
+      "objectid": "357871"
+    },
+    {
+      "name": "Felhők tengere",
+      "shelf": "32-2",
+      "objectid": "189052"
+    },
+    {
+      "name": "Felhőváros",
+      "shelf": "29-5",
+      "objectid": "313963"
+    },
+    {
+      "name": "Fényes díszek",
+      "shelf": "05-4",
+      "objectid": "432944"
+    },
+    {
+      "name": "Fesztáv",
+      "shelf": "62-4",
+      "objectid": "266192"
+    },
+    {
+      "name": "Fesztáv: Európai Madarak",
+      "shelf": "62-4",
+      "objectid": "290448"
+    },
+    {
+      "name": "Fiesta de los Muertos",
+      "shelf": "10-4",
+      "objectid": "285253"
+    },
+    {
+      "name": "FIGUR FIGLE",
+      "shelf": "23-4",
+      "objectid": "258314"
+    },
+    {
+      "name": "Finca",
+      "shelf": "30-4",
+      "objectid": "40628"
+    },
+    {
+      "name": "Find the Source",
+      "shelf": "77-6",
+      "objectid": "370687"
+    },
+    {
+      "name": "Firkafutam",
+      "shelf": "11-2",
+      "objectid": "334379"
+    },
+    {
+      "name": "Firkaland",
+      "shelf": "11-2",
+      "objectid": "136991"
+    },
+    {
+      "name": "First Class: Unterwegs im Orient Express",
+      "shelf": "77-2",
+      "objectid": "206941"
+    },
+    {
+      "name": "Five Tribes: The Djinns of Naqala",
+      "shelf": "77-4",
+      "objectid": "157354"
+    },
+    {
+      "name": "Flamme Rouge",
+      "shelf": "27-2",
+      "objectid": "199478"
+    },
+    {
+      "name": "Flamme Rouge: Peloton",
+      "shelf": "27-2",
+      "objectid": "229941"
+    },
+    {
+      "name": "Flash Point: Fire Rescue",
+      "shelf": "63-1",
+      "objectid": "100901"
+    },
+    {
+      "name": "Fleet",
+      "shelf": "03-2",
+      "objectid": "121297"
+    },
+    {
+      "name": "Fliegende Teppiche",
+      "shelf": "04-2",
+      "objectid": "109936"
+    },
+    {
+      "name": "Flugreisespiel",
+      "shelf": "21-1",
+      "objectid": "111811"
+    },
+    {
+      "name": "Fluxx",
+      "shelf": "06-4",
+      "objectid": "258"
+    },
+    {
+      "name": "Focus",
+      "shelf": "60-4",
+      "objectid": "789"
+    },
+    {
+      "name": "Fogda szappant!",
+      "shelf": "08-3",
+      "objectid": "236360"
+    },
+    {
+      "name": "A Föld",
+      "shelf": "78-4",
+      "objectid": "350184"
+    },
+    {
+      "name": "Föld a láthatáron: Szellemek szigete",
+      "shelf": "84-4",
+      "objectid": "367498"
+    },
+    {
+      "name": "Föld és Víz",
+      "shelf": "54-4",
+      "objectid": "336929"
+    },
+    {
+      "name": "Folytassa őrmester úr!",
+      "shelf": "35-2",
+      "objectid": "261317"
+    },
+    {
+      "name": "Footballiser",
+      "shelf": "13-6",
+      "objectid": "316383"
+    },
+    {
+      "name": "Forever Home",
+      "shelf": "71-3",
+      "objectid": "385999"
+    },
+    {
+      "name": "Forgenesis",
+      "shelf": "50-1",
+      "objectid": "381023"
+    },
+    {
+      "name": "Forró nyomon",
+      "shelf": "09-4",
+      "objectid": "370444"
+    },
+    {
+      "name": "The Fox in the Forest",
+      "shelf": "56-3",
+      "objectid": "221965"
+    },
+    {
+      "name": "Foxy",
+      "shelf": "15-5",
+      "objectid": "359318"
+    },
+    {
+      "name": "Framework: Egy keret a világ!",
+      "shelf": "28-2",
+      "objectid": "353152"
+    },
+    {
+      "name": "Freeze Factory",
+      "shelf": "25-2",
+      "objectid": "327075"
+    },
+    {
+      "name": "Frenetikus forgatás",
+      "shelf": "65-2",
+      "objectid": "298102"
+    },
+    {
+      "name": "Fresco",
+      "shelf": "74-1",
+      "objectid": "66188"
+    },
+    {
+      "name": "Fröccs",
+      "shelf": "05-5",
+      "objectid": "321506"
+    },
+    {
+      "name": "*,\",\",\",83375472,5.62456,6.75809,1.52,8152,870,thing,Fröccs,2,6,30,30,30,2020,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Frui10",
+      "shelf": "07-5",
+      "objectid": "249191"
+    },
+    {
+      "name": "Fruit Mix",
+      "shelf": "03-4",
+      "objectid": "164590"
+    },
+    {
+      "name": "*,\",\",\",108824156,5.54775,6.45904,1.5,13318,340,thing,GYÜMI,1,6,25,25,25,2016,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "Fungi",
+      "shelf": "56-2",
+      "objectid": "122298"
+    },
+    {
+      "name": "*,\",\",\",96450338,6.65518,6.97367,1.7385,980,19025,thing,Morels,2,2,30,30,30,2022,2,2,10+,No necessary in-game text,\",\",\",\",\",standalone,\",Compaya.hu: Gamer Café Kft.; Pegasus Spiele,Hungarian,2022,Hungarian edition",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "FUSE",
+      "shelf": "17-1",
+      "objectid": "171273"
+    },
+    {
+      "name": "*,\",\",\",109940894,6.66976,6.98866,1.6628,951,13811,thing,FUSE,1,5,10,10,10,2015,1",
+      "shelf": "",
+      "objectid": "2"
+    },
+    {
+      "name": "Fűszerkert",
+      "shelf": "03-5",
+      "objectid": "195314"
+    },
+    {
+      "name": "Gaia projekt",
+      "shelf": "82-4",
+      "objectid": "220308"
+    },
+    {
+      "name": "Galaxis Roncsderbi",
+      "shelf": "67-1",
+      "objectid": "31481"
+    },
+    {
+      "name": "Galileo Galilei",
+      "shelf": "75-2",
+      "objectid": "393333"
+    },
+    {
+      "name": "Game of Golf",
+      "shelf": "I.",
+      "objectid": "19760"
+    },
+    {
+      "name": "A Game of Thrones: The Board Game (Second Edition)",
+      "shelf": "83-1",
+      "objectid": "103343"
+    },
+    {
+      "name": "The Gang",
+      "shelf": "05-1",
+      "objectid": "411567"
+    },
+    {
+      "name": "Ganz Schön Clever",
+      "shelf": "17-5",
+      "objectid": "244522"
+    },
+    {
+      "name": "*IV,\",\",\",62811851,7.3662,7.5555,1.8556,198,45498,thing,That's Pretty Clever!,1,4,30,30,30,2019,1",
+      "shelf": "",
+      "objectid": "2"
+    },
+    {
+      "name": "Garden Rush",
+      "shelf": "54-4",
+      "objectid": "327082"
+    },
+    {
+      "name": "Gazdálkodj Okosan!",
+      "shelf": "36-1",
+      "objectid": "18686"
+    },
+    {
+      "name": "Das Geheimnis der Pyramiden",
+      "shelf": "22-3",
+      "objectid": "8295"
+    },
+    {
+      "name": "II.,\",\",\",53783552,5.47223,5.10614,1.0909,28687,528,thing,Secrets of the Pyramids,2,4,15,15,15,2000,2",
+      "shelf": "",
+      "objectid": "3,2,5+,\",\",\",\",\",\",standalone,\",Ravensburger,German,2000,German edition"
+    },
+    {
+      "name": "Geistertreppe",
+      "shelf": "60-1",
+      "objectid": "12346"
+    },
+    {
+      "name": "Genial Connections",
+      "shelf": "18-3",
+      "objectid": "9674"
+    },
+    {
+      "name": "Gépregény",
+      "shelf": "26-1",
+      "objectid": "274093"
+    },
+    {
+      "name": "Get on Board: New York & London",
+      "shelf": "34-3",
+      "objectid": "347013"
+    },
+    {
+      "name": "Get Salty",
+      "shelf": "56-3",
+      "objectid": "419317"
+    },
+    {
+      "name": "Ghost Castle",
+      "shelf": "24-1",
+      "objectid": "1613"
+    },
+    {
+      "name": "Gingerbread House",
+      "shelf": "27-1",
+      "objectid": "258444"
+    },
+    {
+      "name": "Gloomy Graves",
+      "shelf": "26-4",
+      "objectid": "293556"
+    },
+    {
+      "name": "Glüx",
+      "shelf": "18-5",
+      "objectid": "207207"
+    },
+    {
+      "name": "Go & Gobang",
+      "shelf": "52-1",
+      "objectid": "11929"
+    },
+    {
+      "name": "Go! Doggy Go!",
+      "shelf": "20-3",
+      "objectid": "347511"
+    },
+    {
+      "name": "Gold Nuggets",
+      "shelf": "16-2",
+      "objectid": "141337"
+    },
+    {
+      "name": "Golden Horn Erweiterung Dominio Da Mar",
+      "shelf": "33-4",
+      "objectid": "176841"
+    },
+    {
+      "name": "Golden Horn: Von Venedig nach Konstantinopel",
+      "shelf": "33-4",
+      "objectid": "134626"
+    },
+    {
+      "name": "Gombászás az elvarázsolt erdőben",
+      "shelf": "23-4",
+      "objectid": "307380"
+    },
+    {
+      "name": "Good friends?",
+      "shelf": "35-3",
+      "objectid": "514"
+    },
+    {
+      "name": "Gorus Maximus",
+      "shelf": "03-1",
+      "objectid": "253756"
+    },
+    {
+      "name": "Grand Dog Park",
+      "shelf": "04-4",
+      "objectid": "254029"
+    },
+    {
+      "name": "Grand Prix",
+      "shelf": "II.",
+      "objectid": "573"
+    },
+    {
+      "name": "El Grande",
+      "shelf": "57-4",
+      "objectid": "93"
+    },
+    {
+      "name": "El Grande",
+      "shelf": "76-1",
+      "objectid": "93"
+    },
+    {
+      "name": "Grimslingers",
+      "shelf": "02-5",
+      "objectid": "173018"
+    },
+    {
+      "name": "Grund",
+      "shelf": "68-2",
+      "objectid": "287895"
+    },
+    {
+      "name": "Guess Who? Cars 2",
+      "shelf": "35-3",
+      "objectid": "4143"
+    },
+    {
+      "name": "Guinness World Records: Challenges",
+      "shelf": "15-2",
+      "objectid": "257947"
+    },
+    {
+      "name": "Gulyás",
+      "shelf": "27-1",
+      "objectid": "372882"
+    },
+    {
+      "name": "Gumikacsák",
+      "shelf": "03-5",
+      "objectid": "422019"
+    },
+    {
+      "name": "Gumikacsák: Művész csomag",
+      "shelf": "03-5",
+      "objectid": "430300"
+    },
+    {
+      "name": "Gyémántvadászok",
+      "shelf": "13-2",
+      "objectid": "15512"
+    },
+    {
+      "name": "GYÜMI",
+      "shelf": "03-4",
+      "objectid": "164590"
+    },
+    {
+      "name": "GYÜMI Géniusz",
+      "shelf": "03-4",
+      "objectid": "176678"
+    },
+    {
+      "name": "A Gyűrűk Ura: A Gyűrű Szövetsége",
+      "shelf": "06-2",
+      "objectid": "429293"
+    },
+    {
+      "name": "A Gyűrűk Ura: Párbaj Középföldéért",
+      "shelf": "52-4",
+      "objectid": "421006"
+    },
+    {
+      "name": "Hab-Dich-Lieb Bärchis Regenbogenspiel",
+      "shelf": "20-1",
+      "objectid": "55552"
+    },
+    {
+      "name": "Hadara",
+      "shelf": "72-4",
+      "objectid": "269144"
+    },
+    {
+      "name": "Hagakure",
+      "shelf": "05-2",
+      "objectid": "293836"
+    },
+    {
+      "name": "Hajdanvölgy mítosza",
+      "shelf": "80-5",
+      "objectid": "271055"
+    },
+    {
+      "name": "A Hajsza",
+      "shelf": "56-4",
+      "objectid": "376223"
+    },
+    {
+      "name": "Halfogócska",
+      "shelf": "25-4",
+      "objectid": "8203"
+    },
+    {
+      "name": "Halkonzerv Bt.",
+      "shelf": "50-3",
+      "objectid": "402024"
+    },
+    {
+      "name": "Hallatlan",
+      "shelf": "13-3",
+      "objectid": "359893"
+    },
+    {
+      "name": "*,\",\",\",112026471,5.93484,6.74437,1,3545,3765,thing,Sounds Fishy,4,10,30,30,30,2023,5",
+      "shelf": "",
+      "objectid": "6"
+    },
+    {
+      "name": "Halli Galli",
+      "shelf": "03-4",
+      "objectid": "2944"
+    },
+    {
+      "name": "Halloween",
+      "shelf": "08-1",
+      "objectid": "374585"
+    },
+    {
+      "name": "Halmazállapot",
+      "shelf": "11-4",
+      "objectid": "408547"
+    },
+    {
+      "name": "Hamupipőke",
+      "shelf": "22-4",
+      "objectid": "308572"
+    },
+    {
+      "name": "Hanabi",
+      "shelf": "07-2",
+      "objectid": "98778"
+    },
+    {
+      "name": "Hanabi",
+      "shelf": "57-3",
+      "objectid": "98778"
+    },
+    {
+      "name": "Hanamikoji",
+      "shelf": "56-2",
+      "objectid": "158600"
+    },
+    {
+      "name": "Die Händler",
+      "shelf": "75-1",
+      "objectid": "348"
+    },
+    {
+      "name": "Hangman",
+      "shelf": "16-3",
+      "objectid": "5314"
+    },
+    {
+      "name": "Hangok a fejemben",
+      "shelf": "13-5",
+      "objectid": "354254"
+    },
+    {
+      "name": "Happy City",
+      "shelf": "29-6",
+      "objectid": "319793"
+    },
+    {
+      "name": "*IV,\",\",\",84849665,6.05696,6.58807,1.2656,2829,4678,thing,Happy City,2,5,30,30,20,2021,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Happy Fox",
+      "shelf": "24-4",
+      "objectid": "392809"
+    },
+    {
+      "name": "Happy Salmon",
+      "shelf": "02-4",
+      "objectid": "194626"
+    },
+    {
+      "name": "Harmónia",
+      "shelf": "71-4",
+      "objectid": "414317"
+    },
+    {
+      "name": "A három kismalac",
+      "shelf": "20-2",
+      "objectid": "135649"
+    },
+    {
+      "name": "Harry Potter: A halálfalók felemelkedése",
+      "shelf": "63-3",
+      "objectid": "283211"
+    },
+    {
+      "name": "Harry Potter: Roxforti Csata",
+      "shelf": "63-3",
+      "objectid": "199042"
+    },
+    {
+      "name": "Hase und Igel",
+      "shelf": "60-4",
+      "objectid": "361"
+    },
+    {
+      "name": "Heat: Padlógáz",
+      "shelf": "67-1",
+      "objectid": "366013"
+    },
+    {
+      "name": "Hedbanz for Kids",
+      "shelf": "22-1",
+      "objectid": "23049"
+    },
+    {
+      "name": "Hedgehog's Revenge!",
+      "shelf": "20-1",
+      "objectid": "12837"
+    },
+    {
+      "name": "Heimlich & Co.",
+      "shelf": "59-4",
+      "objectid": "382"
+    },
+    {
+      "name": "Hellapagos",
+      "shelf": "14-3",
+      "objectid": "224272"
+    },
+    {
+      "name": "Helsinki",
+      "shelf": "32-3",
+      "objectid": "363351"
+    },
+    {
+      "name": "Helsinki: Expansion 1",
+      "shelf": "32-3",
+      "objectid": "366636"
+    },
+    {
+      "name": "HerbaLexikon",
+      "shelf": "03-4",
+      "objectid": "342743"
+    },
+    {
+      "name": "A Herceg Nyer!",
+      "shelf": "25-3",
+      "objectid": "373787"
+    },
+    {
+      "name": "Hexentanz",
+      "shelf": "I.",
+      "objectid": "2087"
+    },
+    {
+      "name": "Hexpanse",
+      "shelf": "69-4",
+      "objectid": "204143"
+    },
+    {
+      "name": "Hey! That's My Fish!",
+      "shelf": "30-1",
+      "objectid": "8203"
+    },
+    {
+      "name": "Hidden Stones",
+      "shelf": "19-5",
+      "objectid": "302280"
+    },
+    {
+      "name": "Hímes tojások",
+      "shelf": "05-4",
+      "objectid": "439190"
+    },
+    {
+      "name": "Hitster",
+      "shelf": "07-1",
+      "objectid": "318243"
+    },
+    {
+      "name": "Hitster: Magyar kiadás",
+      "shelf": "07-1",
+      "objectid": "433398"
+    },
+    {
+      "name": "Hiúzz egyet!",
+      "shelf": "04-2",
+      "objectid": "153065"
+    },
+    {
+      "name": "Hívatlan haverok",
+      "shelf": "06-5",
+      "objectid": "336622"
+    },
+    {
+      "name": "*,\",\",\",95420537,5.61238,6.4083,1.1818,8655,1736,thing,Wrong Party,2,5,60,60,30,2021,4",
+      "shelf": "",
+      "objectid": "5,5,10+,No necessary in-game text,\",\",\",\",\",standalone,\",Reflexshop,Hungarian,0,Hungarian edition"
+    },
+    {
+      "name": "Hive",
+      "shelf": "53-1",
+      "objectid": "2655"
+    },
+    {
+      "name": "*III,\",\",\",53571823,7.16838,7.31694,2.3139,328,56932,thing,Hive,2,2,20,20,20,2017,2,2,8+,No necessary in-game text,\",\",\",\",\",standalone,\",Reflexshop,Hungarian,2017,Hungarian edition",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "Hive Pocket",
+      "shelf": "53-1",
+      "objectid": "154597"
+    },
+    {
+      "name": "Hive: The Ladybug",
+      "shelf": "53-1",
+      "objectid": "70704"
+    },
+    {
+      "name": "*,\",\",\",76865539,6.63244,7.60788,2.1613,0,9743,thing,Hive: The Ladybug,2,2,20,20,20,2010,2,2,8+,No necessary in-game text,\",\",\",\",\",expansion,\",G3; HUCH!; Smart Zone Games; Vendetta,Dutch; English; French; German; Hebrew; Polish; Spanish,2010,Multilingual edition",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "Hive: The Mosquito",
+      "shelf": "53-1",
+      "objectid": "30323"
+    },
+    {
+      "name": "Hive: The Pillbug",
+      "shelf": "53-1",
+      "objectid": "139666"
+    },
+    {
+      "name": "A Hobbit",
+      "shelf": "25-1",
+      "objectid": "83629"
+    },
+    {
+      "name": "A Hobbit kártyajáték",
+      "shelf": "04-2",
+      "objectid": "126444"
+    },
+    {
+      "name": "Hold your Hat",
+      "shelf": "02-3",
+      "objectid": "362994"
+    },
+    {
+      "name": "Holmes: Sherlock & Mycroft",
+      "shelf": "52-3",
+      "objectid": "174078"
+    },
+    {
+      "name": "*,\",\",\",74458774,6.19562,6.7656,1.8222,2221,5728,thing,Holmes: Sherlock & Mycroft,2,2,30,30,20,2016,2,2,10+,No necessary in-game text,\",\",\",\",\",standalone,\",Devir,English,2016,English edition",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "A holnap társadalma",
+      "shelf": "61-4",
+      "objectid": "334986"
+    },
+    {
+      "name": "Holtak tele: Válaszúton",
+      "shelf": "80-3",
+      "objectid": "150376"
+    },
+    {
+      "name": "Homokcsapda",
+      "shelf": "15-5",
+      "objectid": "396655"
+    },
+    {
+      "name": "Honfoglaló",
+      "shelf": "15-1",
+      "objectid": "56244"
+    },
+    {
+      "name": "? ,\",\",\",53571837,5.49978,5.64159,1.8333,25163,257,thing,Honfoglaló,2,10,0,0,0,2015,2",
+      "shelf": "",
+      "objectid": "3,3,\",Extensive use of text - massive conversion needed to be playable,\",\",\",\",\",standalone,\",AB-MM,Hungarian,2015,Third edition"
+    },
+    {
+      "name": "Hősök útja",
+      "shelf": "26-5",
+      "objectid": "238992"
+    },
+    {
+      "name": "Hősök, kívül tágasabb!",
+      "shelf": "70-2",
+      "objectid": "333255"
+    },
+    {
+      "name": "Hotel",
+      "shelf": "35-3",
+      "objectid": "1502"
+    },
+    {
+      "name": "Hoyuk",
+      "shelf": "72-5",
+      "objectid": "24270"
+    },
+    {
+      "name": "Hullámhossz",
+      "shelf": "09-2",
+      "objectid": "262543"
+    },
+    {
+      "name": "*,\",\",\",83375623,6.97834,7.20936,1.1181,514,31208,thing,Wavelength,2,12,45,45,30,2020,4",
+      "shelf": "",
+      "objectid": "5"
+    },
+    {
+      "name": "Hunok",
+      "shelf": "64-4",
+      "objectid": "233973"
+    },
+    {
+      "name": "Hunyadi: A nándorfehérvári diadal",
+      "shelf": "73-3",
+      "objectid": "458293"
+    },
+    {
+      "name": "hupp",
+      "shelf": "53-2",
+      "objectid": "355433"
+    },
+    {
+      "name": "Hupp a pelyhes",
+      "shelf": "53-2",
+      "objectid": "417696"
+    },
+    {
+      "name": "Hupszi",
+      "shelf": "23-3",
+      "objectid": "376279"
+    },
+    {
+      "name": "Hutan: Az esőerdők élővilága",
+      "shelf": "70-3",
+      "objectid": "419130"
+    },
+    {
+      "name": "HUUupp",
+      "shelf": "53-2",
+      "objectid": "383579"
+    },
+    {
+      "name": "Időfutár",
+      "shelf": "25-3",
+      "objectid": "396653"
+    },
+    {
+      "name": "Időhurok",
+      "shelf": "77-6",
+      "objectid": "438007"
+    },
+    {
+      "name": "Időhurok",
+      "shelf": "13-4",
+      "objectid": "440540"
+    },
+    {
+      "name": "Időzített bomba",
+      "shelf": "12-5",
+      "objectid": "236217"
+    },
+    {
+      "name": "iFluence Land",
+      "shelf": "28-1",
+      "objectid": "427247"
+    },
+    {
+      "name": "Igen?",
+      "shelf": "09-3",
+      "objectid": "257991"
+    },
+    {
+      "name": "*,\",\",\",55977864,5.56938,6.24791,1,11179,645,thing,Igen?,2,6,60,60,30,2018,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "Igen? És...",
+      "shelf": "09-3",
+      "objectid": "289720"
+    },
+    {
+      "name": "Igenis, sötét nagyúr!",
+      "shelf": "06-4",
+      "objectid": "18723"
+    },
+    {
+      "name": "IKI",
+      "shelf": "76-4",
+      "objectid": "177478"
+    },
+    {
+      "name": "iKNOW: Magyarország",
+      "shelf": "15-4",
+      "objectid": "130680"
+    },
+    {
+      "name": "*,\",\",\",118642849,5.78148,6.35898,1.4167,4942,2390,thing,iKNOW,2,6,60,60,60,2016,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "Imagenius",
+      "shelf": "11-3",
+      "objectid": "298624"
+    },
+    {
+      "name": "Imagine",
+      "shelf": "11-3",
+      "objectid": "191894"
+    },
+    {
+      "name": "*,\",\",\",53764427,6.32548,6.80955,1.0612,1762,8910,thing,Imagine,3,8,20,20,20,2016,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "Imperia",
+      "shelf": "26-1",
+      "objectid": "164652"
+    },
+    {
+      "name": "Imperium: Ókori birodalmak",
+      "shelf": "84-2",
+      "objectid": "318184"
+    },
+    {
+      "name": "Impression",
+      "shelf": "82-2",
+      "objectid": "270270"
+    },
+    {
+      "name": "Indian Summer",
+      "shelf": "71-5",
+      "objectid": "233678"
+    },
+    {
+      "name": "Industria",
+      "shelf": "73-1",
+      "objectid": "8124"
+    },
+    {
+      "name": "Inferno",
+      "shelf": "83-4",
+      "objectid": "393165"
+    },
+    {
+      "name": "Inis",
+      "shelf": "74-5",
+      "objectid": "155821"
+    },
+    {
+      "name": "Inkognito",
+      "shelf": "I.",
+      "objectid": "466"
+    },
+    {
+      "name": "Inori",
+      "shelf": "67-2",
+      "objectid": "415938"
+    },
+    {
+      "name": "Instant lista",
+      "shelf": "15-3",
+      "objectid": "373284"
+    },
+    {
+      "name": "Intarzia",
+      "shelf": "18-5",
+      "objectid": "422126"
+    },
+    {
+      "name": "Intrigue",
+      "shelf": "27-4",
+      "objectid": "265"
+    },
+    {
+      "name": "Intrikák háza",
+      "shelf": "12-5",
+      "objectid": "402283"
+    },
+    {
+      "name": "Invaders",
+      "shelf": "55-3",
+      "objectid": "145654"
+    },
+    {
+      "name": "Inventors of the South Tigris",
+      "shelf": "81-2",
+      "objectid": "378387"
+    },
+    {
+      "name": "Invisible",
+      "shelf": "07-3",
+      "objectid": "244460"
+    },
+    {
+      "name": "Irány a dicsőség!",
+      "shelf": "26-5",
+      "objectid": "246816"
+    },
+    {
+      "name": "Irány a Kincses Sziget!",
+      "shelf": "33-2",
+      "objectid": "216330"
+    },
+    {
+      "name": "Irány a vadon: Észak-Amerika",
+      "shelf": "71-4",
+      "objectid": "329939"
+    },
+    {
+      "name": "Ironwood",
+      "shelf": "02-2",
+      "objectid": "407343"
+    },
+    {
+      "name": "Isla Dorada",
+      "shelf": "61-1",
+      "objectid": "68182"
+    },
+    {
+      "name": "Isle of Skye: Vom Häuptling zum König",
+      "shelf": "61-5",
+      "objectid": "176494"
+    },
+    {
+      "name": "Az ismeretlen bolygó",
+      "shelf": "69-4",
+      "objectid": "258779"
+    },
+    {
+      "name": "Istanbul",
+      "shelf": "62-5",
+      "objectid": "148949"
+    },
+    {
+      "name": "Istanbul: Das Würfelspiel",
+      "shelf": "17-4",
+      "objectid": "235488"
+    },
+    {
+      "name": "Istanbul: kávé és baksis",
+      "shelf": "62-5",
+      "objectid": "172505"
+    },
+    {
+      "name": "Jaipur",
+      "shelf": "55-4",
+      "objectid": "54043"
+    },
+    {
+      "name": "Jenga",
+      "shelf": "19-1",
+      "objectid": "2452"
+    },
+    {
+      "name": "*,\",\",\",53571916,5.58075,5.6622,1.1015,10321,34505,thing,Jenga,1,8,20,20,20,2012,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Jerusalem",
+      "shelf": "78-1",
+      "objectid": "63632"
+    },
+    {
+      "name": "Jeruzsálem: Anno Domini",
+      "shelf": "77-5",
+      "objectid": "371972"
+    },
+    {
+      "name": "Jinx",
+      "shelf": "07-4",
+      "objectid": "339475"
+    },
+    {
+      "name": "*,\",\",\",84245785,5.50752,5.93922,1,22935,141,thing,Jinks,2,4,30,30,0,2021,\",\",\",\",\",\",\",\",\",standalone,\",Piatnik,German; Hungarian,2021,German/Hungarian edition",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "Jó a szó!",
+      "shelf": "15-3",
+      "objectid": "438215"
+    },
+    {
+      "name": "Jó tudni!",
+      "shelf": "11-4",
+      "objectid": "370164"
+    },
+    {
+      "name": "Jógi",
+      "shelf": "14-5",
+      "objectid": "224271"
+    },
+    {
+      "name": "Jógi Guru",
+      "shelf": "14-5",
+      "objectid": "257841"
+    },
+    {
+      "name": "Johari Bazaar",
+      "shelf": "55-4",
+      "objectid": "432491"
+    },
+    {
+      "name": "Johnny & Co",
+      "shelf": "22-3",
+      "objectid": "133817"
+    },
+    {
+      "name": "Jolly Roger: The Game of Piracy & Mutiny",
+      "shelf": "03-1",
+      "objectid": "165959"
+    },
+    {
+      "name": "Jórvík",
+      "shelf": "72-4",
+      "objectid": "193739"
+    },
+    {
+      "name": "Juharvölgy Krónikája",
+      "shelf": "70-3",
+      "objectid": "304051"
+    },
+    {
+      "name": "Juharvölgy krónikája: Tavaszi karnevál",
+      "shelf": "70-3",
+      "objectid": "361958"
+    },
+    {
+      "name": "Jumanji",
+      "shelf": "02-5",
+      "objectid": "1751"
+    },
+    {
+      "name": "Jumanji",
+      "shelf": "27-3",
+      "objectid": "1751"
+    },
+    {
+      "name": "Jungle Brunch: Állati Zaba",
+      "shelf": "04-4",
+      "objectid": "130907"
+    },
+    {
+      "name": "Jungle Speed: Dzsungelláz",
+      "shelf": "07-2",
+      "objectid": "8098"
+    },
+    {
+      "name": "? ,\",\",\",57584049,6.24669,6.4525,1.1289,2019,23891,thing,Jungle Speed,2,10,10,10,10,2015,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "Jungo",
+      "shelf": "07-4",
+      "objectid": "424816"
+    },
+    {
+      "name": "Junior Labyrinth",
+      "shelf": "24-2",
+      "objectid": "1218"
+    },
+    {
+      "name": "Just One",
+      "shelf": "01-4",
+      "objectid": "254640"
+    },
+    {
+      "name": "K2",
+      "shelf": "63-2",
+      "objectid": "73761"
+    },
+    {
+      "name": "Kabaleo",
+      "shelf": "18-3",
+      "objectid": "94891"
+    },
+    {
+      "name": "Kahuna",
+      "shelf": "55-2",
+      "objectid": "394"
+    },
+    {
+      "name": "Kairo",
+      "shelf": "72-1",
+      "objectid": "107635"
+    },
+    {
+      "name": "Kalandozoo Marci az állatkertben",
+      "shelf": "23-3",
+      "objectid": "352445"
+    },
+    {
+      "name": "Kalmár: Merchants in Buda",
+      "shelf": "81-1",
+      "objectid": "452439"
+    },
+    {
+      "name": "Kalóz mesék",
+      "shelf": "72-3",
+      "objectid": "359237"
+    },
+    {
+      "name": "Kaméleon",
+      "shelf": "13-3",
+      "objectid": "227072"
+    },
+    {
+      "name": "*,\",\",\",55033131,6.17052,6.51422,1.0549,2305,14770,thing,The Chameleon,3,8,15,15,15,2018,4",
+      "shelf": "",
+      "objectid": "5"
+    },
+    {
+      "name": "Kamisado",
+      "shelf": "51-2",
+      "objectid": "38545"
+    },
+    {
+      "name": "Kamuzol! (vagy nem?)",
+      "shelf": "15-3",
+      "objectid": "291604"
+    },
+    {
+      "name": "Kanaloa",
+      "shelf": "04-1",
+      "objectid": "316525"
+    },
+    {
+      "name": "Kang-a-Roo",
+      "shelf": "21-5",
+      "objectid": "41860"
+    },
+    {
+      "name": "Kapibarista",
+      "shelf": "28-6",
+      "objectid": "406498"
+    },
+    {
+      "name": "Kapocsváros",
+      "shelf": "29-6",
+      "objectid": "421199"
+    },
+    {
+      "name": "Karácsonyfa",
+      "shelf": "68-2",
+      "objectid": "234711"
+    },
+    {
+      "name": "Karak",
+      "shelf": "26-4",
+      "objectid": "241477"
+    },
+    {
+      "name": "Karawane",
+      "shelf": "I.",
+      "objectid": "940"
+    },
+    {
+      "name": "Kard és Korona",
+      "shelf": "73-3",
+      "objectid": "170447"
+    },
+    {
+      "name": "Kard és Korona",
+      "shelf": "73-3",
+      "objectid": "170447"
+    },
+    {
+      "name": "Kariba",
+      "shelf": "07-2",
+      "objectid": "84732"
+    },
+    {
+      "name": "Kartográfusok",
+      "shelf": "33-2",
+      "objectid": "263918"
+    },
+    {
+      "name": "Kartográfusok: Hősök",
+      "shelf": "33-2",
+      "objectid": "315767"
+    },
+    {
+      "name": "Kaspó",
+      "shelf": "64-3",
+      "objectid": "334065"
+    },
+    {
+      "name": "Katicabál",
+      "shelf": "60-1",
+      "objectid": "4522"
+    },
+    {
+      "name": "Keltis",
+      "shelf": "58-3",
+      "objectid": "34585"
+    },
+    {
+      "name": "Keltis: A kártyajáték",
+      "shelf": "06-3",
+      "objectid": "40832"
+    },
+    {
+      "name": "Keltis: Der Weg der Steine Mitbringspiel",
+      "shelf": "28-2",
+      "objectid": "41003"
+    },
+    {
+      "name": "Keltis: Neue Wege, Neue Ziele",
+      "shelf": "58-3",
+      "objectid": "40845"
+    },
+    {
+      "name": "Kemet",
+      "shelf": "74-5",
+      "objectid": "127023"
+    },
+    {
+      "name": "Kemet: Ta-Seti",
+      "shelf": "74-5",
+      "objectid": "161842"
+    },
+    {
+      "name": "Kensington",
+      "shelf": "32-4",
+      "objectid": "276459"
+    },
+    {
+      "name": "Képérzék",
+      "shelf": "59-2",
+      "objectid": "284108"
+    },
+    {
+      "name": "Képmesék",
+      "shelf": "24-4",
+      "objectid": "68340"
+    },
+    {
+      "name": "A Kereskedők Völgye",
+      "shelf": "06-1",
+      "objectid": "176165"
+    },
+    {
+      "name": "Kereszt és Félhold",
+      "shelf": "78-5",
+      "objectid": "351393"
+    },
+    {
+      "name": "Kertvárosi kémek",
+      "shelf": "54-3",
+      "objectid": "422732"
+    },
+    {
+      "name": "Key West",
+      "shelf": "77-2",
+      "objectid": "82976"
+    },
+    {
+      "name": "KeyForge: Worlds Collide",
+      "shelf": "52-2",
+      "objectid": "285775"
+    },
+    {
+      "name": "Khiva",
+      "shelf": "34-3",
+      "objectid": "416832"
+    },
+    {
+      "name": "Ki20tuk!",
+      "shelf": "06-4",
+      "objectid": "318195"
+    },
+    {
+      "name": "kib@szodt dilemma",
+      "shelf": "08-5",
+      "objectid": "378354"
+    },
+    {
+      "name": "Kill Kim",
+      "shelf": "11-5",
+      "objectid": "392806"
+    },
+    {
+      "name": "King Arthur: Das Kartenspiel",
+      "shelf": "04-3",
+      "objectid": "15167"
+    },
+    {
+      "name": "King of Tokyo",
+      "shelf": "02-3",
+      "objectid": "70323"
+    },
+    {
+      "name": "Kingdom Builder: Big Box",
+      "shelf": "57-3",
+      "objectid": "139993"
+    },
+    {
+      "name": "Kingdomino",
+      "shelf": "60-2",
+      "objectid": "204583"
+    },
+    {
+      "name": "Kingdomino",
+      "shelf": "32-5",
+      "objectid": "204583"
+    },
+    {
+      "name": "Kingdomino: Kezdetek",
+      "shelf": "71-5",
+      "objectid": "340041"
+    },
+    {
+      "name": "Királyi áru",
+      "shelf": "03-3",
+      "objectid": "183840"
+    },
+    {
+      "name": "Királyi áru: Big Box",
+      "shelf": "03-3",
+      "objectid": "417268"
+    },
+    {
+      "name": "Királyi kombó",
+      "shelf": "05-4",
+      "objectid": "416851"
+    },
+    {
+      "name": "Kiribati",
+      "shelf": "71-1",
+      "objectid": "366249"
+    },
+    {
+      "name": "A kis herceg-Az én kis bolygóm",
+      "shelf": "28-4",
+      "objectid": "134453"
+    },
+    {
+      "name": "Kisfröccs",
+      "shelf": "05-5",
+      "objectid": "371417"
+    },
+    {
+      "name": "Kitchen Rush (Revised Edition): Time for Dessert!",
+      "shelf": "67-4",
+      "objectid": "318960"
+    },
+    {
+      "name": "Kitchen Rush: Legyél Sztárséf!",
+      "shelf": "67-4",
+      "objectid": "287938"
+    },
+    {
+      "name": "KIWI",
+      "shelf": "23-3",
+      "objectid": "240823"
+    },
+    {
+      "name": "Klank!: Katakombák",
+      "shelf": "63-5",
+      "objectid": "365717"
+    },
+    {
+      "name": "KLASK",
+      "shelf": "56-5",
+      "objectid": "165722"
+    },
+    {
+      "name": "*,\",\",\",109309821,7.26196,7.6283,1.047,255,17343,thing,KLASK,2,2,10,10,10,2019,2,2,6+,No necessary in-game text,\",\",\",\",\",standalone,\",Reflexshop,Hungarian,2019,Hungarian edition",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "Das Kleine Gespenst",
+      "shelf": "60-1",
+      "objectid": "16369"
+    },
+    {
+      "name": "Kleopatra und die Baumeister",
+      "shelf": "65-1",
+      "objectid": "22141"
+    },
+    {
+      "name": "Kluster",
+      "shelf": "19-3",
+      "objectid": "277458"
+    },
+    {
+      "name": "*,\",\",\",117655512,6.15584,6.57119,1.0089,2364,9904,thing,Kluster,1,4,20,20,10,2018,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Kluster Duo",
+      "shelf": "54-2",
+      "objectid": "408383"
+    },
+    {
+      "name": "Knarr",
+      "shelf": "04-1",
+      "objectid": "379629"
+    },
+    {
+      "name": "Kő – Papír – Olló",
+      "shelf": "II.",
+      "objectid": "46925"
+    },
+    {
+      "name": "Kobayakawa",
+      "shelf": "05-2",
+      "objectid": "142325"
+    },
+    {
+      "name": "A kockahegyen is túl",
+      "shelf": "67-2",
+      "objectid": "264278"
+    },
+    {
+      "name": "Kockaparti",
+      "shelf": "17-2",
+      "objectid": "445045"
+    },
+    {
+      "name": "Kockázat",
+      "shelf": "51-1",
+      "objectid": "375075"
+    },
+    {
+      "name": "Kockázatos Kaland",
+      "shelf": "32-3",
+      "objectid": "192349"
+    },
+    {
+      "name": "Kodama: Az Erdő Szellemei",
+      "shelf": "31-4",
+      "objectid": "181810"
+    },
+    {
+      "name": "Kódfejtő",
+      "shelf": "09-4",
+      "objectid": "225694"
+    },
+    {
+      "name": "Ködszerzet: A pakliépítő játék",
+      "shelf": "73-5",
+      "objectid": "422780"
+    },
+    {
+      "name": "Kokopelli",
+      "shelf": "72-1",
+      "objectid": "322195"
+    },
+    {
+      "name": "Kommissar Spürnase",
+      "shelf": "II.",
+      "objectid": "2349"
+    },
+    {
+      "name": "Konyec konyha: Az orosz gasztrotúra",
+      "shelf": "06-3",
+      "objectid": "260407"
+    },
+    {
+      "name": "Korinthosz",
+      "shelf": "17-3",
+      "objectid": "269725"
+    },
+    {
+      "name": "Korruptivity \"Lite",
+      "shelf": "07-4",
+      "objectid": "234590"
+    },
+    {
+      "name": "Köszöntünk a Holdon",
+      "shelf": "69-2",
+      "objectid": "339789"
+    },
+    {
+      "name": "Köszöntünk... álmaid városában!",
+      "shelf": "27-4",
+      "objectid": "233867"
+    },
+    {
+      "name": "Következő megálló: London",
+      "shelf": "33-3",
+      "objectid": "353545"
+    },
+    {
+      "name": "Középkor",
+      "shelf": "31-2",
+      "objectid": "403754"
+    },
+    {
+      "name": "Kozmopolip",
+      "shelf": "69-3",
+      "objectid": "362020"
+    },
+    {
+      "name": "Krafting Krowns",
+      "shelf": "61-2",
+      "objectid": "446177"
+    },
+    {
+      "name": "Kragmortha",
+      "shelf": "09-1",
+      "objectid": "26859"
+    },
+    {
+      "name": "Kristályvölgy üvegművesei",
+      "shelf": "29-3",
+      "objectid": "407297"
+    },
+    {
+      "name": "Kronia",
+      "shelf": "30-2",
+      "objectid": "217581"
+    },
+    {
+      "name": "Kuh & Co.",
+      "shelf": "22-3",
+      "objectid": "12291"
+    },
+    {
+      "name": "Kulcskérdés",
+      "shelf": "10-4",
+      "objectid": "347112"
+    },
+    {
+      "name": "Kulcskérdés",
+      "shelf": "10-4",
+      "objectid": "347112"
+    },
+    {
+      "name": "Kulcsvesztő útvesztő",
+      "shelf": "25-2",
+      "objectid": "242742"
+    },
+    {
+      "name": "Kuruzslók Quedlinburgban",
+      "shelf": "61-5",
+      "objectid": "244521"
+    },
+    {
+      "name": "Kuruzslók Quedlinburgban: A javasasszonyok",
+      "shelf": "61-5",
+      "objectid": "269259"
+    },
+    {
+      "name": "Kuruzslók Quedlinburgban: Az alkimisták",
+      "shelf": "61-5",
+      "objectid": "316597"
+    },
+    {
+      "name": "Kutná Hora: Az Ezüstváros",
+      "shelf": "75-4",
+      "objectid": "385610"
+    },
+    {
+      "name": "Kutyapark",
+      "shelf": "71-3",
+      "objectid": "331401"
+    },
+    {
+      "name": "Kutyavilág",
+      "shelf": "30-3",
+      "objectid": "205101"
+    },
+    {
+      "name": "Kutyavilág kártyajáték",
+      "shelf": "04-4",
+      "objectid": "321957"
+    },
+    {
+      "name": "*,\",\",\",96642336,0,5.13636,2,0,43,thing,Kutyavilág kártyajáték,2,6,20,0,20,2019,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Kvíz casino",
+      "shelf": "15-2",
+      "objectid": "261127"
+    },
+    {
+      "name": "Kwatro",
+      "shelf": "07-5",
+      "objectid": "119632"
+    },
+    {
+      "name": "*,\",\",\",56697141,5.77322,6.14647,1.9146,5043,6300,thing,IOTA,2,4,30,30,30,2018,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "L.A.M.A.",
+      "shelf": "07-4",
+      "objectid": "266083"
+    },
+    {
+      "name": "Labyrinth",
+      "shelf": "35-2",
+      "objectid": "1219"
+    },
+    {
+      "name": "*,\",\",\",53572053,6.23175,6.40795,1.3456,2079,33523,thing,Labyrinth,2,4,20,20,20,2007,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Lacrimosa",
+      "shelf": "75-4",
+      "objectid": "348450"
+    },
+    {
+      "name": "Lámák Földje",
+      "shelf": "32-1",
+      "objectid": "330038"
+    },
+    {
+      "name": "Lancaster",
+      "shelf": "75-1",
+      "objectid": "96913"
+    },
+    {
+      "name": "Lángművesek",
+      "shelf": "70-2",
+      "objectid": "336986"
+    },
+    {
+      "name": "Lapzárta",
+      "shelf": "66-1",
+      "objectid": "352574"
+    },
+    {
+      "name": "Las Vegas",
+      "shelf": "16-1",
+      "objectid": "117959"
+    },
+    {
+      "name": "Las Vegas: Boulevard",
+      "shelf": "16-1",
+      "objectid": "149975"
+    },
+    {
+      "name": "Las Vegas: The Card Game",
+      "shelf": "05-1",
+      "objectid": "209886"
+    },
+    {
+      "name": "Laser",
+      "shelf": "26-1",
+      "objectid": "288350"
+    },
+    {
+      "name": "Last Call: The Bartender Game",
+      "shelf": "11-1",
+      "objectid": "76810"
+    },
+    {
+      "name": "Lázadó hercegnők",
+      "shelf": "04-2",
+      "objectid": "420017"
+    },
+    {
+      "name": "Legend of the Five Rings: The Card Game",
+      "shelf": "52-2",
+      "objectid": "184151"
+    },
+    {
+      "name": "A légi társaság",
+      "shelf": "58-2",
+      "objectid": "373106"
+    },
+    {
+      "name": "A légi társaság: BUD Budapest Liszt Ferenc",
+      "shelf": "58-2",
+      "objectid": "414502"
+    },
+    {
+      "name": "Lemmingek",
+      "shelf": "32-1",
+      "objectid": "153004"
+    },
+    {
+      "name": "Lépten-nyomon: Amszterdam",
+      "shelf": "12-4",
+      "objectid": "246297"
+    },
+    {
+      "name": "Lifeboat",
+      "shelf": "14-2",
+      "objectid": "4174"
+    },
+    {
+      "name": "Light Seeker",
+      "shelf": "50-1",
+      "objectid": "381025"
+    },
+    {
+      "name": "Lighthouse Run",
+      "shelf": "27-2",
+      "objectid": "158971"
+    },
+    {
+      "name": "Limes",
+      "shelf": "55-2",
+      "objectid": "153623"
+    },
+    {
+      "name": "Little Red Riding Hood",
+      "shelf": "20-2",
+      "objectid": "8086"
+    },
+    {
+      "name": "Little Town",
+      "shelf": "29-6",
+      "objectid": "241266"
+    },
+    {
+      "name": "*IV,\",\",\",130702357,6.56563,7.14814,1.9507,1154,8406,thing,Little Town,2,4,60,60,30,2021,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Littoral",
+      "shelf": "11-1",
+      "objectid": "406660"
+    },
+    {
+      "name": "Llamageddon",
+      "shelf": "14-2",
+      "objectid": "365685"
+    },
+    {
+      "name": "Llamageddon",
+      "shelf": "02-3",
+      "objectid": "365685"
+    },
+    {
+      "name": "Llamasters: The Party Game",
+      "shelf": "06-4",
+      "objectid": "337998"
+    },
+    {
+      "name": "Lobo 77",
+      "shelf": "04-2",
+      "objectid": "3337"
+    },
+    {
+      "name": "Lokomoto",
+      "shelf": "25-3",
+      "objectid": "388571"
+    },
+    {
+      "name": "Lom-a-duma",
+      "shelf": "11-3",
+      "objectid": "387219"
+    },
+    {
+      "name": "Lombkorona",
+      "shelf": "54-4",
+      "objectid": "295607"
+    },
+    {
+      "name": "The London Board Game",
+      "shelf": "01-3",
+      "objectid": "2866"
+    },
+    {
+      "name": "Looot",
+      "shelf": "72-4",
+      "objectid": "410991"
+    },
+    {
+      "name": "Loot",
+      "shelf": "68-2",
+      "objectid": "424225"
+    },
+    {
+      "name": "Lorenzo il Magnifico: Big Box",
+      "shelf": "74-4",
+      "objectid": "338476"
+    },
+    {
+      "name": "Lost Cities",
+      "shelf": "*",
+      "objectid": "50"
+    },
+    {
+      "name": "Love Letter",
+      "shelf": "12-5",
+      "objectid": "129622"
+    },
+    {
+      "name": "Love Letter: Premium Edition",
+      "shelf": "02-4",
+      "objectid": "196326"
+    },
+    {
+      "name": "Lumenara felfedezői",
+      "shelf": "25-3",
+      "objectid": "455350"
+    },
+    {
+      "name": "Luna Maris",
+      "shelf": "75-2",
+      "objectid": "319392"
+    },
+    {
+      "name": "Lunatic",
+      "shelf": "03-2",
+      "objectid": "286018"
+    },
+    {
+      "name": "Lunch [atop a Skyscraper]",
+      "shelf": "66-1",
+      "objectid": "445866"
+    },
+    {
+      "name": "Lupos",
+      "shelf": "31-3",
+      "objectid": "301099"
+    },
+    {
+      "name": "Luther: A kártyajáték",
+      "shelf": "04-3",
+      "objectid": "223427"
+    },
+    {
+      "name": "Luxor",
+      "shelf": "II.",
+      "objectid": "1205"
+    },
+    {
+      "name": "Luxor",
+      "shelf": "31-3",
+      "objectid": "245643"
+    },
+    {
+      "name": "Macao",
+      "shelf": "16-1",
+      "objectid": "13258"
+    },
+    {
+      "name": "MacGregor",
+      "shelf": "II.",
+      "objectid": "1326"
+    },
+    {
+      "name": "Mackó kuckó",
+      "shelf": "21-4",
+      "objectid": "454803"
+    },
+    {
+      "name": "Macskák szigete",
+      "shelf": "71-3",
+      "objectid": "281259"
+    },
+    {
+      "name": "Macskalak",
+      "shelf": "32-1",
+      "objectid": "386436"
+    },
+    {
+      "name": "Macskaland",
+      "shelf": "07-2",
+      "objectid": "197893"
+    },
+    {
+      "name": "Magic Maze",
+      "shelf": "14-3",
+      "objectid": "209778"
+    },
+    {
+      "name": "*III,\",\",\",53766833,6.77889,6.93967,1.7475,774,37496,thing,Magic Maze,1,8,15,15,15,2017,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Mágikus erdő",
+      "shelf": "25-3",
+      "objectid": "383405"
+    },
+    {
+      "name": "Mágikus tekercsek",
+      "shelf": "17-2",
+      "objectid": "198455"
+    },
+    {
+      "name": "Magnetic Backgammon",
+      "shelf": "52-1",
+      "objectid": "2397"
+    },
+    {
+      "name": "Mágus párbaj",
+      "shelf": "04-2",
+      "objectid": "63808"
+    },
+    {
+      "name": "Mágusok kora",
+      "shelf": "64-5",
+      "objectid": "309408"
+    },
+    {
+      "name": "Magyar Népmesék Memóriajáték",
+      "shelf": "20-2",
+      "objectid": "448256"
+    },
+    {
+      "name": "Magyar népmesék: A kártyajáték",
+      "shelf": "24-4",
+      "objectid": "341404"
+    },
+    {
+      "name": "Magyar népmesék: A társasjáték",
+      "shelf": "67-2",
+      "objectid": "217095"
+    },
+    {
+      "name": "Magyarország Quiz",
+      "shelf": "15-1",
+      "objectid": "59819"
+    },
+    {
+      "name": "Malefiz",
+      "shelf": "II.",
+      "objectid": "2322"
+    },
+    {
+      "name": "Man Bites Dog",
+      "shelf": "01-2",
+      "objectid": "4035"
+    },
+    {
+      "name": "Mancala",
+      "shelf": "53-1",
+      "objectid": "2448"
+    },
+    {
+      "name": "Manchester United ChampionsChess Set",
+      "shelf": "52-1",
+      "objectid": "171"
+    },
+    {
+      "name": "Mandala",
+      "shelf": "53-3",
+      "objectid": "264241"
+    },
+    {
+      "name": "Mandala kövek",
+      "shelf": "19-5",
+      "objectid": "317504"
+    },
+    {
+      "name": "Mandala Stones: Harmony",
+      "shelf": "19-5",
+      "objectid": "350460"
+    },
+    {
+      "name": "Manhattan",
+      "shelf": "57-4",
+      "objectid": "199"
+    },
+    {
+      "name": "The Manhattan Project",
+      "shelf": "80-1",
+      "objectid": "63628"
+    },
+    {
+      "name": "Manhattan TraffIQ",
+      "shelf": "27-3",
+      "objectid": "179813"
+    },
+    {
+      "name": "Marabunta",
+      "shelf": "55-4",
+      "objectid": "403265"
+    },
+    {
+      "name": "Maradj talpon!",
+      "shelf": "15-2",
+      "objectid": "190629"
+    },
+    {
+      "name": "? ,\",\",\",108822423,0,5.9375,0,0,24,thing,Maradj talpon!,2,4,30,30,15,2013,\",\",\",\",\",\",\",\",\",standalone,\",Piatnik,Hungarian,2013,Hungarian edition",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "Marie Curie nyomában",
+      "shelf": "30-2",
+      "objectid": "408770"
+    },
+    {
+      "name": "Mariposas",
+      "shelf": "71-2",
+      "objectid": "297978"
+    },
+    {
+      "name": "Marrakech",
+      "shelf": "34-1",
+      "objectid": "29223"
+    },
+    {
+      "name": "A Mars terraformálása",
+      "shelf": "79-2",
+      "objectid": "167791"
+    },
+    {
+      "name": "A Mars terraformálása: Árész-expedíció",
+      "shelf": "79-2",
+      "objectid": "328871"
+    },
+    {
+      "name": "A Mars terraformálása: Kockajáték",
+      "shelf": "79-2",
+      "objectid": "296108"
+    },
+    {
+      "name": "Martinique",
+      "shelf": "51-4",
+      "objectid": "42244"
+    },
+    {
+      "name": "Marvel United: Multiverzum",
+      "shelf": "27-5",
+      "objectid": "377969"
+    },
+    {
+      "name": "Marvel United: Spider-Geddon",
+      "shelf": "27-5",
+      "objectid": "379908"
+    },
+    {
+      "name": "Marvel Zombies: Heroes' Resistance",
+      "shelf": "63-5",
+      "objectid": "366023"
+    },
+    {
+      "name": "Mascarade",
+      "shelf": "01-4",
+      "objectid": "139030"
+    },
+    {
+      "name": "Második esély",
+      "shelf": "18-4",
+      "objectid": "265683"
+    },
+    {
+      "name": "Matricás Laci: Kapj el!",
+      "shelf": "04-2",
+      "objectid": "363271"
+    },
+    {
+      "name": "Mátyás",
+      "shelf": "31-2",
+      "objectid": "261117"
+    },
+    {
+      "name": "Die Maulwurf Company",
+      "shelf": "II.",
+      "objectid": "321"
+    },
+    {
+      "name": "Der Maulwurf und sein Versteck-Spiel",
+      "shelf": "22-3",
+      "objectid": "60710"
+    },
+    {
+      "name": "Medvepark",
+      "shelf": "30-3",
+      "objectid": "219513"
+    },
+    {
+      "name": "Mélytáv",
+      "shelf": "61-3",
+      "objectid": "436126"
+    },
+    {
+      "name": "Memoarrr!",
+      "shelf": "25-1",
+      "objectid": "230383"
+    },
+    {
+      "name": "Memory Challenge: Rudolph the Red-Nosed Reindeer Edition",
+      "shelf": "22-3",
+      "objectid": "142148"
+    },
+    {
+      "name": "Men in Tanks: Lazarus' War",
+      "shelf": "77-6",
+      "objectid": "319621"
+    },
+    {
+      "name": "Men-Nefer",
+      "shelf": "81-1",
+      "objectid": "404431"
+    },
+    {
+      "name": "Menekülés a vulkánszigetről",
+      "shelf": "25-4",
+      "objectid": "425428"
+    },
+    {
+      "name": "Mennyei ser",
+      "shelf": "74-1",
+      "objectid": "227789"
+    },
+    {
+      "name": "Menzacsata",
+      "shelf": "07-4",
+      "objectid": "362616"
+    },
+    {
+      "name": "Mercado",
+      "shelf": "32-4",
+      "objectid": "244794"
+    },
+    {
+      "name": "A méret a lényeg",
+      "shelf": "08-4",
+      "objectid": "297123"
+    },
+    {
+      "name": "Merlin",
+      "shelf": "75-1",
+      "objectid": "230933"
+    },
+    {
+      "name": "Messina 1347",
+      "shelf": "83-2",
+      "objectid": "238799"
+    },
+    {
+      "name": "Mesterlogika",
+      "shelf": "53-1",
+      "objectid": "2392"
+    },
+    {
+      "name": "Meteorit",
+      "shelf": "69-2",
+      "objectid": "381078"
+    },
+    {
+      "name": "Metro",
+      "shelf": "33-3",
+      "objectid": "559"
+    },
+    {
+      "name": "Metro X",
+      "shelf": "33-3",
+      "objectid": "248861"
+    },
+    {
+      "name": "Mexican Standoff",
+      "shelf": "04-1",
+      "objectid": "217680"
+    },
+    {
+      "name": "Mexican Train",
+      "shelf": "18-1",
+      "objectid": "11634"
+    },
+    {
+      "name": "Michael Strogoff",
+      "shelf": "64-4",
+      "objectid": "224894"
+    },
+    {
+      "name": "[microfilms]",
+      "shelf": "03-1",
+      "objectid": "175867"
+    },
+    {
+      "name": "MicroMacro: Crime City",
+      "shelf": "59-2",
+      "objectid": "318977"
+    },
+    {
+      "name": "MicroMacro fal,\",\",\",84986054,7.22032,7.45707,1.101,283,37700,thing,MicroMacro: Crime City,1,4,45,45,15,2021,1",
+      "shelf": "",
+      "objectid": "2"
+    },
+    {
+      "name": "MicroMacro: Crime City – A végső rejtély",
+      "shelf": "MicroMacro fal",
+      "objectid": "400114"
+    },
+    {
+      "name": "MicroMacro: Crime City – All In",
+      "shelf": "MicroMacro fal",
+      "objectid": "364766"
+    },
+    {
+      "name": "MicroMacro: Crime City – Full House",
+      "shelf": "MicroMacro fal",
+      "objectid": "338834"
+    },
+    {
+      "name": "MicroMacro: Crime City – Showdown",
+      "shelf": "MicroMacro fal",
+      "objectid": "398162"
+    },
+    {
+      "name": "Micsoda Pech #!?",
+      "shelf": "07-4",
+      "objectid": "12942"
+    },
+    {
+      "name": "Mikado",
+      "shelf": "19-2",
+      "objectid": "6424"
+    },
+    {
+      "name": "Mikulás Műhelye Deluxe",
+      "shelf": "61-2",
+      "objectid": "353942"
+    },
+    {
+      "name": "Milestones",
+      "shelf": "74-2",
+      "objectid": "117914"
+    },
+    {
+      "name": "Mille Grazie",
+      "shelf": "25-1",
+      "objectid": "83199"
+    },
+    {
+      "name": "Million Dollar Script",
+      "shelf": "01-2",
+      "objectid": "304336"
+    },
+    {
+      "name": "Million Dollar Script: Setting Cards Promo Set",
+      "shelf": "01-2",
+      "objectid": "420380"
+    },
+    {
+      "name": "Mimikri",
+      "shelf": "21-2",
+      "objectid": "130724"
+    },
+    {
+      "name": "The Mind",
+      "shelf": "07-4",
+      "objectid": "244992"
+    },
+    {
+      "name": "*,\",\",\",55945248,6.60031,6.72513,1.0742,1084,67236,thing,The Mind,2,4,20,20,20,2018,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "The Mind Extrém",
+      "shelf": "07-4",
+      "objectid": "287607"
+    },
+    {
+      "name": "*,\",\",\",117776489,6.00039,6.8815,1.3421,3131,4321,thing,The Mind Extreme,2,4,20,20,20,2020,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Mind the Gap",
+      "shelf": "03-2",
+      "objectid": "229537"
+    },
+    {
+      "name": "Mind Trap",
+      "shelf": "52-3",
+      "objectid": "1923"
+    },
+    {
+      "name": "Mind Up!",
+      "shelf": "05-3",
+      "objectid": "377515"
+    },
+    {
+      "name": "Minecraft: Builders & Biomes",
+      "shelf": "28-1",
+      "objectid": "269603"
+    },
+    {
+      "name": "MiniCity",
+      "shelf": "21-2",
+      "objectid": "245630"
+    },
+    {
+      "name": "Mint Delivery",
+      "shelf": "28-5",
+      "objectid": "230251"
+    },
+    {
+      "name": "Mississippi Queen",
+      "shelf": "57-4",
+      "objectid": "256"
+    },
+    {
+      "name": "Mistakos",
+      "shelf": "19-3",
+      "objectid": "2922"
+    },
+    {
+      "name": "Mistakos: Level up",
+      "shelf": "19-3",
+      "objectid": "292908"
+    },
+    {
+      "name": "Misty",
+      "shelf": "07-2",
+      "objectid": "270443"
+    },
+    {
+      "name": "MLEM: Asztronyauták",
+      "shelf": "34-5",
+      "objectid": "387378"
+    },
+    {
+      "name": "Mmm!",
+      "shelf": "22-5",
+      "objectid": "172507"
+    },
+    {
+      "name": "Møbee",
+      "shelf": "07-3",
+      "objectid": "410162"
+    },
+    {
+      "name": "Modern Art",
+      "shelf": "65-3",
+      "objectid": "118"
+    },
+    {
+      "name": "Mogel Motte",
+      "shelf": "06-4",
+      "objectid": "105593"
+    },
+    {
+      "name": "Mókuskaland",
+      "shelf": "21-4",
+      "objectid": "321832"
+    },
+    {
+      "name": "Mombasa",
+      "shelf": "82-2",
+      "objectid": "172386"
+    },
+    {
+      "name": "Monastery",
+      "shelf": "78-1",
+      "objectid": "33172"
+    },
+    {
+      "name": "Monopolis",
+      "shelf": "29-5",
+      "objectid": "371057"
+    },
+    {
+      "name": ",\",\",\",99361622,5.52017,7.41875,2,18933,46,thing,Monopolis,2,4,60,60,60,2022,\",\",\",\",\",\",\",\",\",standalone,\",Compaya.hu: Gamer Café Kft.,Hungarian,2022,Hungarian edition",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "Monopoly",
+      "shelf": "35-1",
+      "objectid": "1406"
+    },
+    {
+      "name": "Monopoly",
+      "shelf": "01-5",
+      "objectid": "1406"
+    },
+    {
+      "name": "Monopoly",
+      "shelf": "01-5",
+      "objectid": "1406"
+    },
+    {
+      "name": "Monopoly Deal Kártyajáték",
+      "shelf": "06-3",
+      "objectid": "40398"
+    },
+    {
+      "name": "Monopoly Junior",
+      "shelf": "24-2",
+      "objectid": "5339"
+    },
+    {
+      "name": "Monopoly Kompakt",
+      "shelf": "35-1",
+      "objectid": "36611"
+    },
+    {
+      "name": "Monopoly Milliomos",
+      "shelf": "35-1",
+      "objectid": "130240"
+    },
+    {
+      "name": "Monopoly: London Underground Edition",
+      "shelf": "01-1",
+      "objectid": "51336"
+    },
+    {
+      "name": "Monopoly: Magyarország",
+      "shelf": "35-1",
+      "objectid": "363937"
+    },
+    {
+      "name": "36-1,\",\",\",98175941,0,5.6,0,0,14,thing,Monopoly: Magyarország,2,6,0,0,0,2011,\",\",\",\",\",\",\",\",\",standalone,\",Hasbro,Hungarian,2011,Hungarian edition",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "Monopoly: Star Wars",
+      "shelf": "35-1",
+      "objectid": "183521"
+    },
+    {
+      "name": "Monopoly: Szélhámosok Kiadás",
+      "shelf": "35-1",
+      "objectid": "254617"
+    },
+    {
+      "name": "Monster HR",
+      "shelf": "25-4",
+      "objectid": "455346"
+    },
+    {
+      "name": "MONSTER PARK",
+      "shelf": "22-4",
+      "objectid": "270271"
+    },
+    {
+      "name": "Monster-Bande",
+      "shelf": "08-1",
+      "objectid": "261265"
+    },
+    {
+      "name": "Monstermania",
+      "shelf": "19-1",
+      "objectid": "67041"
+    },
+    {
+      "name": "Monumental",
+      "shelf": "76-5",
+      "objectid": "248125"
+    },
+    {
+      "name": "Moons",
+      "shelf": "03-2",
+      "objectid": "169743"
+    },
+    {
+      "name": "Moorea",
+      "shelf": "06-2",
+      "objectid": "247984"
+    },
+    {
+      "name": "Mosaic: A civilizáció története",
+      "shelf": "76-5",
+      "objectid": "329551"
+    },
+    {
+      "name": "Mosómaci Almája",
+      "shelf": "21-4",
+      "objectid": "363482"
+    },
+    {
+      "name": "Motívumok",
+      "shelf": "53-3",
+      "objectid": "379583"
+    },
+    {
+      "name": "Moving Day",
+      "shelf": "32-4",
+      "objectid": "400276"
+    },
+    {
+      "name": "MOW",
+      "shelf": "04-4",
+      "objectid": "38984"
+    },
+    {
+      "name": "Mozzaroller",
+      "shelf": "17-2",
+      "objectid": "331056"
+    },
+    {
+      "name": "Mr. Jack",
+      "shelf": "52-3",
+      "objectid": "21763"
+    },
+    {
+      "name": "Mr. Jack in New York",
+      "shelf": "52-3",
+      "objectid": "55427"
+    },
+    {
+      "name": "Mr. Jack Pocket",
+      "shelf": "52-3",
+      "objectid": "72287"
+    },
+    {
+      "name": "MS Batory",
+      "shelf": "14-1",
+      "objectid": "233094"
+    },
+    {
+      "name": "Mu Csacsi",
+      "shelf": "21-3",
+      "objectid": "21854"
+    },
+    {
+      "name": "Muffin Time",
+      "shelf": "04-5",
+      "objectid": "286735"
+    },
+    {
+      "name": "Műgyűjtők társasága",
+      "shelf": "28-4",
+      "objectid": "395375"
+    },
+    {
+      "name": "Múlt-Kor: A kocka el van vetve",
+      "shelf": "15-4",
+      "objectid": "291732"
+    },
+    {
+      "name": "Multiplayer Pentago",
+      "shelf": "18-5",
+      "objectid": "56690"
+    },
+    {
+      "name": "Mumusok",
+      "shelf": "14-2",
+      "objectid": "428269"
+    },
+    {
+      "name": "*,\",\",\",132941276,0,7.43333,1.75,0,17,thing,Mumusok,2,6,45,45,15,2025,2",
+      "shelf": "",
+      "objectid": "6,6,8,\",\",\",\",\",\",standalone,\",Piritus Games,Hungarian,2025,Hungarian edition"
+    },
+    {
+      "name": "Munchkin",
+      "shelf": "05-5",
+      "objectid": "1927"
+    },
+    {
+      "name": "Munchkin Cthulhu",
+      "shelf": "05-5",
+      "objectid": "25071"
+    },
+    {
+      "name": "Munchkin Rick and Morty",
+      "shelf": "01-5",
+      "objectid": "224134"
+    },
+    {
+      "name": "My City",
+      "shelf": "29-5",
+      "objectid": "295486"
+    },
+    {
+      "name": "Örök játék verzió",
+      "shelf": "",
+      "objectid": "legacy végigjátszva,\",\",\",96768543,7.25193,7.58857,1.9887,263,24657,thing,My City,2,4,30,30,30,2020,2"
+    },
+    {
+      "name": "My Forest",
+      "shelf": "23-4",
+      "objectid": "268184"
+    },
+    {
+      "name": "Mycelia",
+      "shelf": "78-5",
+      "objectid": "378476"
+    },
+    {
+      "name": "Myrmes",
+      "shelf": "79-4",
+      "objectid": "126792"
+    },
+    {
+      "name": "Mysterium",
+      "shelf": "12-3",
+      "objectid": "181304"
+    },
+    {
+      "name": "Mysterium Park",
+      "shelf": "12-3",
+      "objectid": "301767"
+    },
+    {
+      "name": "Mysterium: Promo Cards",
+      "shelf": "12-3",
+      "objectid": "186293"
+    },
+    {
+      "name": "Mysterium: Verborgene Zeichen",
+      "shelf": "12-3",
+      "objectid": "192661"
+    },
+    {
+      "name": "Na, Ki A Jani?",
+      "shelf": "08-2",
+      "objectid": "231674"
+    },
+    {
+      "name": "Nacho Pile",
+      "shelf": "14-5",
+      "objectid": "366327"
+    },
+    {
+      "name": "Naga Raja",
+      "shelf": "51-3",
+      "objectid": "244191"
+    },
+    {
+      "name": "A nagy western utazás: Második kiadás",
+      "shelf": "82-2",
+      "objectid": "341169"
+    },
+    {
+      "name": "A Nagyi régi kredence",
+      "shelf": "29-2",
+      "objectid": "283242"
+    },
+    {
+      "name": "Nagyon T-Rex!",
+      "shelf": "10-3",
+      "objectid": "289018"
+    },
+    {
+      "name": "Naishi",
+      "shelf": "56-2",
+      "objectid": "423648"
+    },
+    {
+      "name": "Nasty Neighbors",
+      "shelf": "06-4",
+      "objectid": "332399"
+    },
+    {
+      "name": "Naughty or Nice",
+      "shelf": "06-5",
+      "objectid": "400467"
+    },
+    {
+      "name": "Naughty or Nice",
+      "shelf": "02-3",
+      "objectid": "400467"
+    },
+    {
+      "name": "Navoria felfedezői",
+      "shelf": "66-5",
+      "objectid": "371932"
+    },
+    {
+      "name": "Nekojima",
+      "shelf": "19-2",
+      "objectid": "359029"
+    },
+    {
+      "name": "Nem mondod!",
+      "shelf": "09-5",
+      "objectid": "423533"
+    },
+    {
+      "name": "New York építészei",
+      "shelf": "50-3",
+      "objectid": "409693"
+    },
+    {
+      "name": "New York Zoo",
+      "shelf": "71-2",
+      "objectid": "300877"
+    },
+    {
+      "name": "Nézd csak! Mi változott?",
+      "shelf": "24-4",
+      "objectid": "162191"
+    },
+    {
+      "name": "Niagara",
+      "shelf": "59-3",
+      "objectid": "13308"
+    },
+    {
+      "name": "Nidavellir",
+      "shelf": "64-5",
+      "objectid": "293014"
+    },
+    {
+      "name": "Nomad",
+      "shelf": "71-5",
+      "objectid": "351208"
+    },
+    {
+      "name": "Northgard: Uncharted Lands",
+      "shelf": "76-1",
+      "objectid": "274124"
+    },
+    {
+      "name": "Notthingham Bírája: 2. kiadás",
+      "shelf": "13-1",
+      "objectid": "298638"
+    },
+    {
+      "name": "Nova Luna",
+      "shelf": "28-2",
+      "objectid": "284435"
+    },
+    {
+      "name": "Nucleum",
+      "shelf": "83-1",
+      "objectid": "396790"
+    },
+    {
+      "name": "Nutventure",
+      "shelf": "23-5",
+      "objectid": "422059"
+    },
+    {
+      "name": "Nyerőleves",
+      "shelf": "14-5",
+      "objectid": "265524"
+    },
+    {
+      "name": "Nyilván",
+      "shelf": "12-4",
+      "objectid": "338747"
+    },
+    {
+      "name": "Nyolc Perces Birodalom",
+      "shelf": "33-2",
+      "objectid": "131366"
+    },
+    {
+      "name": "Nyomok sűrűjében",
+      "shelf": "11-2",
+      "objectid": "331059"
+    },
+    {
+      "name": "A nyugalom tengere",
+      "shelf": "03-3",
+      "objectid": "288513"
+    },
+    {
+      "name": "A nyugati királyság építőmesterei",
+      "shelf": "80-2",
+      "objectid": "236457"
+    },
+    {
+      "name": "A Nyugati Királyság Lovagjai",
+      "shelf": "80-2",
+      "objectid": "266810"
+    },
+    {
+      "name": "A nyugati királyság várgrófjai",
+      "shelf": "80-2",
+      "objectid": "296151"
+    },
+    {
+      "name": "Nyúlmentő akció",
+      "shelf": "22-5",
+      "objectid": "13436"
+    },
+    {
+      "name": "Óceán",
+      "shelf": "78-4",
+      "objectid": "232414"
+    },
+    {
+      "name": "Oceanos",
+      "shelf": "30-1",
+      "objectid": "192860"
+    },
+    {
+      "name": "OffBeat: A ritmusjáték ami magával ragad",
+      "shelf": "10-1",
+      "objectid": "238529"
+    },
+    {
+      "name": "Offboard",
+      "shelf": "54-1",
+      "objectid": "89951"
+    },
+    {
+      "name": "Ohh...igen?",
+      "shelf": "08-4",
+      "objectid": "373855"
+    },
+    {
+      "name": "Ohne Moos Nix Los!",
+      "shelf": "I.",
+      "objectid": "1797"
+    },
+    {
+      "name": "OK Boomer!",
+      "shelf": "10-5",
+      "objectid": "313463"
+    },
+    {
+      "name": "Okiya",
+      "shelf": "56-2",
+      "objectid": "125311"
+    },
+    {
+      "name": ",\",\",\",53577966,6.00192,6.54923,1.2169,3116,4452,thing,Okiya,2,2,10,10,10,2012,2,2,6+,No necessary in-game text,\",\",\",\",\",standalone,\",Jactalea,English; French; German; Portuguese; Spanish,0,Multilingual first edition",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "Old & New",
+      "shelf": "25-2",
+      "objectid": "7688"
+    },
+    {
+      "name": "Old London Bridge",
+      "shelf": "32-3",
+      "objectid": "354273"
+    },
+    {
+      "name": "Oltakozz okosan!",
+      "shelf": "12-1",
+      "objectid": "365358"
+    },
+    {
+      "name": "Oltréé: Az őrszemek krónikái",
+      "shelf": "62-2",
+      "objectid": "293835"
+    },
+    {
+      "name": "One Night Revolution",
+      "shelf": "11-5",
+      "objectid": "176361"
+    },
+    {
+      "name": "Operáció",
+      "shelf": "23-1",
+      "objectid": "3737"
+    },
+    {
+      "name": "Operators",
+      "shelf": "13-2",
+      "objectid": "254025"
+    },
+    {
+      "name": "Origami",
+      "shelf": "04-2",
+      "objectid": "234469"
+    },
+    {
+      "name": "Origin",
+      "shelf": "71-5",
+      "objectid": "127095"
+    },
+    {
+      "name": "The Original Rummikub",
+      "shelf": "26-2",
+      "objectid": "811"
+    },
+    {
+      "name": "Ország-Város Betű-Téma",
+      "shelf": "15-3",
+      "objectid": "226256"
+    },
+    {
+      "name": "Őrült Lajos király két kastélya között",
+      "shelf": "65-5",
+      "objectid": "258036"
+    },
+    {
+      "name": "Ősidők öröksége",
+      "shelf": "75-6",
+      "objectid": "338093"
+    },
+    {
+      "name": "Ősköltészet",
+      "shelf": "10-3",
+      "objectid": "312786"
+    },
+    {
+      "name": "Osztályharc: Az 1917-es forradalmak",
+      "shelf": "56-4",
+      "objectid": "241987"
+    },
+    {
+      "name": "Osztálytalálkozó",
+      "shelf": "06-1",
+      "objectid": "215746"
+    },
+    {
+      "name": "Othello Classic",
+      "shelf": "54-1",
+      "objectid": "2389"
+    },
+    {
+      "name": "P.I.",
+      "shelf": "66-2",
+      "objectid": "129050"
+    },
+    {
+      "name": "Pachisi",
+      "shelf": "35-3",
+      "objectid": "2136"
+    },
+    {
+      "name": "Ki nevet a végén? Star Wars,\",\",\",96776211,4.71724,4.5332,1.1759,29876,10696,thing,Pachisi,2,6,30,30,30,400,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Packesel",
+      "shelf": "19-2",
+      "objectid": "15505"
+    },
+    {
+      "name": "*,\",\",\",53578074,5.44408,4.98496,1,29409,631,thing,The Last Straw,2,4,15,15,15,0,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Pagodák kertje",
+      "shelf": "64-3",
+      "objectid": "296043"
+    },
+    {
+      "name": "Pairish: The Building of Sonnie Village",
+      "shelf": "29-5",
+      "objectid": "424772"
+    },
+    {
+      "name": "The Palaces of Carrara",
+      "shelf": "73-4",
+      "objectid": "348070"
+    },
+    {
+      "name": "Paleo",
+      "shelf": "62-4",
+      "objectid": "300531"
+    },
+    {
+      "name": "Pandemic",
+      "shelf": "67-3",
+      "objectid": "30549"
+    },
+    {
+      "name": "Pandemic: Bevetésre készen",
+      "shelf": "67-3",
+      "objectid": "280789"
+    },
+    {
+      "name": "Pandemic: In the Lab",
+      "shelf": "67-3",
+      "objectid": "137136"
+    },
+    {
+      "name": "Pandemic: On the Brink",
+      "shelf": "67-3",
+      "objectid": "40849"
+    },
+    {
+      "name": "Pandemic: Reign of Cthulhu",
+      "shelf": "66-3",
+      "objectid": "192153"
+    },
+    {
+      "name": "Pandemic: Szükségállapot",
+      "shelf": "67-3",
+      "objectid": "168703"
+    },
+    {
+      "name": "Pandemic: The Cure",
+      "shelf": "66-3",
+      "objectid": "150658"
+    },
+    {
+      "name": "Panic Lab",
+      "shelf": "04-2",
+      "objectid": "121073"
+    },
+    {
+      "name": "Párizs",
+      "shelf": "74-4",
+      "objectid": "282954"
+    },
+    {
+      "name": "Párizs: A fények városa",
+      "shelf": "51-3",
+      "objectid": "276498"
+    },
+    {
+      "name": "Parlamentary",
+      "shelf": "13-1",
+      "objectid": "288665"
+    },
+    {
+      "name": "Páros Játszma",
+      "shelf": "08-2",
+      "objectid": "327804"
+    },
+    {
+      "name": "Partiszaurusz",
+      "shelf": "04-5",
+      "objectid": "427278"
+    },
+    {
+      "name": "Partvonal",
+      "shelf": "72-3",
+      "objectid": "409581"
+    },
+    {
+      "name": "Party Alias",
+      "shelf": "10-2",
+      "objectid": "43530"
+    },
+    {
+      "name": "Party Bugs",
+      "shelf": "06-3",
+      "objectid": "245700"
+    },
+    {
+      "name": "Patchwork",
+      "shelf": "53-4",
+      "objectid": "163412"
+    },
+    {
+      "name": "Patchwork Doodle",
+      "shelf": "18-4",
+      "objectid": "264239"
+    },
+    {
+      "name": "Patchwork Express",
+      "shelf": "53-4",
+      "objectid": "246639"
+    },
+    {
+      "name": "Patchwork: Folklore Anden",
+      "shelf": "53-4",
+      "objectid": "163412"
+    },
+    {
+      "name": "Patchwork: Téli kiadás",
+      "shelf": "53-4",
+      "objectid": "163412"
+    },
+    {
+      "name": "Patchwork: Valentine's Day Edition",
+      "shelf": "53-4",
+      "objectid": "163412"
+    },
+    {
+      "name": "A Patrióta",
+      "shelf": "15-4",
+      "objectid": "440165"
+    },
+    {
+      "name": "Pencil Nose!",
+      "shelf": "11-2",
+      "objectid": "268839"
+    },
+    {
+      "name": "Pentago",
+      "shelf": "54-1",
+      "objectid": "19841"
+    },
+    {
+      "name": "Perfect Alibi",
+      "shelf": "66-2",
+      "objectid": "184085"
+    },
+    {
+      "name": "Perfect Hotel",
+      "shelf": "28-5",
+      "objectid": "231032"
+    },
+    {
+      "name": "Pergamon",
+      "shelf": "65-3",
+      "objectid": "90040"
+    },
+    {
+      "name": "Pergola",
+      "shelf": "67-5",
+      "objectid": "424573"
+    },
+    {
+      "name": "Pergola: Lavender Promo Tiles",
+      "shelf": "67-5",
+      "objectid": "447120"
+    },
+    {
+      "name": "Perseverance: Castaway Chronicles – Chronicle Expansion",
+      "shelf": "84-5",
+      "objectid": "454444"
+    },
+    {
+      "name": "Perseverance: Castaway Chronicles – Episodes 1 & 2",
+      "shelf": "84-5",
+      "objectid": "256997"
+    },
+    {
+      "name": "Perseverance: Castaway Chronicles – Episodes 3 & 4",
+      "shelf": "84-5",
+      "objectid": "387849"
+    },
+    {
+      "name": "Perudo",
+      "shelf": "16-5",
+      "objectid": "45"
+    },
+    {
+      "name": "Pesti Srácok 1956",
+      "shelf": "74-3",
+      "objectid": "192802"
+    },
+    {
+      "name": "Petite Pastiche",
+      "shelf": "65-3",
+      "objectid": "91620"
+    },
+    {
+      "name": "Pharao Code",
+      "shelf": "34-1",
+      "objectid": "111999"
+    },
+    {
+      "name": "Phase 10",
+      "shelf": "05-3",
+      "objectid": "1258"
+    },
+    {
+      "name": "Photo Rummy",
+      "shelf": "II.",
+      "objectid": "94579"
+    },
+    {
+      "name": "Photosynthese",
+      "shelf": "70-3",
+      "objectid": "218603"
+    },
+    {
+      "name": "Piazza",
+      "shelf": "07-5",
+      "objectid": "397228"
+    },
+    {
+      "name": "Pictionary",
+      "shelf": "01-1",
+      "objectid": "2281"
+    },
+    {
+      "name": "Pictures: X-mas",
+      "shelf": "59-2",
+      "objectid": "368930"
+    },
+    {
+      "name": "Pictures: XL Fotos",
+      "shelf": "59-2",
+      "objectid": "335989"
+    },
+    {
+      "name": "Pillars of Heracles",
+      "shelf": "82-1",
+      "objectid": "391549"
+    },
+    {
+      "name": "Pillars of Heracles: Epic Expansion",
+      "shelf": "82-1",
+      "objectid": "438585"
+    },
+    {
+      "name": "Pillepopók",
+      "shelf": "06-4",
+      "objectid": "394430"
+    },
+    {
+      "name": "Pilvax",
+      "shelf": "25-2",
+      "objectid": "430962"
+    },
+    {
+      "name": "Piñata Party",
+      "shelf": "19-4",
+      "objectid": "175265"
+    },
+    {
+      "name": "Pingvin légitársaság",
+      "shelf": "12-2",
+      "objectid": "369388"
+    },
+    {
+      "name": "Pioneers",
+      "shelf": "72-1",
+      "objectid": "232520"
+    },
+    {
+      "name": "Pirate's Cove",
+      "shelf": "29-1",
+      "objectid": "2987"
+    },
+    {
+      "name": "Pirates",
+      "shelf": "29-1",
+      "objectid": "342807"
+    },
+    {
+      "name": "Piros történetek",
+      "shelf": "14-5",
+      "objectid": "277100"
+    },
+    {
+      "name": "Piszkos Fred, a kapitány",
+      "shelf": "66-1",
+      "objectid": "83278"
+    },
+    {
+      "name": "Pitypang és Lili: Segíts a kutyusoknak!",
+      "shelf": "20-5",
+      "objectid": "456161"
+    },
+    {
+      "name": "Pixelino",
+      "shelf": "25-3",
+      "objectid": "418015"
+    },
+    {
+      "name": "Planet: Egy éledő világ a tenyeredben",
+      "shelf": "31-1",
+      "objectid": "252929"
+    },
+    {
+      "name": "Plums for trash",
+      "shelf": "03-2",
+      "objectid": "377086"
+    },
+    {
+      "name": "Plüssmesék",
+      "shelf": "62-2",
+      "objectid": "233312"
+    },
+    {
+      "name": "Pocket Imperium",
+      "shelf": "31-1",
+      "objectid": "147299"
+    },
+    {
+      "name": "Pocket Tantrix",
+      "shelf": "19-1",
+      "objectid": "1038"
+    },
+    {
+      "name": "Poetry for Neanderthals",
+      "shelf": "01-1",
+      "objectid": "312786"
+    },
+    {
+      "name": "Poker",
+      "shelf": "05-1",
+      "objectid": "1115"
+    },
+    {
+      "name": "I. ,\",\",\",53784816,6.45816,6.71121,2.4305,1407,11604,thing,Poker,2,10,60,60,60,1810,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "Pókháló",
+      "shelf": "23-5",
+      "objectid": "177348"
+    },
+    {
+      "name": "Police 07",
+      "shelf": "35-2",
+      "objectid": "30879"
+    },
+    {
+      "name": "Police 07 Reloaded",
+      "shelf": "35-2",
+      "objectid": "30879"
+    },
+    {
+      "name": "*,\",\",\",63956447,5.52693,6.02993,1.875,17077,238,thing,Police 07,2,6,45,45,45,2015,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "Pompeji",
+      "shelf": "04-2",
+      "objectid": "2543"
+    },
+    {
+      "name": "Pont a közepébe",
+      "shelf": "15-3",
+      "objectid": "360056"
+    },
+    {
+      "name": "Pontsaláta",
+      "shelf": "03-4",
+      "objectid": "274960"
+    },
+    {
+      "name": "Port Royal",
+      "shelf": "05-4",
+      "objectid": "565"
+    },
+    {
+      "name": "Port Royal: Big Box",
+      "shelf": "05-4",
+      "objectid": "331265"
+    },
+    {
+      "name": "Portobello Market",
+      "shelf": "34-2",
+      "objectid": "27356"
+    },
+    {
+      "name": "Portolano",
+      "shelf": "72-3",
+      "objectid": "265527"
+    },
+    {
+      "name": "Pot de Vin",
+      "shelf": "27-4",
+      "objectid": "232078"
+    },
+    {
+      "name": "The Potion",
+      "shelf": "07-2",
+      "objectid": "250539"
+    },
+    {
+      "name": "Pöttyök",
+      "shelf": "17-3",
+      "objectid": "372559"
+    },
+    {
+      "name": "Pozitivity",
+      "shelf": "10-1",
+      "objectid": "414304"
+    },
+    {
+      "name": "Pozitivity Family",
+      "shelf": "10-1",
+      "objectid": "414320"
+    },
+    {
+      "name": "Praga Caput Regni",
+      "shelf": "83-2",
+      "objectid": "308765"
+    },
+    {
+      "name": ",\",\",\",89972816,7.37867,7.84712,3.7277,186,16196,thing,Praga Caput Regni,1,4,150,150,45,2021,1",
+      "shelf": "",
+      "objectid": "2"
+    },
+    {
+      "name": "PROFI-T-ABILITY",
+      "shelf": "70-1",
+      "objectid": "420791"
+    },
+    {
+      "name": "*,\",\",\",122199415,0,0,0,0,2,thing,PROFI-T-ABILITY,2,8,0,0,0,2020,\",\",\",\",\",\",\",\",\",standalone,\",Nagyvállalatok Logisztikai Vezetőinek Klubja,English; Hungarian,2020,Hungarian/English edion",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "Project L",
+      "shelf": "18-4",
+      "objectid": "260180"
+    },
+    {
+      "name": "Prosperity",
+      "shelf": "78-2",
+      "objectid": "145203"
+    },
+    {
+      "name": "PsychoPet: Die durchgedrehte Haustierklinik",
+      "shelf": "32-1",
+      "objectid": "59060"
+    },
+    {
+      "name": "Puerto Rico",
+      "shelf": "77-3",
+      "objectid": "108687"
+    },
+    {
+      "name": "Punto",
+      "shelf": "07-5",
+      "objectid": "259069"
+    },
+    {
+      "name": "Pura Vida",
+      "shelf": "32-5",
+      "objectid": "418690"
+    },
+    {
+      "name": "Quadropolis",
+      "shelf": "65-5",
+      "objectid": "176396"
+    },
+    {
+      "name": "Quartex",
+      "shelf": "18-2",
+      "objectid": "129295"
+    },
+    {
+      "name": "Quarto",
+      "shelf": "54-1",
+      "objectid": "681"
+    },
+    {
+      "name": "Queendomino",
+      "shelf": "71-1",
+      "objectid": "232043"
+    },
+    {
+      "name": "Quetzal: A szent madarak városa",
+      "shelf": "70-2",
+      "objectid": "300700"
+    },
+    {
+      "name": "Quixo",
+      "shelf": "18-2",
+      "objectid": "3190"
+    },
+    {
+      "name": "Quoridor",
+      "shelf": "18-2",
+      "objectid": "624"
+    },
+    {
+      "name": "Qwirkle",
+      "shelf": "57-3",
+      "objectid": "25669"
+    },
+    {
+      "name": "Qwixx",
+      "shelf": "16-1",
+      "objectid": "131260"
+    },
+    {
+      "name": "Rá: A Nílus völgyének krónikája",
+      "shelf": "65-1",
+      "objectid": "12"
+    },
+    {
+      "name": "Race for the Galaxy",
+      "shelf": "02-1",
+      "objectid": "28143"
+    },
+    {
+      "name": "Race for the Galaxy: Auf der Schwelle zum Krieg",
+      "shelf": "02-1",
+      "objectid": "66121"
+    },
+    {
+      "name": "Race for the Galaxy: Rebellen vs. Imperium",
+      "shelf": "02-1",
+      "objectid": "40210"
+    },
+    {
+      "name": "Rainbow",
+      "shelf": "56-2",
+      "objectid": "341510"
+    },
+    {
+      "name": "Rajas of the Ganges: The Dice Charmers",
+      "shelf": "16-5",
+      "objectid": "318553"
+    },
+    {
+      "name": "Rákfogó",
+      "shelf": "22-4",
+      "objectid": "49261"
+    },
+    {
+      "name": "Ramses II",
+      "shelf": "II.",
+      "objectid": "2629"
+    },
+    {
+      "name": "Rancho",
+      "shelf": "25-5",
+      "objectid": "130729"
+    },
+    {
+      "name": "Rattle, Battle, Grab the Loot",
+      "shelf": "63-2",
+      "objectid": "176606"
+    },
+    {
+      "name": "Reboot Food",
+      "shelf": "14-3",
+      "objectid": "449829"
+    },
+    {
+      "name": "01-1,\",\",\",137115444,0,9.5,0,0,5,thing,Reboot Food,1,10,60,60,45,2025,\",\",\",\",\",\",\",\",\",standalone,\",Rolling Rhino Games,Danish; Dutch; English; French; German; Hungarian; Italian; Romanian; Slovenian; Spanish,2025,Print and Play edition",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "Red Dragon",
+      "shelf": "05-2",
+      "objectid": "265105"
+    },
+    {
+      "name": "*,\",\",\",107737509,5.53423,6.83015,1,15430,107,thing,Red Dragon,3,6,30,0,30,2019,4",
+      "shelf": "",
+      "objectid": "5"
+    },
+    {
+      "name": "[redacted]",
+      "shelf": "77-1",
+      "objectid": "161578"
+    },
+    {
+      "name": "[redacted]: Garden Party",
+      "shelf": "77-1",
+      "objectid": "175865"
+    },
+    {
+      "name": "[redacted]: Mercenaries",
+      "shelf": "77-1",
+      "objectid": "162228"
+    },
+    {
+      "name": "[redacted]: Smoke Bomb",
+      "shelf": "77-1",
+      "objectid": "185310"
+    },
+    {
+      "name": "Reef",
+      "shelf": "30-1",
+      "objectid": "244228"
+    },
+    {
+      "name": "Rejtély a babaházban",
+      "shelf": "14-1",
+      "objectid": "256063"
+    },
+    {
+      "name": "Renature: Újjáéledő természet",
+      "shelf": "71-4",
+      "objectid": "300001"
+    },
+    {
+      "name": "Répáskert",
+      "shelf": "24-3",
+      "objectid": "264251"
+    },
+    {
+      "name": "Repello",
+      "shelf": "19-4",
+      "objectid": "88464"
+    },
+    {
+      "name": "*,\",\",\",84849842,5.57462,6.49222,2,10771,438,thing,Repello,2,4,30,30,30,2010,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Reptáv",
+      "shelf": "78-5",
+      "objectid": "410201"
+    },
+    {
+      "name": "Res Arcana",
+      "shelf": "74-5",
+      "objectid": "262712"
+    },
+    {
+      "name": "The Resistance: Avalon",
+      "shelf": "11-5",
+      "objectid": "128882"
+    },
+    {
+      "name": "A rettegés éjszakája: Vérfarkas",
+      "shelf": "12-5",
+      "objectid": "147949"
+    },
+    {
+      "name": "Rettegett Iván: Az első cár",
+      "shelf": "77-5",
+      "objectid": "409553"
+    },
+    {
+      "name": "Reworld",
+      "shelf": "69-2",
+      "objectid": "225163"
+    },
+    {
+      "name": "Rhino Hero",
+      "shelf": "19-3",
+      "objectid": "91514"
+    },
+    {
+      "name": "Rick & Morty: EmRickMások",
+      "shelf": "06-4",
+      "objectid": "194232"
+    },
+    {
+      "name": "Ricochet Robots",
+      "shelf": "68-1",
+      "objectid": "51"
+    },
+    {
+      "name": "Rings Up!",
+      "shelf": "19-2",
+      "objectid": "172035"
+    },
+    {
+      "name": "Risiko Narnia",
+      "shelf": "36-2",
+      "objectid": "22254"
+    },
+    {
+      "name": "Risk",
+      "shelf": "36-2",
+      "objectid": "181"
+    },
+    {
+      "name": "Risk: Game of Thrones",
+      "shelf": "77-1",
+      "objectid": "179719"
+    },
+    {
+      "name": "Die Ritter von der Haselnuss",
+      "shelf": "21-1",
+      "objectid": "1177"
+    },
+    {
+      "name": "Rival Kings",
+      "shelf": "03-2",
+      "objectid": "191879"
+    },
+    {
+      "name": "Rivals for Catan",
+      "shelf": "51-4",
+      "objectid": "66056"
+    },
+    {
+      "name": "Robbanó cicák",
+      "shelf": "04-5",
+      "objectid": "172225"
+    },
+    {
+      "name": "*,\",\",\",97174288,5.88447,6.06918,1.0812,3924,90071,thing,Exploding Kittens,2,5,15,15,15,2018,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "Robbanó cicák: Partipakk",
+      "shelf": "04-5",
+      "objectid": "256804"
+    },
+    {
+      "name": "Robinson Crusoe: Adventures on the Cursed Island",
+      "shelf": "84-4",
+      "objectid": "121921"
+    },
+    {
+      "name": "Robot Művek",
+      "shelf": "80-1",
+      "objectid": "366683"
+    },
+    {
+      "name": "Robotok",
+      "shelf": "24-4",
+      "objectid": "296514"
+    },
+    {
+      "name": "Rockwell",
+      "shelf": "80-1",
+      "objectid": "139562"
+    },
+    {
+      "name": "A rókák tudománya",
+      "shelf": "78-4",
+      "objectid": "368432"
+    },
+    {
+      "name": "Rókanyomon",
+      "shelf": "20-3",
+      "objectid": "172931"
+    },
+    {
+      "name": "? ,\",\",\",100220174,6.59729,7.13907,1.1,1088,11746,thing,Outfoxed!,2,4,20,20,20,2018,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Rókavadászat",
+      "shelf": "22-5",
+      "objectid": "228141"
+    },
+    {
+      "name": "Rokoko",
+      "shelf": "74-2",
+      "objectid": "144344"
+    },
+    {
+      "name": "Rolling Ranch",
+      "shelf": "27-4",
+      "objectid": "249673"
+    },
+    {
+      "name": "Roma",
+      "shelf": "55-1",
+      "objectid": "16496"
+    },
+    {
+      "name": "Róma dicsősége",
+      "shelf": "76-5",
+      "objectid": "349793"
+    },
+    {
+      "name": "Room 25",
+      "shelf": "14-3",
+      "objectid": "127024"
+    },
+    {
+      "name": "Root",
+      "shelf": "82-3",
+      "objectid": "237182"
+    },
+    {
+      "name": "Rory's Story Cubes: Doctor Who",
+      "shelf": "16-2",
+      "objectid": "192320"
+    },
+    {
+      "name": "Rosenkönig",
+      "shelf": "54-2",
+      "objectid": "201"
+    },
+    {
+      "name": "Roundforest",
+      "shelf": "29-2",
+      "objectid": "310076"
+    },
+    {
+      "name": "A rózsa varázsa",
+      "shelf": "67-2",
+      "objectid": "253759"
+    },
+    {
+      "name": "Rudolph",
+      "shelf": "07-4",
+      "objectid": "455166"
+    },
+    {
+      "name": "Rummikub",
+      "shelf": "60-4",
+      "objectid": "811"
+    },
+    {
+      "name": "*,\",\",\",67645284,6.32614,6.51359,1.7129,1759,47996,thing,Rummikub,2,4,60,60,60,1996,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Rummikub Betűs",
+      "shelf": "16-4",
+      "objectid": "4598"
+    },
+    {
+      "name": "Rummikub Twist",
+      "shelf": "26-2",
+      "objectid": "237792"
+    },
+    {
+      "name": "Rummy",
+      "shelf": "05-1",
+      "objectid": "15878"
+    },
+    {
+      "name": "Rummy 17",
+      "shelf": "05-3",
+      "objectid": "200407"
+    },
+    {
+      "name": "Rune Stones",
+      "shelf": "72-1",
+      "objectid": "285265"
+    },
+    {
+      "name": "Rush n' Crush",
+      "shelf": "67-1",
+      "objectid": "46782"
+    },
+    {
+      "name": "Saboteur: Change Order promo card",
+      "shelf": "06-3",
+      "objectid": "353383"
+    },
+    {
+      "name": "Sagaland",
+      "shelf": "60-4",
+      "objectid": "938"
+    },
+    {
+      "name": "Sagrada",
+      "shelf": "17-3",
+      "objectid": "199561"
+    },
+    {
+      "name": "Sail to India",
+      "shelf": "03-2",
+      "objectid": "141736"
+    },
+    {
+      "name": "Sajtbirodalom",
+      "shelf": "60-1",
+      "objectid": "8195"
+    },
+    {
+      "name": "Sajtra szállás",
+      "shelf": "69-4",
+      "objectid": "347703"
+    },
+    {
+      "name": "Sakk",
+      "shelf": "52-1",
+      "objectid": "171"
+    },
+    {
+      "name": "Sakura",
+      "shelf": "05-2",
+      "objectid": "229543"
+    },
+    {
+      "name": "Sakura Dice",
+      "shelf": "16-5",
+      "objectid": "401347"
+    },
+    {
+      "name": "Saltlands",
+      "shelf": "80-4",
+      "objectid": "189222"
+    },
+    {
+      "name": "Samhain",
+      "shelf": "80-5",
+      "objectid": "178397"
+    },
+    {
+      "name": "San Francisco Cable Car",
+      "shelf": "33-3",
+      "objectid": "58602"
+    },
+    {
+      "name": "San Marco",
+      "shelf": "II.",
+      "objectid": "1041"
+    },
+    {
+      "name": "Sankt Petersburg",
+      "shelf": "66-4",
+      "objectid": "9217"
+    },
+    {
+      "name": "Santiago de Cuba",
+      "shelf": "72-3",
+      "objectid": "104347"
+    },
+    {
+      "name": "*,\",\",\",53578984,6.41181,6.87963,2.1475,1535,5031,thing,Santiago de Cuba,2,4,75,75,40,2013,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Santorini",
+      "shelf": "19-5",
+      "objectid": "194655"
+    },
+    {
+      "name": "Sapiens",
+      "shelf": "73-5",
+      "objectid": "169649"
+    },
+    {
+      "name": "Saqqara",
+      "shelf": "07-4",
+      "objectid": "385563"
+    },
+    {
+      "name": "Särge schubsen",
+      "shelf": "06-4",
+      "objectid": "171475"
+    },
+    {
+      "name": "Sárkány Palota",
+      "shelf": "19-5",
+      "objectid": "232219"
+    },
+    {
+      "name": "Sárkány Parádé",
+      "shelf": "28-3",
+      "objectid": "26472"
+    },
+    {
+      "name": ",\",\",\",53764399,5.58779,5.8763,1.2192,9917,1025,thing,Dragon Parade,2,5,30,30,30,2007,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "Sárkányok",
+      "shelf": "28-3",
+      "objectid": "348096"
+    },
+    {
+      "name": "Sárkányok Völgye",
+      "shelf": "71-1",
+      "objectid": "385529"
+    },
+    {
+      "name": "Sárkánytojás",
+      "shelf": "26-1",
+      "objectid": "148215"
+    },
+    {
+      "name": "Sarkvidék",
+      "shelf": "33-5",
+      "objectid": "420214"
+    },
+    {
+      "name": "Savannah Park",
+      "shelf": "30-3",
+      "objectid": "339484"
+    },
+    {
+      "name": "Schotten Totten",
+      "shelf": "56-3",
+      "objectid": "372"
+    },
+    {
+      "name": "Schrödinger macskája",
+      "shelf": "05-3",
+      "objectid": "345972"
+    },
+    {
+      "name": "Der Schwarm",
+      "shelf": "69-1",
+      "objectid": "38735"
+    },
+    {
+      "name": "Scotland Yard",
+      "shelf": "60-4",
+      "objectid": "438"
+    },
+    {
+      "name": "SCOUT",
+      "shelf": "07-2",
+      "objectid": "291453"
+    },
+    {
+      "name": "Scrabble",
+      "shelf": "16-4",
+      "objectid": "320"
+    },
+    {
+      "name": "Scrabble Kártyajáték",
+      "shelf": "06-3",
+      "objectid": "6994"
+    },
+    {
+      "name": "Scrap Racer",
+      "shelf": "12-2",
+      "objectid": "331126"
+    },
+    {
+      "name": "Scythe",
+      "shelf": "80-4",
+      "objectid": "169786"
+    },
+    {
+      "name": "Sea of Clouds",
+      "shelf": "02-5",
+      "objectid": "189052"
+    },
+    {
+      "name": "Sebastian Fitzek Safehouse: Das Würfelspiel",
+      "shelf": "16-5",
+      "objectid": "302212"
+    },
+    {
+      "name": "Secret Hitler",
+      "shelf": "11-6",
+      "objectid": "188834"
+    },
+    {
+      "name": "Senjutsu: Japán hadurainak vérrel írott legendája",
+      "shelf": "76-4",
+      "objectid": "343900"
+    },
+    {
+      "name": "Septima",
+      "shelf": "81-3",
+      "objectid": "360692"
+    },
+    {
+      "name": "Sequence",
+      "shelf": "02-1",
+      "objectid": "2375"
+    },
+    {
+      "name": "Sequence Dice",
+      "shelf": "17-1",
+      "objectid": "5966"
+    },
+    {
+      "name": "SET",
+      "shelf": "07-5",
+      "objectid": "1198"
+    },
+    {
+      "name": "SETI: Kutatás a földön kívüli élet után",
+      "shelf": "82-4",
+      "objectid": "418059"
+    },
+    {
+      "name": "The Settlers of Catan: Travel Edition",
+      "shelf": "31-5",
+      "objectid": "3972"
+    },
+    {
+      "name": "Shardhunters",
+      "shelf": "04-2",
+      "objectid": "252163"
+    },
+    {
+      "name": "Sheriff of Nottingham",
+      "shelf": "13-1",
+      "objectid": "157969"
+    },
+    {
+      "name": "Sherlock",
+      "shelf": "14-1",
+      "objectid": "149869"
+    },
+    {
+      "name": "Sherlock Holmes Criminal-Cabinet",
+      "shelf": "59-4",
+      "objectid": "2511"
+    },
+    {
+      "name": "Sherlock: A halál ünnepi szele",
+      "shelf": "14-4",
+      "objectid": "250779"
+    },
+    {
+      "name": "*,\",\",\",109940648,5.75782,6.37625,1.6111,5246,2037,thing,Sherlock: Death on the 4th of July,1,8,60,60,40,2020,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Sherlock: A régész sírboltja",
+      "shelf": "14-4",
+      "objectid": "247436"
+    },
+    {
+      "name": "Sherlock: Az utolsó figyelmeztetés",
+      "shelf": "14-4",
+      "objectid": "250780"
+    },
+    {
+      "name": "Shipyard",
+      "shelf": "77-2",
+      "objectid": "55600"
+    },
+    {
+      "name": "Shit Happens",
+      "shelf": "08-3",
+      "objectid": "196379"
+    },
+    {
+      "name": "*III,\",\",\",95420521,5.37919,5.29668,1.0556,29710,4819,thing,Shit Happens,2,8,60,60,20,2016,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "Shit Happens",
+      "shelf": "02-4",
+      "objectid": "196379"
+    },
+    {
+      "name": "Shrimp",
+      "shelf": "22-1",
+      "objectid": "117992"
+    },
+    {
+      "name": "Sid Meier's Civilization: A Társasjáték",
+      "shelf": "84-2",
+      "objectid": "77130"
+    },
+    {
+      "name": ",\",\",\",95396308,7.06791,7.37064,3.8995,419,22420,thing,Sid Meier's Civilization: The Board Game,2,4,240,240,120,2011,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Side Effects",
+      "shelf": "08-3",
+      "objectid": "230765"
+    },
+    {
+      "name": "Silent Planet",
+      "shelf": "07-4",
+      "objectid": "325841"
+    },
+    {
+      "name": "Silly Seance",
+      "shelf": "12-3",
+      "objectid": "427382"
+    },
+    {
+      "name": "Similo: Állatok",
+      "shelf": "07-3",
+      "objectid": "268620"
+    },
+    {
+      "name": "Similo: Board Games '24",
+      "shelf": "07-3",
+      "objectid": "268620"
+    },
+    {
+      "name": "*,\",\",\",125374916,6.47577,6.80739,1.0526,1361,23121,thing,Similo,2,8,15,15,10,2024,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Similo: Harry Potter",
+      "shelf": "07-3",
+      "objectid": "268620"
+    },
+    {
+      "name": "Similo: Jurassic World",
+      "shelf": "07-3",
+      "objectid": "268620"
+    },
+    {
+      "name": "Similo: Mesék",
+      "shelf": "07-3",
+      "objectid": "268620"
+    },
+    {
+      "name": "Similo: Mítosz",
+      "shelf": "07-3",
+      "objectid": "268620"
+    },
+    {
+      "name": "Similo: Rémségek",
+      "shelf": "07-3",
+      "objectid": "268620"
+    },
+    {
+      "name": "Similo: The Lord of the Rings",
+      "shelf": "07-3",
+      "objectid": "268620"
+    },
+    {
+      "name": "Similo: Történelem",
+      "shelf": "07-3",
+      "objectid": "268620"
+    },
+    {
+      "name": "Similo: Vadállatok",
+      "shelf": "07-3",
+      "objectid": "268620"
+    },
+    {
+      "name": "Sínen vagyunk",
+      "shelf": "07-4",
+      "objectid": "180602"
+    },
+    {
+      "name": "Skicc",
+      "shelf": "11-3",
+      "objectid": "252526"
+    },
+    {
+      "name": "Skull",
+      "shelf": "14-5",
+      "objectid": "92415"
+    },
+    {
+      "name": "Skull",
+      "shelf": "*",
+      "objectid": "92415"
+    },
+    {
+      "name": "Skull: Koponyák játéka",
+      "shelf": "14-5",
+      "objectid": "92415"
+    },
+    {
+      "name": "Skylands",
+      "shelf": "31-3",
+      "objectid": "254976"
+    },
+    {
+      "name": "Skyline 3000",
+      "shelf": "69-1",
+      "objectid": "54643"
+    },
+    {
+      "name": "Small World",
+      "shelf": "63-4",
+      "objectid": "40692"
+    },
+    {
+      "name": "Small World of Warcraft",
+      "shelf": "63-4",
+      "objectid": "309630"
+    },
+    {
+      "name": "Smart10: Family",
+      "shelf": "15-4",
+      "objectid": "340722"
+    },
+    {
+      "name": "So Clover!",
+      "shelf": "01-4",
+      "objectid": "329839"
+    },
+    {
+      "name": "Sobek",
+      "shelf": "25-1",
+      "objectid": "67185"
+    },
+    {
+      "name": "Sole Mio!",
+      "shelf": "04-2",
+      "objectid": "13530"
+    },
+    {
+      "name": "Solo",
+      "shelf": "06-3",
+      "objectid": "3347"
+    },
+    {
+      "name": "*,\",\",\",72493085,5.38911,5.29907,1.04,29683,2136,thing,Solo,2,10,30,30,30,1993,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "Sör és kenyér",
+      "shelf": "50-3",
+      "objectid": "369880"
+    },
+    {
+      "name": "*,\",\",\",107141468,6.81683,7.32528,2.3568,722,13528,thing,Beer & Bread,2,2,45,45,30,2023,2,2,10+,Moderate in-game text - needs crib sheet or paste ups,\",\",\",\",\",standalone,\",Vagabund,Hungarian,2023,Hungarian edition",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "Sorban állás",
+      "shelf": "27-3",
+      "objectid": "85325"
+    },
+    {
+      "name": "Space Cadets: Away Missions",
+      "shelf": "69-1",
+      "objectid": "124827"
+    },
+    {
+      "name": "Space Dealer",
+      "shelf": "68-1",
+      "objectid": "23451"
+    },
+    {
+      "name": "Space Mission",
+      "shelf": "31-1",
+      "objectid": "105199"
+    },
+    {
+      "name": "Space Taxi",
+      "shelf": "17-2",
+      "objectid": "316973"
+    },
+    {
+      "name": "Space Walk",
+      "shelf": "II.",
+      "objectid": "765"
+    },
+    {
+      "name": "Spaghetti",
+      "shelf": "19-2",
+      "objectid": "206802"
+    },
+    {
+      "name": "Sparta",
+      "shelf": "55-1",
+      "objectid": "109105"
+    },
+    {
+      "name": "Speedy Roll",
+      "shelf": "58-1",
+      "objectid": "259830"
+    },
+    {
+      "name": "Spicy",
+      "shelf": "07-4",
+      "objectid": "299169"
+    },
+    {
+      "name": "*,\",\",\",68820455,6.7178,7.15682,1.3096,868,14870,thing,Spicy,2,6,20,20,15,2020,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "Das Spiel mit der Krake",
+      "shelf": "21-1",
+      "objectid": "111767"
+    },
+    {
+      "name": "Spiral Billard",
+      "shelf": "19-3",
+      "objectid": "86833"
+    },
+    {
+      "name": "Splendor",
+      "shelf": "26-3",
+      "objectid": "148228"
+    },
+    {
+      "name": "Splendor Párbaj",
+      "shelf": "55-4",
+      "objectid": "364073"
+    },
+    {
+      "name": "Splendor: Marvel",
+      "shelf": "26-3",
+      "objectid": "293296"
+    },
+    {
+      "name": "Spot it! The Lord of the Rings",
+      "shelf": "07-3",
+      "objectid": "451322"
+    },
+    {
+      "name": "Stackers",
+      "shelf": "18-1",
+      "objectid": "264172"
+    },
+    {
+      "name": "Stapelei",
+      "shelf": "*",
+      "objectid": "9343"
+    },
+    {
+      "name": "Star Wars Happy Families: The Clone Wars",
+      "shelf": "04-2",
+      "objectid": "21389"
+    },
+    {
+      "name": "Star Wars: A Hoth ostroma",
+      "shelf": "31-2",
+      "objectid": "444481"
+    },
+    {
+      "name": "Star Wars: A klónok háborúja",
+      "shelf": "66-3",
+      "objectid": "370913"
+    },
+    {
+      "name": "Star Wars: Bounty Hunters",
+      "shelf": "05-3",
+      "objectid": "410655"
+    },
+    {
+      "name": "*,\",\",\",120551849,5.75426,6.59038,1.3333,5296,1982,thing,Star Wars: Bounty Hunters,2,6,20,20,20,2024,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Star Wars: Rebellion",
+      "shelf": "84-1",
+      "objectid": "187645"
+    },
+    {
+      "name": "Stella: Dixit univerzum",
+      "shelf": "13-4",
+      "objectid": "329845"
+    },
+    {
+      "name": "Stone Age Junior",
+      "shelf": "58-1",
+      "objectid": "191004"
+    },
+    {
+      "name": "Stone Age: Jubileum",
+      "shelf": "72-5",
+      "objectid": "260678"
+    },
+    {
+      "name": "Stone Age: Találd meg az utad",
+      "shelf": "72-5",
+      "objectid": "34635"
+    },
+    {
+      "name": "Strandbüfé",
+      "shelf": "05-4",
+      "objectid": "445351"
+    },
+    {
+      "name": "Stranger Things: Attack of the Mind Flayer",
+      "shelf": "11-5",
+      "objectid": "361457"
+    },
+    {
+      "name": "Stranger Things: Hellyel lefelé",
+      "shelf": "65-2",
+      "objectid": "374502"
+    },
+    {
+      "name": "Stratego Original",
+      "shelf": "56-1",
+      "objectid": "1917"
+    },
+    {
+      "name": "Street",
+      "shelf": "20-1",
+      "objectid": "58876"
+    },
+    {
+      "name": "Street Illegal",
+      "shelf": "27-2",
+      "objectid": "3921"
+    },
+    {
+      "name": "Strozzi",
+      "shelf": "63-2",
+      "objectid": "35572"
+    },
+    {
+      "name": "Stuffed Fables: Lost Story #1",
+      "shelf": "62-2",
+      "objectid": "327852"
+    },
+    {
+      "name": "Stupid Deaths",
+      "shelf": "08-4",
+      "objectid": "258855"
+    },
+    {
+      "name": "Stupor!",
+      "shelf": "09-1",
+      "objectid": "369519"
+    },
+    {
+      "name": "Subtext",
+      "shelf": "11-3",
+      "objectid": "265684"
+    },
+    {
+      "name": "Sultan",
+      "shelf": "33-1",
+      "objectid": "31612"
+    },
+    {
+      "name": "Sultaniya",
+      "shelf": "33-1",
+      "objectid": "145012"
+    },
+    {
+      "name": "Summoner Wars (Második kiadás)",
+      "shelf": "55-3",
+      "objectid": "332800"
+    },
+    {
+      "name": "Süniálom",
+      "shelf": "21-4",
+      "objectid": "321954"
+    },
+    {
+      "name": "Super Farmer: The Card Game",
+      "shelf": "03-4",
+      "objectid": "286147"
+    },
+    {
+      "name": "Super Stylist",
+      "shelf": "06-1",
+      "objectid": "406669"
+    },
+    {
+      "name": "Survivor",
+      "shelf": "14-3",
+      "objectid": "3623"
+    },
+    {
+      "name": "Sushi Dice",
+      "shelf": "16-2",
+      "objectid": "142334"
+    },
+    {
+      "name": "Sushi Go Party!",
+      "shelf": "05-5",
+      "objectid": "192291"
+    },
+    {
+      "name": "Sushi Go Party!",
+      "shelf": "02-4",
+      "objectid": "192291"
+    },
+    {
+      "name": "Sushi Go!",
+      "shelf": "07-2",
+      "objectid": "133473"
+    },
+    {
+      "name": "*,\",\",\",61240256,6.87285,6.98512,1.1638,645,95816,thing,Sushi Go!,2,5,15,15,15,2017,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "Sushi Roll",
+      "shelf": "16-2",
+      "objectid": "271869"
+    },
+    {
+      "name": "Sütisuli",
+      "shelf": "18-3",
+      "objectid": "300085"
+    },
+    {
+      "name": "Sutter's Mill: California Gold Rush of 1849",
+      "shelf": "64-1",
+      "objectid": "37739"
+    },
+    {
+      "name": "A suttogó rengeteg",
+      "shelf": "64-3",
+      "objectid": "411402"
+    },
+    {
+      "name": "Sweet & Spicy",
+      "shelf": "07-4",
+      "objectid": "355737"
+    },
+    {
+      "name": "Swordcrafters",
+      "shelf": "26-3",
+      "objectid": "243994"
+    },
+    {
+      "name": "Sylla",
+      "shelf": "78-1",
+      "objectid": "35761"
+    },
+    {
+      "name": "Szabadulj kvíz",
+      "shelf": "15-1",
+      "objectid": "328218"
+    },
+    {
+      "name": "Szabadulópakli: Időpróba",
+      "shelf": "14-4",
+      "objectid": "218311"
+    },
+    {
+      "name": "Szabadulópakli: London végórái",
+      "shelf": "14-4",
+      "objectid": "230498"
+    },
+    {
+      "name": "Székely Gazdálkodó",
+      "shelf": "36-1",
+      "objectid": "261322"
+    },
+    {
+      "name": "Szellemek Szigete",
+      "shelf": "84-4",
+      "objectid": "162886"
+    },
+    {
+      "name": "Szellemtinta: Üzenetek a túlvilágról",
+      "shelf": "13-3",
+      "objectid": "330592"
+    },
+    {
+      "name": "Szénre fel",
+      "shelf": "64-2",
+      "objectid": "143515"
+    },
+    {
+      "name": "Egy szép új világ",
+      "shelf": "65-5",
+      "objectid": "271324"
+    },
+    {
+      "name": "Szerelmes Levél",
+      "shelf": "12-5",
+      "objectid": "277085"
+    },
+    {
+      "name": "*IV,\",\",\",135697428,7.17375,7.50559,1.1149,322,29530,thing,Love Letter,2,6,20,20,20,2020,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "Szerencsekerék",
+      "shelf": "16-3",
+      "objectid": "4910"
+    },
+    {
+      "name": "Szerencsével ügyesen!",
+      "shelf": "I.",
+      "objectid": "263304"
+    },
+    {
+      "name": ",\",\",\",55157038,0,3,0,0,2,thing,Szerencsével ügyesen!,2,4,40,40,20,1980,\",\",\",\",\",\",\",\",\",standalone,\",Triál,Hungarian,1980,Hungarian edition",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "Szeszélyes vizeken",
+      "shelf": "03-3",
+      "objectid": "379295"
+    },
+    {
+      "name": "Szilaj: A titkos küldetés",
+      "shelf": "24-4",
+      "objectid": "356421"
+    },
+    {
+      "name": "Szilaj: A titkos küldetés – Butch LePray",
+      "shelf": "24-4",
+      "objectid": "366374"
+    },
+    {
+      "name": "Szilaj: Kalandok Miraderoban",
+      "shelf": "25-2",
+      "objectid": "356417"
+    },
+    {
+      "name": "Színtahal",
+      "shelf": "24-4",
+      "objectid": "359172"
+    },
+    {
+      "name": "Szivárvány történetek",
+      "shelf": "14-5",
+      "objectid": "277083"
+    },
+    {
+      "name": "Szkítia fosztogatói",
+      "shelf": "80-2",
+      "objectid": "301880"
+    },
+    {
+      "name": "Szókapocs",
+      "shelf": "11-4",
+      "objectid": "300753"
+    },
+    {
+      "name": "Szókötő",
+      "shelf": "11-4",
+      "objectid": "329839"
+    },
+    {
+      "name": "Szörnyparádé",
+      "shelf": "62-1",
+      "objectid": "231484"
+    },
+    {
+      "name": "Szörnyszekrény",
+      "shelf": "22-4",
+      "objectid": "43578"
+    },
+    {
+      "name": "A Szörnysziget királya",
+      "shelf": "08-1",
+      "objectid": "350755"
+    },
+    {
+      "name": "Szörnyűző",
+      "shelf": "05-4",
+      "objectid": "456186"
+    },
+    {
+      "name": "Sztorikocka",
+      "shelf": "16-2",
+      "objectid": "20545"
+    },
+    {
+      "name": "Szunnyadó istenek",
+      "shelf": "76-3",
+      "objectid": "255984"
+    },
+    {
+      "name": "Szuper Farmer Extra",
+      "shelf": "25-5",
+      "objectid": "17557"
+    },
+    {
+      "name": "Szupercsapat!",
+      "shelf": "61-4",
+      "objectid": "359970"
+    },
+    {
+      "name": "Szupercsapat! Strandkupa",
+      "shelf": "61-3",
+      "objectid": "390340"
+    },
+    {
+      "name": "Szurdokerdő kalandorai",
+      "shelf": "64-5",
+      "objectid": "346205"
+    },
+    {
+      "name": "Szüret",
+      "shelf": "25-4",
+      "objectid": "205045"
+    },
+    {
+      "name": "Tábortűz",
+      "shelf": "07-3",
+      "objectid": "295192"
+    },
+    {
+      "name": "Tabriz",
+      "shelf": "26-3",
+      "objectid": "349369"
+    },
+    {
+      "name": "Tabu",
+      "shelf": "36-3",
+      "objectid": "1111"
+    },
+    {
+      "name": "Takenoko",
+      "shelf": "31-4",
+      "objectid": "70919"
+    },
+    {
+      "name": "Taki",
+      "shelf": "04-2",
+      "objectid": "13115"
+    },
+    {
+      "name": "Tal der Abenteuer: Die Schatzsuche im Himalaja",
+      "shelf": "*",
+      "objectid": "25142"
+    },
+    {
+      "name": "Tales of Glory",
+      "shelf": "02-2",
+      "objectid": "246816"
+    },
+    {
+      "name": "Táltosból szalonna",
+      "shelf": "04-5",
+      "objectid": "204602"
+    },
+    {
+      "name": "A Táncegyüttes",
+      "shelf": "06-4",
+      "objectid": "458281"
+    },
+    {
+      "name": "Targui",
+      "shelf": "I.",
+      "objectid": "202"
+    },
+    {
+      "name": "Társasház",
+      "shelf": "14-1",
+      "objectid": "320099"
+    },
+    {
+      "name": "Tatsu",
+      "shelf": "51-2",
+      "objectid": "181811"
+    },
+    {
+      "name": "Tavernák Tiefenthalban",
+      "shelf": "78-2",
+      "objectid": "269207"
+    },
+    {
+      "name": "Tea 2 főre",
+      "shelf": "55-4",
+      "objectid": "294448"
+    },
+    {
+      "name": "Tea Time Crime",
+      "shelf": "32-4",
+      "objectid": "382304"
+    },
+    {
+      "name": "A tea titka",
+      "shelf": "77-3",
+      "objectid": "422042"
+    },
+    {
+      "name": "Télirevaló",
+      "shelf": "04-4",
+      "objectid": "281417"
+    },
+    {
+      "name": "Terra Mystica: Big Box",
+      "shelf": "82-3",
+      "objectid": "181289"
+    },
+    {
+      "name": "Terra Mystica: Találmányok kora",
+      "shelf": "82-3",
+      "objectid": "383179"
+    },
+    {
+      "name": "Terra Nova",
+      "shelf": "63-2",
+      "objectid": "20022"
+    },
+    {
+      "name": "Tesla vs. Edison: War of Currents",
+      "shelf": "80-1",
+      "objectid": "132544"
+    },
+    {
+      "name": "Texas Holder",
+      "shelf": "05-1",
+      "objectid": "1115"
+    },
+    {
+      "name": "Tezamen",
+      "shelf": "56-1",
+      "objectid": "321953"
+    },
+    {
+      "name": "That's Not a Hat",
+      "shelf": "06-4",
+      "objectid": "375651"
+    },
+    {
+      "name": "Through the Ages: A New Story of Civilization",
+      "shelf": "84-2",
+      "objectid": "182028"
+    },
+    {
+      "name": "Thunder Road: Vendetta",
+      "shelf": "27-1",
+      "objectid": "342070"
+    },
+    {
+      "name": "Thunder Road: Vendetta – Még több skuló",
+      "shelf": "27-1",
+      "objectid": "355996"
+    },
+    {
+      "name": "Thunder Road: Vendetta – Sufnituning",
+      "shelf": "27-1",
+      "objectid": "347976"
+    },
+    {
+      "name": "Thurn und Taxis",
+      "shelf": "58-3",
+      "objectid": "21790"
+    },
+    {
+      "name": "Tibet",
+      "shelf": "34-1",
+      "objectid": "25142"
+    },
+    {
+      "name": "Tick Tack Bumm: Vibrations",
+      "shelf": "08-2",
+      "objectid": "331541"
+    },
+    {
+      "name": "Tick... Tack... Bumm: Láncreakció",
+      "shelf": "10-2",
+      "objectid": "295124"
+    },
+    {
+      "name": "Tick... Tack... Bumm: Party Edition",
+      "shelf": "10-2",
+      "objectid": "63052"
+    },
+    {
+      "name": "Tick... Tack... Bumm! Junior",
+      "shelf": "23-2",
+      "objectid": "15383"
+    },
+    {
+      "name": "Ticket to Ride",
+      "shelf": "59-3",
+      "objectid": "9209"
+    },
+    {
+      "name": "Ticket to Ride Map Collection 1: Asia + Legendary Asia",
+      "shelf": "34-4",
+      "objectid": "106637"
+    },
+    {
+      "name": "Ticket to Ride Map Collection 4: Nederland",
+      "shelf": "34-4",
+      "objectid": "147938"
+    },
+    {
+      "name": "Ticket to Ride Map Collection 6½: Poland",
+      "shelf": "34-4",
+      "objectid": "283595"
+    },
+    {
+      "name": "Ticket to Ride Map Collection 7: Japan & Italy",
+      "shelf": "33-4",
+      "objectid": "288679"
+    },
+    {
+      "name": "Ticket to Ride: Alvin & Dexter",
+      "shelf": "34-5",
+      "objectid": "89848"
+    },
+    {
+      "name": "Ticket to Ride: Europe",
+      "shelf": "33-4",
+      "objectid": "14996"
+    },
+    {
+      "name": "Ticket to Ride: Europe – 15th Anniversary",
+      "shelf": "34-5",
+      "objectid": "329841"
+    },
+    {
+      "name": "Ticket to Ride: Märklin",
+      "shelf": "34-4",
+      "objectid": "21348"
+    },
+    {
+      "name": "Ticket to Ride: New York",
+      "shelf": "34-4",
+      "objectid": "253284"
+    },
+    {
+      "name": "Ticket to Ride: Nordic Countries",
+      "shelf": "34-4",
+      "objectid": "31627"
+    },
+    {
+      "name": "Tides of Madness",
+      "shelf": "54-3",
+      "objectid": "195544"
+    },
+    {
+      "name": "Tides of Time",
+      "shelf": "54-3",
+      "objectid": "176229"
+    },
+    {
+      "name": "Tikal",
+      "shelf": "60-3",
+      "objectid": "54"
+    },
+    {
+      "name": "Tilting at Windmills",
+      "shelf": "56-3",
+      "objectid": "231331"
+    },
+    {
+      "name": "A Tiltott Fellegek",
+      "shelf": "68-3",
+      "objectid": "245271"
+    },
+    {
+      "name": "A Tiltott Sivatag",
+      "shelf": "68-3",
+      "objectid": "136063"
+    },
+    {
+      "name": "A Tiltott Sziget",
+      "shelf": "68-3",
+      "objectid": "65244"
+    },
+    {
+      "name": "*IV,\",\",\",55033279,6.64148,6.7507,1.7401,1011,99521,thing,Forbidden Island,2,4,30,30,30,2017,1",
+      "shelf": "",
+      "objectid": "2"
+    },
+    {
+      "name": "Time's Up! Party",
+      "shelf": "10-3",
+      "objectid": "38713"
+    },
+    {
+      "name": "*,\",\",\",100896905,6.39153,7.55859,1.0784,1591,4097,thing,Time's Up! Edición Amarilla,4,12,30,30,30,2021,4",
+      "shelf": "",
+      "objectid": "5"
+    },
+    {
+      "name": "Time's Up! Party",
+      "shelf": "02-4",
+      "objectid": "38713"
+    },
+    {
+      "name": "Time's Up!: Harry Potter",
+      "shelf": "10-3",
+      "objectid": "347304"
+    },
+    {
+      "name": "Timeline: Általános ismeretek",
+      "shelf": "07-1",
+      "objectid": "131325"
+    },
+    {
+      "name": "Timeline: Star Wars",
+      "shelf": "07-1",
+      "objectid": "183797"
+    },
+    {
+      "name": "Timeline: Találmányok",
+      "shelf": "07-1",
+      "objectid": "85256"
+    },
+    {
+      "name": "Timeline: Történelmi események",
+      "shelf": "07-1",
+      "objectid": "113401"
+    },
+    {
+      "name": "Timeline: Tudomány és felfedezések",
+      "shelf": "07-1",
+      "objectid": "99975"
+    },
+    {
+      "name": "Timeline: Zene&Mozi",
+      "shelf": "07-1",
+      "objectid": "145189"
+    },
+    {
+      "name": "Tiny Epic Galaxies",
+      "shelf": "68-4",
+      "objectid": "163967"
+    },
+    {
+      "name": "Tiny Epic Kalandok birodalma",
+      "shelf": "68-4",
+      "objectid": "201921"
+    },
+    {
+      "name": "Tiny Epic Kingdoms",
+      "shelf": "68-4",
+      "objectid": "148951"
+    },
+    {
+      "name": "Tiny Towns",
+      "shelf": "29-5",
+      "objectid": "265736"
+    },
+    {
+      "name": "Tip Top Clap",
+      "shelf": "14-5",
+      "objectid": "160183"
+    },
+    {
+      "name": "A Titkos Ajtó",
+      "shelf": "20-4",
+      "objectid": "6558"
+    },
+    {
+      "name": "Titkos szavak",
+      "shelf": "11-4",
+      "objectid": "275467"
+    },
+    {
+      "name": "A tízévente virágba boruló cseresznyefa legendája",
+      "shelf": "31-4",
+      "objectid": "220784"
+    },
+    {
+      "name": "Tobago",
+      "shelf": "72-3",
+      "objectid": "42215"
+    },
+    {
+      "name": "Tokaido",
+      "shelf": "31-4",
+      "objectid": "123540"
+    },
+    {
+      "name": "Tokió Királya",
+      "shelf": "08-1",
+      "objectid": "70323"
+    },
+    {
+      "name": "Tokió királya: Párbaj",
+      "shelf": "50-4",
+      "objectid": "422484"
+    },
+    {
+      "name": "Tökmagok Kincsvadászat",
+      "shelf": "23-3",
+      "objectid": "307006"
+    },
+    {
+      "name": "Toledo",
+      "shelf": "66-4",
+      "objectid": "34599"
+    },
+    {
+      "name": "Tollasodó Tojáslopó",
+      "shelf": "21-3",
+      "objectid": "32465"
+    },
+    {
+      "name": "Too Many Bones",
+      "shelf": "83-4",
+      "objectid": "192135"
+    },
+    {
+      "name": "Top 10",
+      "shelf": "10-3",
+      "objectid": "300905"
+    },
+    {
+      "name": "*,\",\",\",87041792,6.76868,7.39904,1.0783,791,8887,thing,Top Ten,4,9,30,30,30,2021,4",
+      "shelf": "",
+      "objectid": "5"
+    },
+    {
+      "name": "Top Cap",
+      "shelf": "50-1",
+      "objectid": "381021"
+    },
+    {
+      "name": "Top Race",
+      "shelf": "II.",
+      "objectid": "932"
+    },
+    {
+      "name": "Top Ten 18+",
+      "shelf": "08-4",
+      "objectid": "334137"
+    },
+    {
+      "name": "Torres",
+      "shelf": "60-3",
+      "objectid": "88"
+    },
+    {
+      "name": "Tortuga 2199: Hazárdbolygó kalózai",
+      "shelf": "75-2",
+      "objectid": "265017"
+    },
+    {
+      "name": "Toru",
+      "shelf": "10-1",
+      "objectid": "20096"
+    },
+    {
+      "name": "TOSSIT",
+      "shelf": "19-1",
+      "objectid": "410251"
+    },
+    {
+      "name": "Totemix",
+      "shelf": "25-3",
+      "objectid": "448447"
+    },
+    {
+      "name": "Tőzsdejáték",
+      "shelf": "I.",
+      "objectid": "2947"
+    },
+    {
+      "name": "Trafalgar",
+      "shelf": "20-1",
+      "objectid": "192985"
+    },
+    {
+      "name": "Travelin'",
+      "shelf": "05-5",
+      "objectid": "205961"
+    },
+    {
+      "name": "Tribes",
+      "shelf": "72-4",
+      "objectid": "258104"
+    },
+    {
+      "name": "Trickerion: Collector's Edition",
+      "shelf": "83-5",
+      "objectid": "255668"
+    },
+    {
+      "name": "Trickerion: Legends of Illusion",
+      "shelf": "81-4",
+      "objectid": "163068"
+    },
+    {
+      "name": "Trio",
+      "shelf": "07-4",
+      "objectid": "352515"
+    },
+    {
+      "name": "*IV,\",\",\",112026524,6.98449,7.38969,1.0553,510,21573,thing,Trio,3,6,15,15,15,2023,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "Triominos",
+      "shelf": "18-1",
+      "objectid": "4040"
+    },
+    {
+      "name": "Trivial Pursuit: Genus II",
+      "shelf": "I.",
+      "objectid": "2953"
+    },
+    {
+      "name": "Trivial Pursuit: RPM Edition",
+      "shelf": "I.",
+      "objectid": "5660"
+    },
+    {
+      "name": "Trónok Harca: Westerosi intrikák",
+      "shelf": "05-3",
+      "objectid": "155693"
+    },
+    {
+      "name": "Tschakka Lakka: Die rasante Würfeljagd nach dem Tempelschatz",
+      "shelf": "33-1",
+      "objectid": "172168"
+    },
+    {
+      "name": "Tuareg",
+      "shelf": "04-2",
+      "objectid": "108705"
+    },
+    {
+      "name": "Tubyrinth",
+      "shelf": "26-2",
+      "objectid": "193161"
+    },
+    {
+      "name": "*,\",\",\",66510075,5.53132,6.21873,1,16055,273,thing,Tubyrinth,1,6,20,20,20,2017,1",
+      "shelf": "",
+      "objectid": "2"
+    },
+    {
+      "name": "A tudattalan mélyén",
+      "shelf": "81-3",
+      "objectid": "329500"
+    },
+    {
+      "name": "Túl az Óperencián",
+      "shelf": "20-5",
+      "objectid": "189065"
+    },
+    {
+      "name": "Turbo Taxi",
+      "shelf": "34-3",
+      "objectid": "941"
+    },
+    {
+      "name": "Turing Machine",
+      "shelf": "69-3",
+      "objectid": "356123"
+    },
+    {
+      "name": "Tutajra fel!",
+      "shelf": "22-5",
+      "objectid": "40935"
+    },
+    {
+      "name": "Twilight City",
+      "shelf": "83-4",
+      "objectid": "425605"
+    },
+    {
+      "name": "Twin It!",
+      "shelf": "07-2",
+      "objectid": "222887"
+    },
+    {
+      "name": "Ubongo",
+      "shelf": "18-4",
+      "objectid": "16986"
+    },
+    {
+      "name": "Újrajátszott Trianon",
+      "shelf": "74-3",
+      "objectid": "375447"
+    },
+    {
+      "name": "Ukiyo",
+      "shelf": "05-2",
+      "objectid": "316085"
+    },
+    {
+      "name": "Ulti",
+      "shelf": "05-1",
+      "objectid": "15049"
+    },
+    {
+      "name": "Ultimate Werewolf",
+      "shelf": "01-4",
+      "objectid": "152241"
+    },
+    {
+      "name": "Um Reifenbreite",
+      "shelf": "58-4",
+      "objectid": "442"
+    },
+    {
+      "name": "Underground Panic",
+      "shelf": "30-4",
+      "objectid": "290437"
+    },
+    {
+      "name": "The Ungame",
+      "shelf": "I.",
+      "objectid": "6283"
+    },
+    {
+      "name": "Unikornisok: A rémes ménes",
+      "shelf": "04-5",
+      "objectid": "234190"
+    },
+    {
+      "name": "Unlock!: Star Wars",
+      "shelf": "14-4",
+      "objectid": "312267"
+    },
+    {
+      "name": "Unlock!: Szabadulós kalandok",
+      "shelf": "14-4",
+      "objectid": "213460"
+    },
+    {
+      "name": "Unmatched kalandok: Titokzatos töténetek",
+      "shelf": "26-5",
+      "objectid": "381297"
+    },
+    {
+      "name": "Unmatched: Árny & Köd",
+      "shelf": "26-5",
+      "objectid": "294484"
+    },
+    {
+      "name": "UNO Flex!",
+      "shelf": "06-3",
+      "objectid": "380300"
+    },
+    {
+      "name": "UNO Flip!",
+      "shelf": "06-3",
+      "objectid": "271460"
+    },
+    {
+      "name": "UNO Spin",
+      "shelf": "06-3",
+      "objectid": "24318"
+    },
+    {
+      "name": "UNO Teams!",
+      "shelf": "06-3",
+      "objectid": "428030"
+    },
+    {
+      "name": "UNO: All Wild!",
+      "shelf": "06-3",
+      "objectid": "352997"
+    },
+    {
+      "name": "UNO: Deluxe",
+      "shelf": "06-3",
+      "objectid": "2223"
+    },
+    {
+      "name": "*,\",\",\",89101409,5.34718,5.47562,1.1014,29754,70986,thing,UNO,2,10,30,30,30,2014,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "UNO: Show 'Em No Mercy",
+      "shelf": "06-3",
+      "objectid": "399088"
+    },
+    {
+      "name": "*III,\",\",\",127895240,5.62029,6.09675,1.56,8321,5901,thing,UNO: Show 'Em No Mercy,2,6,30,30,15,2023,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Unreliable Wizard",
+      "shelf": "03-2",
+      "objectid": "363503"
+    },
+    {
+      "name": "Unreliable Wizard and the Unstable Spirit Towers",
+      "shelf": "03-2",
+      "objectid": "381095"
+    },
+    {
+      "name": "Unstable Unicorns",
+      "shelf": "02-4",
+      "objectid": "234190"
+    },
+    {
+      "name": "*,\",\",\",64358678,5.94298,6.22869,1.4951,3488,32922,thing,Unstable Unicorns,2,8,60,60,30,2018,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "Up the Rock",
+      "shelf": "17-1",
+      "objectid": "181959"
+    },
+    {
+      "name": "Uradalom",
+      "shelf": "17-3",
+      "objectid": "347303"
+    },
+    {
+      "name": "Űrcsempészek",
+      "shelf": "07-5",
+      "objectid": "235821"
+    },
+    {
+      "name": "Utazás a Föld körül",
+      "shelf": "29-1",
+      "objectid": "420361"
+    },
+    {
+      "name": "Utazás a múltba",
+      "shelf": "30-2",
+      "objectid": "353288"
+    },
+    {
+      "name": "Ütős pandák",
+      "shelf": "04-2",
+      "objectid": "417323"
+    },
+    {
+      "name": "Vaalbara",
+      "shelf": "04-1",
+      "objectid": "361241"
+    },
+    {
+      "name": "Vadnyugati Legendák",
+      "shelf": "76-1",
+      "objectid": "232405"
+    },
+    {
+      "name": "Vakond túra",
+      "shelf": "20-4",
+      "objectid": "447146"
+    },
+    {
+      "name": "Vándor lelkek földje",
+      "shelf": "26-4",
+      "objectid": "267319"
+    },
+    {
+      "name": "Vándorló tornyok",
+      "shelf": "32-5",
+      "objectid": "355483"
+    },
+    {
+      "name": "Vándortáj",
+      "shelf": "05-2",
+      "objectid": "385761"
+    },
+    {
+      "name": "Varázslatos állatok",
+      "shelf": "29-3",
+      "objectid": "370418"
+    },
+    {
+      "name": "Varázslótanoncok a fénylidércek útján",
+      "shelf": "23-5",
+      "objectid": "202296"
+    },
+    {
+      "name": "Varázsösvény: Építs utat! Hátráltass másokat! Juss ki a mocsárból!",
+      "shelf": "27-4",
+      "objectid": "431006"
+    },
+    {
+      "name": "Vasútvonal: Sötétkék Kiadás",
+      "shelf": "17-3",
+      "objectid": "245654"
+    },
+    {
+      "name": "Vasútvonal: Tűzvörös Kiadás",
+      "shelf": "17-3",
+      "objectid": "251678"
+    },
+    {
+      "name": "Veggie Garden",
+      "shelf": "29-3",
+      "objectid": "211533"
+    },
+    {
+      "name": "Végtelen tél: Amerika őslakosai",
+      "shelf": "73-5",
+      "objectid": "305096"
+    },
+    {
+      "name": "Végvári Viadalok",
+      "shelf": "36-2",
+      "objectid": "32326"
+    },
+    {
+      "name": "Velonimo",
+      "shelf": "06-1",
+      "objectid": "323262"
+    },
+    {
+      "name": "Die Verbotene Stadt",
+      "shelf": "II.",
+      "objectid": "504"
+    },
+    {
+      "name": "Vérfarkasok Miller's Hollow-ban",
+      "shelf": "12-5",
+      "objectid": "25821"
+    },
+    {
+      "name": "Vezércsel",
+      "shelf": "06-2",
+      "objectid": "320718"
+    },
+    {
+      "name": "Via Appia",
+      "shelf": "31-3",
+      "objectid": "137397"
+    },
+    {
+      "name": "Vidámpark",
+      "shelf": "27-5",
+      "objectid": "300683"
+    },
+    {
+      "name": "Vigyáz(z) 6!",
+      "shelf": "06-3",
+      "objectid": "268586"
+    },
+    {
+      "name": "Vigyáz(z)6!",
+      "shelf": "06-3",
+      "objectid": "432"
+    },
+    {
+      "name": "*,\",\",\",53665378,6.85563,6.98231,1.1899,672,49130,thing,Take 5,2,10,45,45,45,2011,3",
+      "shelf": "",
+      "objectid": "4"
+    },
+    {
+      "name": "Vigyáz(z)6! társasjáték",
+      "shelf": "27-4",
+      "objectid": "286533"
+    },
+    {
+      "name": "Viking Tourists",
+      "shelf": "04-1",
+      "objectid": "232262"
+    },
+    {
+      "name": "Vikingdoms",
+      "shelf": "56-3",
+      "objectid": "206780"
+    },
+    {
+      "name": "A világ csodái",
+      "shelf": "65-4",
+      "objectid": "365258"
+    },
+    {
+      "name": "A Világ Története",
+      "shelf": "75-5",
+      "objectid": "235591"
+    },
+    {
+      "name": "Világvárosok",
+      "shelf": "29-6",
+      "objectid": "402676"
+    },
+    {
+      "name": "Villa Paletti",
+      "shelf": "59-3",
+      "objectid": "2596"
+    },
+    {
+      "name": "Village",
+      "shelf": "62-5",
+      "objectid": "104006"
+    },
+    {
+      "name": "Village Green",
+      "shelf": "03-4",
+      "objectid": "300583"
+    },
+    {
+      "name": "Village: Inn",
+      "shelf": "62-5",
+      "objectid": "136223"
+    },
+    {
+      "name": "Village: Port",
+      "shelf": "62-5",
+      "objectid": "155996"
+    },
+    {
+      "name": "Villamos dilemma!",
+      "shelf": "08-3",
+      "objectid": "282171"
+    },
+    {
+      "name": "La Viña",
+      "shelf": "70-4",
+      "objectid": "276497"
+    },
+    {
+      "name": "Virágoskert",
+      "shelf": "70-4",
+      "objectid": "204027"
+    },
+    {
+      "name": "Virágvarázs",
+      "shelf": "03-5",
+      "objectid": "322622"
+    },
+    {
+      "name": "Virtù",
+      "shelf": "81-1",
+      "objectid": "345377"
+    },
+    {
+      "name": "Vírus!",
+      "shelf": "06-4",
+      "objectid": "180020"
+    },
+    {
+      "name": "Viticulture: Esszenciális kiadás",
+      "shelf": "79-5",
+      "objectid": "183394"
+    },
+    {
+      "name": "Viticulture: Toszkána Esszenciális kiadás",
+      "shelf": "79-5",
+      "objectid": "202174"
+    },
+    {
+      "name": "Víz alatti városok",
+      "shelf": "83-2",
+      "objectid": "247763"
+    },
+    {
+      "name": "Voidfall",
+      "shelf": "82-5",
+      "objectid": "337627"
+    },
+    {
+      "name": "Volle Wolle",
+      "shelf": "17-2",
+      "objectid": "28037"
+    },
+    {
+      "name": "Voodoo Mania",
+      "shelf": "07-4",
+      "objectid": "136249"
+    },
+    {
+      "name": "Vörös Előőrs",
+      "shelf": "68-4",
+      "objectid": "287589"
+    },
+    {
+      "name": "A vörös katedrális",
+      "shelf": "74-6",
+      "objectid": "227224"
+    },
+    {
+      "name": "Vörös lázadás",
+      "shelf": "68-4",
+      "objectid": "329465"
+    },
+    {
+      "name": "Vortex",
+      "shelf": "18-5",
+      "objectid": "209290"
+    },
+    {
+      "name": "Waka Waka",
+      "shelf": "34-2",
+      "objectid": "118025"
+    },
+    {
+      "name": "Walking Baby",
+      "shelf": "68-2",
+      "objectid": "342567"
+    },
+    {
+      "name": "WarCraft: The Board Game",
+      "shelf": "78-3",
+      "objectid": "7479"
+    },
+    {
+      "name": "Waterfall Park",
+      "shelf": "28-5",
+      "objectid": "396618"
+    },
+    {
+      "name": ",\",\",\",112962408,5.97001,7.05912,1.9524,3317,2643,thing,Waterfall Park,3,5,45,45,45,2023,4",
+      "shelf": "",
+      "objectid": "5,5,8+,No necessary in-game text,\",\",\",\",\",standalone,\",Games7Days; Gém Klub Kft.; Repos Production,Hungarian; Ukrainian,2023,Hungarian/Ukrainian edition"
+    },
+    {
+      "name": "A Watergate-ügy",
+      "shelf": "56-4",
+      "objectid": "274364"
+    },
+    {
+      "name": "WAU",
+      "shelf": "04-4",
+      "objectid": "352822"
+    },
+    {
+      "name": "Wavelength",
+      "shelf": "01-3",
+      "objectid": "262543"
+    },
+    {
+      "name": "Way 2 Go",
+      "shelf": "02-3",
+      "objectid": "299554"
+    },
+    {
+      "name": "Wazabi",
+      "shelf": "17-1",
+      "objectid": "48979"
+    },
+    {
+      "name": "Welcome to the Dungeon",
+      "shelf": "04-2",
+      "objectid": "150312"
+    },
+    {
+      "name": "Welcome To...: Halloween Thematic Neighborhood",
+      "shelf": "27-4",
+      "objectid": "265377"
+    },
+    {
+      "name": "What Do You Meme?",
+      "shelf": "01-1",
+      "objectid": "226610"
+    },
+    {
+      "name": "*,\",\",\",119612630,5.18965,5.06678,1.0563,29838,9628,thing,What Do You Meme?,3,20,90,90,30,2018,4",
+      "shelf": "",
+      "objectid": "5"
+    },
+    {
+      "name": "What Do You Meme? Bigger Better Edition",
+      "shelf": "08-5",
+      "objectid": "396537"
+    },
+    {
+      "name": "What Do You Meme?: A kemény magnak",
+      "shelf": "08-5",
+      "objectid": "316165"
+    },
+    {
+      "name": "What Do You Meme?: Family Edition",
+      "shelf": "10-5",
+      "objectid": "311659"
+    },
+    {
+      "name": "What Do You Meme?: Family Edition",
+      "shelf": "01-3",
+      "objectid": "311659"
+    },
+    {
+      "name": "Who Wants to Be a Millionaire",
+      "shelf": "I.",
+      "objectid": "4077"
+    },
+    {
+      "name": "Who Wants To Be A Millionaire? (2nd Edition)",
+      "shelf": "I.",
+      "objectid": "66218"
+    },
+    {
+      "name": "Wild Pirates",
+      "shelf": "II.",
+      "objectid": "1325"
+    },
+    {
+      "name": "Wild Shots",
+      "shelf": "03-3",
+      "objectid": "219410"
+    },
+    {
+      "name": "Wilmot raktára",
+      "shelf": "13-2",
+      "objectid": "424975"
+    },
+    {
+      "name": "Winter Tales",
+      "shelf": "79-1",
+      "objectid": "122599"
+    },
+    {
+      "name": "The Witcher Adventure Game",
+      "shelf": "62-1",
+      "objectid": "147116"
+    },
+    {
+      "name": "The Witcher: A végzet útja",
+      "shelf": "62-1",
+      "objectid": "401325"
+    },
+    {
+      "name": "Witchstone",
+      "shelf": "78-3",
+      "objectid": "318560"
+    },
+    {
+      "name": "Wizard",
+      "shelf": "04-2",
+      "objectid": "1465"
+    },
+    {
+      "name": "Wombattle",
+      "shelf": "09-2",
+      "objectid": "256627"
+    },
+    {
+      "name": "*,\",\",\",60615901,0,6.53333,0,0,41,thing,Wombattle,3,10,60,60,30,2018,\",\",\",\",\",\",\",\",\",standalone,\",A-games (Board Game); Delta Vision Publishing,English; French; German; Hungarian,2018,English/French/German/Hungarian edition",
+      "shelf": "",
+      "objectid": ""
+    },
+    {
+      "name": "World of Draghan: O Dodo!",
+      "shelf": "28-3",
+      "objectid": "368243"
+    },
+    {
+      "name": "World of Draghan: Once Upon a Dragon",
+      "shelf": "28-3",
+      "objectid": "284585"
+    },
+    {
+      "name": "World of Draghan: Sneaky Ol' Dragons",
+      "shelf": "28-3",
+      "objectid": "285208"
+    },
+    {
+      "name": "WTF?",
+      "shelf": "08-3",
+      "objectid": "265832"
+    },
+    {
+      "name": "Würfelhelden",
+      "shelf": "17-4",
+      "objectid": "362860"
+    },
+    {
+      "name": "Wurst Case Scenario",
+      "shelf": "12-2",
+      "objectid": "248909"
+    },
+    {
+      "name": "Az X bolygó nyomában",
+      "shelf": "69-3",
+      "objectid": "279537"
+    },
+    {
+      "name": "Yukon",
+      "shelf": "26-2",
+      "objectid": "257596"
+    },
+    {
+      "name": "Yunka",
+      "shelf": "25-3",
+      "objectid": "404261"
+    },
+    {
+      "name": "Zangle!",
+      "shelf": "07-5",
+      "objectid": "267006"
+    },
+    {
+      "name": "Zauberwald",
+      "shelf": "21-1",
+      "objectid": "11800"
+    },
+    {
+      "name": "Zero Hero",
+      "shelf": "05-3",
+      "objectid": "374458"
+    },
+    {
+      "name": "Zöldellő Mezők",
+      "shelf": "71-4",
+      "objectid": "314491"
+    },
+    {
+      "name": "Zombicide",
+      "shelf": "79-3",
+      "objectid": "113924"
+    },
+    {
+      "name": "Zombicide Season 2: Prison Outbreak",
+      "shelf": "79-3",
+      "objectid": "137988"
+    },
+    {
+      "name": "Zombie Teenz Evolúció",
+      "shelf": "26-4",
+      "objectid": "310448"
+    },
+    {
+      "name": "Zombie Würfel",
+      "shelf": "16-2",
+      "objectid": "62871"
+    },
+    {
+      "name": "Zoo memória",
+      "shelf": "21-4",
+      "objectid": "363011"
+    },
+    {
+      "name": "Zookini",
+      "shelf": "24-4",
+      "objectid": "407571"
+    },
+    {
+      "name": "Zooloretto",
+      "shelf": "58-3",
+      "objectid": "27588"
+    },
+    {
+      "name": "Zooloretto Mini",
+      "shelf": "32-2",
+      "objectid": "66120"
+    },
+    {
+      "name": "Zooloretto Würfelspiel",
+      "shelf": "17-2",
+      "objectid": "117942"
+    },
+    {
+      "name": "Zooloretto: Goodie-Box",
+      "shelf": "32-2",
+      "objectid": "130818"
+    },
+    {
+      "name": "58-3,\",\",\",53665495,5.53691,6.98611,2.1667,0,535,thing,Zooloretto: Goodie-Box,2,5,0,0,0,2012,2",
+      "shelf": "",
+      "objectid": "3"
+    },
+    {
+      "name": "Zsémbes öregek",
+      "shelf": "10-5",
+      "objectid": "423169"
+    },
+    {
+      "name": "Zug um Zug: Weltreise",
+      "shelf": "33-4",
+      "objectid": "202670"
+    },
+    {
+      "name": "Die Zünfte von London",
+      "shelf": "78-2",
+      "objectid": "134157"
+    }
+  ]
+}
