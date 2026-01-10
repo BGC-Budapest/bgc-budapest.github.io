@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Codenames",
+    "players": [2,3,4,5,6,7,8],
+    "type": ["party", "competitive"],
+    "complexity": "easy_party",
+    "time": ["short", "medium"]
+  },
+  {
+    "name": "Pandemic",
+    "players": [2,3,4],
+    "type": ["cooperative", "strategy"],
+    "complexity": "mid",
+    "time": ["medium"]
+  },
+  {
+    "name": "Ticket to Ride",
+    "players": [2,3,4,5],
+    "type": ["competitive", "strategy"],
+    "complexity": "easy_family",
+    "time": ["short", "medium"]
+  }
+]
