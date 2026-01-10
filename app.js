@@ -1,190 +1,150 @@
-/* ---------- LANGUAGE ---------- */
-let currentLang = "hu";
+const USERNAME = 'Boardgamebudapest';
+let gamesCollection = [];
+let isLoading = false;
 
-const i18n = {
-  hu: {
-    title: "Társasjáték kereső",
-    searchTitle: "Játék keresése",
-    suggestTitle: "Játék ajánlás",
-    searchPlaceholder: "Játék neve...",
-    searchBtn: "Keresés",
-    noResults: "Nincs megfelelő találat 😕"
-  },
-  en: {
-    title: "Board Game Helper",
-    searchTitle: "Find a game",
-    suggestTitle: "Game suggestion",
-    searchPlaceholder: "Game name...",
-    searchBtn: "Search",
-    noResults: "No matching results 😕"
-  }
-};
-
-const langToggle = document.getElementById("langToggle");
-
-langToggle.addEventListener("click", () => {
-  currentLang = currentLang === "hu" ? "en" : "hu";
-  langToggle.textContent = currentLang === "hu" ? "🇺🇸" : "🇭🇺";
-  applyLang();
-});
-
-function applyLang() {
-  const t = i18n[currentLang];
-  document.getElementById("title").textContent = t.title;
-  document.getElementById("searchTitle").textContent = t.searchTitle;
-  document.getElementById("suggestTitle").textContent = t.suggestTitle;
-  document.getElementById("searchInput").placeholder = t.searchPlaceholder;
-  document.getElementById("searchBtn").textContent = t.searchBtn;
-}
-
-applyLang();
-
-/* ---------- FEATURE 1: SEARCH (stub) ---------- */
-
-console.log("JS loaded");
-
-/* ---------- GAMES.JSON DEBUG ---------- */
-console.log("Attempting to load games.json...");
-
-fetch("./games.json")
-  .then(res => {
-    console.log("games.json fetch response:", res);
-    return res.json();
-  })
-  .then(data => {
-    console.log("games.json parsed successfully");
-    console.table(data);
-    window.games = data;
-  })
-  .catch(err => {
-    console.error("❌ games.json fetch FAILED", err);
-  });
-
-/* ---------- BGG DEBUG ---------- */
-const USERNAME = "Boardgamebudapest";
-const BGG_URL = `https://boardgamegeek.com/xmlapi2/collection?username=${USERNAME}&own=1&comment=1`;
-const PROXY = "https://api.allorigins.win/raw?url=";
-
-console.log("BGG URL:", BGG_URL);
-console.log("Proxy URL:", PROXY + encodeURIComponent(BGG_URL));
-
-const MAX_RETRIES = 5;
-
-async function fetchCollection(retry = 0) {
-  console.log("Fetching BGG collection, attempt", retry + 1);
-
-  const response = await fetch(PROXY + encodeURIComponent(BGG_URL));
-  console.log("BGG response status:", response.status);
-
-  const xmlText = await response.text();
-  console.log("BGG raw XML length:", xmlText.length);
-
-  if (response.status === 202 || xmlText.length === 0) {
-    if (retry < MAX_RETRIES) {
-      console.warn("Collection not ready yet, retrying in 3s...");
-      await new Promise(r => setTimeout(r, 3000));
-      return fetchCollection(retry + 1);
-    } else {
-      console.error("Max retries reached, collection still empty");
-      return [];
+// Function to fetch and parse BGG collection
+async function fetchCollection() {
+    console.log('=== STARTING COLLECTION FETCH ===');
+    const resultsDiv = document.getElementById('searchResults');
+    resultsDiv.innerHTML = '<div class="loading">Gyűjtemény betöltése... / Loading collection...</div>';
+    
+    try {
+        // BGG API endpoint for collection
+        const url = `https://boardgamegeek.com/xmlapi2/collection?username=${USERNAME}&brief=1&stats=0`;
+        console.log('Fetching URL:', url);
+        
+        console.log('Sending fetch request...');
+        const response = await fetch(url);
+        console.log('Response received:', response);
+        console.log('Response status:', response.status);
+        console.log('Response ok:', response.ok);
+        console.log('Response headers:', [...response.headers.entries()]);
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        console.log('Reading response text...');
+        const xmlText = await response.text();
+        console.log('XML Text length:', xmlText.length);
+        console.log('XML Text preview (first 500 chars):', xmlText.substring(0, 500));
+        
+        // Parse XML
+        console.log('Parsing XML...');
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+        console.log('XML parsed, document:', xmlDoc);
+        
+        // Check for errors
+        const error = xmlDoc.querySelector('error');
+        if (error) {
+            console.error('BGG API returned an error:', error.textContent);
+            throw new Error('BGG API error: ' + error.textContent);
+        }
+        
+        // Check for parsing errors
+        const parseError = xmlDoc.querySelector('parsererror');
+        if (parseError) {
+            console.error('XML parsing error:', parseError.textContent);
+            throw new Error('XML parsing error');
+        }
+        
+        // Extract games
+        console.log('Extracting game items...');
+        const items = xmlDoc.querySelectorAll('item');
+        console.log('Found items:', items.length);
+        
+        gamesCollection = Array.from(items).map((item, index) => {
+            const name = item.querySelector('name')?.textContent || 'Unknown';
+            const objectid = item.getAttribute('objectid');
+            const comment = item.querySelector('comment');
+            const shelf = comment ? comment.textContent.trim() : '';
+            
+            if (index < 3) {
+                console.log(`Game ${index}:`, { name, objectid, shelf });
+            }
+            
+            return { name, objectid, shelf };
+        });
+        
+        console.log('Total games loaded:', gamesCollection.length);
+        console.log('Sample games:', gamesCollection.slice(0, 3));
+        
+        resultsDiv.innerHTML = `<div style="color: green;">✓ ${gamesCollection.length} játék betöltve / games loaded</div>`;
+        console.log('=== COLLECTION FETCH COMPLETE ===');
+        
+    } catch (error) {
+        console.error('=== ERROR DURING FETCH ===');
+        console.error('Error name:', error.name);
+        console.error('Error message:', error.message);
+        console.error('Error stack:', error.stack);
+        console.error('Full error object:', error);
+        resultsDiv.innerHTML = `<div class="error">Hiba a gyűjtemény betöltésekor / Error loading collection: ${error.message}</div>`;
     }
-  }
-
-  const parser = new DOMParser();
-  const xml = parser.parseFromString(xmlText, "application/xml");
-
-  const items = Array.from(xml.getElementsByTagName("item"));
-  console.log("BGG items found:", items.length);
-
-  const parsed = items.map(item => {
-    const name = item.getElementsByTagName("name")[0]?.textContent?.trim();
-    const comment = item.getElementsByTagName("comment")[0]?.textContent?.trim();
-    return {
-      name,
-      shelf: comment || "(no comment)"
-    };
-  });
-
-  console.table(parsed.slice(0, 10)); // first 10 for debug
-  return parsed;
 }
 
-
-/* ---------- SEARCH DEBUG ---------- */
-async function searchGame(query) {
-  console.log("Search query:", query);
-
-  const collection = await fetchCollection();
-  console.log("Collection loaded, size:", collection.length);
-
-  const normalizedQuery = query.toLowerCase();
-  console.log("Normalized query:", normalizedQuery);
-
-  const matches = collection.filter(g =>
-    g.name && g.name.toLowerCase().includes(normalizedQuery)
-  );
-
-  console.log("Matches found:", matches.length);
-  console.table(matches);
-
-  return matches;
+// Function to search games
+function searchGames(query) {
+    console.log('=== SEARCHING FOR:', query, '===');
+    const resultsDiv = document.getElementById('searchResults');
+    
+    if (!query.trim()) {
+        console.log('Empty query, showing error');
+        resultsDiv.innerHTML = '<div class="error">Kérlek írj be egy játék nevet! / Please enter a game name!</div>';
+        return;
+    }
+    
+    if (gamesCollection.length === 0) {
+        console.log('Collection not loaded yet');
+        resultsDiv.innerHTML = '<div class="error">Gyűjtemény még betöltés alatt... / Collection still loading...</div>';
+        return;
+    }
+    
+    // Search for matching games (case insensitive)
+    const searchTerm = query.toLowerCase();
+    console.log('Search term (lowercase):', searchTerm);
+    
+    const matches = gamesCollection.filter(game => 
+        game.name.toLowerCase().includes(searchTerm)
+    );
+    
+    console.log('Matches found:', matches.length);
+    console.log('Matched games:', matches);
+    
+    // Display results
+    if (matches.length === 0) {
+        resultsDiv.innerHTML = '<div class="error">Nem találtunk ilyen játékot. / No game found.</div>';
+    } else {
+        let html = `<div><strong>${matches.length} találat / match(es):</strong></div>`;
+        matches.forEach(game => {
+            html += `
+                <div class="game-item">
+                    <div class="game-name">${game.name}</div>
+                    ${game.shelf ? 
+                        `<div class="shelf-info">📍 Polc / Shelf: ${game.shelf}</div>` : 
+                        '<div style="color: #999;">Nincs polc információ / No shelf info</div>'
+                    }
+                </div>
+            `;
+        });
+        resultsDiv.innerHTML = html;
+    }
+    console.log('=== SEARCH COMPLETE ===');
 }
 
-
-
-
-/* ---------- FEATURE 2: SUGGEST (fetch JSON) ---------- */
-
-let games = [];
-const complexityOrder = ["easy_party", "easy_family", "mid", "heavy"];
-
-fetch("./games.json")
-  .then(res => res.json())
-  .then(data => {
-    games = data;
-    console.log("games loaded:", games);
-  })
-  .catch(err => console.error("games.json load error", err));
-
-document.getElementById("suggestForm").addEventListener("submit", e => {
-  e.preventDefault();
-
-  if (!games.length) {
-    alert("Games not loaded yet");
-    return;
-  }
-
-  const players = Number(document.getElementById("players").value);
-  const type = document.getElementById("type").value;
-  const complexity = document.getElementById("complexity").value;
-  const time = document.getElementById("time").value;
-
-  const results = games
-    .filter(g => g.players.includes(players))
-    .map(g => {
-      let score = 0;
-      if (g.type.includes(type)) score++;
-      if (
-        complexityOrder.indexOf(g.complexity) <=
-        complexityOrder.indexOf(complexity)
-      ) score++;
-      if (g.time.includes(time)) score++;
-      return { ...g, score };
-    })
-    .filter(g => g.score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 5);
-
-  const out = document.getElementById("suggestResult");
-  out.innerHTML = "";
-
-  if (!results.length) {
-    out.textContent = "Nincs találat";
-    return;
-  }
-
-  results.forEach(g => {
-    out.innerHTML += `<div>🎲 ${g.name}</div>`;
-  });
+// Event listeners
+document.getElementById('searchBtn').addEventListener('click', () => {
+    const query = document.getElementById('searchInput').value;
+    searchGames(query);
 });
 
+document.getElementById('searchInput').addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        const query = document.getElementById('searchInput').value;
+        searchGames(query);
+    }
+});
+
+// Load collection on page load
+console.log('Page loaded, starting collection fetch...');
+fetchCollection();

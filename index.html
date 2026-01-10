@@ -1,74 +1,31 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Board Game Helper</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board Game Finder</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1 id="title">Társasjáték kereső</h1>
-    <button id="langToggle">🇺🇸</button>
-  </header>
+    <div class="container">
+        <h1>Board Game Cafe Finder - Test</h1>
+        
+        <div class="content">
+            <div class="section">
+                <h2>Keresés / Search</h2>
+                <input type="text" id="searchInput" class="search-box" placeholder="Írd be a játék nevét...">
+                <button id="searchBtn" class="search-btn">Keresés</button>
+                
+                <div id="searchResults" class="results"></div>
+            </div>
+            
+            <div class="section">
+                <h2>Javaslat / Suggestion</h2>
+                <p>Coming soon...</p>
+            </div>
+        </div>
+    </div>
 
-  <main class="split">
-    <!-- LEFT: SEARCH -->
-    <section class="panel">
-      <h2 id="searchTitle">Játék keresése</h2>
-      <input id="searchInput" type="text" placeholder="Játék neve..." />
-      <button id="searchBtn">Keresés</button>
-      <div id="searchResult"></div>
-    </section>
-
-    <!-- RIGHT: SUGGEST -->
-    <section class="panel">
-      <h2 id="suggestTitle">Játék ajánlás</h2>
-
-      <form id="suggestForm">
-        <label>
-          Játékosok száma
-          <input type="number" min="1" max="10" id="players" required />
-        </label>
-
-        <label>
-          Típus
-          <select id="type">
-            <option value="party">Party</option>
-            <option value="competitive">Kompetitív</option>
-            <option value="cooperative">Kooperatív</option>
-            <option value="strategy">Stratégiai</option>
-          </select>
-        </label>
-
-        <label>
-          Komplexitás
-          <select id="complexity">
-            <option value="easy_party">Könnyű party</option>
-            <option value="easy_family">Könnyű családi</option>
-            <option value="mid">Közepes</option>
-            <option value="heavy">Nehéz</option>
-          </select>
-        </label>
-
-        <label>
-          Játékidő
-          <select id="time">
-            <option value="quick">Gyors (15–20)</option>
-            <option value="short">Rövid (20–35)</option>
-            <option value="medium">Közepes (35–60)</option>
-            <option value="long">Hosszú (60–90)</option>
-            <option value="all_nighter">Maratoni (90+)</option>
-          </select>
-        </label>
-
-        <button type="submit">Ajánlj!</button>
-      </form>
-
-      <div id="suggestResult"></div>
-    </section>
-  </main>
-
-  <script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
