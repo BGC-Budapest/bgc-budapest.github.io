@@ -253,7 +253,7 @@ console.log('Page loaded, starting collection fetch...');
 console.log('BGG_API_TOKEN configured:', BGG_API_TOKEN ? 'Yes' : 'No (using local JSON)');
 fetchCollection();
 
-// Load suggested games data
+// Load suggested games on page load
 loadSuggestedGames();
 
 // ============== GAME SUGGESTION SYSTEM ==============
@@ -378,15 +378,21 @@ function getSuggestions() {
             </div>
         `;
     } else {
+        console.log('Displaying top games with images...');
         let html = `<div><strong>Javasolt játékok / Suggested games (${topGames.length}):</strong></div>`;
         topGames.forEach(game => {
+            const imagePath = game.image ? `img/${game.image}` : '';
+            console.log(`Game: ${game.name}, Image path: ${imagePath || 'No image'}`);
             html += `
                 <div class="game-item">
-                    <div class="game-name">${game.name}</div>
-                    <div style="font-size: 14px; color: #666; margin-top: 5px;">
-                        👥 ${Math.min(...game.players)}-${Math.max(...game.players)} játékos / players<br>
-                        🎮 ${game.type.join(', ')}<br>
-                        ⏱️ ${game.time.join(', ')}
+                    ${imagePath ? `<img src="${imagePath}" alt="${game.name}" class="game-image" onerror="this.style.display='none'; console.error('Failed to load image: ${imagePath}')">` : ''}
+                    <div class="game-info">
+                        <div class="game-name">${game.name}</div>
+                        <div style="font-size: 14px; color: #666; margin-top: 5px;">
+                            👥 ${Math.min(...game.players)}-${Math.max(...game.players)} játékos / players<br>
+                            🎮 ${game.type.join(', ')}<br>
+                            ⏱️ ${game.time.join(', ')}
+                        </div>
                     </div>
                 </div>
             `;
