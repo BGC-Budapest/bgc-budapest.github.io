@@ -122,6 +122,21 @@ h2 {
     border: 1px solid #ddd;
     border-radius: 4px;
     background-color: #f9f9f9;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.game-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.game-info {
+    flex: 1;
 }
 
 .game-name {
