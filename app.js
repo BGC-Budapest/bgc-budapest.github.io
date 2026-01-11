@@ -258,24 +258,30 @@ loadSuggestedGames();
 
 // ============== GAME SUGGESTION SYSTEM ==============
 
-// Curated list of games with their attributes
-function loadSuggestedGames() {
-    console.log('Loading suggested games database...');
+// Load suggested games data from JSON file
+async function loadSuggestedGames() {
+    console.log('=== LOADING SUGGESTED GAMES ===');
     
-    // TODO: This will be loaded from a separate JSON file later
-    // For now, starting with one example
-    suggestedGames = [
-        {
-            name: "Codenames",
-            players: [2, 3, 4, 5, 6, 7, 8],
-            type: ["party", "competitive"],
-            complexity: "easy_party",
-            time: ["short", "medium"]
+    try {
+        console.log('Fetching suggested-games.json...');
+        const response = await fetch('suggested-games.json');
+        
+        if (!response.ok) {
+            throw new Error(`suggested-games.json not found (status: ${response.status})`);
         }
-        // Add more games here
-    ];
-    
-    console.log(`Loaded ${suggestedGames.length} suggested games`);
+        
+        const data = await response.json();
+        suggestedGames = data.games || [];
+        
+        console.log(`✓ Loaded ${suggestedGames.length} suggested games`);
+        console.log('Sample games:', suggestedGames.slice(0, 3));
+        console.log('All suggested games:', suggestedGames);
+    } catch (error) {
+        console.error('=== ERROR LOADING SUGGESTED GAMES ===');
+        console.error('Error:', error);
+        console.log('Using empty suggested games list');
+        suggestedGames = [];
+    }
 }
 
 // Get suggestions based on user preferences
