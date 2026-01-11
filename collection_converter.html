@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BGG CSV to JSON Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            border: 2px solid #4CAF50;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .instructions {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #4CAF50;
+        }
+        .instructions h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .instructions ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        .instructions li {
+            margin: 8px 0;
+        }
+        .file-input-wrapper {
+            margin: 30px 0;
+            padding: 20px;
+            border: 2px dashed #ccc;
+            border-radius: 5px;
+            text-align: center;
+            background-color: #fafafa;
+        }
+        input[type="file"] {
+            margin: 10px 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        .output {
+            margin-top: 30px;
+        }
+        textarea {
+            width: 100%;
+            height: 400px;
+            font-family: 'Courier New', monospace;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 12px;
+            background-color: #f9f9f9;
+        }
+        .success {
+            color: green;
+            font-weight: bold;
+            padding: 15px;
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
+        .error {
+            color: #721c24;
+            font-weight: bold;
+            padding: 15px;
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
+        .stats {
+            background-color: #e7f3ff;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
+        .stats strong {
+            color: #0066cc;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .button-group {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎲 BGG CSV to JSON Converter</h1>
+        <p class="subtitle">Convert your BoardGameGeek collection to JSON format</p>
+        
+        <div class="instructions">
+            <h3>📋 Instructions:</h3>
+            <ol>
+                <li>Download your BGG collection as CSV: 
+                    <a href="https://boardgamegeek.com/collection/user/Boardgamebudapest?exportcsv=1" target="_blank">
+                        Click here to download
+                    </a>
+                </li>
+                <li>Upload the downloaded CSV file below</li>
+                <li>Click "Convert to JSON"</li>
+                <li>Download the generated <code>games.json</code> file</li>
+                <li>Place <code>games.json</code> in your GitHub repository (same folder as index.html)</li>
+                <li>Push to GitHub and your site will work!</li>
+            </ol>
+        </div>
+
+        <div class="file-input-wrapper">
+            <p><strong>Select your BGG collection CSV file:</strong></p>
+            <input type="file" id="fileInput" accept=".csv">
+        </div>
+
+        <button id="convertBtn" disabled>Convert to JSON</button>
+
+        <div id="status"></div>
+
+        <div class="output" id="outputSection" style="display: none;">
+            <h3>✅ Generated JSON:</h3>
+            <div class="stats" id="stats"></div>
+            <textarea id="jsonOutput" readonly></textarea>
+            <div class="button-group">
+                <button id="copyBtn">📋 Copy to Clipboard</button>
+                <button id="downloadBtn">💾 Download games.json</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const convertBtn = document.getElementById('convertBtn');
+        
+        // Enable convert button when file is selected
+        fileInput.addEventListener('change', () => {
+            convertBtn.disabled = !fileInput.files.length;
+        });
+
+        convertBtn.addEventListener('click', convertCSV);
+        document.getElementById('copyBtn').addEventListener('click', copyToClipboard);
+        document.getElementById('downloadBtn').addEventListener('click', downloadJSON);
+
+        let jsonData = '';
+
+        function convertCSV() {
+            const statusDiv = document.getElementById('status');
+            
+            if (!fileInput.files.length) {
+                statusDiv.innerHTML = '<p class="error">❌ Please select a CSV file first!</p>';
+                return;
+            }
+
+            const file = fileInput.files[0];
+            console.log('Reading file:', file.name);
+            
+            const reader = new FileReader();
+
+            reader.onload = function(e) {
+                try {
+                    statusDiv.innerHTML = '<p>Processing CSV file...</p>';
+                    
+                    const csv = e.target.result;
+                    const lines = csv.split('\n');
+                    
+                    console.log('Total lines:', lines.length);
+                    console.log('First line (headers):', lines[0]);
+                    
+                    // Find header indices
+                    const headers = lines[0].split(',').map(h => h.trim().replace(/"/g, ''));
+                    const nameIndex = headers.indexOf('objectname');
+                    const commentIndex = headers.indexOf('comment');
+                    const objectidIndex = headers.indexOf('objectid');
+
+                    console.log('Headers:', headers);
+                    console.log('Column indices - Name:', nameIndex, 'Comment:', commentIndex, 'ObjectID:', objectidIndex);
+
+                    if (nameIndex === -1) {
+                        throw new Error('Could not find "objectname" column in CSV. Make sure you downloaded the collection CSV from BGG.');
+                    }
+
+                    // Parse games
+                    const games = [];
+                    let gamesWithShelf = 0;
+                    let skippedLines = 0;
+                    
+                    for (let i = 1; i < lines.length; i++) {
+                        const line = lines[i].trim();
+                        if (!line) {
+                            skippedLines++;
+                            continue;
+                        }
+
+                        try {
+                            // Simple CSV parsing (handles quoted fields)
+                            const values = parseCSVLine(line);
+                            
+                            if (values.length <= nameIndex) {
+                                console.warn(`Line ${i}: Not enough columns (${values.length} vs expected ${nameIndex + 1})`);
+                                skippedLines++;
+                                continue;
+                            }
+                            
+                            const name = values[nameIndex] ? values[nameIndex].replace(/^"|"$/g, '').trim() : '';
+                            const comment = commentIndex !== -1 && values[commentIndex] ? values[commentIndex].replace(/^"|"$/g, '').trim() : '';
+                            const objectid = objectidIndex !== -1 && values[objectidIndex] ? values[objectidIndex].replace(/^"|"$/g, '').trim() : '';
+
+                            if (name) {
+                                games.push({
+                                    name: name,
+                                    shelf: comment,
+                                    objectid: objectid
+                                });
+                                
+                                if (comment) gamesWithShelf++;
+                            } else {
+                                console.warn(`Line ${i}: Empty game name`);
+                                skippedLines++;
+                            }
+                        } catch (err) {
+                            console.error(`Error parsing line ${i}:`, err);
+                            skippedLines++;
+                        }
+                    }
+
+                    console.log('Parsed games:', games.length);
+                    console.log('Games with shelf info:', gamesWithShelf);
+                    console.log('Skipped lines:', skippedLines);
+                    console.log('Sample games:', games.slice(0, 5));
+
+                    if (games.length === 0) {
+                        throw new Error('No games found in CSV file. Please check the file format.');
+                    }
+
+                    // Create JSON
+                    jsonData = JSON.stringify({ games: games }, null, 2);
+                    
+                    // Display result
+                    document.getElementById('jsonOutput').value = jsonData;
+                    document.getElementById('stats').innerHTML = `
+                        <strong>📊 Statistics:</strong><br>
+                        Total games: ${games.length}<br>
+                        Games with shelf info: ${gamesWithShelf} (${Math.round(gamesWithShelf/games.length*100)}%)<br>
+                        Games without shelf info: ${games.length - gamesWithShelf}
+                    `;
+                    document.getElementById('outputSection').style.display = 'block';
+                    statusDiv.innerHTML = `<p class="success">✅ Successfully converted ${games.length} games!</p>`;
+
+                } catch (error) {
+                    console.error('Error:', error);
+                    statusDiv.innerHTML = `<p class="error">❌ Error: ${error.message}</p>`;
+                }
+            };
+
+            reader.onerror = function() {
+                statusDiv.innerHTML = '<p class="error">❌ Error reading file. Please try again.</p>';
+            };
+
+            reader.readAsText(file);
+        }
+
+        function parseCSVLine(line) {
+            const values = [];
+            let current = '';
+            let inQuotes = false;
+
+            for (let i = 0; i < line.length; i++) {
+                const char = line[i];
+                const nextChar = line[i + 1];
+                
+                if (char === '"' && nextChar === '"') {
+                    // Escaped quote inside quoted field
+                    current += '"';
+                    i++; // Skip next quote
+                } else if (char === '"') {
+                    inQuotes = !inQuotes;
+                } else if (char === ',' && !inQuotes) {
+                    values.push(current);
+                    current = '';
+                } else {
+                    current += char;
+                }
+            }
+            values.push(current);
+            return values;
+        }
+
+        function copyToClipboard() {
+            const textarea = document.getElementById('jsonOutput');
+            textarea.select();
+            document.execCommand('copy');
+            
+            const btn = document.getElementById('copyBtn');
+            const originalText = btn.textContent;
+            btn.textContent = '✅ Copied!';
+            setTimeout(() => {
+                btn.textContent = originalText;
+            }, 2000);
+        }
+
+        function downloadJSON() {
+            const blob = new Blob([jsonData], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'games.json';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            const btn = document.getElementById('downloadBtn');
+            const originalText = btn.textContent;
+            btn.textContent = '✅ Downloaded!';
+            setTimeout(() => {
+                btn.textContent = originalText;
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
