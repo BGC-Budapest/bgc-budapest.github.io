@@ -2,6 +2,7 @@ const USERNAME = 'Boardgamebudapest';
 const BGG_API_TOKEN = ''; // PASTE YOUR TOKEN HERE WHEN YOU GET IT - Leave empty to use local JSON file
 
 let gamesCollection = [];
+let suggestedGames = []; // Will store the curated game suggestions
 let isLoading = false;
 
 // Main function to fetch collection - uses API if token is available, otherwise loads from JSON
@@ -251,3 +252,150 @@ document.getElementById('searchInput').addEventListener('keypress', (e) => {
 console.log('Page loaded, starting collection fetch...');
 console.log('BGG_API_TOKEN configured:', BGG_API_TOKEN ? 'Yes' : 'No (using local JSON)');
 fetchCollection();
+
+// Load suggested games data
+loadSuggestedGames();
+
+// ============== GAME SUGGESTION SYSTEM ==============
+
+// Curated list of games with their attributes
+function loadSuggestedGames() {
+    console.log('Loading suggested games database...');
+    
+    // TODO: This will be loaded from a separate JSON file later
+    // For now, starting with one example
+    suggestedGames = [
+        {
+            name: "Codenames",
+            players: [2, 3, 4, 5, 6, 7, 8],
+            type: ["party", "competitive"],
+            complexity: "easy_party",
+            time: ["short", "medium"]
+        }
+        // Add more games here
+    ];
+    
+    console.log(`Loaded ${suggestedGames.length} suggested games`);
+}
+
+// Get suggestions based on user preferences
+function getSuggestions() {
+    console.log('=== GETTING SUGGESTIONS ===');
+    const resultsDiv = document.getElementById('suggestionResults');
+    
+    // Get user inputs
+    const playerCount = document.getElementById('playerCount').value;
+    const selectedTypes = Array.from(document.querySelectorAll('input[name="type"]:checked')).map(cb => cb.value);
+    const complexity = document.getElementById('complexity').value;
+    const selectedTimes = Array.from(document.querySelectorAll('input[name="time"]:checked')).map(cb => cb.value);
+    
+    console.log('User preferences:', { playerCount, selectedTypes, complexity, selectedTimes });
+    
+    // Validation
+    if (!playerCount) {
+        resultsDiv.innerHTML = '<div class="error">Kérlek válaszd ki, hányan játszotok! / Please select player count!</div>';
+        return;
+    }
+    
+    if (selectedTypes.length === 0) {
+        resultsDiv.innerHTML = '<div class="error">Kérlek válassz legalább egy játéktípust! / Please select at least one game type!</div>';
+        return;
+    }
+    
+    if (!complexity) {
+        resultsDiv.innerHTML = '<div class="error">Kérlek válaszd ki a bonyolultságot! / Please select complexity!</div>';
+        return;
+    }
+    
+    if (selectedTimes.length === 0) {
+        resultsDiv.innerHTML = '<div class="error">Kérlek válassz legalább egy időtartamot! / Please select at least one time option!</div>';
+        return;
+    }
+    
+    // Check if suggested games are loaded
+    if (suggestedGames.length === 0) {
+        resultsDiv.innerHTML = `
+            <div class="error">
+                A javasolt játékok adatbázisa még nem töltődött be. / Suggested games database not loaded yet.<br>
+                <small>Ellenőrizd, hogy a suggested-games.json fájl létezik-e! / Check if suggested-games.json exists!</small>
+            </div>
+        `;
+        return;
+    }
+    
+    // Score and filter games
+    const playerNum = parseInt(playerCount);
+    
+    // Validate player number
+    if (isNaN(playerNum) || playerNum < 1 || playerNum > 30) {
+        resultsDiv.innerHTML = '<div class="error">Kérlek adj meg egy érvényes játékosszámot (1-30)! / Please enter a valid player count (1-30)!</div>';
+        return;
+    }
+    
+    const scoredGames = suggestedGames.map(game => {
+        let score = 0;
+        
+        // Player count match (must match)
+        const supportsPlayerCount = game.players.includes(playerNum);
+        if (!supportsPlayerCount) return null;
+        
+        // Type match (at least one type must match)
+        const typeMatches = selectedTypes.filter(t => game.type.includes(t)).length;
+        if (typeMatches === 0) return null;
+        score += typeMatches * 10; // 10 points per matching type
+        
+        // Complexity match (exact match preferred)
+        if (game.complexity === complexity) {
+            score += 20;
+        } else {
+            return null; // Complexity must match exactly
+        }
+        
+        // Time match (at least one time must match)
+        const timeMatches = selectedTimes.filter(t => game.time.includes(t)).length;
+        if (timeMatches === 0) return null;
+        score += timeMatches * 5; // 5 points per matching time
+        
+        return { ...game, score };
+    }).filter(g => g !== null);
+    
+    console.log('Scored games:', scoredGames);
+    
+    // Sort by score (highest first) and take top 5
+    const topGames = scoredGames
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 5);
+    
+    console.log('Top suggestions:', topGames);
+    
+    // Display results
+    if (topGames.length === 0) {
+        resultsDiv.innerHTML = `
+            <div class="error">
+                Sajnos nem találtunk megfelelő játékot ezekkel a beállításokkal. 😔<br>
+                Unfortunately, we couldn't find a matching game with these settings. 😔<br><br>
+                <small>Próbálj meg más beállításokat! / Try different settings!</small>
+            </div>
+        `;
+    } else {
+        let html = `<div><strong>Javasolt játékok / Suggested games (${topGames.length}):</strong></div>`;
+        topGames.forEach(game => {
+            html += `
+                <div class="game-item">
+                    <div class="game-name">${game.name}</div>
+                    <div style="font-size: 14px; color: #666; margin-top: 5px;">
+                        👥 ${Math.min(...game.players)}-${Math.max(...game.players)} játékos / players<br>
+                        🎮 ${game.type.join(', ')}<br>
+                        ⏱️ ${game.time.join(', ')}
+                    </div>
+                </div>
+            `;
+        });
+        resultsDiv.innerHTML = html;
+    }
+    
+    console.log('=== SUGGESTIONS COMPLETE ===');
+}
+
+// Event listener for suggestion button
+document.getElementById('suggestBtn').addEventListener('click', getSuggestions);
