@@ -32,7 +32,7 @@ function switchLanguage() {
 }
 
 // Add click listener to language flag
-document.getElementById('langFlag').addEventListener('click', switchLanguage);
+//document.getElementById('langFlag').addEventListener('click', switchLanguage);
 
 // ============== TRANSLATIONS ==============
 
