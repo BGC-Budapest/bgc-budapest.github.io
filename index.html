@@ -8,7 +8,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>Board Game Cafe Finder - Test</h1>
+        <header class="header">
+            <img src="img/BGC_logo.png" alt="BGC Logo" class="logo">
+            <h1>Board Game Cafe Finder</h1>
+        </header>
         
         <div class="content">
             <div class="section">
@@ -25,7 +28,11 @@
                 <div class="survey">
                     <div class="question">
                         <label for="playerCount">Hányan játszotok? / How many players?</label>
-                        <input type="number" id="playerCount" class="number-input" min="1" max="30" placeholder="1-30">
+                        <div class="player-count-input">
+                            <button type="button" class="player-btn" id="decreaseBtn">-</button>
+                            <input type="number" id="playerCount" class="number-input" min="1" max="30" value="" placeholder="1-30">
+                            <button type="button" class="player-btn" id="increaseBtn">+</button>
+                        </div>
                     </div>
 
                     <div class="question">
