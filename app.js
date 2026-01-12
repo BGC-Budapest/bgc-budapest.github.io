@@ -154,9 +154,8 @@ async function fetchFromJSON() {
         
         resultsDiv.innerHTML = `
             <div style="color: green;">
-                ✓ ${gamesCollection.length} játék betöltve (Helyi fájl) / games loaded (Local file)<br>
-                <small>${gamesCollection.filter(g => g.shelf).length} játéknak van polc információja / games have shelf info</small><br>
-                <small style="color: #666;">💡 Tipp: Add hozzá a BGG API tokent az élő adatokért / Tip: Add BGG API token for live data</small>
+                ✓ ${gamesCollection.length} játék betöltve (Helyi fájl, nem BGG API)<br>
+                <small>${gamesCollection.filter(g => g.shelf).length} játéknak van polc információja</small><br>
             </div>
         `;
         console.log('=== COLLECTION LOAD FROM JSON COMPLETE ===');
