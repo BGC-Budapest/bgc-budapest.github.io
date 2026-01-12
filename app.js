@@ -4,12 +4,94 @@ const BGG_API_TOKEN = ''; // PASTE YOUR TOKEN HERE WHEN YOU GET IT - Leave empty
 let gamesCollection = [];
 let suggestedGames = []; // Will store the curated game suggestions
 let isLoading = false;
+let currentLanguage = 'hu'; // Default language is Hungarian
+
+// ============== LANGUAGE SWITCHING ==============
+
+function switchLanguage() {
+    currentLanguage = currentLanguage === 'hu' ? 'en' : 'hu';
+    console.log('Switching to language:', currentLanguage);
+    
+    // Update flag
+    const flagImg = document.getElementById('langFlag');
+    flagImg.src = currentLanguage === 'hu' ? 'img/flag-en.png' : 'img/flag-hu.png';
+    flagImg.alt = currentLanguage === 'hu' ? 'Switch to English' : 'Váltás magyarra';
+    
+    // Update all elements with data-hu and data-en attributes
+    document.querySelectorAll('[data-hu][data-en]').forEach(element => {
+        if (element.tagName === 'INPUT' && element.hasAttribute('data-hu-placeholder')) {
+            element.placeholder = element.getAttribute(`data-${currentLanguage}-placeholder`);
+        } else if (element.tagName === 'OPTION') {
+            element.textContent = element.getAttribute(`data-${currentLanguage}`);
+        } else {
+            element.textContent = element.getAttribute(`data-${currentLanguage}`);
+        }
+    });
+    
+    console.log('Language switched to:', currentLanguage);
+}
+
+// Add click listener to language flag
+document.getElementById('langFlag').addEventListener('click', switchLanguage);
+
+// ============== TRANSLATIONS ==============
+
+const translations = {
+    hu: {
+        loading: 'Betöltés...',
+        emptySearch: 'Kérlek írj be egy játék nevet!',
+        collectionStillLoading: 'Gyűjtemény még betöltés alatt...',
+        noGameFound: 'Nem találtunk ilyen játékot.',
+        matches: 'találat',
+        shelf: 'Polc',
+        noShelfInfo: 'Nincs polc információ',
+        gamesLoaded: 'játék betöltve',
+        gamesLoadedAPI: 'játék betöltve (BGG API)',
+        gamesLoadedLocal: 'játék betöltve (Helyi fájl)',
+        gamesWithShelf: 'játéknak van polc információja',
+        selectPlayerCount: 'Kérlek válaszd ki, hányan játszotok!',
+        selectAtLeastOneType: 'Kérlek válassz legalább egy játéktípust!',
+        selectComplexity: 'Kérlek válaszd ki a bonyolultságot!',
+        selectAtLeastOneTime: 'Kérlek válassz legalább egy időtartamot!',
+        validPlayerCount: 'Kérlek adj meg egy érvényes játékosszámot (1-30)!',
+        noMatchingGame: 'Sajnos nem találtunk megfelelő játékot ezekkel a beállításokkal. 😔',
+        tryDifferentSettings: 'Próbálj meg más beállításokat!',
+        suggestedGames: 'Javasolt játékok',
+        players: 'játékos'
+    },
+    en: {
+        loading: 'Loading...',
+        emptySearch: 'Please enter a game name!',
+        collectionStillLoading: 'Collection still loading...',
+        noGameFound: 'No game found.',
+        matches: 'match(es)',
+        shelf: 'Shelf',
+        noShelfInfo: 'No shelf info',
+        gamesLoaded: 'games loaded',
+        gamesLoadedAPI: 'games loaded (BGG API)',
+        gamesLoadedLocal: 'games loaded (Local file)',
+        gamesWithShelf: 'games have shelf info',
+        selectPlayerCount: 'Please select player count!',
+        selectAtLeastOneType: 'Please select at least one game type!',
+        selectComplexity: 'Please select complexity!',
+        selectAtLeastOneTime: 'Please select at least one time option!',
+        validPlayerCount: 'Please enter a valid player count (1-30)!',
+        noMatchingGame: 'Unfortunately, we couldn\'t find a matching game with these settings. 😔',
+        tryDifferentSettings: 'Try different settings!',
+        suggestedGames: 'Suggested games',
+        players: 'players'
+    }
+};
+
+function t(key) {
+    return translations[currentLanguage][key] || key;
+}
 
 // Main function to fetch collection - uses API if token is available, otherwise loads from JSON
 async function fetchCollection() {
     console.log('=== STARTING COLLECTION FETCH ===');
     const resultsDiv = document.getElementById('searchResults');
-    resultsDiv.innerHTML = '<div class="loading">Gyűjtemény betöltése... / Loading collection...</div>';
+    resultsDiv.innerHTML = `<div class="loading">${t('loading')}</div>`;
     
     // Check if we should use API or local JSON
     if (BGG_API_TOKEN && BGG_API_TOKEN.trim() !== '') {
@@ -47,7 +129,7 @@ async function fetchFromAPI() {
         // BGG API returns 202 when collection is being queued
         if (response.status === 202) {
             console.log('Got 202 - Collection is being queued, will retry in 3 seconds...');
-            resultsDiv.innerHTML = '<div class="loading">A gyűjtemény feldolgozás alatt... Újrapróbálkozás 3 másodperc múlva... / Collection is being processed... Retrying in 3 seconds...</div>';
+            resultsDiv.innerHTML = `<div class="loading">${t('loading')}</div>`;
             await new Promise(resolve => setTimeout(resolve, 3000));
             return fetchFromAPI(); // Retry
         }
@@ -110,8 +192,8 @@ async function fetchFromAPI() {
         
         resultsDiv.innerHTML = `
             <div style="color: green;">
-                ✓ ${gamesCollection.length} játék betöltve (BGG API) / games loaded (BGG API)<br>
-                <small>${gamesCollection.filter(g => g.shelf).length} játéknak van polc információja / games have shelf info</small>
+                ✓ ${gamesCollection.length} ${t('gamesLoadedAPI')}<br>
+                <small>${gamesCollection.filter(g => g.shelf).length} ${t('gamesWithShelf')}</small>
             </div>
         `;
         console.log('=== COLLECTION FETCH FROM API COMPLETE ===');
@@ -122,11 +204,8 @@ async function fetchFromAPI() {
         
         resultsDiv.innerHTML = `
             <div class="error">
-                <strong>Hiba a BGG API-ból való betöltéskor / Error loading from BGG API</strong><br>
-                ${error.message}<br><br>
-                <small>Ellenőrizd a Bearer tokent vagy próbáld újra! / Check your Bearer token or try again!</small><br>
-                <small>Ha a probléma továbbra is fennáll, távolítsd el a tokent a kódból, hogy a helyi JSON fájlt használja.</small><br>
-                <small>If the problem persists, remove the token from the code to use the local JSON file.</small>
+                <strong>Error loading from BGG API</strong><br>
+                ${error.message}
             </div>
         `;
     }
@@ -154,8 +233,8 @@ async function fetchFromJSON() {
         
         resultsDiv.innerHTML = `
             <div style="color: green;">
-                ✓ ${gamesCollection.length} játék betöltve (Helyi fájl, nem BGG API)<br>
-                <small>${gamesCollection.filter(g => g.shelf).length} játéknak van polc információja</small><br>
+                ✓ ${gamesCollection.length} ${t('gamesLoadedLocal')}<br>
+                <small>${gamesCollection.filter(g => g.shelf).length} ${t('gamesWithShelf')}</small>
             </div>
         `;
         console.log('=== COLLECTION LOAD FROM JSON COMPLETE ===');
@@ -166,20 +245,8 @@ async function fetchFromJSON() {
         
         resultsDiv.innerHTML = `
             <div class="error">
-                <strong>Hiba a gyűjtemény betöltésekor / Error loading collection</strong><br>
-                ${error.message}<br><br>
-                <strong>Megoldás / Solution:</strong><br>
-                1. Győződj meg róla, hogy a <code>games.json</code> fájl létezik a projekt gyökérkönyvtárában<br>
-                   Make sure <code>games.json</code> file exists in the project root<br><br>
-                2. Exportáld a BGG gyűjteményt CSV formátumban:<br>
-                   Export your BGG collection as CSV:<br>
-                   <a href="https://boardgamegeek.com/collection/user/${USERNAME}?exportcsv=1" target="_blank">
-                   Kattints ide a CSV letöltéséhez / Click here to download CSV
-                   </a><br><br>
-                3. Használd a konvertert a CSV → JSON átalakításhoz<br>
-                   Use the converter to convert CSV → JSON<br><br>
-                <strong>VAGY / OR:</strong><br>
-                Regisztrálj BGG API tokenért: <a href="https://boardgamegeek.com/applications" target="_blank">boardgamegeek.com/applications</a>
+                <strong>Error loading collection</strong><br>
+                ${error.message}
             </div>
         `;
     }
@@ -192,13 +259,13 @@ function searchGames(query) {
     
     if (!query.trim()) {
         console.log('Empty query, showing error');
-        resultsDiv.innerHTML = '<div class="error">Kérlek írj be egy játék nevet! / Please enter a game name!</div>';
+        resultsDiv.innerHTML = `<div class="error">${t('emptySearch')}</div>`;
         return;
     }
     
     if (gamesCollection.length === 0) {
         console.log('Collection not loaded yet');
-        resultsDiv.innerHTML = '<div class="error">Gyűjtemény még betöltés alatt... / Collection still loading...</div>';
+        resultsDiv.innerHTML = `<div class="error">${t('collectionStillLoading')}</div>`;
         return;
     }
     
@@ -215,16 +282,16 @@ function searchGames(query) {
     
     // Display results
     if (matches.length === 0) {
-        resultsDiv.innerHTML = '<div class="error">Nem találtunk ilyen játékot. / No game found.</div>';
+        resultsDiv.innerHTML = `<div class="error">${t('noGameFound')}</div>`;
     } else {
-        let html = `<div><strong>${matches.length} találat / match(es):</strong></div>`;
+        let html = `<div><strong>${matches.length} ${t('matches')}:</strong></div>`;
         matches.forEach(game => {
             html += `
                 <div class="game-item">
                     <div class="game-name">${game.name}</div>
                     ${game.shelf ? 
-                        `<div class="shelf-info">📍 Polc / Shelf: ${game.shelf}</div>` : 
-                        '<div style="color: #999;">Nincs polc információ / No shelf info</div>'
+                        `<div class="shelf-info">📍 ${t('shelf')}: ${game.shelf}</div>` : 
+                        `<div style="color: #999;">${t('noShelfInfo')}</div>`
                     }
                 </div>
             `;
@@ -293,27 +360,28 @@ function getSuggestions() {
     const selectedTypes = Array.from(document.querySelectorAll('input[name="type"]:checked')).map(cb => cb.value);
     const complexity = document.getElementById('complexity').value;
     const selectedTimes = Array.from(document.querySelectorAll('input[name="time"]:checked')).map(cb => cb.value);
+    const englishOnly = document.getElementById('englishOnly').checked;
     
-    console.log('User preferences:', { playerCount, selectedTypes, complexity, selectedTimes });
+    console.log('User preferences:', { playerCount, selectedTypes, complexity, selectedTimes, englishOnly });
     
     // Validation
     if (!playerCount) {
-        resultsDiv.innerHTML = '<div class="error">Kérlek válaszd ki, hányan játszotok! / Please select player count!</div>';
+        resultsDiv.innerHTML = `<div class="error">${t('selectPlayerCount')}</div>`;
         return;
     }
     
     if (selectedTypes.length === 0) {
-        resultsDiv.innerHTML = '<div class="error">Kérlek válassz legalább egy játéktípust! / Please select at least one game type!</div>';
+        resultsDiv.innerHTML = `<div class="error">${t('selectAtLeastOneType')}</div>`;
         return;
     }
     
     if (!complexity) {
-        resultsDiv.innerHTML = '<div class="error">Kérlek válaszd ki a bonyolultságot! / Please select complexity!</div>';
+        resultsDiv.innerHTML = `<div class="error">${t('selectComplexity')}</div>`;
         return;
     }
     
     if (selectedTimes.length === 0) {
-        resultsDiv.innerHTML = '<div class="error">Kérlek válassz legalább egy időtartamot! / Please select at least one time option!</div>';
+        resultsDiv.innerHTML = `<div class="error">${t('selectAtLeastOneTime')}</div>`;
         return;
     }
     
@@ -321,8 +389,8 @@ function getSuggestions() {
     if (suggestedGames.length === 0) {
         resultsDiv.innerHTML = `
             <div class="error">
-                A javasolt játékok adatbázisa még nem töltődött be. / Suggested games database not loaded yet.<br>
-                <small>Ellenőrizd, hogy a suggested-games.json fájl létezik-e! / Check if suggested-games.json exists!</small>
+                Suggested games database not loaded yet.<br>
+                <small>Check if suggested-games.json exists!</small>
             </div>
         `;
         return;
@@ -333,12 +401,17 @@ function getSuggestions() {
     
     // Validate player number
     if (isNaN(playerNum) || playerNum < 1 || playerNum > 30) {
-        resultsDiv.innerHTML = '<div class="error">Kérlek adj meg egy érvényes játékosszámot (1-30)! / Please enter a valid player count (1-30)!</div>';
+        resultsDiv.innerHTML = `<div class="error">${t('validPlayerCount')}</div>`;
         return;
     }
     
     const scoredGames = suggestedGames.map(game => {
         let score = 0;
+        
+        // Filter by English availability if checked
+        if (englishOnly && !game.englishAvailable) {
+            return null;
+        }
         
         // Player count match (must match)
         const supportsPlayerCount = game.players.includes(playerNum);
@@ -377,14 +450,13 @@ function getSuggestions() {
     if (topGames.length === 0) {
         resultsDiv.innerHTML = `
             <div class="error">
-                Sajnos nem találtunk megfelelő játékot ezekkel a beállításokkal. 😔<br>
-                Unfortunately, we couldn't find a matching game with these settings. 😔<br><br>
-                <small>Próbálj meg más beállításokat! / Try different settings!</small>
+                ${t('noMatchingGame')}<br><br>
+                <small>${t('tryDifferentSettings')}</small>
             </div>
         `;
     } else {
         console.log('Displaying top games with images...');
-        let html = `<div><strong>Javasolt játékok / Suggested games (${topGames.length}):</strong></div>`;
+        let html = `<div><strong>${t('suggestedGames')} (${topGames.length}):</strong></div>`;
         topGames.forEach(game => {
             const imagePath = game.image ? `img/${game.image}` : '';
             console.log(`Game: ${game.name}, Image path: ${imagePath || 'No image'}`);
@@ -394,7 +466,7 @@ function getSuggestions() {
                     <div class="game-info">
                         <div class="game-name">${game.name}</div>
                         <div style="font-size: 14px; color: #666; margin-top: 5px;">
-                            👥 ${Math.min(...game.players)}-${Math.max(...game.players)} játékos / players<br>
+                            👥 ${Math.min(...game.players)}-${Math.max(...game.players)} ${t('players')}<br>
                             🎮 ${game.type.join(', ')}<br>
                             ⏱️ ${game.time.join(', ')}
                         </div>

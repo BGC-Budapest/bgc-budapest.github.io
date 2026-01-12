@@ -32,6 +32,17 @@ body {
     color: #333;
 }
 
+.lang-flag {
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.lang-flag:hover {
+    opacity: 0.8;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
