@@ -411,3 +411,55 @@ function getSuggestions() {
 
 // Event listener for suggestion button
 document.getElementById('suggestBtn').addEventListener('click', getSuggestions);
+
+// ============== PLAYER COUNT +/- BUTTONS ==============
+
+const playerCountInput = document.getElementById('playerCount');
+const decreaseBtn = document.getElementById('decreaseBtn');
+const increaseBtn = document.getElementById('increaseBtn');
+
+decreaseBtn.addEventListener('click', () => {
+    let currentValue = parseInt(playerCountInput.value) || 1;
+    if (currentValue > 1) {
+        playerCountInput.value = currentValue - 1;
+    }
+});
+
+increaseBtn.addEventListener('click', () => {
+    let currentValue = parseInt(playerCountInput.value) || 0;
+    if (currentValue < 30) {
+        playerCountInput.value = currentValue + 1;
+    }
+});
+
+// ============== AUTO-RELOAD AFTER 2 MINUTES OF INACTIVITY ==============
+
+let inactivityTimer;
+let hasInteracted = false;
+
+function resetInactivityTimer() {
+    // Only start the timer if user has interacted at least once
+    if (hasInteracted) {
+        clearTimeout(inactivityTimer);
+        inactivityTimer = setTimeout(() => {
+            console.log('No activity for 2 minutes - reloading page...');
+            window.location.reload();
+        }, 2 * 60 * 1000); // 2 minutes in milliseconds
+    }
+}
+
+function markAsInteracted() {
+    if (!hasInteracted) {
+        hasInteracted = true;
+        console.log('User interaction detected - auto-reload timer started');
+    }
+    resetInactivityTimer();
+}
+
+// Listen for various user interactions
+const interactionEvents = ['click', 'touchstart', 'keypress', 'input', 'change'];
+interactionEvents.forEach(eventType => {
+    document.addEventListener(eventType, markAsInteracted);
+});
+
+console.log('Auto-reload system initialized - will reload after 2 minutes of inactivity (once user has interacted)');
