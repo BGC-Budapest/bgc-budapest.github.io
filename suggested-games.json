@@ -2,7 +2,7 @@
   "games": [
     {
       "name": "Codenames",
-      "image": "codenames.jpg",
+      "image": "codenames.png",
       "players": [2, 3, 4, 5, 6, 7, 8],
       "type": ["party", "competitive"],
       "complexity": "easy_party",
@@ -11,7 +11,7 @@
     },
     {
       "name": "Azul",
-      "image": "azul.jpg",
+      "image": "azul.png",
       "players": [2, 3, 4],
       "type": ["competitive", "strategy"],
       "complexity": "easy_family",
@@ -20,7 +20,7 @@
     },
     {
       "name": "Catan",
-      "image": "catan.jpg",
+      "image": "catan.png",
       "players": [3, 4],
       "type": ["competitive", "strategy"],
       "complexity": "mid",

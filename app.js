@@ -360,7 +360,7 @@ function getSuggestions() {
     const selectedTypes = Array.from(document.querySelectorAll('input[name="type"]:checked')).map(cb => cb.value);
     const complexity = document.getElementById('complexity').value;
     const selectedTimes = Array.from(document.querySelectorAll('input[name="time"]:checked')).map(cb => cb.value);
-    const englishOnly = document.getElementById('englishOnly').checked;
+    //const englishOnly = document.getElementById('englishOnly').checked;
     
     console.log('User preferences:', { playerCount, selectedTypes, complexity, selectedTimes, englishOnly });
     
