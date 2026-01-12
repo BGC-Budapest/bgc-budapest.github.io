@@ -10,33 +10,34 @@
     <div class="container">
         <header class="header">
             <img src="img/BGC_logo.png" alt="BGC Logo" class="logo">
-            <h1>Board Game Cafe Finder</h1>
+            <h1 data-hu="Társasjáték Kereső" data-en="Board Game Finder">Társasjáték Kereső</h1>
+            <img src="img/flag-en.png" alt="Switch to English" class="lang-flag" id="langFlag">
         </header>
         
         <div class="content">
             <div class="section">
-                <h2>Keresés / Search</h2>
-                <input type="text" id="searchInput" class="search-box" placeholder="Írd be a játék nevét...">
-                <button id="searchBtn" class="search-btn">Keresés</button>
+                <h2 data-hu="Keresés" data-en="Search">Keresés</h2>
+                <input type="text" id="searchInput" class="search-box" data-hu-placeholder="Írd be a játék nevét..." data-en-placeholder="Enter game name..." placeholder="Írd be a játék nevét...">
+                <button id="searchBtn" class="search-btn" data-hu="Keresés" data-en="Search">Keresés</button>
                 
                 <div id="searchResults" class="results"></div>
             </div>
             
             <div class="section">
-                <h2>Javaslat / Suggestion</h2>
+                <h2 data-hu="Javaslat" data-en="Suggestion">Javaslat</h2>
                 
                 <div class="survey">
                     <div class="question">
-                        <label for="playerCount">Hányan játszotok? / How many players?</label>
+                        <label for="playerCount" data-hu="Hányan játszotok?" data-en="How many players?">Hányan játszotok?</label>
                         <div class="player-count-input">
                             <button type="button" class="player-btn" id="decreaseBtn">-</button>
-                            <input type="number" id="playerCount" class="number-input" min="1" max="30" value="" placeholder="1-30">
+                            <input type="number" id="playerCount" class="number-input" min="1" max="30" value="" data-hu-placeholder="1-30" data-en-placeholder="1-30" placeholder="1-30">
                             <button type="button" class="player-btn" id="increaseBtn">+</button>
                         </div>
                     </div>
 
                     <div class="question">
-                        <label>Milyen típusú játékot szeretnétek? / What type of game?</label>
+                        <label data-hu="Milyen típusú játékot szeretnétek?" data-en="What type of game?">Milyen típusú játékot szeretnétek?</label>
                         <div class="checkbox-group">
                             <label class="checkbox-label">
                                 <input type="checkbox" name="type" value="party"> Party
@@ -54,35 +55,46 @@
                     </div>
 
                     <div class="question">
-                        <label for="complexity">Bonyolultság / Complexity</label>
+                        <label for="complexity" data-hu="Bonyolultság" data-en="Complexity">Bonyolultság</label>
                         <select id="complexity" class="survey-select">
-                            <option value="">Válassz / Select...</option>
-                            <option value="easy_party">Easy party game</option>
-                            <option value="easy_family">Easy family game</option>
-                            <option value="mid">Mid complexity game</option>
-                            <option value="heavy">Heavy game</option>
+                            <option value="" data-hu="Válassz" data-en="Select">Válassz</option>
+                            <option value="easy_party" data-hu="Egyszerű parti játék" data-en="Easy party game">Egyszerű parti játék</option>
+                            <option value="easy_family" data-hu="Egyszerű családi játék" data-en="Easy family game">Egyszerű családi játék</option>
+                            <option value="mid" data-hu="Közepes bonyolultságú" data-en="Mid complexity game">Közepes bonyolultságú</option>
+                            <option value="heavy" data-hu="Nehéz játék" data-en="Heavy game">Nehéz játék</option>
                         </select>
                     </div>
 
                     <div class="question">
-                        <label>Mennyi időtök van? / How much time?</label>
+                        <label data-hu="Mennyi időtök van?" data-en="How much time?">Mennyi időtök van?</label>
                         <div class="checkbox-group">
                             <label class="checkbox-label">
-                                <input type="checkbox" name="time" value="quick"> Quick (15-20 mins)
+                                <input type="checkbox" name="time" value="quick"> 
+                                <span data-hu="Gyors (15-20 perc)" data-en="Quick (15-20 mins)">Gyors (15-20 perc)</span>
                             </label>
                             <label class="checkbox-label">
-                                <input type="checkbox" name="time" value="short"> Short (20-35 mins)
+                                <input type="checkbox" name="time" value="short"> 
+                                <span data-hu="Rövid (20-35 perc)" data-en="Short (20-35 mins)">Rövid (20-35 perc)</span>
                             </label>
                             <label class="checkbox-label">
-                                <input type="checkbox" name="time" value="medium"> Medium (35-60 mins)
+                                <input type="checkbox" name="time" value="medium"> 
+                                <span data-hu="Közepes (35-60 perc)" data-en="Medium (35-60 mins)">Közepes (35-60 perc)</span>
                             </label>
                             <label class="checkbox-label">
-                                <input type="checkbox" name="time" value="long"> Long (60-90 mins)
+                                <input type="checkbox" name="time" value="long"> 
+                                <span data-hu="Hosszú (60-90 perc)" data-en="Long (60-90 mins)">Hosszú (60-90 perc)</span>
                             </label>
                         </div>
                     </div>
 
-                    <button id="suggestBtn" class="search-btn">Javaslat kérése / Get Suggestions</button>
+                    <div class="question">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="englishOnly"> 
+                            <span data-hu="Csak nyelvfüggetlen / angol játékok" data-en="Only language independent / English games">Csak nyelvfüggetlen / angol játékok</span>
+                        </label>
+                    </div>
+
+                    <button id="suggestBtn" class="search-btn" data-hu="Javaslat kérése" data-en="Get Suggestions">Javaslat kérése</button>
 
                     <div id="suggestionResults" class="results"></div>
                 </div>
