@@ -1,5 +1,5 @@
 const USERNAME = 'Boardgamebudapest';
-const BGG_API_TOKEN = ''; // PASTE YOUR TOKEN HERE WHEN YOU GET IT - Leave empty to use local JSON file
+const BGG_API_TOKEN = '8affd03f-7be3-47df-8bcd-747ebdead50e'; // PASTE YOUR TOKEN HERE WHEN YOU GET IT - Leave empty to use local JSON file
 
 let gamesCollection = [];
 let suggestedGames = []; // Will store the curated game suggestions
@@ -380,7 +380,7 @@ async function loadSuggestedGames() {
 function getSuggestions() {
     console.log('=== GETTING SUGGESTIONS ===');
     const resultsDiv = document.getElementById('suggestionResults');
-    const formDiv = document.getElementById('suggestionForm');
+    const surveyForm = document.getElementById('surveyForm');
     
     // Get user inputs
     const playerCount = document.getElementById('playerCount').value;
@@ -449,13 +449,13 @@ function getSuggestions() {
     console.log('Top suggestions (sorted by rating):', topGames);
     
     // Hide form, show results
-    formDiv.style.display = 'none';
+    surveyForm.style.display = 'none';
     resultsDiv.style.display = 'block';
     
     // Display results
     if (topGames.length === 0) {
         resultsDiv.innerHTML = `
-            <button id="resetBtn" class="reset-btn" data-hu="${t('resetButton')}" data-en="${t('resetButton')}">${t('resetButton')}</button>
+            <button id="resetBtn" class="reset-btn search-btn" data-hu="${t('resetButton')}" data-en="${t('resetButton')}">${t('resetButton')}</button>
             <div class="error">
                 ${t('noMatchingGame')}<br><br>
                 <small>${t('tryDifferentSettings')}</small>
@@ -463,7 +463,7 @@ function getSuggestions() {
         `;
     } else {
         console.log('Displaying top games with images...');
-        let html = `<button id="resetBtn" class="reset-btn" data-hu="${t('resetButton')}" data-en="${t('resetButton')}">${t('resetButton')}</button>`;
+        let html = `<button id="resetBtn" class="reset-btn search-btn" data-hu="${t('resetButton')}" data-en="${t('resetButton')}">${t('resetButton')}</button>`;
         html += `<div><strong>${t('suggestedGames')} (${topGames.length}):</strong></div>`;
         
         topGames.forEach(game => {
@@ -521,7 +521,7 @@ function resetSuggestionForm() {
     document.querySelectorAll('input[name="extra"]').forEach(checkbox => checkbox.checked = false);
     
     // Show form, hide results
-    document.getElementById('suggestionForm').style.display = 'block';
+    document.getElementById('surveyForm').style.display = 'block';
     document.getElementById('suggestionResults').style.display = 'none';
     
     console.log('Form reset complete');
