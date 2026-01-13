@@ -55,6 +55,24 @@ body {
     margin-top: 20px;
 }
 
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+    
+    .header h1 {
+        font-size: 20px;
+    }
+    
+    .logo {
+        height: 60px;
+    }
+    
+    .lang-flag {
+        height: 30px;
+    }
+}
+
 .section {
     border: 1px solid #ccc;
     padding: 20px;
@@ -159,9 +177,13 @@ h2 {
 }
 
 .checkbox-group {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 8px;
+}
+
+.checkbox-group.single-column {
+    grid-template-columns: 1fr;
 }
 
 .radio-group {

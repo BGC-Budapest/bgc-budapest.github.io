@@ -59,7 +59,7 @@
                     </div>
 
                     <div class="question">
-                        <label class="checkbox-label">
+                        <label class="checkbox-label single-column">
                             <input type="checkbox" id="englishOnly"> 
                             <span data-hu="Csak nyelvfüggetlen / angol játékok" data-en="Only language independent / English games">Csak nyelvfüggetlen / angol játékok</span>
                         </label>
@@ -67,7 +67,7 @@
 
                     <div class="question">
                         <label data-hu="Extra opciók (opcionális)" data-en="Extra options (optional)">Extra opciók (opcionális)</label>
-                        <div class="checkbox-group">
+                        <div class="checkbox-group" id="extrasCheckboxes">
                             <label class="checkbox-label">
                                 <input type="checkbox" name="extra" value="cooperative">
                                 <span data-hu="Kooperatív" data-en="Cooperative">Kooperatív</span>
@@ -103,9 +103,11 @@
                         </div>
                     </div>
 
-                    <button id="suggestBtn" class="search-btn" data-hu="Javaslat kérése" data-en="Get Suggestions">Javaslat kérése</button>
+                    <div id="suggestionForm">
+                        <button id="suggestBtn" class="search-btn" data-hu="Javaslat kérése" data-en="Get Suggestions">Javaslat kérése</button>
+                    </div>
 
-                    <div id="suggestionResults" class="results"></div>
+                    <div id="suggestionResults" class="results" style="display: none;"></div>
                 </div>
             </div>
         </div>

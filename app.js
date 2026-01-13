@@ -65,7 +65,12 @@ const translations = {
         logic: 'Logikai',
         award_winning: 'Díjnyertes',
         conversational: 'Társalgási',
-        bluffing: 'Blöfföl'
+        bluffing: 'Blöfföl',
+        // Info box messages
+        englishGamesInfo: 'Az összes angol nyelvű játékunk a földszinten, a 22-es polcon található',
+        twoPlayerGamesInfo: 'Az összes 2 játékos játékunk az 1. emeleten, a 30-as polcon található',
+        awardWinningInfo: 'Minden Spiel des Jahres díjnyertes játék az 1. emeleten, a 44-es polcon található',
+        resetButton: 'Újrakezdés'
     },
     en: {
         loading: 'Loading...',
@@ -95,7 +100,12 @@ const translations = {
         logic: 'Logic',
         award_winning: 'Award-winning',
         conversational: 'Conversational',
-        bluffing: 'Bluffing'
+        bluffing: 'Bluffing',
+        // Info box messages
+        englishGamesInfo: 'All of our English games can be found on the ground floor on shelf 22',
+        twoPlayerGamesInfo: 'All of our 2 player games can be found on the 1st floor on shelf 30',
+        awardWinningInfo: 'Every Spiel des Jahres award winning game can be found on the 1st floor on shelf 44',
+        resetButton: 'Reset'
     }
 };
 
@@ -370,6 +380,7 @@ async function loadSuggestedGames() {
 function getSuggestions() {
     console.log('=== GETTING SUGGESTIONS ===');
     const resultsDiv = document.getElementById('suggestionResults');
+    const formDiv = document.getElementById('suggestionForm');
     
     // Get user inputs
     const playerCount = document.getElementById('playerCount').value;
@@ -381,23 +392,18 @@ function getSuggestions() {
     
     // Validation
     if (!playerCount) {
-        resultsDiv.innerHTML = `<div class="error">${t('selectPlayerCount')}</div>`;
+        alert(t('selectPlayerCount'));
         return;
     }
     
     if (!complexity) {
-        resultsDiv.innerHTML = `<div class="error">${t('selectComplexity')}</div>`;
+        alert(t('selectComplexity'));
         return;
     }
     
     // Check if suggested games are loaded
     if (suggestedGames.length === 0) {
-        resultsDiv.innerHTML = `
-            <div class="error">
-                Suggested games database not loaded yet.<br>
-                <small>Check if suggested-games.json exists!</small>
-            </div>
-        `;
+        alert('Suggested games database not loaded yet.');
         return;
     }
     
@@ -406,7 +412,7 @@ function getSuggestions() {
     
     // Validate player number
     if (isNaN(playerNum) || playerNum < 1 || playerNum > 30) {
-        resultsDiv.innerHTML = `<div class="error">${t('validPlayerCount')}</div>`;
+        alert(t('validPlayerCount'));
         return;
     }
     
@@ -442,9 +448,14 @@ function getSuggestions() {
     
     console.log('Top suggestions (sorted by rating):', topGames);
     
+    // Hide form, show results
+    formDiv.style.display = 'none';
+    resultsDiv.style.display = 'block';
+    
     // Display results
     if (topGames.length === 0) {
         resultsDiv.innerHTML = `
+            <button id="resetBtn" class="reset-btn" data-hu="${t('resetButton')}" data-en="${t('resetButton')}">${t('resetButton')}</button>
             <div class="error">
                 ${t('noMatchingGame')}<br><br>
                 <small>${t('tryDifferentSettings')}</small>
@@ -452,7 +463,9 @@ function getSuggestions() {
         `;
     } else {
         console.log('Displaying top games with images...');
-        let html = `<div><strong>${t('suggestedGames')} (${topGames.length}):</strong></div>`;
+        let html = `<button id="resetBtn" class="reset-btn" data-hu="${t('resetButton')}" data-en="${t('resetButton')}">${t('resetButton')}</button>`;
+        html += `<div><strong>${t('suggestedGames')} (${topGames.length}):</strong></div>`;
+        
         topGames.forEach(game => {
             const imagePath = game.image ? `img/${game.image}` : '';
             console.log(`Game: ${game.name}, Image path: ${imagePath || 'No image'}`);
@@ -474,10 +487,44 @@ function getSuggestions() {
                 </div>
             `;
         });
+        
+        // Add info boxes
+        if (englishOnly) {
+            html += `<div class="info-box">${t('englishGamesInfo')}</div>`;
+        }
+        
+        if (playerNum === 2) {
+            html += `<div class="info-box">${t('twoPlayerGamesInfo')}</div>`;
+        }
+        
+        if (selectedExtras.includes('award_winning')) {
+            html += `<div class="info-box">${t('awardWinningInfo')}</div>`;
+        }
+        
         resultsDiv.innerHTML = html;
     }
     
+    // Add reset button listener
+    document.getElementById('resetBtn').addEventListener('click', resetSuggestionForm);
+    
     console.log('=== SUGGESTIONS COMPLETE ===');
+}
+
+// Reset suggestion form
+function resetSuggestionForm() {
+    console.log('Resetting suggestion form...');
+    
+    // Clear all inputs
+    document.getElementById('playerCount').value = '';
+    document.querySelectorAll('input[name="complexity"]').forEach(radio => radio.checked = false);
+    document.getElementById('englishOnly').checked = false;
+    document.querySelectorAll('input[name="extra"]').forEach(checkbox => checkbox.checked = false);
+    
+    // Show form, hide results
+    document.getElementById('suggestionForm').style.display = 'block';
+    document.getElementById('suggestionResults').style.display = 'none';
+    
+    console.log('Form reset complete');
 }
 
 // Event listener for suggestion button
