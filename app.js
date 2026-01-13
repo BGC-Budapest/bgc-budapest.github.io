@@ -50,14 +50,22 @@ const translations = {
         gamesLoadedLocal: 'játék betöltve (Helyi fájl)',
         gamesWithShelf: 'játéknak van polc információja',
         selectPlayerCount: 'Kérlek válaszd ki, hányan játszotok!',
-        selectAtLeastOneType: 'Kérlek válassz legalább egy játéktípust!',
         selectComplexity: 'Kérlek válaszd ki a bonyolultságot!',
-        selectAtLeastOneTime: 'Kérlek válassz legalább egy időtartamot!',
         validPlayerCount: 'Kérlek adj meg egy érvényes játékosszámot (1-30)!',
         noMatchingGame: 'Sajnos nem találtunk megfelelő játékot ezekkel a beállításokkal. 😔',
         tryDifferentSettings: 'Próbálj meg más beállításokat!',
         suggestedGames: 'Javasolt játékok',
-        players: 'játékos'
+        players: 'játékos',
+        rating: 'Értékelés',
+        // Extra options translations
+        cooperative: 'Kooperatív',
+        card_game: 'Kártyajáték',
+        fast_paced: 'Gyors tempójú',
+        dexterity: 'Ügyességi',
+        logic: 'Logikai',
+        award_winning: 'Díjnyertes',
+        conversational: 'Társalgási',
+        bluffing: 'Blöfföl'
     },
     en: {
         loading: 'Loading...',
@@ -72,14 +80,22 @@ const translations = {
         gamesLoadedLocal: 'games loaded (Local file)',
         gamesWithShelf: 'games have shelf info',
         selectPlayerCount: 'Please select player count!',
-        selectAtLeastOneType: 'Please select at least one game type!',
         selectComplexity: 'Please select complexity!',
-        selectAtLeastOneTime: 'Please select at least one time option!',
         validPlayerCount: 'Please enter a valid player count (1-30)!',
         noMatchingGame: 'Unfortunately, we couldn\'t find a matching game with these settings. 😔',
         tryDifferentSettings: 'Try different settings!',
         suggestedGames: 'Suggested games',
-        players: 'players'
+        players: 'players',
+        rating: 'Rating',
+        // Extra options translations
+        cooperative: 'Cooperative',
+        card_game: 'Card game',
+        fast_paced: 'Fast-paced',
+        dexterity: 'Dexterity',
+        logic: 'Logic',
+        award_winning: 'Award-winning',
+        conversational: 'Conversational',
+        bluffing: 'Bluffing'
     }
 };
 
@@ -357,12 +373,11 @@ function getSuggestions() {
     
     // Get user inputs
     const playerCount = document.getElementById('playerCount').value;
-    const selectedTypes = Array.from(document.querySelectorAll('input[name="type"]:checked')).map(cb => cb.value);
-    const complexity = document.getElementById('complexity').value;
-    const selectedTimes = Array.from(document.querySelectorAll('input[name="time"]:checked')).map(cb => cb.value);
+    const complexity = document.querySelector('input[name="complexity"]:checked')?.value;
     const englishOnly = document.getElementById('englishOnly').checked;
+    const selectedExtras = Array.from(document.querySelectorAll('input[name="extra"]:checked')).map(cb => cb.value);
     
-    console.log('User preferences:', { playerCount, selectedTypes, complexity, selectedTimes, englishOnly });
+    console.log('User preferences:', { playerCount, complexity, englishOnly, selectedExtras });
     
     // Validation
     if (!playerCount) {
@@ -370,18 +385,8 @@ function getSuggestions() {
         return;
     }
     
-    if (selectedTypes.length === 0) {
-        resultsDiv.innerHTML = `<div class="error">${t('selectAtLeastOneType')}</div>`;
-        return;
-    }
-    
     if (!complexity) {
         resultsDiv.innerHTML = `<div class="error">${t('selectComplexity')}</div>`;
-        return;
-    }
-    
-    if (selectedTimes.length === 0) {
-        resultsDiv.innerHTML = `<div class="error">${t('selectAtLeastOneTime')}</div>`;
         return;
     }
     
@@ -405,46 +410,37 @@ function getSuggestions() {
         return;
     }
     
-    const scoredGames = suggestedGames.map(game => {
-        let score = 0;
-        
+    const filteredGames = suggestedGames.filter(game => {
         // Filter by English availability if checked
         if (englishOnly && !game.englishAvailable) {
-            return null;
+            return false;
         }
         
         // Player count match (must match)
         const supportsPlayerCount = game.players.includes(playerNum);
-        if (!supportsPlayerCount) return null;
+        if (!supportsPlayerCount) return false;
         
-        // Type match (at least one type must match)
-        const typeMatches = selectedTypes.filter(t => game.type.includes(t)).length;
-        if (typeMatches === 0) return null;
-        score += typeMatches * 10; // 10 points per matching type
+        // Complexity match (must match exactly)
+        if (game.complexity !== complexity) return false;
         
-        // Complexity match (exact match preferred)
-        if (game.complexity === complexity) {
-            score += 20;
-        } else {
-            return null; // Complexity must match exactly
+        // Extras match (if any extras selected, game must have at least one)
+        if (selectedExtras.length > 0) {
+            const hasMatchingExtra = selectedExtras.some(extra => game.extras && game.extras.includes(extra));
+            if (!hasMatchingExtra) return false;
         }
         
-        // Time match (at least one time must match)
-        const timeMatches = selectedTimes.filter(t => game.time.includes(t)).length;
-        if (timeMatches === 0) return null;
-        score += timeMatches * 5; // 5 points per matching time
-        
-        return { ...game, score };
-    }).filter(g => g !== null);
+        return true;
+    });
     
-    console.log('Scored games:', scoredGames);
+    console.log('Filtered games:', filteredGames);
     
-    // Sort by score (highest first) and take top 5
-    const topGames = scoredGames
-        .sort((a, b) => b.score - a.score)
-        .slice(0, 5);
+    // Sort by BGG rating (descending)
+    const sortedGames = filteredGames.sort((a, b) => b.bggRating - a.bggRating);
     
-    console.log('Top suggestions:', topGames);
+    // Take top 5
+    const topGames = sortedGames.slice(0, 5);
+    
+    console.log('Top suggestions (sorted by rating):', topGames);
     
     // Display results
     if (topGames.length === 0) {
@@ -460,6 +456,10 @@ function getSuggestions() {
         topGames.forEach(game => {
             const imagePath = game.image ? `img/${game.image}` : '';
             console.log(`Game: ${game.name}, Image path: ${imagePath || 'No image'}`);
+            
+            // Translate extras
+            const translatedExtras = game.extras ? game.extras.map(extra => t(extra)).join(', ') : '';
+            
             html += `
                 <div class="game-item">
                     ${imagePath ? `<img src="${imagePath}" alt="${game.name}" class="game-image" onerror="this.style.display='none'; console.error('Failed to load image: ${imagePath}')">` : ''}
@@ -467,8 +467,8 @@ function getSuggestions() {
                         <div class="game-name">${game.name}</div>
                         <div style="font-size: 14px; color: #666; margin-top: 5px;">
                             👥 ${Math.min(...game.players)}-${Math.max(...game.players)} ${t('players')}<br>
-                            🎮 ${game.type.join(', ')}<br>
-                            ⏱️ ${game.time.join(', ')}
+                            ⭐ ${t('rating')}: ${game.bggRating.toFixed(1)}<br>
+                            ${translatedExtras ? `🎯 ${translatedExtras}` : ''}
                         </div>
                     </div>
                 </div>

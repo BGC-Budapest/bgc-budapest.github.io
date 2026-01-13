@@ -37,52 +37,23 @@
                     </div>
 
                     <div class="question">
-                        <label data-hu="Milyen típusú játékot szeretnétek?" data-en="What type of game?">Milyen típusú játékot szeretnétek?</label>
-                        <div class="checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="type" value="party"> Party
+                        <label data-hu="Bonyolultság" data-en="Complexity">Bonyolultság</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="complexity" value="kids">
+                                <span data-hu="Gyerekeknek" data-en="For kids">Gyerekeknek</span>
                             </label>
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="type" value="competitive"> Competitive
+                            <label class="radio-label">
+                                <input type="radio" name="complexity" value="simple">
+                                <span data-hu="Egyszerű / Parti" data-en="Simple / Party">Egyszerű / Parti</span>
                             </label>
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="type" value="cooperative"> Cooperative
+                            <label class="radio-label">
+                                <input type="radio" name="complexity" value="easy">
+                                <span data-hu="Könnyű" data-en="Easy">Könnyű</span>
                             </label>
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="type" value="strategy"> Strategy
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="question">
-                        <label for="complexity" data-hu="Bonyolultság" data-en="Complexity">Bonyolultság</label>
-                        <select id="complexity" class="survey-select">
-                            <option value="" data-hu="Válassz" data-en="Select">Válassz</option>
-                            <option value="easy_party" data-hu="Egyszerű parti játék" data-en="Easy party game">Egyszerű parti játék</option>
-                            <option value="easy_family" data-hu="Egyszerű családi játék" data-en="Easy family game">Egyszerű családi játék</option>
-                            <option value="mid" data-hu="Közepes bonyolultságú" data-en="Mid complexity game">Közepes bonyolultságú</option>
-                            <option value="heavy" data-hu="Nehéz játék" data-en="Heavy game">Nehéz játék</option>
-                        </select>
-                    </div>
-
-                    <div class="question">
-                        <label data-hu="Mennyi időtök van?" data-en="How much time?">Mennyi időtök van?</label>
-                        <div class="checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="time" value="quick"> 
-                                <span data-hu="Gyors (15-20 perc)" data-en="Quick (15-20 mins)">Gyors (15-20 perc)</span>
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="time" value="short"> 
-                                <span data-hu="Rövid (20-35 perc)" data-en="Short (20-35 mins)">Rövid (20-35 perc)</span>
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="time" value="medium"> 
-                                <span data-hu="Közepes (35-60 perc)" data-en="Medium (35-60 mins)">Közepes (35-60 perc)</span>
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="time" value="long"> 
-                                <span data-hu="Hosszú (60-90 perc)" data-en="Long (60-90 mins)">Hosszú (60-90 perc)</span>
+                            <label class="radio-label">
+                                <input type="radio" name="complexity" value="advanced">
+                                <span data-hu="Haladó" data-en="Advanced">Haladó</span>
                             </label>
                         </div>
                     </div>
@@ -92,6 +63,44 @@
                             <input type="checkbox" id="englishOnly"> 
                             <span data-hu="Csak nyelvfüggetlen / angol játékok" data-en="Only language independent / English games">Csak nyelvfüggetlen / angol játékok</span>
                         </label>
+                    </div>
+
+                    <div class="question">
+                        <label data-hu="Extra opciók (opcionális)" data-en="Extra options (optional)">Extra opciók (opcionális)</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="extra" value="cooperative">
+                                <span data-hu="Kooperatív" data-en="Cooperative">Kooperatív</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="extra" value="card_game">
+                                <span data-hu="Kártyajáték" data-en="Card game">Kártyajáték</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="extra" value="fast_paced">
+                                <span data-hu="Gyors tempójú" data-en="Fast-paced">Gyors tempójú</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="extra" value="dexterity">
+                                <span data-hu="Ügyességi" data-en="Dexterity">Ügyességi</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="extra" value="logic">
+                                <span data-hu="Logikai" data-en="Logic">Logikai</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="extra" value="award_winning">
+                                <span data-hu="Díjnyertes" data-en="Award-winning">Díjnyertes</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="extra" value="conversational">
+                                <span data-hu="Társalgási" data-en="Conversational">Társalgási</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="extra" value="bluffing">
+                                <span data-hu="Blöfföl" data-en="Bluffing">Blöfföl</span>
+                            </label>
+                        </div>
                     </div>
 
                     <button id="suggestBtn" class="search-btn" data-hu="Javaslat kérése" data-en="Get Suggestions">Javaslat kérése</button>

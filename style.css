@@ -164,7 +164,14 @@ h2 {
     gap: 8px;
 }
 
-.checkbox-label {
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.checkbox-label,
+.radio-label {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -172,7 +179,8 @@ h2 {
     cursor: pointer;
 }
 
-.checkbox-label input[type="checkbox"] {
+.checkbox-label input[type="checkbox"],
+.radio-label input[type="radio"] {
     width: 18px;
     height: 18px;
     cursor: pointer;
