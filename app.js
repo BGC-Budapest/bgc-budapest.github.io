@@ -67,9 +67,9 @@ const translations = {
         conversational: 'Társalgási',
         bluffing: 'Blöfföl',
         // Info box messages
-        englishGamesInfo: 'Az összes angol nyelvű játékunk a földszinten, a 22-es polcon található',
-        twoPlayerGamesInfo: 'Az összes 2 játékos játékunk az 1. emeleten, a 30-as polcon található',
-        awardWinningInfo: 'Minden Spiel des Jahres díjnyertes játék az 1. emeleten, a 44-es polcon található',
+        englishGamesInfo: 'Az összes angol nyelvű játékunk a földszinten, a 37-38-as polcon található.',
+        twoPlayerGamesInfo: 'Az összes 2 fős játékunk az 1. emeleten, az 50-56-os polcon található.',
+        awardWinningInfo: 'Minden Spiel des Jahres díjnyertes játék az 1. emeleten, az 57-62-es polcon található.',
         resetButton: 'Újrakezdés'
     },
     en: {
@@ -102,9 +102,9 @@ const translations = {
         conversational: 'Conversational',
         bluffing: 'Bluffing',
         // Info box messages
-        englishGamesInfo: 'All of our English games can be found on the ground floor on shelf 22',
-        twoPlayerGamesInfo: 'All of our 2 player games can be found on the 1st floor on shelf 30',
-        awardWinningInfo: 'Every Spiel des Jahres award winning game can be found on the 1st floor on shelf 44',
+        englishGamesInfo: 'All of our English games can be found on the ground floor on shelf 37-38.',
+        twoPlayerGamesInfo: 'All of our 2 player games can be found on the 1st floor on shelf 50-56.',
+        awardWinningInfo: 'Every Spiel des Jahres award winning game can be found on the 1st floor on shelf 57-62.',
         resetButton: 'Reset'
     }
 };
