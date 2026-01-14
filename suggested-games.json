@@ -284,6 +284,35 @@
       "bggRating": 8.2
     },
     {
+      "name": "Csordaszellem",
+      "image": "csordaszellem.png",
+      "players": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "complexity": "simple",
+      "englishAvailable": false,
+      "extras": [
+        "conversational"
+      ],
+      "bggRating": 6.6
+    },
+    {
       "name": "Coffee Rush",
       "image": "coffee_rush.png",
       "players": [
@@ -515,6 +544,19 @@
         "logic"
       ],
       "bggRating": 7.6
+    },
+    {
+      "name": "Go Doggy Go",
+      "image": "go_doggy_go.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "kids",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 4
     },
     {
       "name": "Gumikacsák",
@@ -1410,6 +1452,24 @@
       "bggRating": 6.4
     },
     {
+      "name": "Szókötő",
+      "image": "szókötő.png",
+      "players": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "complexity": "simple",
+      "englishAvailable": true,
+      "extras": [
+        "cooperative",
+        "conversational"
+      ],
+      "bggRating": 7.6
+    },
+    {
       "name": "Szupercsapat",
       "image": "szupercsapat.png",
       "players": [
@@ -1442,6 +1502,23 @@
         "card_game"
       ],
       "bggRating": 7
+    },
+    {
+      "name": "The Crew: A mélytengeri küldetés",
+      "image": "the_crew:_a_mélytengeri_küldetés.png",
+      "players": [
+        3,
+        4,
+        5
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [
+        "cooperative",
+        "logic",
+        "award_winning"
+      ],
+      "bggRating": 7.8
     },
     {
       "name": "The Gang",
@@ -1569,6 +1646,23 @@
         "conversational"
       ],
       "bggRating": 5.8
+    },
+    {
+      "name": "Wilmot Raktára",
+      "image": "wilmot_raktára.png",
+      "players": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [
+        "cooperative"
+      ],
+      "bggRating": 7.5
     }
   ]
 }
