@@ -256,3 +256,12 @@ h2 {
     margin-top: 25px;
     margin-bottom: 30px;
 }
+
+#resetBtn {
+    margin-bottom: 30px;
+}
+
+.info-box{
+    margin-top: 10px;
+    font-weight: bolder;
+}
