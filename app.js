@@ -60,12 +60,12 @@ const translations = {
         // Extra options translations
         cooperative: 'Kooperatív',
         card_game: 'Kártyajáték',
-        fast_paced: 'Gyors tempójú',
+        fast_paced: 'Gyorsasági',
         dexterity: 'Ügyességi',
         logic: 'Logikai',
         award_winning: 'Díjnyertes',
-        conversational: 'Társalgási',
-        bluffing: 'Blöfföl',
+        conversational: 'Ismerkedős / beszélgetős',
+        bluffing: 'Kiszúrós / blöffölős',
         // Info box messages
         englishGamesInfo: 'Az összes angol nyelvű játékunk a földszinten, a 01-02 és 37-38-as polcon található.',
         twoPlayerGamesInfo: 'Az összes dedikáltan 2 fős játékunk az 1. emeleten, az 50-56-os polcon található.',
