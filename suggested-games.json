@@ -1,31 +1,1588 @@
 {
   "games": [
     {
-      "name": "Codenames",
-      "image": "codenames.png",
-      "players": [2, 3, 4, 5, 6, 7, 8],
-      "complexity": "simple",
+      "name": "Azul",
+      "image": "azul.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "easy",
       "englishAvailable": true,
-      "extras": ["conversational", "award_winning"],
+      "extras": [
+        "logic",
+        "award_winning"
+      ],
+      "bggRating": 7.7
+    },
+    {
+      "name": "Patchwork",
+      "image": "patchwork.png",
+      "players": [
+        2
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [
+        "logic"
+      ],
       "bggRating": 7.6
     },
     {
-      "name": "Azul",
-      "image": "azul.png",
-      "players": [2, 3, 4],
+      "name": "Cascadia",
+      "image": "cascadia.png",
+      "players": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [
+        "logic",
+        "award_winning"
+      ],
+      "bggRating": 7.9
+    },
+    {
+      "name": "Légi társaság",
+      "image": "légi_társaság.png",
+      "players": [
+        2
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [
+        "cooperative",
+        "logic",
+        "award_winning"
+      ],
+      "bggRating": 8.1
+    },
+    {
+      "name": "Trio",
+      "image": "trio.png",
+      "players": [
+        3,
+        4,
+        5,
+        6
+      ],
       "complexity": "easy",
       "englishAvailable": true,
-      "extras": ["award_winning", "logic"],
+      "extras": [
+        "card_game",
+        "logic"
+      ],
+      "bggRating": 7.4
+    },
+    {
+      "name": "Eldorádó legendája",
+      "image": "eldorádó_legendája.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 7.7
+    },
+    {
+      "name": "Bombaírtók",
+      "image": "bombaírtók.png",
+      "players": [
+        4,
+        5
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [
+        "cooperative",
+        "logic",
+        "award_winning"
+      ],
+      "bggRating": 8
+    },
+    {
+      "name": "Kertvárosi kémek",
+      "image": "kertvárosi_kémek.png",
+      "players": [
+        2
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [
+        "logic"
+      ],
+      "bggRating": 7.6
+    },
+    {
+      "name": "Firka futam",
+      "image": "firka_futam.png",
+      "players": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "complexity": "simple",
+      "englishAvailable": false,
+      "extras": [
+        "logic",
+        "dexterity",
+        "cooperative"
+      ],
+      "bggRating": 7.3
+    },
+    {
+      "name": "Kingdomino",
+      "image": "kingdomino.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "easy",
+      "englishAvailable": true,
+      "extras": [
+        "logic",
+        "award_winning"
+      ],
+      "bggRating": 7.3
+    },
+    {
+      "name": "Stupor!",
+      "image": "stupor.png",
+      "players": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 6.3
+    },
+    {
+      "name": "Nekojima",
+      "image": "nekojima.png",
+      "players": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "complexity": "simple",
+      "englishAvailable": false,
+      "extras": [
+        "dexterity"
+      ],
+      "bggRating": 7.2
+    },
+    {
+      "name": "Hupp",
+      "image": "hupp.png",
+      "players": [
+        2
+      ],
+      "complexity": "easy",
+      "englishAvailable": true,
+      "extras": [
+        "logic"
+      ],
+      "bggRating": 7.1
+    },
+    {
+      "name": "Splendor párbaj",
+      "image": "splendor_párbaj.png",
+      "players": [
+        2
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 7.9
+    },
+    {
+      "name": "Schotten Totten",
+      "image": "schotten_totten.png",
+      "players": [
+        2
+      ],
+      "complexity": "simple",
+      "englishAvailable": false,
+      "extras": [
+        "card_game",
+        "logic",
+        "bluffing"
+      ],
+      "bggRating": 7.4
+    },
+    {
+      "name": "7 csoda - Párbaj",
+      "image": "7_csoda__párbaj.png",
+      "players": [
+        2
+      ],
+      "complexity": "advanced",
+      "englishAvailable": true,
+      "extras": [],
+      "bggRating": 8.1
+    },
+    {
+      "name": "Sör és kenyér",
+      "image": "sör_és_kenyér.png",
+      "players": [
+        2
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 7.3
+    },
+    {
+      "name": "Looot",
+      "image": "looot.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "advanced",
+      "englishAvailable": true,
+      "extras": [],
+      "bggRating": 7.1
+    },
+    {
+      "name": "7 csoda",
+      "image": "7_csoda.png",
+      "players": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "complexity": "advanced",
+      "englishAvailable": true,
+      "extras": [
+        "award_winning"
+      ],
+      "bggRating": 7.7
+    },
+    {
+      "name": "Pöttyök",
+      "image": "pöttyök.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 7.1
+    },
+    {
+      "name": "Banán buli balhé",
+      "image": "banán_buli_balhé.png",
+      "players": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "complexity": "simple",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 6.5
+    },
+    {
+      "name": "Hullámhossz",
+      "image": "hullámhossz.png",
+      "players": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "complexity": "simple",
+      "englishAvailable": true,
+      "extras": [
+        "conversational"
+      ],
+      "bggRating": 7.2
+    },
+    {
+      "name": "Csak egy",
+      "image": "csak_egy.png",
+      "players": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "complexity": "simple",
+      "englishAvailable": true,
+      "extras": [
+        "award_winning",
+        "cooperative",
+        "conversational"
+      ],
+      "bggRating": 7.6
+    },
+    {
+      "name": "Lázadó Hercegnők",
+      "image": "lázadó_hercegnők.png",
+      "players": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "complexity": "simple",
+      "englishAvailable": false,
+      "extras": [
+        "card_game"
+      ],
+      "bggRating": 7.5
+    },
+    {
+      "name": "Harmónia ",
+      "image": "harmónia_.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 8
+    },
+    {
+      "name": "Bandido",
+      "image": "bandido.png",
+      "players": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "complexity": "simple",
+      "englishAvailable": true,
+      "extras": [
+        "cooperative"
+      ],
+      "bggRating": 6.4
+    },
+    {
+      "name": "That's not a hat! - Ezt adom!",
+      "image": "that's_not_a_hat__ezt_adom.png",
+      "players": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "complexity": "simple",
+      "englishAvailable": true,
+      "extras": [
+        "card_game"
+      ],
+      "bggRating": 7
+    },
+    {
+      "name": "Királyi Kombó",
+      "image": "királyi_kombó.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "easy",
+      "englishAvailable": true,
+      "extras": [
+        "card_game"
+      ],
+      "bggRating": 7.7
+    },
+    {
+      "name": "A Nyugalom Tengere",
+      "image": "a_nyugalom_tengere.png",
+      "players": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "complexity": "simple",
+      "englishAvailable": true,
+      "extras": [
+        "card_game"
+      ],
+      "bggRating": 6.9
+    },
+    {
+      "name": "The Gang",
+      "image": "the_gang.png",
+      "players": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "complexity": "simple",
+      "englishAvailable": false,
+      "extras": [
+        "cooperative"
+      ],
+      "bggRating": 7.6
+    },
+    {
+      "name": "Hellapagos",
+      "image": "hellapagos.png",
+      "players": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [
+        "bluffing"
+      ],
+      "bggRating": 6.6
+    },
+    {
+      "name": "Boldog Lazac",
+      "image": "boldog_lazac.png",
+      "players": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "complexity": "kids",
+      "englishAvailable": true,
+      "extras": [
+        "card_game",
+        "fast_paced"
+      ],
+      "bggRating": 6.7
+    },
+    {
+      "name": "Cucc",
+      "image": "cucc.png",
+      "players": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "complexity": "simple",
+      "englishAvailable": true,
+      "extras": [
+        "fast_paced",
+        "card_game"
+      ],
+      "bggRating": 6.9
+    },
+    {
+      "name": "Az Erdő",
+      "image": "az_erdő.png",
+      "players": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [
+        "card_game"
+      ],
+      "bggRating": 7.7
+    },
+    {
+      "name": "Gumikacsák",
+      "image": "gumikacsák.png",
+      "players": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "complexity": "simple",
+      "englishAvailable": true,
+      "extras": [
+        "card_game"
+      ],
+      "bggRating": 6.6
+    },
+    {
+      "name": "Időhurok",
+      "image": "időhurok.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [
+        "cooperative",
+        "card_game"
+      ],
       "bggRating": 7.8
     },
     {
-      "name": "Catan",
-      "image": "catan.png",
-      "players": [3, 4],
+      "name": "Hoth Ostroma",
+      "image": "hoth_ostroma.png",
+      "players": [
+        2
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 8
+    },
+    {
+      "name": "Szókötő",
+      "image": "szókötő.png",
+      "players": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "complexity": "simple",
+      "englishAvailable": true,
+      "extras": [
+        "cooperative",
+        "conversational"
+      ],
+      "bggRating": 7.6
+    },
+    {
+      "name": "Jó tudni",
+      "image": "jó_tudni.png",
+      "players": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "complexity": "simple",
+      "englishAvailable": false,
+      "extras": [
+        "cooperative",
+        "conversational"
+      ],
+      "bggRating": 7
+    },
+    {
+      "name": "Magic Maze",
+      "image": "magic_maze.png",
+      "players": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "complexity": "simple",
+      "englishAvailable": true,
+      "extras": [
+        "fast_paced",
+        "cooperative"
+      ],
+      "bggRating": 6.9
+    },
+    {
+      "name": "Bonsai",
+      "image": "bonsai.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 7.2
+    },
+    {
+      "name": "Következő Megálló: London",
+      "image": "következő_megálló:_london.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
       "complexity": "easy",
       "englishAvailable": true,
-      "extras": ["award_winning"],
+      "extras": [],
+      "bggRating": 7.4
+    },
+    {
+      "name": "Carcassonne",
+      "image": "carcassonne.png",
+      "players": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "complexity": "easy",
+      "englishAvailable": true,
+      "extras": [
+        "award_winning"
+      ],
+      "bggRating": 7.4
+    },
+    {
+      "name": "Gyémántvadászok",
+      "image": "gyémántvadászok.png",
+      "players": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "complexity": "simple",
+      "englishAvailable": true,
+      "extras": [],
+      "bggRating": 6.8
+    },
+    {
+      "name": "Wilmot Raktára",
+      "image": "wilmot_raktára.png",
+      "players": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [
+        "cooperative"
+      ],
+      "bggRating": 7.5
+    },
+    {
+      "name": "Splendor Marvel",
+      "image": "splendor_marvel.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "easy",
+      "englishAvailable": true,
+      "extras": [],
+      "bggRating": 7.6
+    },
+    {
+      "name": "Lumenara felfedezői",
+      "image": "lumenara_felfedezői.png",
+      "players": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "complexity": "easy",
+      "englishAvailable": true,
+      "extras": [
+        "cooperative",
+        "card_game"
+      ],
+      "bggRating": 7
+    },
+    {
+      "name": "Menekülés A Vulkánszigetről",
+      "image": "menekülés_a_vulkánszigetről.png",
+      "players": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [
+        "bluffing"
+      ],
+      "bggRating": 7.4
+    },
+    {
+      "name": "Műgyűjtők Társasága",
+      "image": "műgyűjtők_társasága.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 7.5
+    },
+    {
+      "name": "Kozmosz Művek",
+      "image": "kozmosz_művek.png",
+      "players": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [
+        "fast_paced"
+      ],
+      "bggRating": 6.8
+    },
+    {
+      "name": "Sárkányok",
+      "image": "sárkányok.png",
+      "players": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "complexity": "simple",
+      "englishAvailable": true,
+      "extras": [
+        "cooperative",
+        "card_game",
+        "fast_paced"
+      ],
+      "bggRating": 6.9
+    },
+    {
+      "name": "Coffee Rush",
+      "image": "coffee_rush.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [],
       "bggRating": 7.1
+    },
+    {
+      "name": "HEAT - Padlógáz",
+      "image": "heat__padlógáz.png",
+      "players": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 8
+    },
+    {
+      "name": "Kitchen Rush",
+      "image": "kitchen_rush.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [
+        "cooperative",
+        "fast_paced"
+      ],
+      "bggRating": 7.2
+    },
+    {
+      "name": "Kaméleon",
+      "image": "kaméleon.png",
+      "players": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "complexity": "simple",
+      "englishAvailable": false,
+      "extras": [
+        "conversational"
+      ],
+      "bggRating": 6.5
+    },
+    {
+      "name": "Hallatlan",
+      "image": "hallatlan.png",
+      "players": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "complexity": "simple",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 6.7
+    },
+    {
+      "name": "Ganz Schön Clever",
+      "image": "ganz_schön_clever.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [
+        "logic"
+      ],
+      "bggRating": 7.6
+    },
+    {
+      "name": "Flatiron",
+      "image": "flatiron.png",
+      "players": [
+        2
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 7.5
+    },
+    {
+      "name": "Aranyásók",
+      "image": "aranyásók.png",
+      "players": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "complexity": "simple",
+      "englishAvailable": true,
+      "extras": [],
+      "bggRating": 6.5
+    },
+    {
+      "name": "Föld és Víz",
+      "image": "föld_és_víz.png",
+      "players": [
+        2
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 7.1
+    },
+    {
+      "name": "Pandemic",
+      "image": "pandemic.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [
+        "cooperative"
+      ],
+      "bggRating": 7.5
+    },
+    {
+      "name": "Mr. Jack",
+      "image": "mr._jack.png",
+      "players": [
+        2
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [
+        "cooperative",
+        "logic"
+      ],
+      "bggRating": 7
+    },
+    {
+      "name": "Cascadia",
+      "image": "cascadia.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [
+        "award_winning"
+      ],
+      "bggRating": 7.9
+    },
+    {
+      "name": "Dixit",
+      "image": "dixit.png",
+      "players": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "complexity": "simple",
+      "englishAvailable": false,
+      "extras": [
+        "award_winning"
+      ],
+      "bggRating": 7.2
+    },
+    {
+      "name": "Kluster",
+      "image": "kluster.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "simple",
+      "englishAvailable": true,
+      "extras": [
+        "dexterity"
+      ],
+      "bggRating": 6.6
+    },
+    {
+      "name": "Klask",
+      "image": "klask.png",
+      "players": [
+        2
+      ],
+      "complexity": "simple",
+      "englishAvailable": true,
+      "extras": [
+        "dexterity"
+      ],
+      "bggRating": 7.6
+    },
+    {
+      "name": "Bűvös Kulcsok",
+      "image": "bűvös_kulcsok.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "kids",
+      "englishAvailable": false,
+      "extras": [
+        "award_winning"
+      ],
+      "bggRating": 7.3
+    },
+    {
+      "name": "Dragomino",
+      "image": "dragomino.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "kids",
+      "englishAvailable": false,
+      "extras": [
+        "award_winning"
+      ],
+      "bggRating": 7
+    },
+    {
+      "name": "Katicabál",
+      "image": "katicabál.png",
+      "players": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "complexity": "kids",
+      "englishAvailable": false,
+      "extras": [
+        "award_winning",
+        "cooperative"
+      ],
+      "bggRating": 6.5
+    },
+    {
+      "name": "Sajtbirodalom",
+      "image": "sajtbirodalom.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "kids",
+      "englishAvailable": false,
+      "extras": [
+        "award_winning"
+      ],
+      "bggRating": 6.8
+    },
+    {
+      "name": "Szellemlépcső",
+      "image": "szellemlépcső.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "kids",
+      "englishAvailable": false,
+      "extras": [
+        "award_winning"
+      ],
+      "bggRating": 6.4
+    },
+    {
+      "name": "Az Elvarázsolt Labirintus",
+      "image": "az_elvarázsolt_labirintus.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "kids",
+      "englishAvailable": false,
+      "extras": [
+        "award_winning"
+      ],
+      "bggRating": 6.8
+    },
+    {
+      "name": "Deszkalózok",
+      "image": "deszkalózok.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "kids",
+      "englishAvailable": false,
+      "extras": [
+        "dexterity"
+      ],
+      "bggRating": 6.9
+    },
+    {
+      "name": "Rókanyomon",
+      "image": "rókanyomon.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "kids",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 7.1
+    },
+    {
+      "name": "Színtahal",
+      "image": "színtahal.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "kids",
+      "englishAvailable": false,
+      "extras": [
+        "card_game"
+      ],
+      "bggRating": 6.4
+    },
+    {
+      "name": "Go Doggy Go",
+      "image": "go_doggy_go.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "kids",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 4
+    },
+    {
+      "name": "Szupercsapat",
+      "image": "szupercsapat.png",
+      "players": [
+        4,
+        6,
+        8
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [
+        "card_game",
+        "award_winning"
+      ],
+      "bggRating": 7.1
+    },
+    {
+      "name": "Kuruzslók Quedlinburgban",
+      "image": "kuruzslók_quedlinburgban.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 7.8
+    },
+    {
+      "name": "The Crew: Küldetés A 9. Bolygóhoz",
+      "image": "the_crew:_küldetés_a_9._bolygóhoz.png",
+      "players": [
+        3,
+        4,
+        5
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [
+        "cooperative",
+        "logic",
+        "award_winning"
+      ],
+      "bggRating": 7.8
+    },
+    {
+      "name": "Paleo",
+      "image": "paleo.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [
+        "cooperative",
+        "award_winning"
+      ],
+      "bggRating": 7.7
+    },
+    {
+      "name": "Cryptid",
+      "image": "cryptid.png",
+      "players": [
+        3,
+        4,
+        5
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 7.4
+    },
+    {
+      "name": "Flash Point: Fire Rescue",
+      "image": "flash_point:_fire_rescue.png",
+      "players": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [
+        "cooperative",
+        "fast_paced"
+      ],
+      "bggRating": 7.1
+    },
+    {
+      "name": "Köszöntünk a Holdon",
+      "image": "köszöntünk_a_holdon.png",
+      "players": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "complexity": "advanced",
+      "englishAvailable": true,
+      "extras": [],
+      "bggRating": 7.9
+    },
+    {
+      "name": "Sajtra Szállás",
+      "image": "sajtra_szállás.png",
+      "players": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 7.5
+    },
+    {
+      "name": "Ősköltészet",
+      "image": "ősköltészet.png",
+      "players": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "complexity": "simple",
+      "englishAvailable": true,
+      "extras": [
+        "fast_paced"
+      ],
+      "bggRating": 6.7
+    },
+    {
+      "name": "Rá",
+      "image": "rá.png",
+      "players": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 7.7
+    },
+    {
+      "name": "Lapzárta",
+      "image": "lapzárta.png",
+      "players": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [
+        "fast_paced"
+      ],
+      "bggRating": 7.3
+    },
+    {
+      "name": "Pergola",
+      "image": "pergola.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 7.3
+    },
+    {
+      "name": "Ezüsthegy Építészei",
+      "image": "ezüsthegy_építészei.png",
+      "players": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 7.4
+    },
+    {
+      "name": "CLANK Katakombák",
+      "image": "clank_katakombák.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 8.2
+    },
+    {
+      "name": "Vörös Előörs",
+      "image": "vörös_előörs.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [
+        "bluffing"
+      ],
+      "bggRating": 6.9
+    },
+    {
+      "name": "Őrült Lajos Király Két Kastélya Között",
+      "image": "őrült_lajos_király_két_kastélya_között.png",
+      "players": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 7.2
+    },
+    {
+      "name": "Walking Baby",
+      "image": "walking_baby.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [
+        "cooperative"
+      ],
+      "bggRating": 6.2
+    },
+    {
+      "name": "Tiltott Sziget",
+      "image": "tiltott_sziget.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [
+        "cooperative"
+      ],
+      "bggRating": 6.8
+    },
+    {
+      "name": "Ismeretlen Bolygó",
+      "image": "ismeretlen_bolygó.png",
+      "players": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 7.8
+    },
+    {
+      "name": "Scout",
+      "image": "scout.png",
+      "players": [
+        3,
+        4,
+        5
+      ],
+      "complexity": "easy",
+      "englishAvailable": true,
+      "extras": [
+        "card_game"
+      ],
+      "bggRating": 7.8
+    },
+    {
+      "name": "Similo",
+      "image": "similo.png",
+      "players": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "complexity": "simple",
+      "englishAvailable": true,
+      "extras": [
+        "cooperative",
+        "card_game"
+      ],
+      "bggRating": 6.8
+    },
+    {
+      "name": "Aljas 7-es",
+      "image": "aljas_7es.png",
+      "players": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "complexity": "simple",
+      "englishAvailable": true,
+      "extras": [
+        "card_game"
+      ],
+      "bggRating": 6.4
+    },
+    {
+      "name": "Johari Bazaar",
+      "image": "johari_bazaar.png",
+      "players": [
+        2
+      ],
+      "complexity": "simple",
+      "englishAvailable": false,
+      "extras": [
+        "logic"
+      ],
+      "bggRating": 7.8
+    },
+    {
+      "name": "Kartográfusok",
+      "image": "kartográfusok.png",
+      "players": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "complexity": "easy",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 7.6
+    },
+    {
+      "name": "Citadella",
+      "image": "citadella.png",
+      "players": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 7.2
+    },
+    {
+      "name": "Mycelia",
+      "image": "mycelia.png",
+      "players": [
+        2,
+        3,
+        4
+      ],
+      "complexity": "advanced",
+      "englishAvailable": false,
+      "extras": [],
+      "bggRating": 7.3
     }
   ]
 }
