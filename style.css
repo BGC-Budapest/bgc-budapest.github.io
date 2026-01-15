@@ -216,7 +216,7 @@ h2 {
     background-color: #f9f9f9;
     display: flex;
     gap: 15px;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .game-image {
@@ -250,6 +250,20 @@ h2 {
 .loading {
     color: #666;
     margin-top: 10px;
+}
+
+#englishOnlyLabel {
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+#resetBtn {
+    margin-bottom: 30px;
+}
+
+.info-box{
+    margin-top: 10px;
+    font-weight: bolder;
 }
 
 #englishOnlyLabel {
