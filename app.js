@@ -65,7 +65,11 @@ const translations = {
         logic: 'Logikai',
         award_winning: 'Díjnyertes',
         conversational: 'Ismerkedős / beszélgetős',
-        bluffing: 'Kiszúrós / blöffölős',
+        bluffing: 'Blöffölős',
+        pretty: 'Szép asztalkép',
+        race: 'Verseny',
+        dice: 'Kockajáték',
+        takeThat: 'Kiszúrós',
         // Info box messages
         englishGamesInfo: 'ℹ️🌍 Az összes angol nyelvű játékunk a földszinten, a 01-02 és 37-38-as polcon található.',
         twoPlayerGamesInfo: ' ℹ️🆚 Az összes dedikáltan 2 fős játékunk az 1. emeleten, az 50-56-os polcon található.',
@@ -73,7 +77,11 @@ const translations = {
         resetButton: 'Újrakezdés',
         firstFloor: '1. emelet',
         groundFloor: 'Földszint',
-        shelfButton: 'Polc'
+        shelfButton: 'Polc',
+        showAllButton: 'Összes megjelenítése',
+        showLessButton: 'Kevesebb',
+        randomGame: 'Véletlen játék',
+        matchingGames: 'egyező játék',
     },
     en: {
         loading: 'Loading...',
@@ -104,6 +112,10 @@ const translations = {
         award_winning: 'Award-winning',
         conversational: 'Conversational',
         bluffing: 'Bluffing',
+        pretty: 'Pretty',
+        race: 'Race',
+        dice: 'Dicegame',
+        takeThat: 'Take That',
         // Info box messages
         englishGamesInfo: 'ℹ️🌍 All of our English games can be found on the ground floor on shelf 01-02 and 37-38.',
         twoPlayerGamesInfo: 'ℹ️🆚 All of our dedicated 2 player games can be found on the 1st floor on shelf 50-56.',
@@ -111,7 +123,11 @@ const translations = {
         resetButton: 'Reset',
         firstFloor: '1st floor',
         groundFloor: 'Ground floor',
-        shelfButton: 'Shelf'
+        shelfButton: 'Shelf',
+        showAllButton: 'Show All',
+        showLessButton: 'Show Less',
+        randomGame: 'Random Game',
+        matchingGames: 'matching games'
     }
 };
 
@@ -406,7 +422,7 @@ async function loadSuggestedGames() {
 }
 
 // Get suggestions based on user preferences
-function getSuggestions() {
+function getSuggestions(showAll = false) {
     console.log('=== GETTING SUGGESTIONS ===');
     const resultsDiv = document.getElementById('suggestionResults');
     const surveyForm = document.getElementById('surveyForm');
@@ -445,32 +461,59 @@ function getSuggestions() {
         return;
     }
 
-    const filteredGames = suggestedGames.filter(game => {
+const scoredGames = suggestedGames.map(game => {
         // Filter by English availability if checked
         if (englishOnly && !game.englishAvailable) {
-            return false;
+            return null;
         }
-
+        
         // Player count match (must match)
         const supportsPlayerCount = game.players.includes(playerNum);
-        if (!supportsPlayerCount) return false;
-
+        if (!supportsPlayerCount) return null;
+        
         // Complexity match (must match exactly)
-        if (game.complexity !== complexity) return false;
-
+        if (game.complexity !== complexity) return null;
+        
         // Extras match (if any extras selected, game must have at least one)
         if (selectedExtras.length > 0) {
             const hasMatchingExtra = selectedExtras.some(extra => game.extras && game.extras.includes(extra));
-            if (!hasMatchingExtra) return false;
+            if (!hasMatchingExtra) return null;
         }
+        
+        // Calculate score based on extras match count (if extras were selected)
+        let extraScore = 0;
+        if (selectedExtras.length > 0) {
+            const matchingExtras = selectedExtras.filter(extra => game.extras && game.extras.includes(extra));
+            extraScore = matchingExtras.length * 100; // Each matching extra is worth 100 points
+        }
+        
+        // Total score: extras match count (prioritized) + BGG rating
+        const totalScore = extraScore + game.bggRating;
+        
+        return { ...game, score: totalScore };
+    }).filter(g => g !== null);
+    
+    console.log('Scored games:', scoredGames);
+    
+    // Sort by score (highest first)
+    const sortedGames = scoredGames.sort((a, b) => b.score - a.score);
+    
+    // Determine how many to show
+    const gamesToShow = showAll ? sortedGames : sortedGames.slice(0, 5);
+    const hasMoreGames = sortedGames.length > 5;
+    
+    console.log('Games to display:', gamesToShow.length, 'Total matching:', sortedGames.length);
+    
+    displaySuggestionResults(gamesToShow, sortedGames.length, hasMoreGames, showAll, playerNum, englishOnly, selectedExtras);
+}
 
-        return true;
-    });
-
-    console.log('Filtered games:', filteredGames);
+// Display suggestion results
+function displaySuggestionResults(games, totalCount, hasMoreGames, showingAll, playerNum, englishOnly, selectedExtras) {
+    const resultsDiv = document.getElementById('suggestionResults');
+    const surveyForm = document.getElementById('surveyForm');
 
     // Sort by BGG rating (descending)
-    const sortedGames = filteredGames.sort((a, b) => b.bggRating - a.bggRating);
+    const sortedGames = games.sort((a, b) => b.bggRating - a.bggRating);
 
     // Take top 5
     const topGames = sortedGames.slice(0, 5);
@@ -480,9 +523,8 @@ function getSuggestions() {
     // Hide form, show results
     surveyForm.style.display = 'none';
     resultsDiv.style.display = 'block';
-
-    // Display results
-    if (topGames.length === 0) {
+    
+    if (games.length === 0) {
         resultsDiv.innerHTML = `
             <button id="resetBtn" class="reset-btn search-btn" data-hu="${t('resetButton')}" data-en="${t('resetButton')}">${t('resetButton')}</button>
             <div class="error">
@@ -490,33 +532,46 @@ function getSuggestions() {
                 <small>${t('tryDifferentSettings')}</small>
             </div>
         `;
+        document.getElementById('resetBtn').addEventListener('click', resetSuggestionForm);
     } else {
-        console.log('Displaying top games with images...');
+        console.log('Displaying games with images...');
         let html = `<button id="resetBtn" class="reset-btn search-btn" data-hu="${t('resetButton')}" data-en="${t('resetButton')}">${t('resetButton')}</button>`;
-        html += `<div><strong>${t('suggestedGames')} (${topGames.length}):</strong></div>`;
-
-        topGames.forEach(game => {
+        html += `<div><strong>${t('suggestedGames')} (${games.length}${hasMoreGames && !showingAll ? ` / ${totalCount} ${t('matchingGames')}` : ''}):</strong></div>`;
+        
+        games.forEach((game, index) => {
             const imagePath = game.image ? `img/${game.image}` : '';
-            console.log(`Game: ${game.name}, Image path: ${imagePath || 'No image'}`);
-
+            console.log(`Game: ${game.name}, Image path: ${imagePath || 'No image'}, Score: ${game.score}`);
+            
             // Translate extras
             const translatedExtras = game.extras ? game.extras.map(extra => t(extra)).join(', ') : '';
-
+            
+            // Add language indicator
+            const languageIndicator = game.englishAvailable ? '🌐 ' : '';
+            
             html += `
                 <div class="game-item">
                     ${imagePath ? `<img src="${imagePath}" alt="${game.name}" class="game-image" onerror="this.style.display='none'; console.error('Failed to load image: ${imagePath}')">` : ''}
                     <div class="game-info">
-                        <div class="game-name">${game.name}</div>
+                        <div class="game-name">${languageIndicator}${game.name}</div>
                         <div style="font-size: 14px; color: #666; margin-top: 5px;">
                             👥 ${Math.min(...game.players)}-${Math.max(...game.players)} ${t('players')}<br>
                             ⭐ ${t('rating')}: ${game.bggRating.toFixed(1)}<br>
                             ${translatedExtras ? `🎯 ${translatedExtras}` : ''}
                         </div>
                     </div>
-                    <button class="shelf-btn search-btn" data-game-name="${game.name}">${t('shelfButton')}</button>
+                    <button class="search-btn" data-game-name="${game.name}">${t('shelfButton')}</button>
                 </div>
             `;
         });
+        
+        // Add "Show All" or "Show Less" button if needed
+        if (hasMoreGames) {
+            if (!showingAll) {
+                html += `<button id="showAllBtn" class="search-btn" style="margin-top: 15px;">${t('showAllButton')} (${totalCount})</button>`;
+            } else {
+                html += `<button id="showLessBtn" class="search-btn" style="margin-top: 15px;">${t('showLessButton')}</button>`;
+            }
+        }
 
         // Add info boxes
         if (englishOnly) {
@@ -536,6 +591,14 @@ function getSuggestions() {
 
     // Add reset button listener
     document.getElementById('resetBtn').addEventListener('click', resetSuggestionForm);
+
+    // Add show all/less button listeners
+    if (hasMoreGames) {
+        const toggleBtn = document.getElementById(showingAll ? 'showLessBtn' : 'showAllBtn');
+        if (toggleBtn) {
+            toggleBtn.addEventListener('click', () => getSuggestions(!showingAll));
+        }
+    }
 
     // Add click listeners to shelf buttons
 
@@ -588,7 +651,40 @@ function resetSuggestionForm() {
 }
 
 // Event listener for suggestion button
-document.getElementById('suggestBtn').addEventListener('click', getSuggestions);
+document.getElementById('suggestBtn').addEventListener('click', () => getSuggestions(false));
+
+// Event listener for random game button
+document.getElementById('randomBtn').addEventListener('click', getRandomGame);
+
+// Get random game suggestion (excluding kids games)
+function getRandomGame() {
+    console.log('=== GETTING RANDOM GAME ===');
+    
+    // Filter out kids games
+    const nonKidsGames = suggestedGames.filter(game => game.complexity !== 'kids');
+    
+    if (nonKidsGames.length === 0) {
+        alert('No games available for random selection.');
+        return;
+    }
+    
+    // Pick a random game
+    const randomIndex = Math.floor(Math.random() * nonKidsGames.length);
+    const randomGame = nonKidsGames[randomIndex];
+    
+    console.log('Random game selected:', randomGame);
+    
+    // Fill search input with game name
+    document.getElementById('searchInput').value = randomGame.name;
+    
+    // Trigger search
+    searchGames(randomGame.name);
+    
+    // Scroll to search results
+    setTimeout(() => {
+        document.getElementById('searchResults').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 100);
+}
 
 // ============== PLAYER COUNT +/- BUTTONS ==============
 
