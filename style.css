@@ -66,15 +66,15 @@ body {
     }
     
     .header h1 {
-        font-size: 20px;
+        font-size: 40px;
     }
     
     .logo {
-        height: 80px;
+        height: 90px;
     }
     
     .lang-flag {
-        height: 30px;
+        height: 60px;
     }
 }
 
