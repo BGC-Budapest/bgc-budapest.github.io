@@ -38,7 +38,7 @@ body {
 }
 
 .lang-flag {
-    height: 35px;
+    height: 45px;
     width: auto;
     cursor: pointer;
     transition: opacity 0.2s;
@@ -70,7 +70,7 @@ body {
     }
     
     .logo {
-        height: 60px;
+        height: 80px;
     }
     
     .lang-flag {
@@ -123,6 +123,10 @@ h2 {
 
 .survey {
     width: 100%;
+}
+
+hr {
+    margin-bottom: 12px;
 }
 
 .question {
