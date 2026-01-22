@@ -25,7 +25,7 @@ body {
 }
 
 .logo {
-    height: 60px;
+    height: 80px;
     width: auto;
 }
 
@@ -33,12 +33,12 @@ body {
     flex: 1;
     text-align: center;
     margin: 0;
-    font-size: 22px;
+    font-size: 35px;
     color: #333;
 }
 
 .lang-flag {
-    height: 35px;
+    height: 45px;
     width: auto;
     cursor: pointer;
     transition: opacity 0.2s;
