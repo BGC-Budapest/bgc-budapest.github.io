@@ -380,23 +380,31 @@ function searchGames(query) {
                     }
                 }
                 
+                const shelfText = `📍 ${floorText}${t('shelf')}: ${game.shelf}`;
+
                 html += `
-                        <div class="game-item shelf-info"
+                    <div class="game-item"
                         data-objectid="${game.objectid || ''}"
-                        data-gamename="${game.name}">
+                        data-gamename="${game.name}"
+                        data-shelf="${shelfText}">
                         <div class="game-name">${game.name}</div>
-                        <div class="shelf-info">📍 ${floorText}${t('shelf')}: ${game.shelf}</div>
+                        <div class="shelf-info">${shelfText}</div>
                     </div>
                 `;
+
             } else {
+                const noShelfText = t('noShelfInfo');
+
                 html += `
-                        <div class="game-item"
+                    <div class="game-item"
                         data-objectid="${game.objectid || ''}"
-                        data-gamename="${game.name}">
+                        data-gamename="${game.name}"
+                        data-shelf="${noShelfText}">
                         <div class="game-name">${game.name}</div>
-                        <div style="color: #999;">${t('noShelfInfo')}</div>
+                        <div style="color: #999;">${noShelfText}</div>
                     </div>
                 `;
+
             }
         });
         resultsDiv.innerHTML = html;
@@ -518,7 +526,7 @@ function mapComplexity(weight) {
   return t("complexity_hardcore");
 }
 
-async function openGameModal(gameName, objectId) {
+async function openGameModal(gameName, objectId, shelfInfo) {
   if (!objectId) return;
 
   modalOverlay.classList.remove("hidden");
@@ -556,6 +564,10 @@ async function openGameModal(gameName, objectId) {
         ${data.mechanisms.join(", ")}
         </div>
 
+        <div class="modal-section">
+        <div class="modal-label">📍 ${t('shelf')}:</div>
+        ${shelfInfo}
+        </div>
     `;
   } catch (err) {
     modalContent.innerHTML = `<p>Hiba történt az adatok betöltésekor.</p>`;
@@ -566,28 +578,20 @@ async function openGameModal(gameName, objectId) {
 const resultsDiv = document.getElementById("searchResults");
 
 resultsDiv.addEventListener("click", (e) => {
-    console.log("Click detected:", e.target);
-
     const gameItem = e.target.closest(".game-item");
-    if (!gameItem) {
-        console.log("No .game-item found");
-        return;
-    }
-
-    console.log("Game item clicked:", gameItem);
+    if (!gameItem) return;
 
     const objectId = gameItem.dataset.objectid;
     const gameName = gameItem.dataset.gamename;
+    const rawShelfInfo = gameItem.dataset.shelf;
 
-    console.log("Dataset:", { objectId, gameName });
+    if (!objectId) return;
 
-    if (!objectId) {
-        console.log("No objectId → popup disabled for this item");
-        return;
-    }
+    const shelfInfo = rawShelfInfo
+        ? rawShelfInfo.replace(/^📍\s*/, "")
+        : "";
 
-    console.log("Opening modal for:", gameName, objectId);
-    openGameModal(gameName, objectId);
+    openGameModal(gameName, objectId, shelfInfo);
 });
 
 
