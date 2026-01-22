@@ -82,6 +82,8 @@ const translations = {
         showLessButton: 'Kevesebb',
         randomGame: 'Véletlen játék',
         matchingGames: 'egyező játék',
+        clearButton: 'Törlés'
+
     },
     en: {
         loading: 'Loading...',
@@ -127,7 +129,8 @@ const translations = {
         showAllButton: 'Show All',
         showLessButton: 'Show Less',
         randomGame: 'Random Game',
-        matchingGames: 'matching games'
+        matchingGames: 'matching games',
+        clearButton: 'Clear'
     }
 };
 
@@ -304,16 +307,19 @@ async function fetchFromJSON() {
 function searchGames(query) {
     console.log('=== SEARCHING FOR:', query, '===');
     const resultsDiv = document.getElementById('searchResults');
+    const resetSearchBtn = document.getElementById('resetSearchBtn');
 
     if (!query.trim()) {
         console.log('Empty query, showing error');
         resultsDiv.innerHTML = `<div class="error">${t('emptySearch')}</div>`;
+        resetSearchBtn.style.display = 'none';
         return;
     }
 
     if (gamesCollection.length === 0) {
         console.log('Collection not loaded yet');
         resultsDiv.innerHTML = `<div class="error">${t('collectionStillLoading')}</div>`;
+        resetSearchBtn.style.display = 'none';
         return;
     }
 
@@ -327,6 +333,9 @@ function searchGames(query) {
 
     console.log('Matches found:', matches.length);
     console.log('Matched games:', matches);
+
+    // Show reset button when there are results or input
+    resetSearchBtn.style.display = 'block';
 
     // Display results
     if (matches.length === 0) {
@@ -383,6 +392,14 @@ document.getElementById('searchInput').addEventListener('keypress', (e) => {
         const query = document.getElementById('searchInput').value;
         searchGames(query);
     }
+});
+
+// Reset search button event listener
+document.getElementById('resetSearchBtn').addEventListener('click', () => {
+    console.log('Reset search button clicked');
+    document.getElementById('searchInput').value = '';
+    document.getElementById('searchResults').innerHTML = '';
+    document.getElementById('resetSearchBtn').style.display = 'none';
 });
 
 // Load collection on page load

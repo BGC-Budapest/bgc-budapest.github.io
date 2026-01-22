@@ -21,8 +21,11 @@
         <div class="content">
             <div class="section">
                 <h2 data-hu="Hol van ez a játék?" data-en="Where can I find this game?">Hol van ez a játék?</h2>
-                <input type="text" id="searchInput" class="search-box" data-hu="Írd be a játék nevét..." data-en="Enter game name..." placeholder="Game name...">
-                <button id="searchBtn" class="search-btn" data-hu="Keresés" data-en="Search">Keresés</button>
+                <input type="text" id="searchInput" class="search-box" data-hu-placeholder="Írd be a játék nevét..." data-en-placeholder="Enter game name..." placeholder="Game...">
+                <div class="button-row">
+                    <button id="searchBtn" class="search-btn" data-hu="Keresés" data-en="Search">Keresés</button>
+                    <button id="resetSearchBtn" class="reset-btn search-btn" data-hu="Törlés" data-en="Clear" style="display: none;">Törlés</button>
+                </div>
                 
                 <div id="searchResults" class="results"></div>
             </div>
