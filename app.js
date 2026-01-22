@@ -82,8 +82,17 @@ const translations = {
         showLessButton: 'Kevesebb',
         randomGame: 'Véletlen játék',
         matchingGames: 'egyező játék',
-        clearButton: 'Törlés'
-
+        clearButton: 'Törlés',
+        //Popup
+        playerCount: "Játékosszám",
+        rating: "Értékelés",
+        complexity: "Komplexitás",
+        complexity_very_easy: "Nagyon könnyű",
+        complexity_easy: "Könnyű",
+        complexity_mid: "Közepes",
+        complexity_hard: "Nehéz",
+        complexity_hardcore: "Nagyon nehéz",
+        mechanics: "Mechanikák"
     },
     en: {
         loading: 'Loading...',
@@ -130,7 +139,17 @@ const translations = {
         showLessButton: 'Show Less',
         randomGame: 'Random Game',
         matchingGames: 'matching games',
-        clearButton: 'Clear'
+        clearButton: 'Clear',
+        //Popup
+        playerCount: "Player count",
+        rating: "Rating",
+        complexity: "Complexity",
+        complexity_very_easy: "Very easy",
+        complexity_easy: "Easy",
+        complexity_mid: "Mid",
+        complexity_hard: "Hard",
+        complexity_hardcore: "Hardcore",
+        mechanics: "Mechanics"
     }
 };
 
@@ -362,14 +381,18 @@ function searchGames(query) {
                 }
                 
                 html += `
-                    <div class="game-item">
+                        <div class="game-item shelf-info"
+                        data-objectid="${game.objectid || ''}"
+                        data-gamename="${game.name}">
                         <div class="game-name">${game.name}</div>
                         <div class="shelf-info">📍 ${floorText}${t('shelf')}: ${game.shelf}</div>
                     </div>
                 `;
             } else {
                 html += `
-                    <div class="game-item">
+                        <div class="game-item"
+                        data-objectid="${game.objectid || ''}"
+                        data-gamename="${game.name}">
                         <div class="game-name">${game.name}</div>
                         <div style="color: #999;">${t('noShelfInfo')}</div>
                     </div>
@@ -409,6 +432,164 @@ fetchCollection();
 
 // Load suggested games on page load
 loadSuggestedGames();
+
+//=============== POPUP LOGIC =========================
+
+const modalOverlay = document.getElementById("game-modal-overlay");
+const modalContent = document.getElementById("modal-content");
+const modalClose = document.getElementById("modal-close");
+
+modalClose.addEventListener("click", closeModal);
+modalOverlay.addEventListener("click", e => {
+  if (e.target === modalOverlay) closeModal();
+});
+
+function closeModal() {
+  modalOverlay.classList.add("hidden");
+  modalContent.innerHTML = "";
+}
+
+let touchStartY = null;
+
+modalOverlay.addEventListener("touchstart", (e) => {
+  if (e.touches.length === 1) {
+    touchStartY = e.touches[0].clientY;
+  }
+});
+
+modalOverlay.addEventListener("touchend", (e) => {
+  if (touchStartY === null) return;
+
+  const touchEndY = e.changedTouches[0].clientY;
+  const deltaY = touchEndY - touchStartY;
+
+  // swipe down threshold
+  if (deltaY > 120) {
+    closeModal();
+  }
+
+  touchStartY = null;
+});
+
+
+async function fetchBggGameDetails(objectId) {
+  const url = `https://boardgamegeek.com/xmlapi2/thing?id=${objectId}&stats=1`;
+  const response = await fetch(url, {
+      method: 'GET',
+      headers: {
+          'Authorization': `Bearer ${BGG_API_TOKEN}`,
+          'Accept': 'application/xml, text/xml, */*'
+      }
+  });
+
+
+  const text = await response.text();
+  const xml = new DOMParser().parseFromString(text, "text/xml");
+
+  const item = xml.querySelector("item");
+
+  const minPlayers = item.querySelector("minplayers")?.getAttribute("value");
+  const maxPlayers = item.querySelector("maxplayers")?.getAttribute("value");
+
+  const rating = item.querySelector("statistics ratings average")?.getAttribute("value");
+  const weight = item.querySelector("statistics ratings averageweight")?.getAttribute("value");
+
+  const image = item.querySelector("image")?.textContent;
+
+  const mechanisms = [...item.querySelectorAll("link[type='boardgamemechanic']")]
+    .map(m => m.getAttribute("value"));
+
+  return {
+    minPlayers,
+    maxPlayers,
+    rating,
+    weight,
+    weightText: mapComplexity(parseFloat(weight)),
+    mechanisms,
+    image
+  };
+}
+
+function mapComplexity(weight) {
+  if (weight < 1.5) return t("complexity_very_easy");
+  if (weight < 2.5) return t("complexity_easy");
+  if (weight < 3.5) return t("complexity_mid");
+  if (weight < 4.5) return t("complexity_hard");
+  return t("complexity_hardcore");
+}
+
+async function openGameModal(gameName, objectId) {
+  if (!objectId) return;
+
+  modalOverlay.classList.remove("hidden");
+  modalContent.innerHTML = `
+  <div class="skeleton skeleton-image"></div>
+  <div class="skeleton skeleton-line"></div>
+  <div class="skeleton skeleton-line"></div>
+  <div class="skeleton skeleton-line"></div>
+`;
+
+
+  try {
+    const data = await fetchBggGameDetails(objectId);
+
+    modalContent.innerHTML = `
+      ${data.image ? `<img src="${data.image}" alt="${gameName}">` : ""}
+
+        <div class="modal-section">
+        <div class="modal-label">👥 ${t("playerCount")}:</div>
+        ${data.minPlayers}–${data.maxPlayers}
+        </div>
+
+        <div class="modal-section">
+        <div class="modal-label">⭐ ${t("rating")}:</div>
+        ${Number(data.rating).toFixed(2)}
+        </div>
+
+        <div class="modal-section">
+        <div class="modal-label">🧠 ${t("complexity")}:</div>
+        ${Number(data.weight).toFixed(2)} / 5 – ${data.weightText}
+        </div>
+
+        <div class="modal-section">
+        <div class="modal-label">⚙️ ${t("mechanics")}:</div>
+        ${data.mechanisms.join(", ")}
+        </div>
+
+    `;
+  } catch (err) {
+    modalContent.innerHTML = `<p>Hiba történt az adatok betöltésekor.</p>`;
+    console.error(err);
+  }
+}
+
+const resultsDiv = document.getElementById("searchResults");
+
+resultsDiv.addEventListener("click", (e) => {
+    console.log("Click detected:", e.target);
+
+    const gameItem = e.target.closest(".game-item");
+    if (!gameItem) {
+        console.log("No .game-item found");
+        return;
+    }
+
+    console.log("Game item clicked:", gameItem);
+
+    const objectId = gameItem.dataset.objectid;
+    const gameName = gameItem.dataset.gamename;
+
+    console.log("Dataset:", { objectId, gameName });
+
+    if (!objectId) {
+        console.log("No objectId → popup disabled for this item");
+        return;
+    }
+
+    console.log("Opening modal for:", gameName, objectId);
+    openGameModal(gameName, objectId);
+});
+
 
 // ============== GAME SUGGESTION SYSTEM ==============
 
