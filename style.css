@@ -436,3 +436,16 @@ hr {
   height: 16px;
   margin-bottom: 10px;
 }
+
+.shelf-zone.active {
+  fill: #ff9800;
+  stroke: #e65100;
+  stroke-width: 2;
+  animation: pulse 1.4s infinite;
+}
+
+@keyframes pulse {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.5; }
+  100% { opacity: 1; }
+}
