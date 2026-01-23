@@ -437,6 +437,26 @@ hr {
   margin-bottom: 10px;
 }
 
+.floor-map-wrapper {
+  margin-top: 10px;
+}
+
+.floor-map-title {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.floor-map {
+  width: 100%;
+}
+
+.shelf-zone {
+  fill: #d6d6d6;
+  stroke: #666;
+  stroke-width: 1;
+  rx: 6;
+}
+
 .shelf-zone.active {
   fill: #ff9800;
   stroke: #e65100;
