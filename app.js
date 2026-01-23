@@ -662,13 +662,11 @@ const FLOOR_CONFIG = {
 };
 
 function resolveFloorAndShelf(shelfInfo) {
-  console.log("shelfInfo: " + shelfInfo);
   const match = shelfInfo.match(/(\d+)-/);
-  console.log("MATCH: " + match);
   if (!match) return null;
 
   const shelfNumber = parseInt(match[1], 10);
-  //if (Number.isNaN(shelfNumber)) return null;
+  if (Number.isNaN(shelfNumber)) return null;
 
   for (const [key, floor] of Object.entries(FLOOR_CONFIG)) {
     const [min, max] = floor.shelfRange;
