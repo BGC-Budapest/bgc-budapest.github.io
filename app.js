@@ -6,6 +6,41 @@ let suggestedGames = []; // Will store the curated game suggestions
 let isLoading = false;
 let currentLanguage = 'hu'; // Default language is Hungarian
 
+const SHELF_ZONE_MAP = {
+  ground: [
+    { range: [35, 36],   zoneId: "zone-top-1" },
+    { range: [25, 34],   zoneId: "zone-top-2" },
+
+    { range: [20, 24],  zoneId: "zone-right-1" },
+    { range: [18, 19], zoneId: "zone-right-2" },
+    { range: [16, 17], zoneId: "zone-right-3" },
+    { range: [11, 15], zoneId: "zone-right-4" },
+    { range: [9, 10], zoneId: "zone-right-5" },
+    { range: [8, 8], zoneId: "zone-right-6" },
+    { range: [7, 7], zoneId: "zone-right-7" },
+    { range: [4, 6], zoneId: "zone-right-8" },
+    { range: [3, 3], zoneId: "zone-right-9" },
+
+    { range: [37, 38], zoneId: "zone-bottom-1" },
+    { range: [1, 2], zoneId: "zone-bottom-2" }
+  ],
+  first: [
+    { range: [81, 84], zoneId: "zone-top-1" },
+    { range: [73, 80], zoneId: "zone-top-2" },
+
+    { range: [72, 72], zoneId: "zone-right-1" },
+    { range: [70, 71], zoneId: "zone-right-2" },
+    { range: [63, 69], zoneId: "zone-right-3" },
+    { range: [61, 62], zoneId: "zone-right-4" },
+    { range: [57, 60], zoneId: "zone-right-5" },
+    { range: [53, 56], zoneId: "zone-right-6" },
+
+    { range: [50, 51], zoneId: "zone-bottom-1" },
+    { range: [52, 52], zoneId: "zone-bottom-2" }
+  ]
+};
+
+
 // ============== LANGUAGE SWITCHING ==============
 
 function switchLanguage() {
