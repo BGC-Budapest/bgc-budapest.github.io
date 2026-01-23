@@ -491,29 +491,6 @@ function closeModal() {
   modalContent.innerHTML = "";
 }
 
-let touchStartY = null;
-
-modalOverlay.addEventListener("touchstart", (e) => {
-  if (e.touches.length === 1) {
-    touchStartY = e.touches[0].clientY;
-  }
-});
-
-modalOverlay.addEventListener("touchend", (e) => {
-  if (touchStartY === null) return;
-
-  const touchEndY = e.changedTouches[0].clientY;
-  const deltaY = touchEndY - touchStartY;
-
-  // swipe down threshold
-  if (deltaY > 120) {
-    closeModal();
-  }
-
-  touchStartY = null;
-});
-
-
 async function fetchBggGameDetails(objectId) {
   const url = `https://boardgamegeek.com/xmlapi2/thing?id=${objectId}&stats=1`;
   const response = await fetch(url, {
