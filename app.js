@@ -40,7 +40,6 @@ const SHELF_ZONE_MAP = {
   ]
 };
 
-
 // ============== LANGUAGE SWITCHING ==============
 
 function switchLanguage() {
@@ -604,6 +603,24 @@ async function openGameModal(gameName, objectId, shelfInfo) {
         ${shelfInfo}
         </div>
     `;
+
+    const floorData = resolveFloorAndShelf(shelfInfo);
+
+    if (floorData) {
+    modalContent.innerHTML += `
+        <div class="floor-map-wrapper">
+        <div class="floor-map-title">${floorData.floorLabel}</div>
+        <div id="floor-map-container"></div>
+        </div>
+    `;
+
+    loadFloorMap(
+        floorData.floorKey,
+        floorData.shelfNumber,
+        floorData.svg
+    );
+    }
+
   } catch (err) {
     modalContent.innerHTML = `<p>Hiba történt az adatok betöltésekor.</p>`;
     console.error(err);
@@ -628,6 +645,65 @@ resultsDiv.addEventListener("click", (e) => {
 
     openGameModal(gameName, objectId, shelfInfo);
 });
+
+// ============== SHELF HIGHLIGHTING LOGIC ==============
+
+const FLOOR_CONFIG = {
+  ground: {
+    label: t("groundFloor"),
+    shelfRange: [1, 49],
+    svg: "/img/floor-ground.svg"
+  },
+  first: {
+    label: t("firstFloor"),
+    shelfRange: [50, 99],
+    svg: "/img/floor-first.svg"
+  }
+};
+
+function resolveFloorAndShelf(shelfInfo) {
+  console.log("shelfInfo: " + shelfInfo);
+  const match = shelfInfo.match(/(\d+)-/);
+  console.log("MATCH: " + match);
+  if (!match) return null;
+
+  const shelfNumber = parseInt(match[1], 10);
+  //if (Number.isNaN(shelfNumber)) return null;
+
+  for (const [key, floor] of Object.entries(FLOOR_CONFIG)) {
+    const [min, max] = floor.shelfRange;
+    if (shelfNumber >= min && shelfNumber <= max) {
+      return {
+        floorKey: key,
+        shelfNumber,
+        floorLabel: floor.label,
+        svg: floor.svg
+      };
+    }
+  }
+
+  return null;
+}
+
+async function loadFloorMap(floorKey, shelfNumber, svgPath) {
+  const container = document.getElementById("floor-map-container");
+  const response = await fetch(svgPath);
+  const svgText = await response.text();
+
+  container.innerHTML = svgText;
+
+  const zone = SHELF_ZONE_MAP[floorKey]?.find(z =>
+    shelfNumber >= z.range[0] && shelfNumber <= z.range[1]
+  );
+
+  if (!zone) return;
+
+  requestAnimationFrame(() => {
+    const el = container.querySelector(`#${zone.zoneId}`);
+    el?.classList.add("active");
+  });
+}
+
 
 
 // ============== GAME SUGGESTION SYSTEM ==============
