@@ -2,7 +2,7 @@
   "games": [
     {
       "name": "7 csoda",
-      "image": "7_csoda.png",
+      "image": "7_csoda.jpg",
       "players": [
         3,
         4,
@@ -19,7 +19,7 @@
     },
     {
       "name": "7 Csoda Párbaj",
-      "image": "7_csoda_párbaj.png",
+      "image": "7_csoda_párbaj.jpg",
       "players": [
         2
       ],
@@ -30,7 +30,7 @@
     },
     {
       "name": "A Nyugalom Tengere",
-      "image": "a_nyugalom_tengere.png",
+      "image": "a_nyugalom_tengere.jpg",
       "players": [
         1,
         2,
@@ -47,7 +47,7 @@
     },
     {
       "name": "Aljas 7-es",
-      "image": "aljas_7es.png",
+      "image": "aljas_7es.jpg",
       "players": [
         3,
         4,
@@ -63,7 +63,7 @@
     },
     {
       "name": "Aranyásók",
-      "image": "aranyásók.png",
+      "image": "aranyásók.jpg",
       "players": [
         3,
         4,
@@ -81,7 +81,7 @@
     },
     {
       "name": "Az Erdő",
-      "image": "az_erdő.png",
+      "image": "az_erdő.jpg",
       "players": [
         2,
         3,
@@ -97,7 +97,7 @@
     },
     {
       "name": "Azul",
-      "image": "azul.png",
+      "image": "azul.jpg",
       "players": [
         2,
         3,
@@ -113,7 +113,7 @@
     },
     {
       "name": "Banán buli balhé",
-      "image": "banán_buli_balhé.png",
+      "image": "banán_buli_balhé.jpg",
       "players": [
         2,
         3,
@@ -130,7 +130,7 @@
     },
     {
       "name": "Bandido",
-      "image": "bandido.png",
+      "image": "bandido.jpg",
       "players": [
         1,
         2,
@@ -146,7 +146,7 @@
     },
     {
       "name": "Boldog Lazac",
-      "image": "boldog_lazac.png",
+      "image": "boldog_lazac.jpg",
       "players": [
         3,
         4,
@@ -165,7 +165,7 @@
     },
     {
       "name": "Bombairtók",
-      "image": "bombairtók.png",
+      "image": "bombairtók.jpg",
       "players": [
         4,
         5
@@ -181,7 +181,7 @@
     },
     {
       "name": "Bonszai",
-      "image": "bonszai.png",
+      "image": "bonszai.jpg",
       "players": [
         2,
         3,
@@ -194,7 +194,7 @@
     },
     {
       "name": "Bűvös Kulcsok",
-      "image": "bűvös_kulcsok.png",
+      "image": "bűvös_kulcsok.jpg",
       "players": [
         2,
         3,
@@ -209,7 +209,7 @@
     },
     {
       "name": "Carcassonne",
-      "image": "carcassonne.png",
+      "image": "carcassonne.jpg",
       "players": [
         2,
         3,
@@ -225,7 +225,7 @@
     },
     {
       "name": "Cascadia",
-      "image": "cascadia.png",
+      "image": "cascadia.jpg",
       "players": [
         2,
         3,
@@ -240,7 +240,7 @@
     },
     {
       "name": "Citadella",
-      "image": "citadella.png",
+      "image": "citadella.jpg",
       "players": [
         2,
         3,
@@ -257,7 +257,7 @@
     },
     {
       "name": "Klank!: Katakombák",
-      "image": "klank_katakombák.png",
+      "image": "klank_katakombák.jpg",
       "players": [
         2,
         3,
@@ -270,7 +270,7 @@
     },
     {
       "name": "Csordaszellem",
-      "image": "csordaszellem.png",
+      "image": "csordaszellem.jpg",
       "players": [
         4,
         5,
@@ -299,7 +299,7 @@
     },
     {
       "name": "Coffee Rush",
-      "image": "coffee_rush.png",
+      "image": "coffee_rush.jpg",
       "players": [
         2,
         3,
@@ -312,7 +312,7 @@
     },
     {
       "name": "Cryptid",
-      "image": "cryptid.png",
+      "image": "cryptid.jpg",
       "players": [
         3,
         4,
@@ -325,7 +325,7 @@
     },
     {
       "name": "Csak egy",
-      "image": "csak_egy.png",
+      "image": "csak_egy.jpg",
       "players": [
         3,
         4,
@@ -344,7 +344,7 @@
     },
     {
       "name": "Cucc",
-      "image": "cucc.png",
+      "image": "cucc.jpg",
       "players": [
         2,
         3,
@@ -364,7 +364,7 @@
     },
     {
       "name": "Deszkalózok",
-      "image": "deszkalózok.png",
+      "image": "deszkalózok.jpg",
       "players": [
         2,
         3,
@@ -379,7 +379,7 @@
     },
     {
       "name": "Dixit",
-      "image": "dixit.png",
+      "image": "dixit.jpg",
       "players": [
         3,
         4,
@@ -395,7 +395,7 @@
     },
     {
       "name": "Dragomino",
-      "image": "dragomino.png",
+      "image": "dragomino.jpg",
       "players": [
         2,
         3,
@@ -410,7 +410,7 @@
     },
     {
       "name": "Eldorádó legendája",
-      "image": "eldorádó_legendája.png",
+      "image": "eldorádó_legendája.jpg",
       "players": [
         2,
         3,
@@ -423,7 +423,7 @@
     },
     {
       "name": "Ezüsthegy Építészei",
-      "image": "ezüsthegy_építészei.png",
+      "image": "ezüsthegy_építészei.jpg",
       "players": [
         2,
         3,
@@ -437,7 +437,7 @@
     },
     {
       "name": "Fedőnevek",
-      "image": "fedőnevek.png",
+      "image": "fedőnevek.jpg",
       "players": [
         4,
         5,
@@ -457,7 +457,7 @@
     },
     {
       "name": "Firkafutam",
-      "image": "firkafutam.png",
+      "image": "firkafutam.jpg",
       "players": [
         3,
         4,
@@ -477,7 +477,7 @@
     },
     {
       "name": "Flash Point: Fire Rescue",
-      "image": "flash_point_fire_rescue.png",
+      "image": "flash_point_fire_rescue.jpg",
       "players": [
         2,
         3,
@@ -495,7 +495,7 @@
     },
     {
       "name": "New York építészei",
-      "image": "new_york_építészei.png",
+      "image": "new_york_építészei.jpg",
       "players": [
         2
       ],
@@ -506,7 +506,7 @@
     },
     {
       "name": "Föld és Víz",
-      "image": "föld_és_víz.png",
+      "image": "föld_és_víz.jpg",
       "players": [
         2
       ],
@@ -517,7 +517,7 @@
     },
     {
       "name": "Ganz Schön Clever",
-      "image": "ganz_schön_clever.png",
+      "image": "ganz_schön_clever.jpg",
       "players": [
         2,
         3,
@@ -532,7 +532,7 @@
     },
     {
       "name": "Go! Doggy Go!",
-      "image": "go_doggy_go.png",
+      "image": "go_doggy_go.jpg",
       "players": [
         2,
         3,
@@ -545,7 +545,7 @@
     },
     {
       "name": "Gumikacsák",
-      "image": "gumikacsák.png",
+      "image": "gumikacsák.jpg",
       "players": [
         2,
         3,
@@ -565,7 +565,7 @@
     },
     {
       "name": "Gyémántvadászok",
-      "image": "gyémántvadászok.png",
+      "image": "gyémántvadászok.jpg",
       "players": [
         3,
         4,
@@ -581,7 +581,7 @@
     },
     {
       "name": "Hallatlan",
-      "image": "hallatlan.png",
+      "image": "hallatlan.jpg",
       "players": [
         4,
         5,
@@ -598,7 +598,7 @@
     },
     {
       "name": "Harmónia",
-      "image": "harmónia.png",
+      "image": "harmónia.jpg",
       "players": [
         2,
         3,
@@ -611,7 +611,7 @@
     },
     {
       "name": "HEAT: Padlógáz",
-      "image": "heat_padlógáz.png",
+      "image": "heat_padlógáz.jpg",
       "players": [
         3,
         4,
@@ -625,7 +625,7 @@
     },
     {
       "name": "Hellapagos",
-      "image": "hellapagos.png",
+      "image": "hellapagos.jpg",
       "players": [
         3,
         4,
@@ -647,7 +647,7 @@
     },
     {
       "name": "Hoth Ostroma",
-      "image": "hoth_ostroma.png",
+      "image": "hoth_ostroma.jpg",
       "players": [
         2
       ],
@@ -658,7 +658,7 @@
     },
     {
       "name": "Hullámhossz",
-      "image": "hullámhossz.png",
+      "image": "hullámhossz.jpg",
       "players": [
         2,
         3,
@@ -681,7 +681,7 @@
     },
     {
       "name": "Hupp",
-      "image": "hupp.png",
+      "image": "hupp.jpg",
       "players": [
         2
       ],
@@ -694,7 +694,7 @@
     },
     {
       "name": "Időhurok",
-      "image": "időhurok.png",
+      "image": "időhurok.jpg",
       "players": [
         2,
         3,
@@ -710,7 +710,7 @@
     },
     {
       "name": "Az ismeretlen bolygó",
-      "image": "az_ismeretlen_bolygó.png",
+      "image": "az_ismeretlen_bolygó.jpg",
       "players": [
         2,
         3,
@@ -725,7 +725,7 @@
     },
     {
       "name": "Jó tudni",
-      "image": "jó_tudni.png",
+      "image": "jó_tudni.jpg",
       "players": [
         4,
         5,
@@ -743,7 +743,7 @@
     },
     {
       "name": "Johari Bazaar",
-      "image": "johari_bazaar.png",
+      "image": "johari_bazaar.jpg",
       "players": [
         2
       ],
@@ -756,7 +756,7 @@
     },
     {
       "name": "Kaméleon",
-      "image": "kaméleon.png",
+      "image": "kaméleon.jpg",
       "players": [
         4,
         5,
@@ -773,7 +773,7 @@
     },
     {
       "name": "Kartográfusok",
-      "image": "kartográfusok.png",
+      "image": "kartográfusok.jpg",
       "players": [
         2,
         3,
@@ -792,7 +792,7 @@
     },
     {
       "name": "Katicabál",
-      "image": "katicabál.png",
+      "image": "katicabál.jpg",
       "players": [
         2,
         3,
@@ -810,7 +810,7 @@
     },
     {
       "name": "Kertvárosi kémek",
-      "image": "kertvárosi_kémek.png",
+      "image": "kertvárosi_kémek.jpg",
       "players": [
         2
       ],
@@ -823,7 +823,7 @@
     },
     {
       "name": "Kingdomino",
-      "image": "kingdomino.png",
+      "image": "kingdomino.jpg",
       "players": [
         2,
         3,
@@ -839,7 +839,7 @@
     },
     {
       "name": "Királyi Kombó",
-      "image": "királyi_kombó.png",
+      "image": "királyi_kombó.jpg",
       "players": [
         2,
         3,
@@ -854,7 +854,7 @@
     },
     {
       "name": "Kitchen Rush",
-      "image": "kitchen_rush.png",
+      "image": "kitchen_rush.jpg",
       "players": [
         2,
         3,
@@ -870,7 +870,7 @@
     },
     {
       "name": "Klask",
-      "image": "klask.png",
+      "image": "klask.jpg",
       "players": [
         2
       ],
@@ -883,7 +883,7 @@
     },
     {
       "name": "Kluster",
-      "image": "kluster.png",
+      "image": "kluster.jpg",
       "players": [
         2,
         3,
@@ -898,7 +898,7 @@
     },
     {
       "name": "Köszöntünk a Holdon",
-      "image": "köszöntünk_a_holdon.png",
+      "image": "köszöntünk_a_holdon.jpg",
       "players": [
         2,
         3,
@@ -913,7 +913,7 @@
     },
     {
       "name": "Következő Megálló: London",
-      "image": "következő_megálló_london.png",
+      "image": "következő_megálló_london.jpg",
       "players": [
         2,
         3,
@@ -926,7 +926,7 @@
     },
     {
       "name": "Cosmic Factory",
-      "image": "cosmic_factory.png",
+      "image": "cosmic_factory.jpg",
       "players": [
         2,
         3,
@@ -943,7 +943,7 @@
     },
     {
       "name": "Kuruzslók Quedlinburgban",
-      "image": "kuruzslók_quedlinburgban.png",
+      "image": "kuruzslók_quedlinburgban.jpg",
       "players": [
         2,
         3,
@@ -956,7 +956,7 @@
     },
     {
       "name": "Lapzárta",
-      "image": "lapzárta.png",
+      "image": "lapzárta.jpg",
       "players": [
         2,
         3,
@@ -973,7 +973,7 @@
     },
     {
       "name": "Lázadó Hercegnők",
-      "image": "lázadó_hercegnők.png",
+      "image": "lázadó_hercegnők.jpg",
       "players": [
         3,
         4,
@@ -989,7 +989,7 @@
     },
     {
       "name": "Légi társaság",
-      "image": "légi_társaság.png",
+      "image": "légi_társaság.jpg",
       "players": [
         2
       ],
@@ -1004,7 +1004,7 @@
     },
     {
       "name": "Looot",
-      "image": "looot.png",
+      "image": "looot.jpg",
       "players": [
         2,
         3,
@@ -1017,7 +1017,7 @@
     },
     {
       "name": "Lumenara felfedezői",
-      "image": "lumenara_felfedezői.png",
+      "image": "lumenara_felfedezői.jpg",
       "players": [
         1,
         2,
@@ -1035,7 +1035,7 @@
     },
     {
       "name": "Magic Maze",
-      "image": "magic_maze.png",
+      "image": "magic_maze.jpg",
       "players": [
         2,
         3,
@@ -1055,7 +1055,7 @@
     },
     {
       "name": "Menekülés A Vulkánszigetről",
-      "image": "menekülés_a_vulkánszigetről.png",
+      "image": "menekülés_a_vulkánszigetről.jpg",
       "players": [
         2,
         3,
@@ -1071,7 +1071,7 @@
     },
     {
       "name": "Mr. Jack",
-      "image": "mr._jack.png",
+      "image": "mr._jack.jpg",
       "players": [
         2
       ],
@@ -1085,7 +1085,7 @@
     },
     {
       "name": "Műgyűjtők Társasága",
-      "image": "műgyűjtők_társasága.png",
+      "image": "műgyűjtők_társasága.jpg",
       "players": [
         2,
         3,
@@ -1098,7 +1098,7 @@
     },
     {
       "name": "Mycelia",
-      "image": "mycelia.png",
+      "image": "mycelia.jpg",
       "players": [
         2,
         3,
@@ -1111,7 +1111,7 @@
     },
     {
       "name": "Nekojima",
-      "image": "nekojima.png",
+      "image": "nekojima.jpg",
       "players": [
         1,
         2,
@@ -1128,7 +1128,7 @@
     },
     {
       "name": "Őrült Lajos Király Két Kastélya Között",
-      "image": "őrült_lajos_király_két_kastélya_között.png",
+      "image": "őrült_lajos_király_két_kastélya_között.jpg",
       "players": [
         3,
         4,
@@ -1143,7 +1143,7 @@
     },
     {
       "name": "Ősköltészet",
-      "image": "ősköltészet.png",
+      "image": "ősköltészet.jpg",
       "players": [
         2,
         3,
@@ -1166,7 +1166,7 @@
     },
     {
       "name": "Paleo",
-      "image": "paleo.png",
+      "image": "paleo.jpg",
       "players": [
         2,
         3,
@@ -1182,7 +1182,7 @@
     },
     {
       "name": "Pandemic",
-      "image": "pandemic.png",
+      "image": "pandemic.jpg",
       "players": [
         2,
         3,
@@ -1197,7 +1197,7 @@
     },
     {
       "name": "Patchwork",
-      "image": "patchwork.png",
+      "image": "patchwork.jpg",
       "players": [
         2
       ],
@@ -1210,7 +1210,7 @@
     },
     {
       "name": "Pergola",
-      "image": "pergola.png",
+      "image": "pergola.jpg",
       "players": [
         2,
         3,
@@ -1223,7 +1223,7 @@
     },
     {
       "name": "Pöttyök",
-      "image": "pöttyök.png",
+      "image": "pöttyök.jpg",
       "players": [
         2,
         3,
@@ -1236,7 +1236,7 @@
     },
     {
       "name": "Rá: A Nílus völgyének krónikája",
-      "image": "rá_a_nílus_völgyének_krónikája.png",
+      "image": "rá_a_nílus_völgyének_krónikája.jpg",
       "players": [
         2,
         3,
@@ -1250,7 +1250,7 @@
     },
     {
       "name": "Rókanyomon",
-      "image": "rókanyomon.png",
+      "image": "rókanyomon.jpg",
       "players": [
         2,
         3,
@@ -1263,7 +1263,7 @@
     },
     {
       "name": "Sajtbirodalom",
-      "image": "sajtbirodalom.png",
+      "image": "sajtbirodalom.jpg",
       "players": [
         2,
         3,
@@ -1278,7 +1278,7 @@
     },
     {
       "name": "Sajtra Szállás",
-      "image": "sajtra_szállás.png",
+      "image": "sajtra_szállás.jpg",
       "players": [
         2,
         3,
@@ -1292,7 +1292,7 @@
     },
     {
       "name": "Sárkányok",
-      "image": "sárkányok.png",
+      "image": "sárkányok.jpg",
       "players": [
         2,
         3,
@@ -1311,7 +1311,7 @@
     },
     {
       "name": "Schotten Totten",
-      "image": "schotten_totten.png",
+      "image": "schotten_totten.jpg",
       "players": [
         2
       ],
@@ -1326,7 +1326,7 @@
     },
     {
       "name": "Scout",
-      "image": "scout.png",
+      "image": "scout.jpg",
       "players": [
         3,
         4,
@@ -1341,7 +1341,7 @@
     },
     {
       "name": "Similo",
-      "image": "similo.png",
+      "image": "similo.jpg",
       "players": [
         2,
         3,
@@ -1359,7 +1359,7 @@
     },
     {
       "name": "Sör és kenyér",
-      "image": "sör_és_kenyér.png",
+      "image": "sör_és_kenyér.jpg",
       "players": [
         2
       ],
@@ -1370,7 +1370,7 @@
     },
     {
       "name": "Splendor: Marvel",
-      "image": "splendor_marvel.png",
+      "image": "splendor_marvel.jpg",
       "players": [
         3,
         4
@@ -1382,7 +1382,7 @@
     },
     {
       "name": "Splendor párbaj",
-      "image": "splendor_párbaj.png",
+      "image": "splendor_párbaj.jpg",
       "players": [
         2
       ],
@@ -1393,7 +1393,7 @@
     },
     {
       "name": "Stupor!",
-      "image": "stupor.png",
+      "image": "stupor.jpg",
       "players": [
         4,
         5,
@@ -1408,7 +1408,7 @@
     },
     {
       "name": "Színtahal",
-      "image": "színtahal.png",
+      "image": "színtahal.jpg",
       "players": [
         2,
         3,
@@ -1423,7 +1423,7 @@
     },
     {
       "name": "Szókötő",
-      "image": "szókötő.png",
+      "image": "szókötő.jpg",
       "players": [
         2,
         3,
@@ -1441,7 +1441,7 @@
     },
     {
       "name": "Szupercsapat",
-      "image": "szupercsapat.png",
+      "image": "szupercsapat.jpg",
       "players": [
         4,
         6,
@@ -1457,7 +1457,7 @@
     },
     {
       "name": "That's Not a Hat",
-      "image": "thats_not_a_hat.png",
+      "image": "thats_not_a_hat.jpg",
       "players": [
         3,
         4,
@@ -1475,7 +1475,7 @@
     },
     {
       "name": "The Crew: A mélytengeri küldetés",
-      "image": "the_crew_a_mélytengeri_küldetés.png",
+      "image": "the_crew_a_mélytengeri_küldetés.jpg",
       "players": [
         3,
         4,
@@ -1492,7 +1492,7 @@
     },
     {
       "name": "The Gang",
-      "image": "the_gang.png",
+      "image": "the_gang.jpg",
       "players": [
         3,
         4,
@@ -1508,7 +1508,7 @@
     },
     {
       "name": "Tiltott Sziget",
-      "image": "tiltott_sziget.png",
+      "image": "tiltott_sziget.jpg",
       "players": [
         2,
         3,
@@ -1523,7 +1523,7 @@
     },
     {
       "name": "Time's Up!",
-      "image": "times_up.png",
+      "image": "times_up.jpg",
       "players": [
         4,
         5,
@@ -1540,7 +1540,7 @@
     },
     {
       "name": "Trio",
-      "image": "trio.png",
+      "image": "trio.jpg",
       "players": [
         3,
         4,
@@ -1557,7 +1557,7 @@
     },
     {
       "name": "Vörös Előőrs",
-      "image": "vörös_előőrs.png",
+      "image": "vörös_előőrs.jpg",
       "players": [
         2,
         3,
@@ -1572,7 +1572,7 @@
     },
     {
       "name": "Walking Baby",
-      "image": "walking_baby.png",
+      "image": "walking_baby.jpg",
       "players": [
         2,
         3,
@@ -1587,7 +1587,7 @@
     },
     {
       "name": "What Do You Meme?",
-      "image": "what_do_you_meme.png",
+      "image": "what_do_you_meme.jpg",
       "players": [
         3,
         4,
@@ -1619,7 +1619,7 @@
     },
     {
       "name": "Wilmot Raktára",
-      "image": "wilmot_raktára.png",
+      "image": "wilmot_raktára.jpg",
       "players": [
         2,
         3,
@@ -1636,7 +1636,7 @@
     },
     {
       "name": "Igen?",
-      "image": "igen.png",
+      "image": "igen.jpg",
       "players": [
         2,
         3,
@@ -1654,7 +1654,7 @@
     },
     {
       "name": "Abszolút szabad válaszok",
-      "image": "abszolút_szabad_válaszok.png",
+      "image": "abszolút_szabad_válaszok.jpg",
       "players": [
         3,
         4,
@@ -1685,7 +1685,7 @@
     },
     {
       "name": "Szókapocs",
-      "image": "szókapocs.png",
+      "image": "szókapocs.jpg",
       "players": [
         2,
         3,
@@ -1705,7 +1705,7 @@
     },
     {
       "name": "Concept",
-      "image": "concept.png",
+      "image": "concept.jpg",
       "players": [
         3,
         4,
@@ -1736,7 +1736,7 @@
     },
     {
       "name": "Bűnügyi Krónikák",
-      "image": "bűnügyi_krónikák.png",
+      "image": "bűnügyi_krónikák.jpg",
       "players": [
         2,
         3,
@@ -1752,7 +1752,7 @@
     },
     {
       "name": "Sztorikocka",
-      "image": "sztorikocka.png",
+      "image": "sztorikocka.jpg",
       "players": [
         2,
         3,
@@ -1774,7 +1774,7 @@
     },
     {
       "name": "Love Letter",
-      "image": "love_letter.png",
+      "image": "love_letter.jpg",
       "players": [
         3,
         4,
@@ -1794,7 +1794,7 @@
     },
     {
       "name": "A rettegés éjszakája: Vérfarkas",
-      "image": "a_rettegés_éjszakája_vérfarkas.png",
+      "image": "a_rettegés_éjszakája_vérfarkas.jpg",
       "players": [
         4,
         5,
@@ -1815,7 +1815,7 @@
     },
     {
       "name": "Instant Lista",
-      "image": "instant_lista.png",
+      "image": "instant_lista.jpg",
       "players": [
         3,
         4,
@@ -1834,7 +1834,7 @@
     },
     {
       "name": "Imagine",
-      "image": "imagine.png",
+      "image": "imagine.jpg",
       "players": [
         3,
         4,
@@ -1852,7 +1852,7 @@
     },
     {
       "name": "Hedbanz for Kids",
-      "image": "hedbanz_for_kids.png",
+      "image": "hedbanz_for_kids.jpg",
       "players": [
         2,
         3,
@@ -1869,7 +1869,7 @@
     },
     {
       "name": "Kragmortha",
-      "image": "kragmortha.png",
+      "image": "kragmortha.jpg",
       "players": [
         3,
         4,
@@ -1887,7 +1887,7 @@
     },
     {
       "name": "Dobble",
-      "image": "dobble.png",
+      "image": "dobble.jpg",
       "players": [
         2,
         3,
@@ -1907,7 +1907,7 @@
     },
     {
       "name": "Képmesék",
-      "image": "képmesék.png",
+      "image": "képmesék.jpg",
       "players": [
         3,
         4,
@@ -1930,7 +1930,7 @@
     },
     {
       "name": "Fekete Történetek",
-      "image": "fekete_történetek.png",
+      "image": "fekete_történetek.jpg",
       "players": [
         2,
         3,
@@ -1964,7 +1964,7 @@
     },
     {
       "name": "Villamos Dilemma",
-      "image": "villamos_dilemma.png",
+      "image": "villamos_dilemma.jpg",
       "players": [
         3,
         4,
@@ -1988,7 +1988,7 @@
     },
     {
       "name": "Spicy",
-      "image": "spicy.png",
+      "image": "spicy.jpg",
       "players": [
         2,
         3,
@@ -2006,7 +2006,7 @@
     },
     {
       "name": "Halmazállapot",
-      "image": "halmazállapot.png",
+      "image": "halmazállapot.jpg",
       "players": [
         3,
         4,
@@ -2025,7 +2025,7 @@
     },
     {
       "name": "Get on Board",
-      "image": "get_on_board.png",
+      "image": "get_on_board.jpg",
       "players": [
         2,
         3,
@@ -2039,7 +2039,7 @@
     },
     {
       "name": "Partvonal",
-      "image": "partvonal.png",
+      "image": "partvonal.jpg",
       "players": [
         2,
         3,
@@ -2053,7 +2053,7 @@
     },
     {
       "name": "Juharvölgy Krónikája",
-      "image": "juharvölgy_krónikája.png",
+      "image": "juharvölgy_krónikája.jpg",
       "players": [
         2,
         3,
@@ -2069,7 +2069,7 @@
     },
     {
       "name": "Everdell",
-      "image": "everdell.png",
+      "image": "everdell.jpg",
       "players": [
         2,
         3,
@@ -2082,7 +2082,7 @@
     },
     {
       "name": "Flamme Rouge",
-      "image": "flamme_rouge.png",
+      "image": "flamme_rouge.jpg",
       "players": [
         2,
         3,
@@ -2097,7 +2097,7 @@
     },
     {
       "name": "Citadella",
-      "image": "citadella.png",
+      "image": "citadella.jpg",
       "players": [
         2,
         3,
@@ -2116,7 +2116,7 @@
     },
     {
       "name": "Quadropolis",
-      "image": "quadropolis.png",
+      "image": "quadropolis.jpg",
       "players": [
         2,
         3,
@@ -2129,7 +2129,7 @@
     },
     {
       "name": "Sagrada",
-      "image": "sagrada.png",
+      "image": "sagrada.jpg",
       "players": [
         2,
         3,
@@ -2145,7 +2145,7 @@
     },
     {
       "name": "Azul: Sintra üvegcsodái",
-      "image": "azul_sintra_üvegcsodái.png",
+      "image": "azul_sintra_üvegcsodái.jpg",
       "players": [
         2,
         3,
@@ -2161,7 +2161,7 @@
     },
     {
       "name": "Azul: A királyi pavilon",
-      "image": "azul_a_királyi_pavilon.png",
+      "image": "azul_a_királyi_pavilon.jpg",
       "players": [
         2,
         3,
@@ -2177,7 +2177,7 @@
     },
     {
       "name": "Tiny Towns",
-      "image": "tiny_towns.png",
+      "image": "tiny_towns.jpg",
       "players": [
         2,
         3,
@@ -2190,7 +2190,7 @@
     },
     {
       "name": "Carcassonne: Vadászok és gyűjtögetők",
-      "image": "carcassonne_vadászok_és_gyűjtögetők.png",
+      "image": "carcassonne_vadászok_és_gyűjtögetők.jpg",
       "players": [
         2,
         3,
@@ -2204,7 +2204,7 @@
     },
     {
       "name": "Carcassonne: A ködbe zárt Carcassonne",
-      "image": "carcassonne_a_ködbe_zárt_carcassonne.png",
+      "image": "carcassonne_a_ködbe_zárt_carcassonne.jpg",
       "players": [
         2,
         3,
@@ -2220,7 +2220,7 @@
     },
     {
       "name": "Carcassonne: Amazonas",
-      "image": "carcassonne_amazonas.png",
+      "image": "carcassonne_amazonas.jpg",
       "players": [
         2,
         3,
@@ -2234,7 +2234,7 @@
     },
     {
       "name": "San Francisco Cable Car",
-      "image": "san_francisco_cable_car.png",
+      "image": "san_francisco_cable_car.jpg",
       "players": [
         2,
         3,
@@ -2249,7 +2249,7 @@
     },
     {
       "name": "Lombkorona",
-      "image": "lombkorona.png",
+      "image": "lombkorona.jpg",
       "players": [
         2
       ],
@@ -2262,7 +2262,7 @@
     },
     {
       "name": "Magyar Népmesék Memóriajáték",
-      "image": "magyar_népmesék_memóriajáték.png",
+      "image": "magyar_népmesék_memóriajáték.jpg",
       "players": [
         2,
         3,
@@ -2285,7 +2285,7 @@
     },
     {
       "name": "Ganz Schön Clever Kids",
-      "image": "ganz_schön_clever_kids.png",
+      "image": "ganz_schön_clever_kids.jpg",
       "players": [
         2,
         3,
@@ -2300,7 +2300,7 @@
     },
     {
       "name": "Hellapagos",
-      "image": "hellapagos.png",
+      "image": "hellapagos.jpg",
       "players": [
         3,
         4,
@@ -2322,7 +2322,7 @@
     },
     {
       "name": "Notthingham Bírája: 2. kiadás",
-      "image": "notthingham_bírája_2._kiadás.png",
+      "image": "notthingham_bírája_2._kiadás.jpg",
       "players": [
         3,
         4,
@@ -2338,7 +2338,7 @@
     },
     {
       "name": "Perudo",
-      "image": "perudo.png",
+      "image": "perudo.jpg",
       "players": [
         2,
         3,
@@ -2359,7 +2359,7 @@
     },
     {
       "name": "Dixit",
-      "image": "dixit.png",
+      "image": "dixit.jpg",
       "players": [
         3,
         4,
@@ -2375,7 +2375,7 @@
     },
     {
       "name": "Camel Up (Second Edition)",
-      "image": "camel_up_(second_edition).png",
+      "image": "camel_up_(second_edition).jpg",
       "players": [
         3,
         4,
