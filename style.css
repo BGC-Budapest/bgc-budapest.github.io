@@ -79,9 +79,22 @@ body {
 }
 
 .section {
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     padding: 15px;
     border-radius: 8px;
+}
+
+#randomBtn {
+    padding-left: 42px;
+    padding-right: 42px;
+}
+
+.section h2 {
+  text-align: center;
+}
+
+.mandatory {
+    font-size: 16px !important;
 }
 
 h2 {
@@ -105,7 +118,7 @@ h2 {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .button-row {
@@ -280,6 +293,13 @@ hr {
     display: flex;
     gap: 15px;
     align-items: center;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.game-item:hover {
+    background-color: #e8f5e9;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .game-image {
@@ -401,7 +421,7 @@ hr {
   font-weight: bold;
 }
 
-.shelf-info {
+.game-item {
   cursor: pointer;
 }
 

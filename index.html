@@ -21,7 +21,7 @@
         
         <div class="content">
             <div class="section">
-                <h2 data-hu="Hol van ez a játék?" data-en="Where can I find this game?">Hol van ez a játék?</h2>
+                <h2 data-hu="Konkrét játék helyét keresed?" data-en="Looking for a specific game's place?">Konkrét játék helyét keresed?</h2>
                 <input type="text" id="searchInput" class="search-box" data-hu-placeholder="Írd be a játék nevét..." data-en-placeholder="Enter game name..." placeholder="Game...">
                 <div class="button-row">
                     <button id="searchBtn" class="search-btn" data-hu="Keresés" data-en="Search">Keresés</button>
@@ -32,10 +32,10 @@
             </div>
             
             <div class="section">
-                <h2 data-hu="Mivel játsszunk?" data-en="Suggest a game to play with">Mivel játsszunk?</h2>
+                <h2 data-hu="Ajánljunk egy játékot?" data-en="Should we suggest a game for you?">Ajánljunk egy játékot?</h2>
                 <div class="survey" id="surveyForm">
                     <div class="question">
-                        <label for="playerCount" data-hu="Hányan játszotok?" data-en="How many players?">Hányan játszotok?</label>
+                        <label class="mandatory" for="playerCount" data-hu="Hányan játszotok? *" data-en="How many players? *">Hányan játszotok? *</label>
                         <div class="player-count-input">
                             <button type="button" class="player-btn" id="decreaseBtn">-</button>
                             <input type="number" id="playerCount" class="number-input" min="1" max="20" value="" data-hu-placeholder="1-20" data-en-placeholder="1-20" placeholder="1-20">
@@ -44,7 +44,7 @@
                     </div>
 
                     <div class="question">
-                        <label data-hu="Nehézség" data-en="Complexity">Nehézség</label>
+                        <label class="mandatory" data-hu="Nehézség *" data-en="Complexity *">Nehézség *</label>
                         <div class="radio-group">
                             <label class="radio-label">
                                 <input type="radio" name="complexity" value="kids">
@@ -127,8 +127,9 @@
                             </label>
                         </div>
                     </div>
-
-                    <button id="suggestBtn" class="search-btn" data-hu="Javaslat kérése" data-en="Get Suggestions">Javaslat kérése</button>
+                    <div class="button-row">
+                        <button id="suggestBtn" class="search-btn" data-hu="Javaslat kérése" data-en="Get Suggestions">Javaslat kérése</button>
+                    </div> 
                 </div>
 
                 <div id="suggestionResults" class="results" style="display: none;"></div>

@@ -814,7 +814,9 @@ function displaySuggestionResults(games, totalCount, hasMoreGames, showingAll, p
     
     if (games.length === 0) {
         resultsDiv.innerHTML = `
-            <button id="resetBtn" class="reset-btn search-btn" data-hu="${t('resetButton')}" data-en="${t('resetButton')}">${t('resetButton')}</button>
+            <div class="button-row">
+                <button id="resetBtn" class="reset-btn search-btn" data-hu="${t('resetButton')}" data-en="${t('resetButton')}">${t('resetButton')}</button>
+            </div>
             <div class="error">
                 ${t('noMatchingGame')}<br><br>
                 <small>${t('tryDifferentSettings')}</small>
@@ -823,7 +825,9 @@ function displaySuggestionResults(games, totalCount, hasMoreGames, showingAll, p
         document.getElementById('resetBtn').addEventListener('click', resetSuggestionForm);
     } else {
         console.log('Displaying games with images...');
-        let html = `<button id="resetBtn" class="reset-btn search-btn" data-hu="${t('resetButton')}" data-en="${t('resetButton')}">${t('resetButton')}</button>`;
+        let html = `<div class="button-row">
+        <button id="resetBtn" class="reset-btn search-btn" data-hu="${t('resetButton')}" data-en="${t('resetButton')}">${t('resetButton')}</button>
+        </div>`;
         html += `<div><strong>${t('suggestedGames')} (${games.length}${hasMoreGames && !showingAll ? ` / ${totalCount} ${t('matchingGames')}` : ''}):</strong></div>`;
         
         games.forEach((game, index) => {
@@ -854,11 +858,13 @@ function displaySuggestionResults(games, totalCount, hasMoreGames, showingAll, p
         
         // Add "Show All" or "Show Less" button if needed
         if (hasMoreGames) {
+            html += `<div class="button-row">`;
             if (!showingAll) {
                 html += `<button id="showAllBtn" class="search-btn" style="margin-top: 15px;">${t('showAllButton')} (${totalCount})</button>`;
             } else {
                 html += `<button id="showLessBtn" class="search-btn" style="margin-top: 15px;">${t('showLessButton')}</button>`;
             }
+            html += `</div>`;
         }
 
         // Add info boxes
@@ -892,7 +898,8 @@ function displaySuggestionResults(games, totalCount, hasMoreGames, showingAll, p
 
         document.querySelectorAll('.game-item .search-btn[data-game-name]').forEach(button => {
 
-            button.addEventListener('click', function() {
+            button.addEventListener('click', function(e) {
+                e.stopPropagation(); // Prevent triggering the parent click
 
                 const gameName = this.getAttribute('data-game-name');
 
@@ -916,6 +923,31 @@ function displaySuggestionResults(games, totalCount, hasMoreGames, showingAll, p
 
             });
 
+        });
+
+        // Make entire game item clickable
+        document.querySelectorAll('#suggestionResults .game-item').forEach(item => {
+            item.style.cursor = 'pointer';
+            
+            item.addEventListener('click', function() {
+                const button = this.querySelector('.search-btn[data-game-name]');
+                if (button) {
+                    const gameName = button.getAttribute('data-game-name');
+                    
+                    console.log('Game item clicked for game:', gameName);
+                    
+                    // Fill search input with game name
+                    document.getElementById('searchInput').value = gameName;
+                    
+                    // Trigger search
+                    searchGames(gameName);
+                    
+                    // Scroll to search results
+                    setTimeout(() => {
+                        document.getElementById('searchResults').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }, 100);
+                }
+            });
         });
 
     console.log('=== SUGGESTIONS COMPLETE ===');
