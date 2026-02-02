@@ -1,5 +1,5 @@
 const USERNAME = 'Boardgamebudapest';
-const BGG_API_TOKEN = '8affd03f-7be3-47df-8bcd-747ebdead50e'; // PASTE YOUR TOKEN HERE WHEN YOU GET IT - Leave empty to use local JSON file
+const BGG_API_TOKEN = '8affd03f-7be3-47df-8bcd-747ebdead50e';
 
 let gamesCollection = [];
 let suggestedGames = []; // Will store the curated game suggestions
