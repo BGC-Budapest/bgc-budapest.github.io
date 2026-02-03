@@ -378,7 +378,6 @@ function searchGames(query) {
 
     // Search for matching games (case insensitive)
     const searchTerm = query.toLowerCase();
-    console.log('Search term (lowercase):', searchTerm);
 
     const matches = gamesCollection.filter(game =>
         game.name.toLowerCase().includes(searchTerm)
