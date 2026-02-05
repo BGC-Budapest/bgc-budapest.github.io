@@ -80,7 +80,7 @@ const translations = {
         shelf: 'Polc',
         noShelfInfo: 'Nincs polc információ',
         gamesLoaded: 'játék betöltve',
-        gamesLoadedAPI: 'játék betöltve (BGG API)',
+        gamesLoadedAPI: 'játék elérhető a földszinti és emeleti polcokon.',
         gamesLoadedLocal: 'játék betöltve (Helyi fájl)',
         gamesWithShelf: 'játéknak van polc információja',
         selectPlayerCount: 'Kérlek válaszd ki, hányan játszotok!',
@@ -137,7 +137,7 @@ const translations = {
         shelf: 'Shelf',
         noShelfInfo: 'No shelf info',
         gamesLoaded: 'games loaded',
-        gamesLoadedAPI: 'games loaded (BGG API)',
+        gamesLoadedAPI: 'games are available on the ground floor and upstairs shelves.',
         gamesLoadedLocal: 'games loaded (Local file)',
         gamesWithShelf: 'games have shelf info',
         selectPlayerCount: 'Please select player count!',
@@ -297,7 +297,6 @@ async function fetchFromAPI() {
         resultsDiv.innerHTML = `
             <div style="color: green;">
                 ✓ ${gamesCollection.length} ${t('gamesLoadedAPI')}<br>
-                <small>${gamesCollection.filter(g => g.shelf).length} ${t('gamesWithShelf')}</small>
             </div>
         `;
         console.log('=== COLLECTION FETCH FROM API COMPLETE ===');
